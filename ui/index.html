@@ -1,0 +1,747 @@
+<title>HerEvidence</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap">
+<style>
+/* Layout: the person's phone (left) beside the machine room (right); supervisor and gap map below, for judges.
+   One file, two modes: with ui_server.py it drives the real agent; anywhere else it simulates HerEvidence in the browser. */
+:root {
+  /* The phone is a dark lock screen in both themes on purpose */
+  --phone-bg: #1b2230; --phone-ink: #f1f3f7; --phone-muted: #a9b2c1; --notif-bg: rgba(255, 255, 255, .1); --phone-alert: #ff7a66; --phone-brief: #e9a8d4;
+  --bg: #f4f6f9; --surface: #ffffff; --ink: #172030; --muted: #5a6577; --line: #dce1e9;
+  --accent: #7a2e63; --accent-soft: rgba(122, 46, 99, .14); --series2: #2f6aa8;
+  --ok: #1d7a4b; --warn: #a35f00; --bad: #b42318;
+  --ok-soft: rgba(29, 122, 75, .12); --warn-soft: rgba(163, 95, 0, .13); --bad-soft: rgba(180, 35, 24, .11);
+  --f-display: "IBM Plex Serif", Georgia, serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f131a; --surface: #161c26; --ink: #e6eaf1; --muted: #97a2b3; --line: #29313f;
+  --accent: #d98bc1; --accent-soft: rgba(217, 139, 193, .17); --series2: #7fb0e8;
+  --ok: #4cc38a; --warn: #e3a33b; --bad: #f2735f;
+  --ok-soft: rgba(76, 195, 138, .14); --warn-soft: rgba(227, 163, 59, .15); --bad-soft: rgba(242, 115, 95, .15);
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0f131a; --surface: #161c26; --ink: #e6eaf1; --muted: #97a2b3; --line: #29313f;
+  --accent: #d98bc1; --accent-soft: rgba(217, 139, 193, .17); --series2: #7fb0e8;
+  --ok: #4cc38a; --warn: #e3a33b; --bad: #f2735f;
+  --ok-soft: rgba(76, 195, 138, .14); --warn-soft: rgba(227, 163, 59, .15); --bad-soft: rgba(242, 115, 95, .15);
+  color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 14px/1.5 var(--f-body); margin: 0; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-block: 20px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 16px; }
+h1, h2 { font-family: var(--f-display); font-weight: 600; margin: 0; text-wrap: balance; }
+h1 { font-size: 1.6rem; letter-spacing: -.01em; }
+h2 { font-size: 1.05rem; }
+.label { font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+.num { font-family: var(--f-data); font-variant-numeric: tabular-nums; }
+[hidden] { display: none !important; }
+
+header p { margin: 4px 0 0; color: var(--muted); max-width: 70ch; }
+.tag-data { display: inline-block; font: 500 .7rem var(--f-data); color: var(--accent); background: var(--accent-soft);
+  padding: 2px 8px; border-radius: 4px; letter-spacing: .04em; vertical-align: middle; margin-left: 8px; }
+.offline { border: 1px solid var(--bad); background: var(--bad-soft); color: var(--bad); border-radius: 8px; padding: 10px 14px; }
+
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; min-width: 0; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+button, select { font: 500 .85rem var(--f-body); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 6px; padding: 7px 12px; cursor: pointer; }
+button:hover:not(:disabled), select:hover { border-color: var(--muted); }
+button:disabled { opacity: .5; cursor: default; }
+button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+button.break { border-color: var(--bad); color: var(--bad); }
+.sep { width: 1px; height: 24px; background: var(--line); }
+.cmd { font: .75rem var(--f-data); color: var(--muted); margin-top: 10px; overflow-wrap: anywhere; }
+
+.status-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 0; margin-top: 16px; }
+.stat { padding: 2px 16px; border-left: 1px solid var(--line); display: grid; gap: 2px; align-content: start; }
+.stat:nth-child(3n+1) { border-left: 0; padding-left: 0; }
+.stat .v { font: 500 1.25rem var(--f-data); font-variant-numeric: tabular-nums; }
+.meter { height: 4px; background: var(--line); border-radius: 2px; overflow: hidden; margin-top: 4px; }
+.meter i { display: block; height: 100%; background: var(--accent); width: 0; transition: width .2s; }
+
+.pill { display: inline-flex; align-items: center; gap: 6px; font: 600 .78rem var(--f-body); letter-spacing: .04em;
+  text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+.pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.pill.running, .pill.done { color: var(--ok); background: var(--ok-soft); }
+.pill.idle { color: var(--muted); background: var(--line); }
+.pill.halted { color: var(--bad); background: var(--bad-soft); }
+
+.top { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 16px; align-items: start; }
+.side { display: grid; gap: 10px; min-width: 0; }
+.side > p { margin: 0; color: var(--muted); font-size: .85rem; }
+.phone { background: var(--phone-bg); color: var(--phone-ink); border-radius: 30px; padding: 18px 14px 22px;
+  min-height: 420px; display: flex; flex-direction: column; gap: 10px; border: 6px solid var(--line); }
+.phone .clock { text-align: center; font: 300 2.6rem/1 var(--f-body); letter-spacing: -.02em; font-variant-numeric: tabular-nums; margin-top: 6px; }
+.phone .date { text-align: center; color: var(--phone-muted); font-size: .8rem; margin-bottom: 8px; }
+.phone .empty { color: var(--phone-muted); text-align: center; font-size: .85rem; margin: auto 12px; }
+.notes { display: grid; gap: 8px; }
+.note { background: var(--notif-bg); border-radius: 14px; padding: 10px 12px; display: grid; gap: 2px; }
+.note .meta { display: flex; justify-content: space-between; font-size: .7rem; color: var(--phone-muted); }
+.note .meta b { font-weight: 600; letter-spacing: .02em; display: inline-flex; align-items: center; gap: 6px; }
+.note .meta b::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--phone-brief); }
+.note.alert .meta b::before { background: var(--phone-alert); }
+.note strong { font-size: .88rem; font-weight: 600; }
+.note p { margin: 0; font-size: .82rem; line-height: 1.4; }
+.phone.buzz { animation: buzz .45s ease-in-out 2; }
+@keyframes buzz { 0%, 100% { transform: translateX(0); } 20%, 60% { transform: translateX(-4px); } 40%, 80% { transform: translateX(4px); } }
+.machine-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; }
+
+.grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px; align-items: start; }
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+svg text { fill: var(--muted); font: 11px var(--f-data); }
+.chart { width: 100%; height: auto; display: block; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: .78rem; color: var(--muted); margin-top: 6px; }
+.legend span::before { content: ""; display: inline-block; width: 12px; height: 3px; margin-right: 6px; vertical-align: middle; background: var(--accent); }
+.legend .s2::before { background: var(--series2); }
+.legend .lim::before { background: var(--bad); }
+
+.checks { display: grid; gap: 8px; margin-top: 14px; }
+.check { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding-top: 8px; border-top: 1px solid var(--line); }
+.check .d { grid-column: 1 / -1; font-size: .8rem; color: var(--muted); }
+.check .s { font: 500 .8rem var(--f-data); }
+.s.ok { color: var(--ok); } .s.warn { color: var(--warn); } .s.bad { color: var(--bad); }
+
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 520px; }
+th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600;
+  white-space: normal; vertical-align: bottom; line-height: 1.3; }
+td.r, th.r { text-align: right; }
+td { font-variant-numeric: tabular-nums; }
+.scorebar { display: inline-block; width: 44px; height: 6px; background: var(--line); border-radius: 3px; vertical-align: middle; margin-left: 8px; overflow: hidden; }
+.scorebar i { display: block; height: 100%; background: var(--accent); }
+.lowppr { color: var(--bad); font-weight: 600; }
+.foot { font-size: .78rem; color: var(--muted); margin: 10px 0 0; }
+.gapnote { color: var(--warn); }
+.empty-row { color: var(--muted); padding: 14px 8px; }
+
+.log { list-style: none; margin: 0; padding: 0; font: .8rem var(--f-data); }
+.log li { display: grid; grid-template-columns: 8.5em minmax(0, 1fr) auto; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+.log li > span:nth-child(2) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--f-body); }
+.log li > span:nth-child(3) { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px; }
+.log .empty { color: var(--muted); font-family: var(--f-body); padding: 6px 0; }
+.tag { font-size: .72rem; padding: 1px 6px; border-radius: 4px; white-space: nowrap; }
+.tag.ok { color: var(--ok); background: var(--ok-soft); }
+.tag.bad { color: var(--bad); background: var(--bad-soft); }
+.tag.warn { color: var(--warn); background: var(--warn-soft); }
+.tag.n { color: var(--muted); background: var(--line); }
+
+.how { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.how div { display: grid; gap: 4px; align-content: start; }
+.how p { margin: 0; color: var(--muted); font-size: .85rem; }
+
+@media (max-width: 860px) {
+  .grid, .how, .top { grid-template-columns: 1fr; }
+  .phone { max-width: 320px; width: 100%; justify-self: center; }
+  .status-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stat:nth-child(3n+1) { border-left: 1px solid var(--line); padding-left: 16px; }
+  .stat:nth-child(odd) { border-left: 0; padding-left: 0; }
+  .log li { grid-template-columns: 8.5em minmax(0, 1fr); }
+  .log li > span:nth-child(3) { grid-column: 1 / -1; justify-content: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) { .meter i { transition: none; } .phone.buzz { animation: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>HerEvidence <span id="datatag" class="tag-data">SYNTHETIC DATA</span></h1>
+    <p>An agent audits clinical trial records unattended: are women enrolled in proportion to who has the disease, were results reported by sex, and does eligibility exclude women? It checks its own work and stops itself when it can't be trusted.</p>
+  </header>
+
+  <div id="offline" class="offline" hidden>Lost contact with the agent. Check that <span class="num">python ui_server.py</span> is still running, then reload.</div>
+
+  <div class="top">
+    <section class="side" aria-label="What the person running it gets">
+      <span class="label">What the person running it gets</span>
+      <div id="phone" class="phone" aria-live="polite">
+        <div class="clock" id="p-clock">--:--</div>
+        <div class="date" id="p-date"></div>
+        <div id="p-empty" class="empty">No notifications. The auditor runs on its own and only reaches out when it needs someone.</div>
+        <div id="p-notes" class="notes"></div>
+      </div>
+      <div class="controls">
+        <button id="brief">Send morning brief</button>
+        <button id="speak" disabled>Hear latest</button>
+        <button id="resume" hidden>Fix and resume</button>
+      </div>
+      <p>No app to watch. The phone stays silent unless the agent stops itself or finishes. With Twilio set up in <span class="num">notify.py</span>, the same message arrives as a real text.</p>
+    </section>
+
+    <div class="side">
+      <div class="machine-head">
+        <span class="label">Behind the scenes, for judges</span>
+        <span id="pill" class="pill idle">Idle</span>
+      </div>
+      <section class="panel" aria-label="Run controls and status">
+        <div class="controls">
+          <button class="primary" data-scenario="normal">Run audit</button>
+          <span id="data-wrap" hidden>
+            <label class="label" for="data">Data</label>
+            <select id="data">
+              <option value="synthetic">Synthetic (offline)</option>
+              <option value="live">Real (ClinicalTrials.gov)</option>
+            </select>
+          </span>
+          <span class="sep" aria-hidden="true"></span>
+          <span class="label">Break it</span>
+          <button class="break" data-scenario="sabotage">Model degrades</button>
+          <button class="break" data-scenario="loop">Model loops</button>
+          <button class="break" data-scenario="stuck">Ambiguous trials</button>
+          <button class="break" data-scenario="budget">Tiny budget</button>
+        </div>
+        <div class="cmd" id="cmd"></div>
+        <div class="status-row">
+          <div class="stat"><span class="label">Trials audited</span><span class="v" id="s-n">0</span></div>
+          <div class="stat"><span class="label">Running time</span><span class="v" id="s-time">0s</span></div>
+          <div class="stat"><span class="label">LLM calls</span><span class="v" id="s-calls">0</span></div>
+          <div class="stat"><span class="label">Spend</span><span class="v" id="s-cost">$0.000</span><div class="meter"><i id="m-cost"></i></div></div>
+          <div class="stat"><span class="label">Tokens</span><span class="v" id="s-tok">0</span><div class="meter"><i id="m-tok"></i></div></div>
+          <div class="stat"><span class="label">Rejected · set aside</span><span class="v" id="s-bad">0 · 0</span></div>
+        </div>
+      </section>
+      <section class="panel how" aria-label="How it works">
+        <div><span class="label">Rules first, no LLM</span><p>Enrollment counts by sex come straight from each record's baseline table, so the representation numbers can't be hallucinated.</p></div>
+        <div><span class="label">LLM, with evidence</span><p>The model only judges eligibility wording and sex-stratified results. Every claim must quote the record, and code checks the quote exists.</p></div>
+        <div><span class="label">Supervisor</span><p>Watches error rates, loops, progress and spend. On a halt it sets aside everything since the last clean batch and writes a handoff report.</p></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="grid">
+    <section class="panel" aria-label="Supervisor">
+      <div class="panel-head"><h2>Supervisor</h2><span class="label">Chance its error rate is above 10%</span></div>
+      <svg id="chart" class="chart" viewBox="0 0 460 210" role="img" aria-label="Probability that each check's error rate exceeds 10 percent, by batch, with the halt line at 0.8"></svg>
+      <div class="legend"><span>Quote check</span><span class="s2">Independent recheck</span><span class="lim">Halt line</span></div>
+      <div class="checks">
+        <div class="check"><span>Quote check</span><span id="c-ground" class="s ok">–</span>
+          <span class="d">Every claim must quote the record. A quote that isn't in the source counts as an error, and the claim is rejected.</span></div>
+        <div class="check"><span>Independent recheck</span><span id="c-recheck" class="s ok">–</span>
+          <span class="d">A few answers per batch are asked again separately. Disagreement counts as an error.</span></div>
+        <div class="check"><span>Loop detector</span><span id="c-loop" class="s ok">–</span>
+          <span class="d">The same call repeated three times skips that trial; too many skipped trials stops the run.</span></div>
+        <div class="check"><span>Stuck detector</span><span id="c-stuck" class="s ok">–</span>
+          <span class="d">Stops when several batches in a row resolve nothing.</span></div>
+        <div class="check"><span>Budget</span><span id="c-budget" class="s ok">–</span>
+          <span class="d">Token, call, cost and time caps are checked before every model call.</span></div>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Gap map">
+      <div class="panel-head"><h2>Gap map</h2><span class="label">Ranked by gap score · trusted verdicts only</span></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr>
+            <th>Condition</th><th class="r">Trials</th><th class="r">Women in trials / patients</th><th class="r">PPR</th>
+            <th class="r">No result by sex</th><th class="r">Blanket exclusion</th><th>Gap score</th>
+          </tr></thead>
+          <tbody id="gap"><tr><td class="empty-row" colspan="7">Run an audit to fill the gap map.</td></tr></tbody>
+        </table>
+      </div>
+      <p class="foot gapnote" id="gapnote" hidden></p>
+      <p class="foot">PPR = share of women in trials ÷ share of women among patients; below 0.8 is usually read as under-representation. "No result by sex" means not found in the registry record, not that the analysis wasn't done. Gap score (0–100) weights PPR shortfall 50, no result by sex 30, blanket exclusion 20.</p>
+    </section>
+  </div>
+
+  <section class="panel" aria-label="Latest trials">
+    <div class="panel-head"><h2>Latest trials</h2><span class="label">Newest first</span></div>
+    <ul id="log" class="log"><li class="empty">Nothing audited yet.</li></ul>
+  </section>
+</div>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const pct = x => x == null ? "–" : Math.round(x) + "%";
+  const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+
+  // =====================================================================
+  // Simulation of HerEvidence, used when ui_server.py isn't reachable (e.g. the shared link).
+  // Mirrors agent.py / supervisor.py: batches of 5, quote grounding + sampled recheck,
+  // Beta(1,9) posterior with halt at P(rate > 10%) >= 0.8, loop / stuck / budget guards,
+  // quarantine since the last clean batch. Produces the same JSON shape as /api/state.
+  // =====================================================================
+  const Sim = (() => {
+    const BASE = { max_tokens: 150000, max_calls: 300, max_cost_usd: 2, max_seconds: 900, batch_size: 5, rechecks_per_batch: 3,
+      error_threshold: 0.1, halt_probability: 0.8, prior_alpha: 1, prior_beta: 9, min_observations: 6,
+      loop_repeat: 3, max_task_loops: 3, stuck_batches: 3, max_attempts_per_trial: 3 };
+    const SCEN = { normal: {}, sabotage: { from: 2, q: "degraded" }, loop: { from: 1, q: "garbage" },
+      stuck: { from: 0, q: "unclear", ambiguous: true }, budget: { limits: { max_tokens: 9000 } } };
+    const CONDS = ["heart failure", "major depressive disorder", "rheumatoid arthritis", "lung cancer"];
+    // SYNTHETIC placeholders, same as fixtures.py. Not real estimates.
+    const TRIAL_W = { "heart failure": .26, "major depressive disorder": .64, "rheumatoid arthritis": .74, "lung cancer": .38 };
+    const PAT_W = { "heart failure": .45, "major depressive disorder": .62, "rheumatoid arthritis": .70, "lung cancer": .46 };
+    const NEEDS_QUOTE = new Set(["BLANKET_EXCLUSION_CHILDBEARING", "PREGNANCY_LACTATION_EXCLUSION", "CONDITIONAL", "STRATIFIED_FOUND"]);
+    const ELIG = ["NONE", "CONDITIONAL", "PREGNANCY_LACTATION_EXCLUSION", "BLANKET_EXCLUSION_CHILDBEARING"];
+    const ADVICE = {
+      ERROR_RATE: "Batches since the last clean batch were set aside. Check the prompts and model against the gold set before trusting new output.",
+      LOOP: "Check for malformed model output or a failing endpoint, then resume.",
+      STUCK: "The remaining trials are likely ambiguous for the current prompt; a person should review them.",
+      TOKEN_BUDGET: "Raise the cap deliberately or narrow the scope, then resume.",
+    };
+    const PACE = 300;
+
+    let r, trials, rec, q, run = null, sup, hist, order, timer = null, seq = 0, drafts = 0, cfg, batch, curBatch, bIdx, rechecks, batchFails, t0;
+
+    function mulberry(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+    function gauss(m, sd) { const u = 1 - r(), v = r(); return m + sd * Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); }
+    function pickW(pairs) { let x = r(); for (const [v, w] of pairs) { x -= w; if (x <= 0) return v; } return pairs[0][0]; }
+
+    // P(rate > thr) for Beta(a, b): ratio of midpoint integrals of the unnormalized density
+    function pExceeds(t, thr) {
+      const a = t.a0 + t.errors, b = t.b0 + t.passes, N = 4000;
+      let tot = 0, tail = 0;
+      for (let i = 0; i < N; i++) {
+        const x = (i + 0.5) / N, d = Math.exp((a - 1) * Math.log(x) + (b - 1) * Math.log(1 - x));
+        tot += d; if (x > thr) tail += d;
+      }
+      return tail / tot;
+    }
+    const tracker = L => ({ a0: L.prior_alpha, b0: L.prior_beta, errors: 0, passes: 0 });
+
+    function makeTrials(ambiguous) {
+      r = mulberry(7);
+      const out = [];
+      for (let i = 0; i < 40; i++) {
+        const cond = CONDS[i % CONDS.length];
+        const lab = ambiguous ? "NONE" : pickW([["NONE", .4], ["CONDITIONAL", .2], ["PREGNANCY_LACTATION_EXCLUSION", .25], ["BLANKET_EXCLUSION_CHILDBEARING", .15]]);
+        const hasRes = r() < .75, found = r() < .3, sexMeasure = hasRes && r() < .8;
+        const sex = pickW([["ALL", .88], ["FEMALE", .06], ["MALE", .06]]);
+        const decoy = ambiguous || r() < .15, mention = found || r() < .3;
+        let f = null, m = null;
+        if (sexMeasure) {
+          const n = 80 + Math.floor(r() * 820), sh = sex === "FEMALE" ? 1 : sex === "MALE" ? 0 : clamp(gauss(TRIAL_W[cond], .1), .03, .97);
+          f = Math.round(n * sh); m = n - f;
+        }
+        out.push({ id: "SYN07" + String(i).padStart(5, "0"), cond, sex, f, m, hasRes, sexMeasure,
+          elig: lab, strat: !hasRes ? "NO_RESULTS_POSTED" : found ? "STRATIFIED_FOUND" : "NOT_FOUND_IN_RECORD",
+          eligLLM: lab !== "NONE" || decoy, stratLLM: hasRes && mention });
+      }
+      return out;
+    }
+
+    class Halt { constructor(code, reason) { this.code = code; this.reason = reason; } }
+    class TaskLoop {}
+
+    function checkBudget() {
+      const L = sup.L;
+      if (sup.tokens >= L.max_tokens) throw new Halt("TOKEN_BUDGET", `${sup.tokens.toLocaleString()} tokens used (cap ${L.max_tokens.toLocaleString()})`);
+      if (sup.calls >= L.max_calls) throw new Halt("CALL_BUDGET", `${sup.calls} LLM calls (cap ${L.max_calls})`);
+      if (sup.cost >= L.max_cost_usd) throw new Halt("COST_BUDGET", `~$${sup.cost.toFixed(2)} spent`);
+    }
+    function call(sig) {
+      checkBudget();
+      sup.sigs[sig] = (sup.sigs[sig] || 0) + 1;
+      if (sup.sigs[sig] >= sup.L.loop_repeat) {
+        sup.task_loops++;
+        if (sup.task_loops >= sup.L.max_task_loops) throw new Halt("LOOP", `${sup.task_loops} tasks stuck repeating identical calls (last: ${sig})`);
+        throw new TaskLoop();
+      }
+      const tin = 800 + Math.floor(r() * 400), tout = 50 + Math.floor(r() * 40);
+      sup.calls++; sup.tokens += tin + tout; sup.cost += tin / 1e6 * 3 + tout / 1e6 * 15;
+    }
+    function llm(task, t, variant) {
+      const qual = curQuality();
+      if (qual === "garbage") return null;
+      if (qual === "unclear") return { label: "UNCLEAR", grounded: true };
+      const isElig = task === "eligibility";
+      const truth = isElig ? t.elig : t.strat;
+      const others = isElig ? ELIG.filter(x => x !== truth) : [truth === "STRATIFIED_FOUND" ? "NOT_FOUND_IN_RECORD" : "STRATIFIED_FOUND"];
+      // Healthy model is near-perfect (like mock_llm.py), so a normal run never trips the halt by bad luck.
+      const wrongP = variant === "recheck" ? (qual === "degraded" ? .2 : 0) : (qual === "degraded" ? .25 : .005);
+      const label = r() < wrongP ? others[Math.floor(r() * others.length)] : truth;
+      const fabP = qual === "degraded" ? .35 : .003;
+      return { label, grounded: !NEEDS_QUOTE.has(label) || r() > fabP };
+    }
+    const curQuality = () => cfg.from != null && bIdx >= cfg.from ? cfg.q : "normal";
+    function observe(k, failed) { sup.tr[k][failed ? "errors" : "passes"]++; if (failed) batchFails++; }
+
+    function audit(t) {
+      const vs = [];
+      const primary = task => { for (;;) { call(`${task}|primary|${t.id}`); const res = llm(task, t, "primary"); if (res) return res; } };
+      const verify = (task, chk, res) => {
+        const v = { chk, label: res.label, llm: true, verified: true };
+        if (res.label === "UNCLEAR") { v.verified = false; v.unclear = true; return v; }
+        let grounded = true;
+        if (NEEDS_QUOTE.has(res.label)) { grounded = res.grounded; observe("grounding", !grounded); }
+        let agree = null;
+        if (rechecks.has(t.id) && grounded) {
+          call(`${task}|recheck|${t.id}`);
+          const r2 = llm(task, t, "recheck");
+          if (r2 && r2.label !== "UNCLEAR") { agree = r2.label === res.label; observe("recheck", !agree); }
+        }
+        v.verified = grounded && agree !== false;
+        return v;
+      };
+      vs.push(t.eligLLM ? verify("eligibility", "eligibility_exclusion", primary("eligibility")) : { chk: "eligibility_exclusion", label: "NONE", verified: true });
+      if (!t.hasRes) vs.push({ chk: "sex_stratified_results", label: "NO_RESULTS_POSTED", verified: true });
+      else if (!t.stratLLM) vs.push({ chk: "sex_stratified_results", label: "NOT_FOUND_IN_RECORD", verified: true });
+      else vs.push(verify("stratified", "sex_stratified_results", primary("stratified")));
+      return vs;
+    }
+
+    function step() {
+      try {
+        if (!curBatch.length) {
+          const ids = order.filter(id => q[id] === "pending").slice(0, sup.L.batch_size);
+          if (!ids.length) return finish(null);
+          curBatch = ids.slice(); batch = { idx: bIdx, ids, resolved: 0 }; batchFails = 0;
+          const pool = ids.slice(); rechecks = new Set();
+          for (let k = 0; k < Math.min(pool.length, sup.L.rechecks_per_batch); k++) rechecks.add(pool.splice(Math.floor(r() * pool.length), 1)[0]);
+        }
+        const id = curBatch.shift(), t = trials.find(x => x.id === id);
+        let vs;
+        try { vs = audit(t); }
+        catch (e) { if (!(e instanceof TaskLoop)) throw e; q[id] = "failed"; recordRecent(t, null); vs = null; }
+        if (vs) {
+          const bad = vs.filter(v => !v.verified);
+          const attempts = (rec[id] && rec[id].attempts) || 0;
+          let outcome;
+          if (bad.length) outcome = attempts + 1 >= sup.L.max_attempts_per_trial ? "review" : "retry";
+          else outcome = vs[1].label === "NOT_FOUND_IN_RECORD" ? "watch" : "done";
+          rec[id] = { batch: bIdx, run: run.run_id, vs, attempts: attempts + (bad.length ? 1 : 0), quarantined: false };
+          q[id] = outcome;
+          sup.rejected += bad.filter(v => !v.unclear).length;
+          if (outcome === "done" || outcome === "watch") batch.resolved++;
+          if (outcome === "watch") drafts++;
+          recordRecent(t, rec[id]);
+        }
+        sup.audited.add(id);
+        if (!curBatch.length) afterBatch();
+      } catch (e) {
+        if (e instanceof Halt) return finish(e);
+        throw e;
+      }
+    }
+
+    function afterBatch() {
+      if (batchFails === 0) sup.last_clean = bIdx;
+      sup.no_progress = batch.resolved > 0 ? 0 : sup.no_progress + 1;
+      const L = sup.L, p = {};
+      for (const k of ["grounding", "recheck"]) p[k] = pExceeds(sup.tr[k], L.error_threshold);
+      hist.push({ batch: bIdx, grounding: +p.grounding.toFixed(3), recheck: +p.recheck.toFixed(3) });
+      bIdx++;
+      for (const k of ["grounding", "recheck"]) {
+        const t = sup.tr[k], n = t.errors + t.passes;
+        if (n >= L.min_observations && p[k] >= L.halt_probability)
+          throw new Halt("ERROR_RATE", `${k} check: ${t.errors}/${n} failures; P(error rate > 10%) = ${p[k].toFixed(2)} >= 0.80`);
+      }
+      if (sup.no_progress >= L.stuck_batches) throw new Halt("STUCK", `${sup.no_progress} consecutive batches resolved zero trials`);
+      checkBudget();
+    }
+
+    function finish(h) {
+      clearInterval(timer); timer = null;
+      run.status = h ? "HALTED_" + h.code : "COMPLETED";
+      run.halt_code = h ? h.code : null; run.halt_reason = h ? h.reason : null;
+      if (h && h.code === "ERROR_RATE") {
+        for (const id in rec) if (rec[id].run === run.run_id && rec[id].batch > sup.last_clean) { rec[id].quarantined = true; q[id] = "quarantined"; }
+      }
+      sup.elapsed = (performance.now() - t0) / 1000;
+    }
+
+    const recent = [];
+    function recordRecent(t, rc) { recent.unshift({ t, rc }); if (recent.length > 8) recent.pop(); }
+
+    function start(body) {
+      if (timer) return { error: "A run is already in progress. Wait for it to finish." };
+      const scen = body.scenario in SCEN ? body.scenario : "normal";
+      cfg = SCEN[scen];
+      const L = { ...BASE, ...(cfg.limits || {}) };
+      if (!body.resume || !trials) {
+        trials = makeTrials(!!cfg.ambiguous); rec = {}; q = {}; drafts = 0;
+        order = trials.map(t => t.id); order.forEach(id => q[id] = "pending");
+      } else {
+        order.forEach(id => { if (q[id] === "retry" || q[id] === "failed") q[id] = "pending"; });
+      }
+      r = mulberry(1000 + (++seq));
+      run = { run_id: `sim-${seq}-${scen}`, scenario: scen, status: "RUNNING", halt_code: null, halt_reason: null };
+      sup = { L, tokens: 0, calls: 0, cost: 0, sigs: {}, task_loops: 0, no_progress: 0, last_clean: -1, elapsed: 0,
+              tr: { grounding: tracker(L), recheck: tracker(L) }, rejected: 0, audited: new Set() };
+      hist = []; curBatch = []; bIdx = 0; recent.length = 0; t0 = performance.now();
+      timer = setInterval(step, PACE);
+      return { started: `run_agent.py --scenario ${scen}${body.resume ? " --no-ingest" : ""} (simulated in your browser)` };
+    }
+
+    function state() {
+      if (!run) return { running: false, run: null, snapshot: null, history: [], counts: { audited: 0, rejected: 0, quarantined: 0, drafts: 0 }, synthetic: true, gap: [], recent: [], advice: "" };
+      if (timer) sup.elapsed = (performance.now() - t0) / 1000;
+      const snap = { elapsed: sup.elapsed, tokens: sup.tokens, calls: sup.calls, cost: sup.cost, limits: sup.L,
+        trackers: Object.fromEntries(["grounding", "recheck"].map(k => { const t = sup.tr[k];
+          return [k, { n: t.errors + t.passes, errors: t.errors, p_exceeds: pExceeds(t, sup.L.error_threshold) }]; })),
+        task_loops: sup.task_loops, no_progress: sup.no_progress };
+      // Gap map from trusted (verified, not quarantined) verdicts, latest per trial
+      const gap = CONDS.map(cond => {
+        const ts = trials.filter(t => t.cond === cond && rec[t.id] && !rec[t.id].quarantined);
+        if (!ts.length) return null;
+        let f = 0, m = 0;
+        ts.forEach(t => { if (t.sex === "ALL" && t.f != null) { f += t.f; m += t.m; } });
+        const share = f + m ? f / (f + m) : null;
+        const strat = ts.filter(t => t.hasRes).map(t => rec[t.id].vs[1]).filter(v => v.verified);
+        const elig = ts.map(t => rec[t.id].vs[0]).filter(v => v.verified);
+        return { condition: cond, trials: ts.length,
+          women_trials: share == null ? null : 100 * share, women_patients: 100 * PAT_W[cond],
+          ppr: share == null ? null : +(share / PAT_W[cond]).toFixed(2), source: "SYNTHETIC placeholder (offline demo)",
+          no_strat: strat.length ? 100 * strat.filter(v => v.label === "NOT_FOUND_IN_RECORD").length / strat.length : null,
+          blanket: elig.length ? 100 * elig.filter(v => v.label === "BLANKET_EXCLUSION_CHILDBEARING").length / elig.length : null };
+      }).filter(Boolean);
+      return {
+        running: !!timer, run: { ...run }, advice: run.halt_code ? (ADVICE[run.halt_code] || "") : "",
+        snapshot: snap, history: hist.slice(),
+        counts: { audited: sup.audited.size, rejected: sup.rejected,
+          quarantined: Object.values(rec).filter(x => x.quarantined && x.run === run.run_id).length, drafts },
+        synthetic: true, gap,
+        recent: recent.map(({ t, rc }) => ({ nct_id: t.id, condition: t.cond,
+          checks: rc ? { eligibility_exclusion: rc.vs[0].label, sex_stratified_results: rc.vs[1].label } : {},
+          rejected: rc ? rc.vs.filter(v => !v.verified && !v.unclear).length : 0,
+          unclear: rc ? rc.vs.some(v => v.unclear) : false, looped: !rc,
+          quarantined: rc ? (rc.quarantined ? 1 : 0) : 0 })),
+      };
+    }
+    return { start, state };
+  })();
+
+  // =====================================================================
+  // Backend: the real agent through ui_server.py, or the simulation above.
+  // =====================================================================
+  let mode = "sim";
+  const api = {
+    async state() {
+      if (mode === "sim") return Sim.state();
+      const res = await fetch("/api/state", { cache: "no-store" });
+      if (!res.ok) throw new Error("state " + res.status);
+      return res.json();
+    },
+    async run(body) {
+      if (mode === "sim") { const out = Sim.start(body); return { ok: !out.error, out }; }
+      const res = await fetch("/api/run", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+      return { ok: res.ok, out: await res.json() };
+    },
+  };
+  async function detect() {
+    try {
+      const ctl = new AbortController(), to = setTimeout(() => ctl.abort(), 1500);
+      const res = await fetch("/api/state", { cache: "no-store", signal: ctl.signal });
+      clearTimeout(to);
+      if (res.ok) { const j = await res.json(); if (j && Array.isArray(j.scenarios)) mode = "live"; }
+    } catch (e) { /* no agent server: simulate */ }
+    $("data-wrap").hidden = mode !== "live";
+    $("cmd").textContent = mode === "live" ? "Connected to the agent." :
+      "Simulated in your browser with the agent's own rules. On the laptop, python ui_server.py runs the real agent with these same buttons.";
+  }
+
+  // =====================================================================
+  // UI
+  // =====================================================================
+  let S = null, lastKey = null, notes = [], booted = false, pollTimer = null, ignoreRun = null;
+
+  const clock = d => d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+  function notify(kind, title, body, say) {
+    notes.unshift({ kind, title, body, say, at: new Date() });
+    const ph = $("phone"); ph.classList.remove("buzz"); void ph.offsetWidth; ph.classList.add("buzz");
+    renderPhone();
+  }
+  function renderPhone() {
+    const now = new Date();
+    $("p-clock").textContent = clock(now);
+    $("p-date").textContent = now.toLocaleDateString([], { weekday: "long", month: "long", day: "numeric" });
+    $("p-empty").hidden = notes.length > 0;
+    $("p-notes").replaceChildren(...notes.slice(0, 4).map(n => {
+      const d = document.createElement("div");
+      d.className = "note " + n.kind;
+      d.innerHTML = `<div class="meta"><b>HEREVIDENCE</b><span></span></div><strong></strong><p></p>`;
+      d.querySelector(".meta span").textContent = clock(n.at);
+      d.querySelector("strong").textContent = n.title;
+      d.querySelector("p").textContent = n.body;
+      return d;
+    }));
+    $("speak").disabled = !notes.length;
+  }
+
+  function messageFor(s) {
+    const r = s.run, sn = s.snapshot || {}, c = s.counts, code = r.halt_code;
+    const cost = "$" + (sn.cost || 0).toFixed(3);
+    if (!code) return ["brief", "Audit finished",
+      `${c.audited} trials audited for ${cost}. ${c.drafts} draft request${c.drafts === 1 ? "" : "s"} to trial teams wait for your approval. Nothing is sent without you.`];
+    if (code === "ERROR_RATE") {
+      const tr = sn.trackers || {}, g = tr.grounding || {}, rc = tr.recheck || {};
+      const why = (g.p_exceeds || 0) >= (rc.p_exceeds || 0)
+        ? `${g.errors} of ${g.n} quotes weren't in the record` : `${rc.errors} of ${rc.n} rechecks disagreed`;
+      return ["alert", "Stopped itself: answers are going wrong",
+        `${why}, so it can no longer be trusted. ${c.quarantined} recent trials set aside; none of them reach the gap map.`];
+    }
+    if (code === "LOOP") return ["alert", "Stopped itself: stuck in a loop",
+      `The model kept giving the same unusable answer. Stopped after ${sn.calls} calls instead of burning the budget.`];
+    if (code === "STUCK") return ["alert", "Stopped itself: no progress",
+      `${sn.no_progress} batches in a row resolved nothing. The remaining trials need a person to look.`];
+    return ["alert", "Stopped at its budget",
+      `Used ${(sn.tokens || 0).toLocaleString()} tokens (${cost}). Progress is saved; resume when you're ready.`];
+  }
+
+  function score(r) {
+    const p = r.ppr != null ? 50 * clamp((1 - r.ppr) / 0.4, 0, 1) : 0;
+    return p + 30 * (r.no_strat || 0) / 100 + 20 * (r.blanket || 0) / 100;
+  }
+  const ranked = g => [...g].map(r => ({ ...r, score: score(r) })).sort((a, b) => b.score - a.score);
+
+  function morningBrief() {
+    if (!S || !S.gap.length) { notify("brief", "Morning brief", "Nothing audited yet.", "Nothing audited yet."); return; }
+    const top = ranked(S.gap)[0];
+    let body = `${S.counts.audited} trials audited in the last run. Biggest gap: ${top.condition}.`;
+    if (top.ppr != null) body += ` Women are ${pct(top.women_trials)} of participants but ${pct(top.women_patients)} of patients.`;
+    if (top.no_strat != null) body += ` ${pct(top.no_strat)} of its trials with results show no result by sex in the record.`;
+    if (S.synthetic) body += " These are synthetic demo numbers.";
+    notify("brief", "Morning brief", body, "Morning brief. " + body);
+  }
+
+  function svg(tag, attrs, text) {
+    const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (const k in attrs) el.setAttribute(k, attrs[k]);
+    if (text != null) el.textContent = text;
+    return el;
+  }
+  function drawChart(hist, haltAt) {
+    const g = $("chart"); g.replaceChildren();
+    const L = 40, R = 450, T = 10, B = 184, n = Math.max(hist.length, 8);
+    const x = i => L + (i / (n - 1)) * (R - L), y = v => B - v * (B - T);
+    const css = getComputedStyle(document.documentElement), col = k => css.getPropertyValue(k).trim();
+    for (const t of [0, 0.25, 0.5, 0.75, 1]) {
+      g.append(svg("line", { x1: L, x2: R, y1: y(t), y2: y(t), stroke: col("--line"), "stroke-width": 1 }));
+      g.append(svg("text", { x: L - 6, y: y(t) + 4, "text-anchor": "end" }, t.toFixed(2)));
+    }
+    g.append(svg("line", { x1: L, x2: R, y1: y(haltAt), y2: y(haltAt), stroke: col("--bad"), "stroke-width": 1.5, "stroke-dasharray": "5 4" }));
+    g.append(svg("text", { x: R, y: y(haltAt) - 5, "text-anchor": "end" }, "halt"));
+    g.append(svg("text", { x: R, y: 204, "text-anchor": "end" }, "batch →"));
+    for (const [key, c] of [["recheck", "--series2"], ["grounding", "--accent"]]) {
+      if (!hist.length) continue;
+      g.append(svg("polyline", { points: hist.map((h, i) => `${x(i)},${y(h[key])}`).join(" "), fill: "none", stroke: col(c), "stroke-width": 2, "stroke-linejoin": "round" }));
+      hist.forEach((h, i) => g.append(svg("circle", { cx: x(i), cy: y(h[key]), r: 3, fill: col(c) })));
+    }
+  }
+
+  function setCheck(id, text, level) { const el = $(id); el.textContent = text; el.className = "s " + level; }
+  const SHORT = { BLANKET_EXCLUSION_CHILDBEARING: ["blanket exclusion", "bad"], PREGNANCY_LACTATION_EXCLUSION: ["pregnancy excl.", "n"],
+    CONDITIONAL: ["conditional", "n"], NONE: ["no exclusion", "n"], UNCLEAR: ["unclear", "warn"],
+    STRATIFIED_FOUND: ["by sex: found", "ok"], NOT_FOUND_IN_RECORD: ["by sex: not in record", "warn"], NO_RESULTS_POSTED: ["no results", "n"] };
+
+  function render() {
+    renderPhone();
+    const r = S.run, sn = S.snapshot, L = sn ? sn.limits : null;
+    $("datatag").textContent = S.synthetic || !r ? "SYNTHETIC DATA" : "REAL REGISTRY DATA";
+
+    const pill = $("pill");
+    if (S.running) { pill.className = "pill running"; pill.textContent = "Running: " + (r ? r.scenario : ""); }
+    else if (!r) { pill.className = "pill idle"; pill.textContent = "Idle"; }
+    else if (r.status === "COMPLETED") { pill.className = "pill done"; pill.textContent = "Completed"; }
+    else { pill.className = "pill halted"; pill.textContent = "Halted: " + (r.halt_code || r.status).replace(/_/g, " ").toLowerCase(); }
+    document.querySelectorAll("[data-scenario]").forEach(b => b.disabled = S.running);
+    $("resume").hidden = !(r && !S.running && r.halt_code);
+    $("resume").disabled = S.running;
+
+    $("s-n").textContent = S.counts.audited;
+    $("s-time").textContent = sn ? (sn.elapsed < 90 ? Math.round(sn.elapsed) + "s" : Math.round(sn.elapsed / 60) + " min") : "0s";
+    $("s-calls").textContent = sn ? sn.calls : 0;
+    $("s-cost").textContent = "$" + (sn ? sn.cost : 0).toFixed(3);
+    $("s-tok").textContent = sn ? sn.tokens.toLocaleString() : "0";
+    $("m-cost").style.width = sn ? clamp(100 * sn.cost / L.max_cost_usd, 0, 100) + "%" : "0";
+    $("m-tok").style.width = sn ? clamp(100 * sn.tokens / L.max_tokens, 0, 100) + "%" : "0";
+    $("s-bad").textContent = `${S.counts.rejected} · ${S.counts.quarantined}`;
+
+    const haltP = L ? L.halt_probability : 0.8;
+    drawChart(S.history, haltP);
+    if (sn) {
+      for (const [id, k] of [["c-ground", "grounding"], ["c-recheck", "recheck"]]) {
+        const t = sn.trackers[k], lvl = t.p_exceeds >= haltP ? "bad" : t.p_exceeds >= haltP * 0.6 ? "warn" : "ok";
+        setCheck(id, `${t.errors}/${t.n} errors · P ${t.p_exceeds.toFixed(2)}`, lvl);
+      }
+      setCheck("c-loop", `${sn.task_loops} of ${L.max_task_loops} loops`, sn.task_loops >= L.max_task_loops ? "bad" : sn.task_loops ? "warn" : "ok");
+      setCheck("c-stuck", `${sn.no_progress} of ${L.stuck_batches} empty batches`, sn.no_progress >= L.stuck_batches ? "bad" : sn.no_progress ? "warn" : "ok");
+      const use = Math.max(sn.tokens / L.max_tokens, sn.cost / L.max_cost_usd, sn.calls / L.max_calls);
+      setCheck("c-budget", `${Math.round(100 * use)}% of cap used`, use >= 1 ? "bad" : use > 0.7 ? "warn" : "ok");
+    }
+
+    const rows = ranked(S.gap);
+    if (rows.length) {
+      $("gap").replaceChildren(...rows.map(o => {
+        const tr = document.createElement("tr");
+        const mark = /SYNTHETIC/.test(o.source || "") ? "*" : "";
+        tr.innerHTML = `<td></td><td class="r num">${o.trials}</td>
+          <td class="r num">${pct(o.women_trials)} / ${pct(o.women_patients)}${mark}</td>
+          <td class="r num ${o.ppr != null && o.ppr < 0.8 ? "lowppr" : ""}">${o.ppr != null ? o.ppr.toFixed(2) : "–"}</td>
+          <td class="r num">${pct(o.no_strat)}</td><td class="r num">${pct(o.blanket)}</td>
+          <td><span class="num">${Math.round(o.score)}</span><span class="scorebar"><i style="width:${o.score}%"></i></span></td>`;
+        tr.firstChild.textContent = o.condition;
+        return tr;
+      }));
+    }
+    const anySyn = rows.some(o => /SYNTHETIC/.test(o.source || ""));
+    const missing = rows.filter(o => /missing/.test(o.source || "")).map(o => o.condition);
+    $("gapnote").hidden = !anySyn && !missing.length;
+    $("gapnote").textContent = [
+      anySyn ? "* Patient shares are synthetic placeholders for the demo. Don't quote these PPRs." : "",
+      missing.length ? `No sourced patient share yet for ${missing.join(", ")}; add it to prevalence.csv to get a PPR.` : "",
+    ].filter(Boolean).join(" ");
+
+    if (S.recent.length) {
+      $("log").replaceChildren(...S.recent.map(t => {
+        const li = document.createElement("li");
+        const tag = lab => lab && SHORT[lab] ? `<span class="tag ${SHORT[lab][1]}">${SHORT[lab][0]}</span>` : "";
+        const extra = (t.looped ? `<span class="tag bad">skipped: repeated call</span>` : "") +
+                      (t.quarantined ? `<span class="tag bad">set aside</span>` : "") +
+                      (t.rejected ? `<span class="tag bad">${t.rejected} rejected</span>` : "");
+        li.innerHTML = `<span></span><span></span><span>${tag(t.checks.eligibility_exclusion)}${tag(t.checks.sex_stratified_results)}${extra}</span>`;
+        li.children[0].textContent = t.nct_id; li.children[1].textContent = t.condition;
+        return li;
+      }));
+    }
+  }
+
+  async function poll() {
+    clearTimeout(pollTimer);
+    try {
+      S = await api.state();
+      $("offline").hidden = true;
+      if (S.run && ignoreRun && S.run.run_id !== ignoreRun) ignoreRun = null;
+      const key = S.run ? S.run.run_id + "|" + S.run.status : null;
+      const finished = S.run && !S.running && S.run.status !== "RUNNING" && S.run.run_id !== ignoreRun;
+      if (finished && key !== lastKey && (booted ? lastKey !== null : true)) {
+        const [kind, title, body] = messageFor(S);
+        notify(kind, title, body, `${title}. ${body} ${S.advice || ""}`);
+      }
+      lastKey = key; booted = true;
+      render();
+    } catch (e) { if (mode === "live") $("offline").hidden = false; }
+    pollTimer = setTimeout(poll, S && S.running ? (mode === "sim" ? 300 : 600) : 2500);
+  }
+
+  async function start(body) {
+    try {
+      const { ok, out } = await api.run(body);
+      $("cmd").textContent = ok ? "$ python " + out.started : out.error;
+      if (ok) { lastKey = "starting"; ignoreRun = S && S.run ? S.run.run_id : null; }
+    } catch (e) { $("cmd").textContent = "Couldn't start the run: the agent server isn't reachable."; }
+    poll();
+  }
+
+  document.querySelectorAll("[data-scenario]").forEach(b => b.addEventListener("click", () =>
+    start({ scenario: b.dataset.scenario, live: mode === "live" && $("data").value === "live" })));
+  $("resume").addEventListener("click", () => start({ scenario: "normal", resume: true, live: mode === "live" && $("data").value === "live" }));
+  $("brief").addEventListener("click", morningBrief);
+  $("speak").addEventListener("click", () => {
+    if (!notes.length) return;
+    try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(notes[0].say); u.rate = 0.95; speechSynthesis.speak(u); }
+    catch (e) { $("speak").textContent = "Audio isn't available"; $("speak").disabled = true; }
+  });
+  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => S && render());
+  new MutationObserver(() => S && render()).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  setInterval(renderPhone, 15000);
+  renderPhone();
+  detect().then(poll);
+})();
+</script>

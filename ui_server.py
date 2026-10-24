@@ -13,7 +13,7 @@ import json, os, subprocess, sys
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 
-import config, store, report, drafts, followup
+import config, store, report, drafts, followup, notify
 from config import Limits
 from supervisor import BetaTracker
 from agent import SCENARIOS
@@ -232,4 +232,5 @@ class H(BaseHTTPRequestHandler):
 if __name__ == "__main__":
     os.chdir(HERE)
     print(f"HerEvidence UI on http://localhost:{PORT}  (Ctrl+C to stop)")
+    print("Phone notifications:", ", ".join(notify.channels()) or "OFF (set NTFY_TOPIC to turn on)")
     ThreadingHTTPServer(("127.0.0.1", PORT), H).serve_forever()

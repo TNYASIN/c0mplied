@@ -118,6 +118,11 @@ def run(scenario="normal", conditions=None, limit=40, offline=True, supervised=T
     store.upsert_run(run_id, ended=time.time(), status=status, halt_code=halt.code if halt else None,
                      halt_reason=halt.reason if halt else None, state_json=json.dumps(snap))
     n_draft = store.q("SELECT COUNT(*) n FROM drafts WHERE status='DRAFT'")[0]["n"]
-    notify.send(f"HerEvidence {status}. {report.queue_counts()}. {n_draft} draft(s) need your approval.")
+    if halt:
+        notify.send(f"HerEvidence HALTED: {halt.reason}. Recent work set aside; handoff report written. "
+                    f"{n_draft} draft(s) need your approval.")
+    else:
+        notify.send(f"HerEvidence COMPLETED. {sum(report.queue_counts().values())} trials audited. "
+                    f"{n_draft} draft(s) need your approval. Nothing is sent without you.")
     log(f"\n{status} | tokens {sup.tokens:,} | calls {sup.calls} | ~${sup.cost:.3f} | handoff: {path}")
     return {"run_id": run_id, "status": status, "halt": halt, "snapshot": snap, "gap_map": gm}

@@ -67,6 +67,25 @@ or finishes, then shows the same message `notify.py` texts. Right: backstage for
 `HEREVIDENCE_UI_PACE` changes it). The supervisor chart is P(error rate > 10%) per batch, the same numbers the halt rule
 uses. **Send morning brief** summarizes the gap map. Pick **Real (ClinicalTrials.gov)** in the Data menu for live runs.
 
+## Phone notifications
+The agent pushes to a real phone when a run finishes or the supervisor halts it (halts arrive as high priority).
+It uses [ntfy](https://ntfy.sh): free, no account, works on iPhone and Android. Without setup it just prints `[notify:stub]`.
+
+1. Install the **ntfy** app (App Store / Google Play). On iPhone, tap **Allow** when it asks to send notifications.
+2. In the app, tap **+** and subscribe to the team topic (ask Tanya for the name; anyone who knows it can read it, so don't post it publicly). Leave the server as ntfy.sh.
+3. Start the server with the topic set; it should print `Phone notifications: ntfy`:
+   ```bash
+   NTFY_TOPIC=<team-topic> python ui_server.py
+   ```
+4. Test: lock the phone, then run `NTFY_TOPIC=<team-topic> python notify.py`. The phone should buzz.
+
+**Troubleshooting (iPhone):** if messages show inside the app but never on the lock screen, notifications weren't registered.
+Delete the app, reinstall, tap **Allow**, re-add the topic. Also check Settings → Notifications → ntfy and turn off Focus.
+A failed send prints `[notify:ntfy] FAILED ...` in the terminal.
+
+SMS via Twilio also works: set `TWILIO_SID`, `TWILIO_TOKEN`, `TWILIO_FROM`, `NOTIFY_TO` (trial accounts can only text
+verified numbers; some countries require sender registration first, so test early).
+
 ## 3-minute demo
 1. **Real gap:** live run, open a flagged trial, show the verbatim quote against source text.
 2. **Sabotage:** `sabotage` scenario. Posterior climbs, supervisor halts, quarantines, prints the handoff.

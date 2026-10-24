@@ -9,7 +9,7 @@ NEEDS_QUOTE = {"BLANKET_EXCLUSION_CHILDBEARING", "PREGNANCY_LACTATION_EXCLUSION"
                "CONDITIONAL", "STRATIFIED_FOUND"}
 
 TRIG = re.compile(r"pregnan|lactat|breast-?\s?feed|nursing|child-?bearing|"
-                  r"reproductive potential|contracept|women of|woman of", re.I)
+                  r"reproductive potential|contracept|birth control|women of|woman of", re.I)
 SEXWORD = re.compile(r"\b(sex|gender|female|females|male|males|women|woman|men)\b", re.I)
 HEAD_EX = re.compile(r"^\s*(key\s+)?exclusion criteria\s*:?\s*", re.I)
 HEAD_IN = re.compile(r"^\s*(key\s+)?inclusion criteria\s*:?\s*", re.I)
@@ -35,7 +35,7 @@ def elig_lines(text):
             if m:
                 sec, line = "inclusion", line[m.end():].strip()
         if line:
-            yield sec, line[:300]
+            yield sec, line
 
 
 def elig_candidates(text):

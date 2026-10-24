@@ -55,7 +55,7 @@ def sex_counts(baseline):
         got = {"f": None, "m": None}
         for cls in m.get("classes", []) or []:
             for cat in cls.get("categories", []) or []:
-                label = (cat.get("title") or "").strip().lower()
+                label = (cat.get("title") or cls.get("title") or "").strip().lower()
                 key = "f" if label in FEMALE else "m" if label in MALE else None
                 if not key:
                     continue
@@ -70,6 +70,50 @@ def sex_counts(baseline):
     return None, None
 
 
+def outcome_sex_values(measure, outcome_index):
+    """Return posted outcome values tied to an explicit female/male row or group.
+
+    Denominators and statistical analyses alone are not outcome measurements.
+    Paths point back to the unmodified ClinicalTrials.gov v2 record.
+    """
+    found = {"female": [], "male": []}
+    if measure.get("reportingStatus") not in (None, "POSTED"):
+        return found
+    group_sex = {}
+    for group in measure.get("groups", []) or []:
+        label = (group.get("title") or "").strip().lower()
+        if label in FEMALE | MALE:
+            group_sex[group.get("id")] = "female" if label in FEMALE else "male"
+
+    def sex_in(text):
+        words = set(re.findall(r"[a-z]+", (text or "").lower()))
+        female = bool(words & FEMALE)
+        male = bool(words & MALE)
+        return "female" if female and not male else "male" if male and not female else None
+
+    for ci, cls in enumerate(measure.get("classes", []) or []):
+        for ki, cat in enumerate(cls.get("categories", []) or []):
+            row_sex = sex_in(cat.get("title")) or sex_in(cls.get("title"))
+            for vi, value in enumerate(cat.get("measurements", []) or []):
+                number = value.get("value")
+                if number is None or not re.search(r"\d", str(number)):
+                    continue
+                group = next((g for g in measure.get("groups", []) or [] if g.get("id") == value.get("groupId")), {})
+                sex = row_sex or group_sex.get(value.get("groupId"))
+                if sex:
+                    if row_sex:
+                        context = re.sub(r"\b(female|females|women|woman|male|males|men|man)\b", "",
+                                         " ".join((cls.get("title") or "", cat.get("title") or "")), flags=re.I)
+                        match_key = f"row:{' '.join(context.lower().split())}:{value.get('groupId')}"
+                    else:
+                        match_key = f"group:{ci}:{ki}"
+                    found[sex].append({"value": str(number), "group": group.get("title", ""),
+                                       "class": cls.get("title", ""), "category": cat.get("title", ""),
+                                       "match_key": match_key,
+                                       "path": f"resultsSection.outcomeMeasuresModule.outcomeMeasures[{outcome_index}].classes[{ci}].categories[{ki}].measurements[{vi}].value"})
+    return found
+
+
 def normalize_trial(study, condition=""):
     p = study.get("protocolSection", {}) or {}
     ident, el, st = (p.get(k, {}) or {} for k in ("identificationModule", "eligibilityModule", "statusModule"))
@@ -81,7 +125,7 @@ def normalize_trial(study, condition=""):
             cats += [c.get("title", "")] + _titles(c.get("categories"))
         base.append({"title": m.get("title", ""), "categories": [c for c in cats if c]})
     outs = []
-    for m in (res.get("outcomeMeasuresModule", {}) or {}).get("outcomeMeasures", []) or []:
+    for oi, m in enumerate((res.get("outcomeMeasuresModule", {}) or {}).get("outcomeMeasures", []) or []):
         classes, cats = [], []
         for c in m.get("classes", []) or []:
             classes.append(c.get("title", ""))
@@ -90,7 +134,8 @@ def normalize_trial(study, condition=""):
                     for a in m.get("analyses", []) or []]
         outs.append({"title": m.get("title", ""), "description": m.get("description", ""),
                      "groups": _titles(m.get("groups")), "classes": [c for c in classes if c],
-                     "categories": [c for c in cats if c], "analyses": [a for a in analyses if a]})
+                     "categories": [c for c in cats if c], "analyses": [a for a in analyses if a],
+                     "sex_values": outcome_sex_values(m, oi)})
     t = {"nct_id": ident.get("nctId"), "condition": condition, "title": ident.get("briefTitle", ""),
          "status": st.get("overallStatus", ""), "sex": el.get("sex", "UNKNOWN"),
          "eligibility_text": el.get("eligibilityCriteria", "") or "",

@@ -829,7 +829,7 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
     $("gold").replaceChildren();
     if (gold) {
       const h = document.createElement("p"); h.className = "label"; h.style.marginTop = "14px";
-      h.textContent = `Accuracy vs hand-labelled gold set (n=${gold.n})`;
+      h.textContent = `Reference comparison (n=${gold.n}; backend=${gold.backend || "unknown"}; status=${(gold.reference_status || []).join(", ")})`;
       const kv = document.createElement("div"); kv.className = "kv";
       for (const [k, v] of Object.entries(gold.accuracy || {})) {
         const a = document.createElement("span"); a.textContent = k.replace(/_/g, " ");

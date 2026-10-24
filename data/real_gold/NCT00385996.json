@@ -1,0 +1,917 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D002283",
+          "term": "Carcinoma, Bronchogenic"
+        },
+        {
+          "id": "D001984",
+          "term": "Bronchial Neoplasms"
+        },
+        {
+          "id": "D008175",
+          "term": "Lung Neoplasms"
+        },
+        {
+          "id": "D012142",
+          "term": "Respiratory Tract Neoplasms"
+        },
+        {
+          "id": "D013899",
+          "term": "Thoracic Neoplasms"
+        },
+        {
+          "id": "D009371",
+          "term": "Neoplasms by Site"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        },
+        {
+          "id": "D008171",
+          "term": "Lung Diseases"
+        },
+        {
+          "id": "D012140",
+          "term": "Respiratory Tract Diseases"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D002289",
+          "term": "Carcinoma, Non-Small-Cell Lung"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D011799",
+          "term": "Quinazolines"
+        },
+        {
+          "id": "D006574",
+          "term": "Heterocyclic Compounds, 2-Ring"
+        },
+        {
+          "id": "D000072471",
+          "term": "Heterocyclic Compounds, Fused-Ring"
+        },
+        {
+          "id": "D006571",
+          "term": "Heterocyclic Compounds"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D000069347",
+          "term": "Erlotinib Hydrochloride"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "description": "Erlotinib 150mg/day for 3 weeks followed by surgical resection at week 4 then daily Tarceva® at 150 mg/day for 2 years for those patients who had a response rate of at least 50% tumor volume reduction and/or have EGFR-positive tumor tissue determined by IHC and/or FISH.",
+          "interventionNames": [
+            "Drug: Tarceva (Erlotinib)"
+          ],
+          "label": "Erlotinib",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "Erlotinib"
+          ],
+          "description": "Patients will receive daily erlotinib at 150 mg/day for 3 weeks followed by surgical resection at week 4 then daily Tarceva® at 150 mg/day for 2 years for those patients who had a response rate of at least 50% tumor volume reduction and/or have EGFR-positive tumor tissue determined by IHC and/or FISH.",
+          "name": "Tarceva (Erlotinib)",
+          "type": "DRUG"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Carcinoma, Non-small Cell Lung"
+      ],
+      "keywords": [
+        "Carcinoma,non-small cell lung",
+        "preoperative",
+        "Tarceva",
+        "Response rate"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "New York",
+          "country": "United States",
+          "facility": "Weill Medical College of Cornell University",
+          "geoPoint": {
+            "lat": 40.71427,
+            "lon": -74.00597
+          },
+          "state": "New York",
+          "zip": "10021"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "Weill Medical College of Cornell University",
+          "name": "Nasser K Altorki, MD",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "The main purpose of this study is to see if Tarceva® (erlotinib) is effective in shrinking tumors. A high resolution CT scan (CT scanner that can view 3 dimensional images of the tumor) will be used to measure the tumor before and after treatment with Tarceva®(erlotinib) . This type of CT scan will measure the tumor by volume and by standard measurement (length and width). Both methods will be compared to find out whether standard measurement or measurement by tumor volume is more accurate.",
+      "detailedDescription": "Tarceva® (erlotinib) is a drug that blocks a receptor called the Epidermal Growth Factor Receptor (EGFR) on certain cells including tumor cells. Blocking this receptor has been shown to shrink tumors in some patients. Tarceva®(erlotinib) is approved for commercial use by the U.S. Food and Drug Administration for treatment of Non-Small Cell Lung Cancer (NSCLC) after failure of at least one chemotherapy treatment. However, it is not approved for the first treatment of Non-Small Cell Lung Cancer (NSCLC), which is the treatment used in this study.\n\nPatients with early stage non-small cell lung cancer will receive daily Tarceva® (erlotinib) at 150 mg/day for 3 weeks followed by surgical resection at week 4. High resolution CT scans for tumor response assessment will be obtained at baseline and after 3 weeks of treatment with Tarceva® (erlotinib). Post-operative 2-year treatment with Tarceva® (erlotinib) will be offered to patients who had at least a 50% (half) decrease in size of their tumor after treatment with Tarceva® (erlotinib)and/or patients with tumors that were found to have the receptor, Epidermal Growth Factor Receptor (EGFR), on their tumor cells at the time of their surgery.\n\nPost-operative chemotherapy will be administered at the discretion of the treating physician to patients with stages IB and II. Patients who receive post-operative chemotherapy will begin Tarceva (erlotinib)no sooner than 3 weeks from Day 1 of the last chemotherapy cycle and no longer than 6 months after surgery. Follow-up for recurrence and survival will continue for 2 years."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "NA",
+        "interventionModel": "SINGLE_GROUP",
+        "maskingInfo": {
+          "masking": "NONE"
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 22,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Biopsy proven stage I/II non-small cell lung cancer who are candidates for surgical resection\n* Ambulatory and capable of all self-care but may be unable to carry out any work activities.\n* Preoperative and postoperative high resolution CT scans done at NYPH-Weill Cornell medical center for purposes of volumetric measurements.\n* Acceptable cardiac, breathing, kidney, liver, and bone marrow functions.\n* 18 years and older.\n* Women of child-bearing potential must be taking adequate contraceptive precautions prior to study entry and for the duration of study participation. A negative serum or urine pregnancy test is required within 7-10 days of Tarceva® administration. Men and premenopausal women of child bearing potential will follow an approved, medically accepted birth control regimen or agree to abstain from heterosexual intercourse while taking study drug and for 30 days following the last dose of study drug.\n\nExclusion Criteria:\n\n* Cannot be on any other anti-cancer treatment during this study.\n* Prior treatment with any EGFR inhibitor.\n* Patients who had prior treatment with chemotherapy or radiation for this disease.\n* Other active cancers.\n* Tumors with a mixed histology of small cell and non-small cell carcinoma as well as patients with pulmonary carcinoid tumors.\n* Gastro-intestinal abnormalities, including active peptic ulcer or inflammatory bowel disease.\n* Hypersensitivity to compounds similar in chemical composition to Tarceva®.\n* Active infection or serious underlying medical conditions which would impair protocol treatment.",
+      "healthyVolunteers": false,
+      "maximumAge": "85 Years",
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "Pilot Study of Preoperative Tarceva (Erlotinib) for Stages I/II Non-Small Cell Lung Cancer",
+      "nctId": "NCT00385996",
+      "officialTitle": "A Pilot Study of Preoperative Tarceva (Erlotinib) Monotherapy in Patients With Early Stage (I/II) Non-Small Cell Lung Cancer",
+      "orgStudyIdInfo": {
+        "id": "OSI TAR 728"
+      },
+      "organization": {
+        "class": "OTHER",
+        "fullName": "Weill Medical College of Cornell University"
+      }
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "High resolution CT scans for response assessment were obtained at baseline and within 1 week after completion of erlotinib treatment. Volumetric and maximum diameter (RECIST) response criteria was determined by a radiologist blinded to the sequence of treatment. Response rate (RR) is defined as the percentage of subjects achieving at least 50% tumor volume reduction.",
+          "measure": "Response Rate Defined as the Percentage of Subjects Achieving at Least 50% Tumor Volume Reduction.",
+          "timeFrame": "High resolution CT scans for response assessment will be obtained after 3 weeks of treatment with Tarceva®."
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "description": "Safety will be measured by describing the incidence of AEs, including SAEs and discontinuation of study drug due to AEs, and incidence of abnormal clinical laboratory values from day 1 of treatment.\n\nGrade 3 - Severe or medically significant but not immediately life-threatening; hospitalization or prolongation of hospitalization indicated; disabling; limiting self care ADL.\n\nGrade 4 - Life-threatening consequences; urgent intervention indicated. Grade 5 - Death related to AE.",
+          "measure": "Number of Participants With Grade 3, 4, or 5 Treatment Related Adverse Events as Assessed by CTCAE v3.0.",
+          "timeFrame": "From Day 1 until 30 days after the last study drug dose,"
+        },
+        {
+          "description": "Defined as the time from surgical resection to the time of recurrent disease in the primary or in metastatic sites.",
+          "measure": "Time-to-progression (TTP)",
+          "timeFrame": "Every 3 months for the first 6 months, then yearly for 2 years."
+        },
+        {
+          "description": "Defined as the time from the start of treatment to the time of recurrent disease in the primary or in metastatic sites.",
+          "measure": "Disease-free Survival (DFS)",
+          "timeFrame": "From date of erlotinib start date until the date of first documented progression or date of death from any cause, whichever came first, assessed up to 25 months."
+        }
+      ]
+    },
+    "oversightModule": {
+      "oversightHasDmc": false
+    },
+    "sponsorCollaboratorsModule": {
+      "collaborators": [
+        {
+          "class": "INDUSTRY",
+          "name": "OSI Pharmaceuticals"
+        }
+      ],
+      "leadSponsor": {
+        "class": "OTHER",
+        "name": "Weill Medical College of Cornell University"
+      },
+      "responsibleParty": {
+        "type": "SPONSOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2011-08",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2018-12-28",
+        "type": "ACTUAL"
+      },
+      "lastUpdateSubmitDate": "2018-12-27",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2008-11",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2012-11-14",
+        "type": "ESTIMATED"
+      },
+      "resultsFirstSubmitDate": "2012-10-12",
+      "resultsFirstSubmitQcDate": "2012-10-12",
+      "startDateStruct": {
+        "date": "2006-10"
+      },
+      "statusVerifiedDate": "2018-12",
+      "studyFirstPostDateStruct": {
+        "date": "2006-10-11",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2006-10-09",
+      "studyFirstSubmitQcDate": "2006-10-10"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "eventGroups": [
+        {
+          "description": "Erlotinib 150 mg po daily.",
+          "id": "EG000",
+          "otherNumAffected": 21,
+          "otherNumAtRisk": 22,
+          "seriousNumAffected": 4,
+          "seriousNumAtRisk": 22,
+          "title": "Erlotinib"
+        }
+      ],
+      "frequencyThreshold": "5",
+      "otherEvents": [
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 6,
+              "numAtRisk": 22,
+              "numEvents": 6
+            }
+          ],
+          "term": "Fatigue"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 20,
+              "numAtRisk": 22,
+              "numEvents": 20
+            }
+          ],
+          "term": "Rash"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 22,
+              "numEvents": 3
+            }
+          ],
+          "term": "Pruritis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 12,
+              "numAtRisk": 22,
+              "numEvents": 12
+            }
+          ],
+          "term": "Diarrhea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 6,
+              "numAtRisk": 22,
+              "numEvents": 6
+            }
+          ],
+          "term": "Nausea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 22,
+              "numEvents": 4
+            }
+          ],
+          "term": "Anorexia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 22,
+              "numEvents": 3
+            }
+          ],
+          "term": "Epistaxis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 5,
+              "numAtRisk": 22,
+              "numEvents": 5
+            }
+          ],
+          "term": "Mucositis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Eye disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 22,
+              "numEvents": 3
+            }
+          ],
+          "term": "Dry eyes"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 22,
+              "numEvents": 3
+            }
+          ],
+          "term": "Dry mouth"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 22,
+              "numEvents": 4
+            }
+          ],
+          "term": "Rhinitis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 22,
+              "numEvents": 3
+            }
+          ],
+          "term": "Cough"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 5,
+              "numAtRisk": 22,
+              "numEvents": 5
+            }
+          ],
+          "term": "Dyspepsia/Heartburn"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 22,
+              "numEvents": 3
+            }
+          ],
+          "term": "Sore throat"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 5,
+              "numAtRisk": 22,
+              "numEvents": 5
+            }
+          ],
+          "term": "Atrial fibrillation"
+        }
+      ],
+      "seriousEvents": [
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 22,
+              "numEvents": 1
+            }
+          ],
+          "term": "Cerebral vascular accident"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 22,
+              "numEvents": 1
+            }
+          ],
+          "term": "Wound infection"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 22,
+              "numEvents": 1
+            }
+          ],
+          "term": "Diarrhea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 22,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pulmonry embolus"
+        }
+      ],
+      "timeFrame": "26 months"
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "22"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "description": "Erlotinib 150 mg po daily",
+          "id": "BG000",
+          "title": "Erlotinib"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "lowerLimit": "56",
+                      "upperLimit": "82",
+                      "value": "71"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "FULL_RANGE",
+          "paramType": "MEDIAN",
+          "title": "Age, Continuous",
+          "unitOfMeasure": "years"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "11"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "11"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "22"
+                    }
+                  ]
+                }
+              ],
+              "title": "United States"
+            }
+          ],
+          "paramType": "NUMBER",
+          "title": "Region of Enrollment",
+          "unitOfMeasure": "participants"
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": false,
+        "restrictiveAgreement": false
+      },
+      "pointOfContact": {
+        "email": "nkaltork@med.cornell.edu",
+        "organization": "Weill Cornell Medical College",
+        "phone": "212-746-5156",
+        "title": "Nasser Altorki, MD"
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "analyses": [
+            {
+              "groupDescription": "One arm phase 2 trial. This study is designed to asses response rate and defined as the percentage of subjects achieving at least 50% tumor volume. One-sided alpha is set at no more than 5% and the power no less than 90%,and the null hypothesis of RR of less than 10% and alternative hypothesis of RR of greater than 30%, a total of 30 patients will be enrolled (Fleming 1982).At least 7 responders out of 30 patients are needed to reject the null hypothesis of a 10% RR.",
+              "groupIds": [
+                "OG000"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "<0.01",
+              "statisticalComment": "Binomial distribution and test proportion =0.50",
+              "statisticalMethod": "Binomial distribution"
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "22"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "High resolution CT scans for response assessment were obtained at baseline and within 1 week after completion of erlotinib treatment. Volumetric and maximum diameter (RECIST) response criteria was determined by a radiologist blinded to the sequence of treatment. Response rate (RR) is defined as the percentage of subjects achieving at least 50% tumor volume reduction.",
+          "groups": [
+            {
+              "description": "Erlotinib 150 mg po daily",
+              "id": "OG000",
+              "title": "Erlotinib"
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "populationDescription": "Population per protocol",
+          "reportingStatus": "POSTED",
+          "timeFrame": "High resolution CT scans for response assessment will be obtained after 3 weeks of treatment with Tarceva®.",
+          "title": "Response Rate Defined as the Percentage of Subjects Achieving at Least 50% Tumor Volume Reduction.",
+          "type": "PRIMARY",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "22"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Safety will be measured by describing the incidence of AEs, including SAEs and discontinuation of study drug due to AEs, and incidence of abnormal clinical laboratory values from day 1 of treatment.\n\nGrade 3 - Severe or medically significant but not immediately life-threatening; hospitalization or prolongation of hospitalization indicated; disabling; limiting self care ADL.\n\nGrade 4 - Life-threatening consequences; urgent intervention indicated. Grade 5 - Death related to AE.",
+          "groups": [
+            {
+              "description": "Erlotinib 150 mg po daily",
+              "id": "OG000",
+              "title": "Erlotinib"
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "populationDescription": "Per protocol",
+          "reportingStatus": "POSTED",
+          "timeFrame": "From Day 1 until 30 days after the last study drug dose,",
+          "title": "Number of Participants With Grade 3, 4, or 5 Treatment Related Adverse Events as Assessed by CTCAE v3.0.",
+          "type": "SECONDARY",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "analyses": [
+            {
+              "ciLowerLimit": "43.4",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": "83.8",
+              "estimateComment": "Using the Kaplan-Meier method.",
+              "groupDescription": "One arm study",
+              "groupIds": [
+                "OG000"
+              ],
+              "nonInferiorityType": "OTHER",
+              "paramType": "TTP [% without disease at 24 months]",
+              "paramValue": "63.6"
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "5.7",
+                      "upperLimit": "23.3",
+                      "value": "13.9"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "22"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Defined as the time from surgical resection to the time of recurrent disease in the primary or in metastatic sites.",
+          "dispersionType": "Inter-Quartile Range",
+          "groups": [
+            {
+              "description": "Erlotinib 150mg/day for 3 weeks followed by surgical resection at week 4 then daily Tarceva® at 150 mg/day for 2 years for those patients who had a response rate of at least 50% tumor volume reduction and/or have EGFR-positive tumor tissue determined by IHC and/or FISH.\n\nTarceva (Erlotinib): Patients will receive daily erlotinib at 150 mg/day for 3 weeks followed by surgical resection at week 4 then daily Tarceva® at 150 mg/day for 2 years for those patients who had a response rate of at least 50% tumor volume reduction and/or have EGFR-positive tumor tissue determined by IHC and/or FISH.",
+              "id": "OG000",
+              "title": "Erlotinib"
+            }
+          ],
+          "paramType": "MEDIAN",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Every 3 months for the first 6 months, then yearly for 2 years.",
+          "title": "Time-to-progression (TTP)",
+          "type": "SECONDARY",
+          "unitOfMeasure": "Months"
+        },
+        {
+          "analyses": [
+            {
+              "ciLowerLimit": "54.1",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": "91.3",
+              "estimateComment": "Using the Kaplan-Meier method.",
+              "groupDescription": "One arm study",
+              "groupIds": [
+                "OG000"
+              ],
+              "nonInferiorityType": "OTHER",
+              "paramType": "% alive without disease at 25 months",
+              "paramValue": "72.70"
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "6.9",
+                      "upperLimit": "24.5",
+                      "value": "22.7"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "22"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Defined as the time from the start of treatment to the time of recurrent disease in the primary or in metastatic sites.",
+          "dispersionType": "Inter-Quartile Range",
+          "groups": [
+            {
+              "description": "Erlotinib 150mg/day for 3 weeks followed by surgical resection at week 4 then daily Tarceva® at 150 mg/day for 2 years for those patients who had a response rate of at least 50% tumor volume reduction and/or have EGFR-positive tumor tissue determined by IHC and/or FISH.\n\nTarceva (Erlotinib): Patients will receive daily erlotinib at 150 mg/day for 3 weeks followed by surgical resection at week 4 then daily Tarceva® at 150 mg/day for 2 years for those patients who had a response rate of at least 50% tumor volume reduction and/or have EGFR-positive tumor tissue determined by IHC and/or FISH.",
+              "id": "OG000",
+              "title": "Erlotinib"
+            }
+          ],
+          "paramType": "MEDIAN",
+          "reportingStatus": "POSTED",
+          "timeFrame": "From date of erlotinib start date until the date of first documented progression or date of death from any cause, whichever came first, assessed up to 25 months.",
+          "title": "Disease-free Survival (DFS)",
+          "type": "SECONDARY",
+          "unitOfMeasure": "Months"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "Erlotinib 150 mg po daily.",
+          "id": "FG000",
+          "title": "Erlotinib"
+        }
+      ],
+      "periods": [
+        {
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "22"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "22"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "Overall Study"
+        }
+      ],
+      "recruitmentDetails": "The recruitment period was from 10/13/06 to 10/8/08. Patients were recruited from the Weill Cornell Medical College Thoracic Surgery outpatient office."
+    }
+  }
+}

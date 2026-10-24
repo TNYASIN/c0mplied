@@ -1,0 +1,2485 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D006331",
+          "term": "Heart Diseases"
+        },
+        {
+          "id": "D002318",
+          "term": "Cardiovascular Diseases"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D006333",
+          "term": "Heart Failure"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "description": "Implantation of HeartPOD™ Heart Failure Management System with DynamicRx®",
+          "interventionNames": [
+            "Device: HeartPOD™ System"
+          ],
+          "label": "HeartPOD™ System",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "HeartPOD™ System"
+          ],
+          "description": "HeartPOD™ device with DynamicRx® automatically measures left heart pressures throughout the day.",
+          "name": "HeartPOD™ System",
+          "type": "DEVICE"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Heart Failure"
+      ],
+      "keywords": [
+        "Heart Failure",
+        "Left Atrial Pressure Monitoring"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "La Jolla",
+          "country": "United States",
+          "facility": "Scripps Green Hospital",
+          "geoPoint": {
+            "lat": 32.84727,
+            "lon": -117.2742
+          },
+          "state": "California",
+          "zip": "92037"
+        },
+        {
+          "city": "Los Angeles",
+          "country": "United States",
+          "facility": "Cedars-Sinai Medical Center",
+          "geoPoint": {
+            "lat": 34.05223,
+            "lon": -118.24368
+          },
+          "state": "California",
+          "zip": "90048"
+        },
+        {
+          "city": "Columbus",
+          "country": "United States",
+          "facility": "The Ohio State University",
+          "geoPoint": {
+            "lat": 39.96118,
+            "lon": -82.99879
+          },
+          "state": "Ohio",
+          "zip": "43210"
+        },
+        {
+          "city": "Oklahoma City",
+          "country": "United States",
+          "facility": "Oklahoma Heart Hospital",
+          "geoPoint": {
+            "lat": 35.46756,
+            "lon": -97.51643
+          },
+          "state": "Oklahoma",
+          "zip": "73120"
+        },
+        {
+          "city": "Melbourne",
+          "country": "Australia",
+          "facility": "Alfred Hospital",
+          "geoPoint": {
+            "lat": -37.814,
+            "lon": 144.96332
+          },
+          "state": "Victoria",
+          "zip": "3004"
+        },
+        {
+          "city": "Auckland",
+          "country": "New Zealand",
+          "facility": "University of Auckland",
+          "geoPoint": {
+            "lat": -36.84853,
+            "lon": 174.76349
+          }
+        },
+        {
+          "city": "Christchurch",
+          "country": "New Zealand",
+          "facility": "Christchurch Hospital",
+          "geoPoint": {
+            "lat": -43.53333,
+            "lon": 172.63333
+          }
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "Ohio State University",
+          "name": "William T. Abraham, MD, FACC",
+          "role": "STUDY_CHAIR"
+        },
+        {
+          "affiliation": "Monash University/Alfred Hosptial",
+          "name": "Henry Krum, MD",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "This study is a feasibility study of the HeartPOD™ Heart Failure Management System with DynamicRx® (HeartPOD system) in patients with severe chronic congestive heart failure. The device being studied in this trial monitors heart function and alerts the patient and physician of necessary changes to medication. The study will assess the safety, reliability, and preliminary efficacy of the HeartPOD™ system.",
+      "detailedDescription": "Direct cardiac measurements may provide an accurate, reliable and medically acceptable way of informing patients and physicians of worsening CHF prior to the development of symptoms. This may enable physicians to take preventative measures and avoid hospitalization.\n\nThis is a feasibility study to assess the safety, reliability, and preliminary efficacy of the HeartPOD™ Heart Failure Management System with DynamicRx®. This feasibility study will be performed in two phases. The first phase will enroll 20 patients at sites in Australia and New Zealand and the second phase will enroll 20 patients at sites in the U.S."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "NA",
+        "interventionModel": "SINGLE_GROUP",
+        "maskingInfo": {
+          "masking": "NONE"
+        },
+        "primaryPurpose": "DIAGNOSTIC"
+      },
+      "enrollmentInfo": {
+        "count": 71,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "NA"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Age \\> 18 and \\< 85.\n* Documented history of congestive heart failure resulting from ischemic or non-ischemic cardiomyopathy with systolic or diastolic dysfunction of at least 6 months duration.\n* Patients with LVEF \\< 40% should receive maximally tolerated doses of ACE-I (or ARB if ACE-I is not tolerated), beta blockers, and anti-aldosterone therapy. The combination of hydralazine and nitrates should be considered in the persistently symptomatic African American patient.\n* A history of NYHA Class II (OUS only), III or IV symptoms.\n* Minimum of one (1) prior hospital admission within the last 12 months for exacerbation of CHF or one (1) presentation to the Emergency Department or Clinic requiring parenteral diuretic, vasodilator, inotrope, nesiritide, or equivalent treatment.\n* Female subjects of childbearing potential must have a negative pregnancy test within seven (7) days before the procedure.\n* Central venous vascular access.\n* Capable of Valsalva maneuver with airway pressure \\> 40 mm Hg for 10 seconds.\n* The subject and the treating physician agree that the subject will comply with all required post-procedure follow-up, and that the patient is capable of correct device use as outlined in the protocol.\n* Written informed consent.\n\nExclusion Criteria:\n\n* Intractable HF with resting symptoms despite maximal medical therapy or active listing for cardiac transplantation (\\< 6 months survival expected).\n* Resting systolic blood pressure \\< 90 or \\> 180 mmHg.\n* Acute MI, unstable ischemic syndrome within the last 6 weeks.\n* Percutaneous coronary intervention (PCI) or cardiac surgery performed or planned within 6 weeks.\n* Coexisting stenotic valve lesions, vegetations, hypertrophic cardiomyopathy, amyloidosis or other infiltrative heart disease, constrictive, restrictive disease, tamponade, or moderate or large pericardial effusion.\n* Subject has a history of deep venous thrombosis or pulmonary embolism.\n* Surgical correction of congenital heart disease involving atrial septum.\n* CVA or TIA within 6 months. History of uncorrected cerebral vascular disease.\n* Atrial or ventricular thrombus, tumor or systemic thromboembolism.\n* Chronic atrial fibrillation.\n* Symptomatic bradyarrhythmia or sustained VT/VF unless successfully treated with cardiac rhythm management device for 6 weeks.\n* Atrial septal defect or patent foramen ovale \\> 2 mm in diameter.\n* Life expectancy \\< 1 year from malignancy, primary pulmonary hypertension, renal, hepatic, or neurological condition, etc.\n* Gastrointestinal bleeding during the last 6 months.\n* Coagulopathy or uninterruptible anticoagulation therapy or unable to take antiplatelet medications.\n* Creatinine \\> 2.5 gm/dl\n* Temperature \\> 37.8C or white blood cell count (WBC) \\> 13,000/mm3.\n* The subject is currently participating in an investigational drug or another device study that has not completed the primary endpoint or that clinically interferes with the current study endpoints.",
+      "healthyVolunteers": false,
+      "maximumAge": "85 Years",
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "acronym": "HOMEOSTASIS",
+      "briefTitle": "Hemodynamically Guided Home Self-Therapy in Severe Heart Failure Patients (HOMEOSTASIS)",
+      "nctId": "NCT00547729",
+      "officialTitle": "Hemodynamically Guided Home Self-Therapy in Severe Heart Failure Patients: A Prospective, Multi-center, Non-randomized, Open Label Study.",
+      "orgStudyIdInfo": {
+        "id": "HP-05-04/HP-12-04"
+      },
+      "organization": {
+        "class": "INDUSTRY",
+        "fullName": "Abbott Medical Devices"
+      }
+    },
+    "ipdSharingStatementModule": {
+      "ipdSharing": "NO"
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "Out of 71 subjects enrolled, data from 55 subjects was adjudicated by a Clinical Events Committee and included in this primary endpoint analysis. MACNE was defined as a hierarchical composite of cardiovascular related death, myocardial infarction, systemic thromboembolism and stroke.",
+          "measure": "Number of Patients Free From Major Adverse Cardiac and Neurological Events (MACNE) at 6 Weeks.",
+          "timeFrame": "6 Weeks"
+        }
+      ]
+    },
+    "oversightModule": {
+      "isFdaRegulatedDevice": true,
+      "isFdaRegulatedDrug": false,
+      "isUnapprovedDevice": true,
+      "oversightHasDmc": true
+    },
+    "referencesModule": {
+      "references": [
+        {
+          "citation": "Ritzema J, Melton IC, Richards AM, Crozier IG, Frampton C, Doughty RN, Whiting J, Kar S, Eigler N, Krum H, Abraham WT, Troughton RW. Direct left atrial pressure monitoring in ambulatory heart failure patients: initial experience with a new permanent implantable device. Circulation. 2007 Dec 18;116(25):2952-9. doi: 10.1161/CIRCULATIONAHA.107.702191. Epub 2007 Dec 3.",
+          "pmid": "18056531",
+          "type": "BACKGROUND"
+        },
+        {
+          "citation": "Pretorius V, Birgersdotter-Green U, Heywood JT, Hafelfinger W, Gutfinger DE, Eigler NL, Love CJ, Abraham WT. An implantable left atrial pressure sensor lead designed for percutaneous extraction using standard techniques. Pacing Clin Electrophysiol. 2013 May;36(5):570-7. doi: 10.1111/pace.12111. Epub 2013 Feb 28.",
+          "pmid": "23448187",
+          "type": "DERIVED"
+        },
+        {
+          "citation": "Ritzema JL, Richards AM, Crozier IG, Frampton CF, Melton IC, Doughty RN, Stewart JT, Eigler N, Whiting J, Abraham WT, Troughton RW. Serial Doppler echocardiography and tissue Doppler imaging in the detection of elevated directly measured left atrial pressure in ambulant subjects with chronic heart failure. JACC Cardiovasc Imaging. 2011 Sep;4(9):927-34. doi: 10.1016/j.jcmg.2011.07.004.",
+          "pmid": "21920328",
+          "type": "DERIVED"
+        },
+        {
+          "citation": "Ritzema J, Troughton R, Melton I, Crozier I, Doughty R, Krum H, Walton A, Adamson P, Kar S, Shah PK, Richards M, Eigler NL, Whiting JS, Haas GJ, Heywood JT, Frampton CM, Abraham WT; Hemodynamically Guided Home Self-Therapy in Severe Heart Failure Patients (HOMEOSTASIS) Study Group. Physician-directed patient self-management of left atrial pressure in advanced chronic heart failure. Circulation. 2010 Mar 9;121(9):1086-95. doi: 10.1161/CIRCULATIONAHA.108.800490. Epub 2010 Feb 22.",
+          "pmid": "20176990",
+          "type": "DERIVED"
+        }
+      ]
+    },
+    "sponsorCollaboratorsModule": {
+      "leadSponsor": {
+        "class": "INDUSTRY",
+        "name": "Abbott Medical Devices"
+      },
+      "responsibleParty": {
+        "type": "SPONSOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2008-06",
+        "type": "ACTUAL"
+      },
+      "dispFirstPostDateStruct": {
+        "date": "2016-06-07",
+        "type": "ESTIMATED"
+      },
+      "dispFirstSubmitDate": "2016-05-18",
+      "dispFirstSubmitQcDate": "2016-06-02",
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2021-09-02",
+        "type": "ACTUAL"
+      },
+      "lastUpdateSubmitDate": "2021-08-09",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2008-06",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2021-08-06",
+        "type": "ACTUAL"
+      },
+      "resultsFirstSubmitDate": "2021-07-13",
+      "resultsFirstSubmitQcDate": "2021-07-13",
+      "startDateStruct": {
+        "date": "2005-03"
+      },
+      "statusVerifiedDate": "2021-08",
+      "studyFirstPostDateStruct": {
+        "date": "2007-10-23",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2007-10-19",
+      "studyFirstSubmitQcDate": "2007-10-19"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "eventGroups": [
+        {
+          "deathsNumAffected": 31,
+          "deathsNumAtRisk": 71,
+          "description": "Implantation of HeartPOD™ System\n\nHeartPOD™ System: HeartPOD™ device automatically measures left heart pressures throughout the day.",
+          "id": "EG000",
+          "otherNumAffected": 45,
+          "otherNumAtRisk": 71,
+          "seriousNumAffected": 68,
+          "seriousNumAtRisk": 71,
+          "title": "HeartPOD™ System"
+        }
+      ],
+      "frequencyThreshold": "0",
+      "otherEvents": [
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Blood and lymphatic system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Anemia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Blood and lymphatic system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Epistaxis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Blood and lymphatic system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hyperkalemia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Angina"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Chest Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 71,
+              "numEvents": 5
+            }
+          ],
+          "term": "Heart failure"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Endocrine disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hyperglycemia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Eye disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Blurred Vision"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Nausea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Abdominal Bruising"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Dehydration"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Episode of Vagueness"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Fatigue"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Headache"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Syncope"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Hepatobiliary disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Elevated liver enzymes"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 71,
+              "numEvents": 4
+            }
+          ],
+          "term": "Infection"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 8,
+              "numAtRisk": 71,
+              "numEvents": 8
+            }
+          ],
+          "term": "Acute hemorrhage/bleeding"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Device migration"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Discomfort at device location"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 8,
+              "numAtRisk": 71,
+              "numEvents": 8
+            }
+          ],
+          "term": "Hematoma/seroma formation"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Infection"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Nausea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Oversedation"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Skin injury"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Wound Dehiscence"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Wound Tenderness"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Abnormal lab results"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Femoral Nerve Irritation"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hypotension"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Paresthesia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Vasovagal Episode"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Product Issues",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Bradycardia due to ICD RV lead dislodgement"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Product Issues",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Device Malfunction"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Renal Failure"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Bronchitis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Dermatitis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Cholecystectomy"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Elective Cataract Surgery"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Lightheadedness during Valsalva"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Planned Knee Replacement"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Surgery"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hypotention"
+        }
+      ],
+      "seriousEvents": [
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Blood and lymphatic system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Anemia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Blood and lymphatic system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "False Positive Blood Cultures"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Blood and lymphatic system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hypokalemia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Blood and lymphatic system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Thromboemboli"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 14,
+              "numAtRisk": 71,
+              "numEvents": 16
+            }
+          ],
+          "term": "Angina"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Angioplasty"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Atrial Fibrillation"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Atrial Fibrillation with RVR"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Atrioventricular block"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 71,
+              "numEvents": 4
+            }
+          ],
+          "term": "Chest Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 35,
+              "numAtRisk": 71,
+              "numEvents": 89
+            }
+          ],
+          "term": "Heart Failure"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 7,
+              "numAtRisk": 71,
+              "numEvents": 10
+            }
+          ],
+          "term": "Myocardial Infarction"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Ventricular Fibrillation"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 9,
+              "numAtRisk": 71,
+              "numEvents": 14
+            }
+          ],
+          "term": "Ventricular Tachycardia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Endocrine disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 4
+            }
+          ],
+          "term": "Hyperglycemia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Endocrine disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Hypoglycemia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Antral gastritis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Diarrhea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Dyspnea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Gastroenteritis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Gastrointestinal Bleeding"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hernia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Melena"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pleuritic chest pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Body Tingling"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Chest Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 31,
+              "numAtRisk": 71,
+              "numEvents": 31
+            }
+          ],
+          "term": "Death"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Dehydration"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Dizziness"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Esophageal Reflux"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Fall"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Fever"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hypoxia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Lightheadedness"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Presyncope"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Stroke"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 10,
+              "numAtRisk": 71,
+              "numEvents": 10
+            }
+          ],
+          "term": "Syncope"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Hepatobiliary disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Cholecystitis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Gastroenteritis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 7,
+              "numAtRisk": 71,
+              "numEvents": 11
+            }
+          ],
+          "term": "Infection"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Iritis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Osteomyelitis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Sepsis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Septic Shock"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Viral Syndrome"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Acute hemorrhage/bleeding"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Air emboli"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Cardiac or venous perforation"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Dehydration"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Device migration"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Erosion"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Fall"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 71,
+              "numEvents": 4
+            }
+          ],
+          "term": "Hematoma/seroma formation"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Lead displacement"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Oversedation"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pericardial effusion"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pneumothorax"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Right and Left Atrium Thrombus"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Arthritis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Chest Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Fracture"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Osteoarthritis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 5,
+              "numAtRisk": 71,
+              "numEvents": 7
+            }
+          ],
+          "term": "Cancer"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Syncope"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Product Issues",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 8,
+              "numAtRisk": 71,
+              "numEvents": 8
+            }
+          ],
+          "term": "Device malfunction"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Product Issues",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Fidelis Medtronic RV lead impedance out of range"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Product Issues",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Inappropriate ICD Shocks"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Product Issues",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Lead Failure"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Product Issues",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Pacemaker Mediated Tachycardia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Product Issues",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Sensor Drift"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Psychiatric disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Trauma"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Prostatism"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 7,
+              "numAtRisk": 71,
+              "numEvents": 9
+            }
+          ],
+          "term": "Renal Failure"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Ureteral Stricture and Dilatation"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Urinary Retension"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Bronchitis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Chronic obstructive pulmonary disease"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Pneumonia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Pulmonary edema"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Abscess"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Atrial Pressure Sensor Revision"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "AV Fistula Creation for Dialysis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Balloon Cystoscopy"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Chemotherapy"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hysterectomy"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "LVAD Repair"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Percutaneous Mitral Repair"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 71,
+              "numEvents": 4
+            }
+          ],
+          "term": "Planned CRT implant"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Planned CRT replacement"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Planned Device Revision"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Planned ICD Implant"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Planned LVAD Implant"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Planned Pacemaker Replacement"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Planned Pulse Generator Replacement"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Planned Upgrade to CRT"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 3
+            }
+          ],
+          "term": "Surgery"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 1
+            }
+          ],
+          "term": "Carotid Stenosis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Cerebrovascular Accident"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Coronary artery disease"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Deep Vein Thrombosis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 5,
+              "numAtRisk": 71,
+              "numEvents": 5
+            }
+          ],
+          "term": "Hypotension"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Stroke"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 71,
+              "numEvents": 2
+            }
+          ],
+          "term": "Transient Ischemic Attack"
+        }
+      ],
+      "timeFrame": "Subjects were followed for 12 months to evaluate adverse events."
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "71"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "description": "Implantation of HeartPOD™ System\n\nHeartPOD™ System: HeartPOD™ device automatically measures left heart pressures throughout the day.",
+          "id": "BG000",
+          "title": "HeartPOD™ System"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "10.9",
+                      "value": "65.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Age, Continuous",
+          "unitOfMeasure": "years"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "19"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "52"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        }
+      ],
+      "populationDescription": "A total of 71 subjects were enrolled in the study."
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": false,
+        "restrictiveAgreement": false
+      },
+      "pointOfContact": {
+        "email": "clay.cohorn@abbott.com",
+        "organization": "Abbott",
+        "phone": "469-929-7116",
+        "title": "Clay Cohorn - Director, Clinical Research"
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "51"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "55"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Out of 71 subjects enrolled, data from 55 subjects was adjudicated by a Clinical Events Committee and included in this primary endpoint analysis. MACNE was defined as a hierarchical composite of cardiovascular related death, myocardial infarction, systemic thromboembolism and stroke.",
+          "groups": [
+            {
+              "description": "Implantation of HeartPOD™ System\n\nHeartPOD™ System: HeartPOD™ device automatically measures left heart pressures throughout the day.",
+              "id": "OG000",
+              "title": "HeartPOD™ System"
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "reportingStatus": "POSTED",
+          "timeFrame": "6 Weeks",
+          "title": "Number of Patients Free From Major Adverse Cardiac and Neurological Events (MACNE) at 6 Weeks.",
+          "type": "PRIMARY",
+          "unitOfMeasure": "Participants"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "Implantation of HeartPOD™ System\n\nHeartPOD™ System: HeartPOD™ device automatically measures left heart pressures throughout the day.",
+          "id": "FG000",
+          "title": "HeartPOD™ System"
+        }
+      ],
+      "periods": [
+        {
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "71"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "71"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "Overall Study"
+        }
+      ],
+      "preAssignmentDetails": "A total of 71 subjects were enrolled. The adverse events (both serious and non-serious) during the entire period of the study were evaluated in 71 subjects."
+    }
+  }
+}

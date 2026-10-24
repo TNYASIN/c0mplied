@@ -1,0 +1,8 @@
+﻿nct_id,source_url,snapshot_path,condition,has_results,sex_restriction,eligibility,enrollment_by_sex,sex_stratified,eligibility_quote,sex_outcome_path_and_values,notes
+NCT00074724,https://clinicaltrials.gov/study/NCT00074724,data/real_gold/NCT00074724.json,heart failure,True,,,,,,,
+NCT01187407,https://clinicaltrials.gov/study/NCT01187407,data/real_gold/NCT01187407.json,major depressive disorder,True,,,,,,,
+NCT00162266,https://clinicaltrials.gov/study/NCT00162266,data/real_gold/NCT00162266.json,rheumatoid arthritis,True,,,,,,,
+NCT00182689,https://clinicaltrials.gov/study/NCT00182689,data/real_gold/NCT00182689.json,lung cancer,True,,,,,,,
+NCT00365053,https://clinicaltrials.gov/study/NCT00365053,data/real_gold/NCT00365053.json,lung cancer,True,,,,,,,
+NCT00003299,https://clinicaltrials.gov/study/NCT00003299,data/real_gold/NCT00003299.json,lung cancer,False,,,,,,,
+NCT01094717,https://clinicaltrials.gov/study/NCT01094717,data/real_gold/NCT01094717.json,targeted challenge,True,,,,,,,

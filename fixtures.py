@@ -46,10 +46,14 @@ def _outcomes(strat, rng):
         if rng.random() < 0.5:
             ms.append({"title": "Primary endpoint, stratified by sex",
                        "description": "Treatment effect reported separately for each sex.",
-                       "groups": [], "classes": [], "categories": [], "analyses": []})
+                       "groups": ["Female", "Male"], "classes": [], "categories": [], "analyses": [],
+                       "sex_values": {"female": [{"value": "12", "path": "synthetic.outcome.female"}],
+                                      "male": [{"value": "9", "path": "synthetic.outcome.male"}]}})
         else:
             ms.append({"title": "Primary endpoint by subgroup", "description": "Subgroup results.",
-                       "groups": [], "classes": ["Female", "Male"], "categories": [], "analyses": []})
+                       "groups": [], "classes": ["Female", "Male"], "categories": [], "analyses": [],
+                       "sex_values": {"female": [{"value": "12", "path": "synthetic.outcome.female"}],
+                                      "male": [{"value": "9", "path": "synthetic.outcome.male"}]}})
     else:
         if rng.random() < 0.3:
             m0["description"] = "Enrolled men and women aged 18 or older; analysis pooled across all participants."

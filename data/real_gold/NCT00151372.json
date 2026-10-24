@@ -1,0 +1,1288 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D008173",
+          "term": "Lung Diseases, Obstructive"
+        },
+        {
+          "id": "D008171",
+          "term": "Lung Diseases"
+        },
+        {
+          "id": "D012140",
+          "term": "Respiratory Tract Diseases"
+        },
+        {
+          "id": "D002908",
+          "term": "Chronic Disease"
+        },
+        {
+          "id": "D020969",
+          "term": "Disease Attributes"
+        },
+        {
+          "id": "D010335",
+          "term": "Pathologic Processes"
+        },
+        {
+          "id": "D013568",
+          "term": "Pathological Conditions, Signs and Symptoms"
+        },
+        {
+          "id": "D003866",
+          "term": "Depressive Disorder"
+        },
+        {
+          "id": "D019964",
+          "term": "Mood Disorders"
+        },
+        {
+          "id": "D001523",
+          "term": "Mental Disorders"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D029424",
+          "term": "Pulmonary Disease, Chronic Obstructive"
+        },
+        {
+          "id": "D003865",
+          "term": "Depressive Disorder, Major"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "description": "In the Treatment Adherence Intervention group, a study therapist regularly meets with subjects in order to identify obstacles to depression and chronic obstructive pulmonary disease treatment adherence and to help the participant overcome those obstacles.",
+          "interventionNames": [
+            "Behavioral: Treatment Adherence Intervention"
+          ],
+          "label": "Treatment Adherence Intervention",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "In the Enhanced Care group, physicians providing aftercare will be informed in writing of the patients' diagnosis but will receive no clinical instructions by the research team.",
+          "interventionNames": [
+            "Behavioral: Enhanced Care"
+          ],
+          "label": "Enhanced Care",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "Treatment Adherence Intervention"
+          ],
+          "description": "The care management intervention aims at facilitating adherence to a treatment algorithm based on the Agency for Health Care Policy and Research (AHCPR) guidelines. The investigators hypothesize that this intervention, in comparison to usual care, will increase the prescription of adequate antidepressant treatment by physicians, enhance treatment adherence by patients, and reduce depressive symptoms, suicide ideation, and disability.",
+          "name": "Treatment Adherence Intervention",
+          "type": "BEHAVIORAL"
+        },
+        {
+          "armGroupLabels": [
+            "Enhanced Care"
+          ],
+          "description": "For subjects in the Enhanced Care group, physicians providing aftercare will receive no clinical instructions by the research team, but will be informed in writing of the patients' diagnosis and will be provided with a copy of the Agency for Health Care Policy and Research (AHCPR) guidelines for the treatment of depression in primary care with an addendum updating the tables describing Selective Serotonin Reuptake Inhibitors (SSRI) side effect and dosage profiles. The investigators expect that these physicians will continue to base their practice on clinical judgment about how best to treat depression in chronic obstructive pulmonary disease patients.",
+          "name": "Enhanced Care",
+          "type": "BEHAVIORAL"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Pulmonary Disease, Chronic Obstructive",
+        "Major Depression"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "West Haverstraw",
+          "country": "United States",
+          "facility": "Helen Hayes Hospital",
+          "geoPoint": {
+            "lat": 41.20954,
+            "lon": -73.98542
+          },
+          "state": "New York",
+          "zip": "10993"
+        },
+        {
+          "city": "White Plains",
+          "country": "United States",
+          "facility": "Burke Rehabilitation Hospital",
+          "geoPoint": {
+            "lat": 41.03399,
+            "lon": -73.76291
+          },
+          "state": "New York",
+          "zip": "10605"
+        },
+        {
+          "city": "White Plains",
+          "country": "United States",
+          "facility": "Weill Medical College of Cornell University",
+          "geoPoint": {
+            "lat": 41.03399,
+            "lon": -73.76291
+          },
+          "state": "New York",
+          "zip": "10605"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "Weill Medical College of Cornell University",
+          "name": "George S Alexopoulos, MD",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "Approximately 20% of patients with chronic obstructive pulmonary disease (COPD) have major depression, a condition that contributes to suffering but also to poor treatment adherence leading to increased disability and morbidity. This study investigates the effectiveness of a care management intervention aimed at facilitating adherence to a treatment algorithm based on the Agency for Health Care Policy and Research (AHCPR) guidelines. The investigators hypothesize that this intervention, in comparison to usual care, will increase the prescription of adequate antidepressant treatment by physicians, enhance treatment adherence by patients, and reduce depressive symptoms, suicide ideation, and disability at a 28-week follow-up period."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "maskingInfo": {
+          "masking": "NONE"
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 141,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "NA"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Chronic obstructive pulmonary disease by American Thoracic Society criteria\n* Major depression by DSM-IV criteria\n* 17-item Hamilton score \\>14\n* English speaking\n\nExclusion Criteria:\n\n* Inability to give informed consent\n* MiniMental score \\<24\n* Aphasia\n* Nursing home placement after discharge",
+      "healthyVolunteers": false,
+      "maximumAge": "95 Years",
+      "minimumAge": "50 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "Treatment of Depressed Chronic Obstructive Pulmonary Disease Patients",
+      "nctId": "NCT00151372",
+      "officialTitle": "Treatment Effectiveness in Depressed Patients With Chronic Obstructive Pulmonary Disease",
+      "orgStudyIdInfo": {
+        "id": "0201005319"
+      },
+      "organization": {
+        "class": "OTHER",
+        "fullName": "Weill Medical College of Cornell University"
+      },
+      "secondaryIdInfos": [
+        {
+          "id": "R01HL071992-05",
+          "link": "https://reporter.nih.gov/quickSearch/R01HL071992-05",
+          "type": "NIH"
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "The Composite Antidepressant Score scale (CAD) describes the adequacy of an antidepressant's dosage. Scores range from 0-4 with 0, 1, and 2 signifying subthreshold or non-adequate therapeutic dosages while 3 and 4 signify a therapeutic/adequate dosage. The best value is 4 while the worst value is 0.",
+          "measure": "Composite Antidepressant Score Scale (CAD)",
+          "timeFrame": "28 Weeks"
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "description": "The 17-item Hamilton Depression Rating Scale (HDRS) measures the severity of a depressive episode: the higher the score, the more severe the depression. The Best value is 0 and the Worst value is 52.",
+          "measure": "Hamilton Depression Rating Scale",
+          "timeFrame": "28 Weeks"
+        }
+      ]
+    },
+    "oversightModule": {
+      "oversightHasDmc": true
+    },
+    "referencesModule": {
+      "references": [
+        {
+          "citation": "Solomonov N, Kerchner D, Bein O, Lee CE, Diaz JL, Ciarleglio A, Kim S, Sirey JA, Gunning FM, Raue PJ, Banerjee S, Arean PA, Alexopoulos GS. Precision Assignment to Psychosocial Interventions for Late-Life Depression: An Automated Treatment Decision Rule. JAMA Psychiatry. 2025 Nov 1;82(11):1075-1084. doi: 10.1001/jamapsychiatry.2025.2518.",
+          "pmid": "40960814",
+          "type": "DERIVED"
+        }
+      ]
+    },
+    "sponsorCollaboratorsModule": {
+      "collaborators": [
+        {
+          "class": "NIH",
+          "name": "National Heart, Lung, and Blood Institute (NHLBI)"
+        }
+      ],
+      "leadSponsor": {
+        "class": "OTHER",
+        "name": "Weill Medical College of Cornell University"
+      },
+      "responsibleParty": {
+        "oldNameTitle": "George S. Alexopoulos, M.D.",
+        "oldOrganization": "Weill Medical College of Cornell University"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2008-07",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2010-01-11",
+        "type": "ESTIMATED"
+      },
+      "lastUpdateSubmitDate": "2009-12-07",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2008-07",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2010-01-11",
+        "type": "ESTIMATED"
+      },
+      "resultsFirstSubmitDate": "2009-07-07",
+      "resultsFirstSubmitQcDate": "2009-12-07",
+      "startDateStruct": {
+        "date": "2002-03"
+      },
+      "statusVerifiedDate": "2009-12",
+      "studyFirstPostDateStruct": {
+        "date": "2005-09-08",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2005-09-06",
+      "studyFirstSubmitQcDate": "2005-09-07"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "description": "This research study only tracked serious adverse events which included any incident which required that the subject seek medical attention (for example, specially scheduled physician's appointment, emergency room visit, and/or inpatient hospitalization) or death. We did not track adverse events: \"0\" in the adverse event section reflects this.",
+      "eventGroups": [
+        {
+          "description": "In the Intervention group, a study therapist regularly meets with subjects in order to identify obstacles to depression and chronic obstructive pulmonary disease (COPD) treatment adherence and to help the participant overcome those obstacles.",
+          "id": "EG000",
+          "otherNumAffected": 0,
+          "otherNumAtRisk": 67,
+          "seriousNumAffected": 38,
+          "seriousNumAtRisk": 67,
+          "title": "Treatment Adherence Intervention"
+        },
+        {
+          "description": "In the Enhanced Care group, physicians providing aftercare will be informed in writing of the patients' diagnosis but will receive no clinical instructions by the research team.",
+          "id": "EG001",
+          "otherNumAffected": 0,
+          "otherNumAtRisk": 74,
+          "seriousNumAffected": 46,
+          "seriousNumAtRisk": 74,
+          "title": "Enhanced Care"
+        }
+      ],
+      "frequencyThreshold": "0",
+      "seriousEvents": [
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Accidental Medication Overdose"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Atrial Fibrilation"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 67,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 74,
+              "numEvents": 0
+            }
+          ],
+          "term": "Back surgery"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 67,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 74,
+              "numEvents": 0
+            }
+          ],
+          "term": "Bradycardia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 2
+            }
+          ],
+          "term": "Brain cancer"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 2
+            }
+          ],
+          "term": "Cellulitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Cervical cancer"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 67,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 74,
+              "numEvents": 0
+            }
+          ],
+          "term": "Colitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 67,
+              "numEvents": 2
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Congestive Heart Failure"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 67,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 74,
+              "numEvents": 0
+            }
+          ],
+          "term": "Constipation"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Debility"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Dehydration"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 67,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 74,
+              "numEvents": 2
+            }
+          ],
+          "term": "Edema"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 25,
+              "numAtRisk": 67,
+              "numEvents": 36
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 34,
+              "numAtRisk": 74,
+              "numEvents": 38
+            }
+          ],
+          "term": "Exacerbation of chronic obstructive pulmonary disease"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 67,
+              "numEvents": 2
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 74,
+              "numEvents": 0
+            }
+          ],
+          "term": "Fall"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 67,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Fracture"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 67,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 74,
+              "numEvents": 0
+            }
+          ],
+          "term": "Heart attack"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 67,
+              "numEvents": 4
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 74,
+              "numEvents": 0
+            }
+          ],
+          "term": "Heart surgery"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 67,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 74,
+              "numEvents": 0
+            }
+          ],
+          "term": "High potassium levels"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hip pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Psychiatric disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 67,
+              "numEvents": 2
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Inpatient psychiatric hospitalization"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 67,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 74,
+              "numEvents": 2
+            }
+          ],
+          "term": "Loss of consciousness/fainting"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 67,
+              "numEvents": 2
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 2
+            }
+          ],
+          "term": "Lung Cancer"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 67,
+              "numEvents": 5
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 5,
+              "numAtRisk": 74,
+              "numEvents": 5
+            }
+          ],
+          "term": "Pneumonia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 67,
+              "numEvents": 2
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 74,
+              "numEvents": 0
+            }
+          ],
+          "term": "Renal Failure"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 74,
+              "numEvents": 4
+            }
+          ],
+          "term": "Staph infection"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Stomach pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Surgical and medical procedures",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Total knee replacement"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 67,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 74,
+              "numEvents": 2
+            }
+          ],
+          "term": "Unknown case of death"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 67,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 74,
+              "numEvents": 1
+            }
+          ],
+          "term": "Urinary tract infection"
+        }
+      ],
+      "timeFrame": "1 Year. The 14, 28, and 52 week assessments recorded any serious adverse event that had taken place since the previous assessment."
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "67"
+            },
+            {
+              "groupId": "BG001",
+              "value": "74"
+            },
+            {
+              "groupId": "BG002",
+              "value": "141"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "description": "In the Intervention group, a study therapist regularly meets with subjects in order to identify obstacles to depression and chronic obstructive pulmonary disease (COPD) treatment adherence and to help the participant overcome those obstacles.",
+          "id": "BG000",
+          "title": "Treatment Adherence Intervention"
+        },
+        {
+          "description": "In the Enhanced Care group, physicians providing aftercare will be informed in writing of the patients' diagnosis but will receive no clinical instructions by the research team.",
+          "id": "BG001",
+          "title": "Enhanced Care"
+        },
+        {
+          "description": "Total of all reporting groups",
+          "id": "BG002",
+          "title": "Total"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "8.54",
+                      "value": "71.24"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "spread": "8.0",
+                      "value": "71.5"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "spread": "8.4",
+                      "value": "71.4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Age Continuous",
+          "unitOfMeasure": "years"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "42"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "51"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "93"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "25"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "23"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "48"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "67"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "74"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "141"
+                    }
+                  ]
+                }
+              ],
+              "title": "United States"
+            }
+          ],
+          "paramType": "NUMBER",
+          "title": "Region of Enrollment",
+          "unitOfMeasure": "participants"
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": true
+      },
+      "pointOfContact": {
+        "email": "gsalexop@med.cornell.edu",
+        "organization": "Weill Cornell Medical College",
+        "phone": "914-997-5767",
+        "title": "George S. Alexopoulos, M.D."
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "7.4",
+                      "value": "29"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "9.3",
+                      "value": "25"
+                    }
+                  ]
+                }
+              ],
+              "title": "Adequate Antidepressant Treatment"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "20"
+                    }
+                  ]
+                }
+              ],
+              "title": "Non-Adequate Antidepressant Treatment"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "38"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "45"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "The Composite Antidepressant Score scale (CAD) describes the adequacy of an antidepressant's dosage. Scores range from 0-4 with 0, 1, and 2 signifying subthreshold or non-adequate therapeutic dosages while 3 and 4 signify a therapeutic/adequate dosage. The best value is 4 while the worst value is 0.",
+          "groups": [
+            {
+              "description": "In the Intervention group, a study therapist regularly meets with subjects in order to identify obstacles to depression and chronic obstructive pulmonary disease (COPD) treatment adherence and to help the participant overcome those obstacles.",
+              "id": "OG000",
+              "title": "Treatment Adherence Intervention"
+            },
+            {
+              "description": "In the Enhanced Care group, physicians providing aftercare will be informed in writing of the patients' diagnosis but will receive no clinical instructions by the research team.",
+              "id": "OG001",
+              "title": "Enhanced Care"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Analysis was conducted on subjects actively participating in the study at the 28-week assessment. The number corresponds to \"Completed\" in the \"Participant Flow\" section.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "28 Weeks",
+          "title": "Composite Antidepressant Score Scale (CAD)",
+          "type": "PRIMARY",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "5.7",
+                      "value": "9.2"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "6.0",
+                      "value": "12.4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "38"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "45"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "The 17-item Hamilton Depression Rating Scale (HDRS) measures the severity of a depressive episode: the higher the score, the more severe the depression. The Best value is 0 and the Worst value is 52.",
+          "dispersionType": "Standard Deviation",
+          "groups": [
+            {
+              "description": "In the Intervention group, a study therapist regularly meets with subjects in order to identify obstacles to depression and chronic obstructive pulmonary disease (COPD) treatment adherence and to help the participant overcome those obstacles.",
+              "id": "OG000",
+              "title": "Treatment Adherence Intervention"
+            },
+            {
+              "description": "In the Enhanced Care group, physicians providing aftercare will be informed in writing of the patients' diagnosis but will receive no clinical instructions by the research team.",
+              "id": "OG001",
+              "title": "Enhanced Care"
+            }
+          ],
+          "paramType": "MEAN",
+          "populationDescription": "Analysis was conducted on subjects actively participating in the study at the 28-week assessment. The number corresponds to \"Completed\" in the \"Participant Flow\" section.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "28 Weeks",
+          "title": "Hamilton Depression Rating Scale",
+          "type": "SECONDARY",
+          "unitOfMeasure": "points on a scale"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "In the Intervention group, a study therapist regularly meets with subjects in order to identify obstacles to depression and chronic obstructive pulmonary disease (COPD) treatment adherence and to help the participant overcome those obstacles.",
+          "id": "FG000",
+          "title": "Treatment Adherence Intervention"
+        },
+        {
+          "description": "In the Enhanced Care group, physicians providing aftercare will be informed in writing of the patients' diagnosis but will receive no clinical instructions by the research team.",
+          "id": "FG001",
+          "title": "Enhanced Care"
+        }
+      ],
+      "periods": [
+        {
+          "dropWithdraws": [
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "12"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "11"
+                }
+              ],
+              "type": "Death"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "5"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "5"
+                }
+              ],
+              "type": "Lost to Follow-up"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "5"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "6"
+                }
+              ],
+              "type": "Too sick medically to continue"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "7"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "7"
+                }
+              ],
+              "type": "Withdrawal by Subject"
+            }
+          ],
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "67"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "74"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "38"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "45"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "29"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "29"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "Overall Study"
+        }
+      ],
+      "recruitmentDetails": "All subjects were recruited from the Inpatient Pulmonary Rehabilitation Units of the Burke Rehabilitation Hospital and Helen Hayes Rehabilitation Hospital. Recruitment began in March 2002 and ended in January 2008."
+    }
+  }
+}

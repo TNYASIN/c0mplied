@@ -1,0 +1,2509 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D008654",
+          "term": "Mesothelioma"
+        },
+        {
+          "id": "D000236",
+          "term": "Adenoma"
+        },
+        {
+          "id": "D009375",
+          "term": "Neoplasms, Glandular and Epithelial"
+        },
+        {
+          "id": "D009370",
+          "term": "Neoplasms by Histologic Type"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        },
+        {
+          "id": "D018301",
+          "term": "Neoplasms, Mesothelial"
+        },
+        {
+          "id": "D008175",
+          "term": "Lung Neoplasms"
+        },
+        {
+          "id": "D012142",
+          "term": "Respiratory Tract Neoplasms"
+        },
+        {
+          "id": "D013899",
+          "term": "Thoracic Neoplasms"
+        },
+        {
+          "id": "D009371",
+          "term": "Neoplasms by Site"
+        },
+        {
+          "id": "D010997",
+          "term": "Pleural Neoplasms"
+        },
+        {
+          "id": "D008171",
+          "term": "Lung Diseases"
+        },
+        {
+          "id": "D012140",
+          "term": "Respiratory Tract Diseases"
+        },
+        {
+          "id": "D054364",
+          "term": "Solitary Fibrous Tumors"
+        },
+        {
+          "id": "D018218",
+          "term": "Neoplasms, Fibrous Tissue"
+        },
+        {
+          "id": "D009372",
+          "term": "Neoplasms, Connective Tissue"
+        },
+        {
+          "id": "D018204",
+          "term": "Neoplasms, Connective and Soft Tissue"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D000086002",
+          "term": "Mesothelioma, Malignant"
+        },
+        {
+          "id": "D054363",
+          "term": "Solitary Fibrous Tumor, Pleural"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "meshes": [
+        {
+          "id": "C487081",
+          "term": "belinostat"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "description": "Patients receive PXD101 IV at 1000 mg/m2 over 30 minutes on days 1-5. Treatment repeats every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity.",
+          "interventionNames": [
+            "Drug: belinostat",
+            "Other: laboratory biomarker analysis"
+          ],
+          "label": "Treatment (belinostat)",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "Treatment (belinostat)"
+          ],
+          "description": "Given IV",
+          "name": "belinostat",
+          "otherNames": [
+            "PXD101"
+          ],
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "Treatment (belinostat)"
+          ],
+          "description": "Correlative studies",
+          "name": "laboratory biomarker analysis",
+          "type": "OTHER"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Advanced Malignant Mesothelioma",
+        "Epithelial Mesothelioma",
+        "Recurrent Malignant Mesothelioma",
+        "Sarcomatous Mesothelioma"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Duarte",
+          "country": "United States",
+          "facility": "City of Hope",
+          "geoPoint": {
+            "lat": 34.13945,
+            "lon": -117.97729
+          },
+          "state": "California",
+          "zip": "91010"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "City of Hope Medical Center",
+          "name": "Suresh Ramalingam",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "This phase II trial is studying how well PXD101 works as second-line therapy in treating patients with malignant mesothelioma of the chest that cannot be removed by surgery. PXD101 may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth and by blocking blood flow to the tumor.",
+      "detailedDescription": "PRIMARY OBJECTIVES:\n\nI. Determine the objective response rate in patients with unresectable malignant pleural mesothelioma (MPM) treated with PXD101.\n\nSECONDARY OBJECTIVES:\n\nI. Determine the overall survival and time to progression in these patients. II. Assess the toxicities associated with this drug in these patients. III. Perform molecular correlative studies on tumor tissue (optional) and peripheral blood (required) and identify potential predictive markers for response.\n\nOUTLINE:\n\nPatients receive PXD101 IV over 30 minutes on days 1-5. Treatment repeats every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity.\n\nPatients undergo blood collection during course 1 of treatment for biomarker correlative studies. Fetal hemoglobin (hemoglobin F) levels are measured via reverse transcriptase-polymerase chain reaction as a potential predictive marker for response.\n\nAfter completion of study treatment, patients are followed periodically."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "NA",
+        "interventionModel": "SINGLE_GROUP",
+        "maskingInfo": {
+          "masking": "NONE"
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 13,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Histologically or cytologically confirmed malignant pleural mesothelioma (MPM) of any of the following subtypes:\n\n  * Epithelial\n  * Sarcomatoid\n  * Mixed\n* Have received only 1 prior systemic chemotherapy regimen for advanced mesothelioma\n\n  * Prior intrapleural cytotoxic agents (including bleomycin) not considered systemic chemotherapy\n  * Patients who are not candidates for combination chemotherapy are eligible even if they have not received prior chemotherapy\n* Unresectable disease\n* Measurable disease, defined as \\>= 1 unidimensionally measurable lesion \\>= 20 mm by conventional techniques OR \\>= 10 mm by spiral CT scan\n\n  * The sole site of measurable disease must not be located within the radiotherapy port\n* No known brain metastases\n* ECOG performance status (PS) 0-2 OR Karnofsky PS 60-100%\n* Life expectancy \\> 3 months\n* WBC \\>= 3,000/mm\\^3\n* Absolute neutrophil count \\>= 1,500/mm\\^3\n* Platelet count \\>= 100,000/mm\\^3\n* Bilirubin normal\n* AST/ALT =\\< 2.5 times upper limit of normal\n* Creatinine normal OR creatinine clearance \\>= 50 mL/min\n* Not pregnant or nursing\n* Negative pregnancy test\n* Fertile patients must use effective double-barrier contraception for 1 week before, during, and for \\>= 2 weeks after completion of study treatment\n* No history of allergic reactions attributed to compounds of similar chemical or biologic composition to PXD101\n* No symptomatic congestive heart failure\n* No congestive heart failure related to primary cardiac disease\n* No unstable angina pectoris\n* No cardiac arrhythmia\n* No condition requiring anti-arrhythmic therapy\n* No uncontrolled hypertension\n* No myocardial infarction within the past 6 months\n* No ischemic or severe valvular heart disease\n* No ongoing or active infection\n* No marked baseline prolongation of QT/QTc interval\n* No repeated QTc interval \\> 500 msec\n* No long QT syndrome\n* No other significant cardiovascular disease\n* No other uncontrolled intercurrent illness\n* No psychiatric illness or social situation that would preclude study compliance\n* Recovered from prior therapy\n* No prior valproic acid or other known histone deacetylase (HDAC) inhibitor\n* More than 3 weeks since prior chemotherapy (6 weeks for nitrosoureas or mitomycin C)\n* More than 3 weeks since prior radiation therapy\n* No concurrent medication that may cause torsade de pointes\n* No concurrent combination antiretroviral therapy for HIV-positive patients\n* No other concurrent investigational agents\n* No other concurrent anticancer agents or therapies",
+      "healthyVolunteers": false,
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "PXD101 as Second-Line Therapy in Treating Patients With Malignant Mesothelioma of the Chest That Cannot Be Removed By Surgery",
+      "nctId": "NCT00365053",
+      "officialTitle": "Phase II Study of PXD101 (NSC 726630) as Second-Line Therapy for Treatment of Patients With Malignant Pleural Mesothelioma",
+      "orgStudyIdInfo": {
+        "id": "NCI-2012-02839"
+      },
+      "organization": {
+        "class": "NIH",
+        "fullName": "National Cancer Institute (NCI)"
+      },
+      "secondaryIdInfos": [
+        {
+          "id": "PHII 67"
+        },
+        {
+          "id": "N01CM62209",
+          "link": "https://reporter.nih.gov/quickSearch/N01CM62209",
+          "type": "NIH"
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "Per Response Evaluation Criteria In Solid Tumors Criteria (RECIST v1.0) for target lesions and assessed by CT, MRI or X-ray: Complete Response (CR), Disappearance of all target lesions; Partial Response (PR), \\>=30% decrease in the sum of the longest diameter of target lesions; Overall Response (OR) = CR + PR",
+          "measure": "Objective Tumor Response Rate According to the Response Evaluation Criteria in Solid Tumors (RECIST) Committee",
+          "timeFrame": "Up to 3 years"
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "description": "Estimated using the product-limit method of Kaplan and Meier.",
+          "measure": "Overall Survival",
+          "timeFrame": "Up to 3 years"
+        },
+        {
+          "description": "Estimated using the product-limit method of Kaplan and Meier. Progression is defined using Response Evaluation Criteria In Solid Tumors Criteria (RECIST v1.0), as a 20% increase in the sum of the longest diameter of target lesions, or a measurable increase in a non-target lesion, or the appearance of new lesions.",
+          "measure": "Progression-free Survival",
+          "timeFrame": "Up to 3 years"
+        },
+        {
+          "description": "Toxicity information recorded will include the type, severity, time of onset, time of resolution, and the probable association with the study regimen. Toxicities table summarizes the observed incidence by severity and type of toxicity for toxicities that are related to treatment and greater than grade 1. Adverse events assessed by the National Cancer Institute (NCI) Common Terminology Criteria for Adverse Events (CTCAE) version 3.0.",
+          "measure": "Toxicity Profile",
+          "timeFrame": "Up to 3 years"
+        },
+        {
+          "description": "Summarized with contingency tables or scatterplots, and with quantitative measures of agreement.",
+          "measure": "Apoptosis by TUNEL Assay",
+          "timeFrame": "At baseline"
+        },
+        {
+          "description": "Summarized with contingency tables or scatterplots, and with quantitative measures of agreement.",
+          "measure": "Histone Acetylation by IHC and Western Blotting",
+          "timeFrame": "At baseline and at 4 hours after last dose of PXD101 on day 5"
+        }
+      ]
+    },
+    "sponsorCollaboratorsModule": {
+      "leadSponsor": {
+        "class": "NIH",
+        "name": "National Cancer Institute (NCI)"
+      },
+      "responsibleParty": {
+        "type": "SPONSOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2009-03",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2018-06-07",
+        "type": "ACTUAL"
+      },
+      "lastUpdateSubmitDate": "2018-05-04",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2009-03",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2014-12-29",
+        "type": "ESTIMATED"
+      },
+      "resultsFirstSubmitDate": "2014-07-09",
+      "resultsFirstSubmitQcDate": "2014-12-17",
+      "startDateStruct": {
+        "date": "2006-06"
+      },
+      "statusVerifiedDate": "2018-05",
+      "studyFirstPostDateStruct": {
+        "date": "2006-08-17",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2006-08-16",
+      "studyFirstSubmitQcDate": "2006-08-16"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "description": "\"Other\" adverse events table includes all grades and attributions to treatment not included in the \"Serious\" adverse events table.",
+      "eventGroups": [
+        {
+          "deathsNumAffected": 1,
+          "deathsNumAtRisk": 13,
+          "description": "Patients receive PXD101 IV at 1000 mg/m2 over 30 minutes on days 1-5. Treatment repeats every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity.\n\nbelinostat: Given IV\n\nlaboratory biomarker analysis: Correlative studies",
+          "id": "EG000",
+          "otherNumAffected": 13,
+          "otherNumAtRisk": 13,
+          "seriousNumAffected": 3,
+          "seriousNumAtRisk": 13,
+          "title": "Treatment (Belinostat)"
+        }
+      ],
+      "frequencyThreshold": "0",
+      "otherEvents": [
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Blood and lymphatic system disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 8,
+              "numAtRisk": 13,
+              "numEvents": 11
+            }
+          ],
+          "term": "Hemoglobin decreased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Atrial fibrillation"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Atrial flutter"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Cardiac valve disease"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Myocardial ischemia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Palpitations"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Premature ventricular contractions"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Sinus arrhythmia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Sinus tachycardia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Supraventricular tachycardia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 13,
+              "numEvents": 3
+            }
+          ],
+          "term": "Abdominal pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 8,
+              "numAtRisk": 13,
+              "numEvents": 13
+            }
+          ],
+          "term": "Constipation"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 13,
+              "numEvents": 3
+            }
+          ],
+          "term": "Diarrhea"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 10,
+              "numAtRisk": 13,
+              "numEvents": 15
+            }
+          ],
+          "term": "Nausea"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 7,
+              "numAtRisk": 13,
+              "numEvents": 9
+            }
+          ],
+          "term": "Vomiting"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 13,
+              "numEvents": 4
+            }
+          ],
+          "term": "Chest pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 9,
+              "numAtRisk": 13,
+              "numEvents": 9
+            }
+          ],
+          "term": "Disease progression"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Edema limbs"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 10,
+              "numAtRisk": 13,
+              "numEvents": 16
+            }
+          ],
+          "term": "Fatigue"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Fever"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Injection site reaction"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Localized edema"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Immune system disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Hypersensitivity"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Peripheral nerve infection"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pneumonia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Prolonged intubation after pulmonary resection (>24 hrs after surgery)"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 3
+            }
+          ],
+          "term": "Alanine aminotransferase increased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 13,
+              "numEvents": 5
+            }
+          ],
+          "term": "Alkaline phosphatase increased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 13,
+              "numEvents": 4
+            }
+          ],
+          "term": "Aspartate aminotransferase increased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 13,
+              "numEvents": 4
+            }
+          ],
+          "term": "Creatinine increased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Haptoglobin decreased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 13,
+              "numEvents": 3
+            }
+          ],
+          "term": "Lymphocyte count decreased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Lymphopenia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 5,
+              "numAtRisk": 13,
+              "numEvents": 8
+            }
+          ],
+          "term": "Weight loss"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Alkalosis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 7,
+              "numAtRisk": 13,
+              "numEvents": 9
+            }
+          ],
+          "term": "Anorexia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 8,
+              "numAtRisk": 13,
+              "numEvents": 8
+            }
+          ],
+          "term": "Hyperglycemia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hyperkalemia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 13,
+              "numEvents": 5
+            }
+          ],
+          "term": "Hypoalbuminemia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hypocalcemia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hypokalemia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hypomagnesemia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 13,
+              "numEvents": 4
+            }
+          ],
+          "term": "Hyponatremia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 13,
+              "numEvents": 7
+            }
+          ],
+          "term": "Serum albumin decreased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Serum calcium increased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Serum magnesium decreased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Serum potassium decreased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 13,
+              "numEvents": 6
+            }
+          ],
+          "term": "Serum sodium decreased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 13,
+              "numEvents": 9
+            }
+          ],
+          "term": "Back pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Muscle weakness"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Musculoskeletal disorder"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 13,
+              "numEvents": 4
+            }
+          ],
+          "term": "Tumor pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Depressed level of consciousness"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Headache"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Psychiatric disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 13,
+              "numEvents": 3
+            }
+          ],
+          "term": "Anxiety"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Psychiatric disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Depression"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Psychiatric disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Psychosis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Protein urine positive"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Urinary frequency"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Urine discoloration"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Bronchospasm"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 9,
+              "numAtRisk": 13,
+              "numEvents": 19
+            }
+          ],
+          "term": "Dyspnea"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Pleural effusion"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Pleuritic pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Respiratory disorder"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Voice alteration"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Alopecia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Pain of skin"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Rash desquamating"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 13,
+              "numEvents": 5
+            }
+          ],
+          "term": "Sweating"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Hypertension"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hypotension"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Phlebitis superficial"
+        }
+      ],
+      "seriousEvents": [
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Supraventricular tachycardia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Chest pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Death"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Back pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "meddra10.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 13,
+              "numEvents": 2
+            }
+          ],
+          "term": "Dyspnea"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "meddra9.0",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 13,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hypoxia"
+        }
+      ],
+      "timeFrame": "Adverse events were collected over a period of 1 year, 1 month."
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "13"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "description": "Patients receive PXD101 IV at 1000 mg/m2 over 30 minutes on days 1-5. Treatment repeats every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity.\n\nbelinostat: Given IV\n\nlaboratory biomarker analysis: Correlative studies",
+          "id": "BG000",
+          "title": "Treatment (Belinostat)"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "lowerLimit": "27",
+                      "upperLimit": "82",
+                      "value": "73"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "FULL_RANGE",
+          "paramType": "MEDIAN",
+          "title": "Age, Continuous",
+          "unitOfMeasure": "years"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "5"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "8"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "13"
+                    }
+                  ]
+                }
+              ],
+              "title": "United States"
+            }
+          ],
+          "paramType": "NUMBER",
+          "title": "Region of Enrollment",
+          "unitOfMeasure": "participants"
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": false,
+        "restrictionType": "LTE60",
+        "restrictiveAgreement": true
+      },
+      "pointOfContact": {
+        "email": "CCCP@coh.org",
+        "organization": "California Cancer Consortium",
+        "phone": "626-256-4673",
+        "phoneExt": "60094",
+        "title": "DCC Project Administrator"
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "13"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Per Response Evaluation Criteria In Solid Tumors Criteria (RECIST v1.0) for target lesions and assessed by CT, MRI or X-ray: Complete Response (CR), Disappearance of all target lesions; Partial Response (PR), \\>=30% decrease in the sum of the longest diameter of target lesions; Overall Response (OR) = CR + PR",
+          "groups": [
+            {
+              "description": "Patients receive PXD101 IV at 1000 mg/m2 over 30 minutes on days 1-5. Treatment repeats every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity.\n\nbelinostat: Given IV\n\nlaboratory biomarker analysis: Correlative studies",
+              "id": "OG000",
+              "title": "Treatment (Belinostat)"
+            }
+          ],
+          "paramType": "NUMBER",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Up to 3 years",
+          "title": "Objective Tumor Response Rate According to the Response Evaluation Criteria in Solid Tumors (RECIST) Committee",
+          "type": "PRIMARY",
+          "unitOfMeasure": "percentage of participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "2.3",
+                      "upperLimit": "5.3",
+                      "value": "4.5"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "13"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Estimated using the product-limit method of Kaplan and Meier.",
+          "dispersionType": "95% Confidence Interval",
+          "groups": [
+            {
+              "description": "Patients receive PXD101 IV at 1000 mg/m2 over 30 minutes on days 1-5. Treatment repeats every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity.\n\nbelinostat: Given IV\n\nlaboratory biomarker analysis: Correlative studies",
+              "id": "OG000",
+              "title": "Treatment (Belinostat)"
+            }
+          ],
+          "paramType": "MEDIAN",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Up to 3 years",
+          "title": "Overall Survival",
+          "type": "SECONDARY",
+          "unitOfMeasure": "Months"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "1.1",
+                      "upperLimit": "1.6",
+                      "value": "1.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "13"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Estimated using the product-limit method of Kaplan and Meier. Progression is defined using Response Evaluation Criteria In Solid Tumors Criteria (RECIST v1.0), as a 20% increase in the sum of the longest diameter of target lesions, or a measurable increase in a non-target lesion, or the appearance of new lesions.",
+          "dispersionType": "95% Confidence Interval",
+          "groups": [
+            {
+              "description": "Patients receive PXD101 IV at 1000 mg/m2 over 30 minutes on days 1-5. Treatment repeats every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity.\n\nbelinostat: Given IV\n\nlaboratory biomarker analysis: Correlative studies",
+              "id": "OG000",
+              "title": "Treatment (Belinostat)"
+            }
+          ],
+          "paramType": "MEAN",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Up to 3 years",
+          "title": "Progression-free Survival",
+          "type": "SECONDARY",
+          "unitOfMeasure": "Months"
+        },
+        {
+          "calculatePct": false,
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "6"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Hemoglobin"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Lymphopenia"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Albumin"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Anorexia"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : AST"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Constipation"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Creatinine"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Sweating"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "3"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Dyspnea"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Fatigue"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "6"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Glucose (hyperglycemia)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Hypoxia"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Hypotension"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Infection"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Nausea"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Pain"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Sodium (Hyponatremia)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 2 : Supraventricular arrhythmia NOS"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Hemoglobin"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Lymphopenia"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Albumin"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Anorexia"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : AST"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Constipation"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Creatinine"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Sweating"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Dyspnea"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Fatigue"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Glucose (hyperglycemia)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Hypoxia"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Hypotension"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Infection"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Nausea"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Pain"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "3"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Sodium (Hyponatremia)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 3 : Supraventricular arrhythmia NOS"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Hemoglobin"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Lymphopenia"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Albumin"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Anorexia"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : AST"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Constipation"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Creatinine"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Sweating"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Dyspnea"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Fatigue"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Glucose (hyperglycemia)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Hypoxia"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Hypotension"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Infection"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Nausea"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Pain"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Sodium (Hyponatremia)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Grade 4 : Supraventricular arrhythmia NOS"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "13"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Toxicity information recorded will include the type, severity, time of onset, time of resolution, and the probable association with the study regimen. Toxicities table summarizes the observed incidence by severity and type of toxicity for toxicities that are related to treatment and greater than grade 1. Adverse events assessed by the National Cancer Institute (NCI) Common Terminology Criteria for Adverse Events (CTCAE) version 3.0.",
+          "groups": [
+            {
+              "description": "Patients receive PXD101 IV at 1000 mg/m2 over 30 minutes on days 1-5. Treatment repeats every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity.\n\nbelinostat: Given IV\n\nlaboratory biomarker analysis: Correlative studies",
+              "id": "OG000",
+              "title": "Treatment (Belinostat)"
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Up to 3 years",
+          "title": "Toxicity Profile",
+          "type": "SECONDARY",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "0"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Summarized with contingency tables or scatterplots, and with quantitative measures of agreement.",
+          "groups": [
+            {
+              "description": "Patients receive PXD101 IV at 1000 mg/m2 over 30 minutes on days 1-5. Treatment repeats every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity.\n\nbelinostat: Given IV\n\nlaboratory biomarker analysis: Correlative studies",
+              "id": "OG000",
+              "title": "Treatment (Belinostat)"
+            }
+          ],
+          "populationDescription": "Assay data were not collected.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "At baseline",
+          "title": "Apoptosis by TUNEL Assay",
+          "type": "SECONDARY"
+        },
+        {
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "0"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Summarized with contingency tables or scatterplots, and with quantitative measures of agreement.",
+          "groups": [
+            {
+              "description": "Patients receive PXD101 IV at 1000 mg/m2 over 30 minutes on days 1-5. Treatment repeats every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity.\n\nbelinostat: Given IV\n\nlaboratory biomarker analysis: Correlative studies",
+              "id": "OG000",
+              "title": "Treatment (Belinostat)"
+            }
+          ],
+          "populationDescription": "IHC data were not collected.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "At baseline and at 4 hours after last dose of PXD101 on day 5",
+          "title": "Histone Acetylation by IHC and Western Blotting",
+          "type": "SECONDARY"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "Patients receive PXD101 IV at 1000 mg/m2 over 30 minutes on days 1-5. Treatment repeats every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity.\n\nbelinostat: Given IV\n\nlaboratory biomarker analysis: Correlative studies",
+          "id": "FG000",
+          "title": "Treatment (Belinostat)"
+        }
+      ],
+      "periods": [
+        {
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "13"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "13"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "Overall Study"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,772 @@
+{
+  "n": 25,
+  "backend": "mock",
+  "reference_status": [
+    "single_reviewer_provisional"
+  ],
+  "accuracy": {
+    "sex_restriction": 1.0,
+    "eligibility": 0.76,
+    "enrollment_by_sex": 0.96,
+    "sex_stratified": 1.0
+  },
+  "metrics": {
+    "sex_restriction": {
+      "n": 25,
+      "accuracy": 1.0,
+      "abstained": 0,
+      "abstention_rate": 0.0,
+      "coverage": 1.0,
+      "accuracy_on_non_abstained": 1.0,
+      "labels": {
+        "ALL": {
+          "support": 24,
+          "predicted": 24,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "FEMALE": {
+          "support": 1,
+          "predicted": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "MALE": {
+          "support": 0,
+          "predicted": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "UNKNOWN": {
+          "support": 0,
+          "predicted": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "confusion_matrix": {
+        "ALL": {
+          "ALL": 24,
+          "FEMALE": 0,
+          "MALE": 0,
+          "UNKNOWN": 0
+        },
+        "FEMALE": {
+          "ALL": 0,
+          "FEMALE": 1,
+          "MALE": 0,
+          "UNKNOWN": 0
+        },
+        "MALE": {
+          "ALL": 0,
+          "FEMALE": 0,
+          "MALE": 0,
+          "UNKNOWN": 0
+        },
+        "UNKNOWN": {
+          "ALL": 0,
+          "FEMALE": 0,
+          "MALE": 0,
+          "UNKNOWN": 0
+        }
+      }
+    },
+    "eligibility": {
+      "n": 25,
+      "accuracy": 0.76,
+      "abstained": 0,
+      "abstention_rate": 0.0,
+      "coverage": 1.0,
+      "accuracy_on_non_abstained": 0.76,
+      "labels": {
+        "BLANKET_EXCLUSION_CHILDBEARING": {
+          "support": 2,
+          "predicted": 3,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "PREGNANCY_LACTATION_EXCLUSION": {
+          "support": 9,
+          "predicted": 5,
+          "precision": 1.0,
+          "recall": 0.5555555555555556,
+          "f1": 0.7142857142857143
+        },
+        "CONDITIONAL": {
+          "support": 4,
+          "predicted": 6,
+          "precision": 0.5,
+          "recall": 0.75,
+          "f1": 0.6
+        },
+        "NONE": {
+          "support": 9,
+          "predicted": 11,
+          "precision": 0.8181818181818182,
+          "recall": 1.0,
+          "f1": 0.9
+        },
+        "UNCLEAR": {
+          "support": 1,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        }
+      },
+      "confusion_matrix": {
+        "BLANKET_EXCLUSION_CHILDBEARING": {
+          "BLANKET_EXCLUSION_CHILDBEARING": 2,
+          "PREGNANCY_LACTATION_EXCLUSION": 0,
+          "CONDITIONAL": 0,
+          "NONE": 0,
+          "UNCLEAR": 0
+        },
+        "PREGNANCY_LACTATION_EXCLUSION": {
+          "BLANKET_EXCLUSION_CHILDBEARING": 0,
+          "PREGNANCY_LACTATION_EXCLUSION": 5,
+          "CONDITIONAL": 3,
+          "NONE": 1,
+          "UNCLEAR": 0
+        },
+        "CONDITIONAL": {
+          "BLANKET_EXCLUSION_CHILDBEARING": 0,
+          "PREGNANCY_LACTATION_EXCLUSION": 0,
+          "CONDITIONAL": 3,
+          "NONE": 1,
+          "UNCLEAR": 0
+        },
+        "NONE": {
+          "BLANKET_EXCLUSION_CHILDBEARING": 0,
+          "PREGNANCY_LACTATION_EXCLUSION": 0,
+          "CONDITIONAL": 0,
+          "NONE": 9,
+          "UNCLEAR": 0
+        },
+        "UNCLEAR": {
+          "BLANKET_EXCLUSION_CHILDBEARING": 1,
+          "PREGNANCY_LACTATION_EXCLUSION": 0,
+          "CONDITIONAL": 0,
+          "NONE": 0,
+          "UNCLEAR": 0
+        }
+      }
+    },
+    "enrollment_by_sex": {
+      "n": 25,
+      "accuracy": 0.96,
+      "abstained": 0,
+      "abstention_rate": 0.0,
+      "coverage": 1.0,
+      "accuracy_on_non_abstained": 0.96,
+      "labels": {
+        "REPORTED": {
+          "support": 19,
+          "predicted": 20,
+          "precision": 0.95,
+          "recall": 1.0,
+          "f1": 0.9743589743589743
+        },
+        "NOT_REPORTED_IN_RECORD": {
+          "support": 1,
+          "predicted": 0,
+          "precision": null,
+          "recall": 0.0,
+          "f1": null
+        },
+        "NO_RESULTS_POSTED": {
+          "support": 5,
+          "predicted": 5,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "confusion_matrix": {
+        "REPORTED": {
+          "REPORTED": 19,
+          "NOT_REPORTED_IN_RECORD": 0,
+          "NO_RESULTS_POSTED": 0
+        },
+        "NOT_REPORTED_IN_RECORD": {
+          "REPORTED": 1,
+          "NOT_REPORTED_IN_RECORD": 0,
+          "NO_RESULTS_POSTED": 0
+        },
+        "NO_RESULTS_POSTED": {
+          "REPORTED": 0,
+          "NOT_REPORTED_IN_RECORD": 0,
+          "NO_RESULTS_POSTED": 5
+        }
+      }
+    },
+    "sex_stratified": {
+      "n": 25,
+      "accuracy": 1.0,
+      "abstained": 0,
+      "abstention_rate": 0.0,
+      "coverage": 1.0,
+      "accuracy_on_non_abstained": 1.0,
+      "labels": {
+        "STRATIFIED_FOUND": {
+          "support": 2,
+          "predicted": 2,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NOT_FOUND_IN_RECORD": {
+          "support": 18,
+          "predicted": 18,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NO_RESULTS_POSTED": {
+          "support": 5,
+          "predicted": 5,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "UNCLEAR": {
+          "support": 0,
+          "predicted": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "confusion_matrix": {
+        "STRATIFIED_FOUND": {
+          "STRATIFIED_FOUND": 2,
+          "NOT_FOUND_IN_RECORD": 0,
+          "NO_RESULTS_POSTED": 0,
+          "UNCLEAR": 0
+        },
+        "NOT_FOUND_IN_RECORD": {
+          "STRATIFIED_FOUND": 0,
+          "NOT_FOUND_IN_RECORD": 18,
+          "NO_RESULTS_POSTED": 0,
+          "UNCLEAR": 0
+        },
+        "NO_RESULTS_POSTED": {
+          "STRATIFIED_FOUND": 0,
+          "NOT_FOUND_IN_RECORD": 0,
+          "NO_RESULTS_POSTED": 5,
+          "UNCLEAR": 0
+        },
+        "UNCLEAR": {
+          "STRATIFIED_FOUND": 0,
+          "NOT_FOUND_IN_RECORD": 0,
+          "NO_RESULTS_POSTED": 0,
+          "UNCLEAR": 0
+        }
+      }
+    }
+  },
+  "strata_counts": [
+    {
+      "condition": "heart failure",
+      "results_status": "no_results",
+      "n": 1
+    },
+    {
+      "condition": "heart failure",
+      "results_status": "results",
+      "n": 4
+    },
+    {
+      "condition": "lung cancer",
+      "results_status": "no_results",
+      "n": 1
+    },
+    {
+      "condition": "lung cancer",
+      "results_status": "results",
+      "n": 4
+    },
+    {
+      "condition": "major depressive disorder",
+      "results_status": "no_results",
+      "n": 1
+    },
+    {
+      "condition": "major depressive disorder",
+      "results_status": "results",
+      "n": 4
+    },
+    {
+      "condition": "rheumatoid arthritis",
+      "results_status": "no_results",
+      "n": 1
+    },
+    {
+      "condition": "rheumatoid arthritis",
+      "results_status": "results",
+      "n": 4
+    },
+    {
+      "condition": "targeted challenge",
+      "results_status": "no_results",
+      "n": 1
+    },
+    {
+      "condition": "targeted challenge",
+      "results_status": "results",
+      "n": 4
+    }
+  ],
+  "misses": [
+    {
+      "nct_id": "NCT00074724",
+      "check": "enrollment_by_sex",
+      "gold": "NOT_REPORTED_IN_RECORD",
+      "pred": "REPORTED"
+    },
+    {
+      "nct_id": "NCT01187407",
+      "check": "eligibility",
+      "gold": "CONDITIONAL",
+      "pred": "NONE"
+    },
+    {
+      "nct_id": "NCT00162266",
+      "check": "eligibility",
+      "gold": "PREGNANCY_LACTATION_EXCLUSION",
+      "pred": "CONDITIONAL"
+    },
+    {
+      "nct_id": "NCT00182689",
+      "check": "eligibility",
+      "gold": "PREGNANCY_LACTATION_EXCLUSION",
+      "pred": "CONDITIONAL"
+    },
+    {
+      "nct_id": "NCT00365053",
+      "check": "eligibility",
+      "gold": "PREGNANCY_LACTATION_EXCLUSION",
+      "pred": "CONDITIONAL"
+    },
+    {
+      "nct_id": "NCT00003299",
+      "check": "eligibility",
+      "gold": "PREGNANCY_LACTATION_EXCLUSION",
+      "pred": "NONE"
+    },
+    {
+      "nct_id": "NCT01094717",
+      "check": "eligibility",
+      "gold": "UNCLEAR",
+      "pred": "BLANKET_EXCLUSION_CHILDBEARING"
+    }
+  ],
+  "decisions": [
+    {
+      "nct_id": "NCT00074724",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "NOT_REPORTED_IN_RECORD",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "e64eaef74e04e405b8c25a7b3d3a1414eb486507856266f1066809230096d38f"
+    },
+    {
+      "nct_id": "NCT00209339",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "56d9367789756c803c87d823ff8a74a17e6427eb2b4de325e8ba5d6479a57645"
+    },
+    {
+      "nct_id": "NCT00424762",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "ab57bfa46e64627955e3784439621efc2af13120c7f685630df61065996a6095"
+    },
+    {
+      "nct_id": "NCT00012870",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "NO_RESULTS_POSTED",
+        "sex_stratified": "NO_RESULTS_POSTED"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "NO_RESULTS_POSTED",
+        "sex_stratified": "NO_RESULTS_POSTED"
+      },
+      "snapshot_sha256": "daa5d71aacfbb7497b6dc95144785777bb82c30c7f869a13c77de937a8fb8f01"
+    },
+    {
+      "nct_id": "NCT00547729",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "CONDITIONAL",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "CONDITIONAL",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "92666642af0dea9203820ea955dcc9389f01f0adbb51399e7552c96ceb2a0cc4"
+    },
+    {
+      "nct_id": "NCT00043550",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "42353219cd6221d9fd6f0986e4fdf164a30961702230ab55527e8e3b6ff45b9c"
+    },
+    {
+      "nct_id": "NCT00151372",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "a40a0e18688310691fdbe04bd284c91f6f4fee1fbaf622cc8426569f4c5aa42f"
+    },
+    {
+      "nct_id": "NCT00340379",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "75dd455873f540c9f2cdfa8ed775e3f15132dd8ebeb16aa3ab401739e5ce8277"
+    },
+    {
+      "nct_id": "NCT00042562",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "NO_RESULTS_POSTED",
+        "sex_stratified": "NO_RESULTS_POSTED"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "NO_RESULTS_POSTED",
+        "sex_stratified": "NO_RESULTS_POSTED"
+      },
+      "snapshot_sha256": "6259b06550d8e050ddae6d8a6b9f0fae8180332c77f754c060534c1c7c312249"
+    },
+    {
+      "nct_id": "NCT01187407",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "CONDITIONAL",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "8c6be885e6f6bcf49747a9e38b2e876c75f856e5f05d577671525afd0b58d589"
+    },
+    {
+      "nct_id": "NCT00071812",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "681d90129b5c00dd2e95513a9058b21a6dd565f107bd3cdfcb42c31db75d5430"
+    },
+    {
+      "nct_id": "NCT00162266",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "CONDITIONAL",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "6bd43c2c704bd236e89321a67454b151fdb645e4607d1a48067e1bdc331f060a"
+    },
+    {
+      "nct_id": "NCT00233363",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "987396b1c8f9cbac848c8291d8e7b11397e134d6a8e73e5bd4a299c60792262a"
+    },
+    {
+      "nct_id": "NCT00001731",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "CONDITIONAL",
+        "enrollment_by_sex": "NO_RESULTS_POSTED",
+        "sex_stratified": "NO_RESULTS_POSTED"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "CONDITIONAL",
+        "enrollment_by_sex": "NO_RESULTS_POSTED",
+        "sex_stratified": "NO_RESULTS_POSTED"
+      },
+      "snapshot_sha256": "b06356b356a1a3f8639fff411ad717a427e2e29463b709257038e8280d11c5de"
+    },
+    {
+      "nct_id": "NCT01317797",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "6a7c528329a3ada525262228f27c8a6472e82f53b9cf433bf6839abc9645a39b"
+    },
+    {
+      "nct_id": "NCT00182689",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "CONDITIONAL",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "26ba169a8f5baf2865dc339bfb088353c70f82fd129585b8aa2e98e7b74d1143"
+    },
+    {
+      "nct_id": "NCT00365053",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "CONDITIONAL",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "95c1859bc1799957f09c18f17f93a84162d3036d337250666e88b93676904dc7"
+    },
+    {
+      "nct_id": "NCT00385996",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "CONDITIONAL",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "CONDITIONAL",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "f6dfc4a1d92b6de1c41c0892197c5476215160db3f910c5cc86697c84fee48b4"
+    },
+    {
+      "nct_id": "NCT00003299",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "NO_RESULTS_POSTED",
+        "sex_stratified": "NO_RESULTS_POSTED"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "NO_RESULTS_POSTED",
+        "sex_stratified": "NO_RESULTS_POSTED"
+      },
+      "snapshot_sha256": "c4c0831c6bfc81c0a8891e70497882fe2ca3eef34b21dbb99f103f9632dccd7c"
+    },
+    {
+      "nct_id": "NCT00560573",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "8b138035e3872a5c1acb583d4f31fa0512173b9d8ec7ec3719c72c4d47156983"
+    },
+    {
+      "nct_id": "NCT00381303",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "STRATIFIED_FOUND"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "STRATIFIED_FOUND"
+      },
+      "snapshot_sha256": "df14d95ff27b775a96d1086f36fb19565fd2881c975cd05527f7b8c6c588b01c"
+    },
+    {
+      "nct_id": "NCT03844321",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "STRATIFIED_FOUND"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "NONE",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "STRATIFIED_FOUND"
+      },
+      "snapshot_sha256": "e3aa3c4325588e95b32527423fec2586d5e3067a609a58dd9de44e7cd892b1d1"
+    },
+    {
+      "nct_id": "NCT01541852",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "BLANKET_EXCLUSION_CHILDBEARING",
+        "enrollment_by_sex": "NO_RESULTS_POSTED",
+        "sex_stratified": "NO_RESULTS_POSTED"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "BLANKET_EXCLUSION_CHILDBEARING",
+        "enrollment_by_sex": "NO_RESULTS_POSTED",
+        "sex_stratified": "NO_RESULTS_POSTED"
+      },
+      "snapshot_sha256": "eb84c86ef59f84f587216dd343a51d278420b1411bbeb0def27e085ec322c73d"
+    },
+    {
+      "nct_id": "NCT01094717",
+      "reference": {
+        "sex_restriction": "ALL",
+        "eligibility": "UNCLEAR",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "ALL",
+        "eligibility": "BLANKET_EXCLUSION_CHILDBEARING",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "776b6e611d0f7970db7da2c4b0827bc96f4bd1585c333f82ec1bc0b0f7411d69"
+    },
+    {
+      "nct_id": "NCT04680273",
+      "reference": {
+        "sex_restriction": "FEMALE",
+        "eligibility": "BLANKET_EXCLUSION_CHILDBEARING",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "prediction": {
+        "sex_restriction": "FEMALE",
+        "eligibility": "BLANKET_EXCLUSION_CHILDBEARING",
+        "enrollment_by_sex": "REPORTED",
+        "sex_stratified": "NOT_FOUND_IN_RECORD"
+      },
+      "snapshot_sha256": "e5e958970f5e5ac14f648c014d05c3ea8080a474d2205196c954063d22819e2a"
+    }
+  ],
+  "reference_digest": "a967c2332edd4b3bb1cd6901051646a53b99e2b38eb8c55a81fc976572068c7d"
+}

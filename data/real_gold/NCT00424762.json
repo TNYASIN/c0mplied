@@ -1,0 +1,945 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D003920",
+          "term": "Diabetes Mellitus"
+        },
+        {
+          "id": "D044882",
+          "term": "Glucose Metabolism Disorders"
+        },
+        {
+          "id": "D008659",
+          "term": "Metabolic Diseases"
+        },
+        {
+          "id": "D009750",
+          "term": "Nutritional and Metabolic Diseases"
+        },
+        {
+          "id": "D004700",
+          "term": "Endocrine System Diseases"
+        },
+        {
+          "id": "D006331",
+          "term": "Heart Diseases"
+        },
+        {
+          "id": "D002318",
+          "term": "Cardiovascular Diseases"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D003924",
+          "term": "Diabetes Mellitus, Type 2"
+        },
+        {
+          "id": "D006333",
+          "term": "Heart Failure"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D045162",
+          "term": "Thiazolidinediones"
+        },
+        {
+          "id": "D013844",
+          "term": "Thiazoles"
+        },
+        {
+          "id": "D013457",
+          "term": "Sulfur Compounds"
+        },
+        {
+          "id": "D009930",
+          "term": "Organic Chemicals"
+        },
+        {
+          "id": "D001393",
+          "term": "Azoles"
+        },
+        {
+          "id": "D006573",
+          "term": "Heterocyclic Compounds, 1-Ring"
+        },
+        {
+          "id": "D006571",
+          "term": "Heterocyclic Compounds"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D000077154",
+          "term": "Rosiglitazone"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "description": "4mg titrated to 8mg daily",
+          "interventionNames": [
+            "Drug: rosiglitazone"
+          ],
+          "label": "rosiglitazone",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "blinded matching placebo treatment",
+          "interventionNames": [
+            "Drug: placebo"
+          ],
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "rosiglitazone"
+          ],
+          "description": "6 months of treatment of blinded study drug",
+          "name": "rosiglitazone",
+          "otherNames": [
+            "Avandia"
+          ],
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "Placebo"
+          ],
+          "description": "blinded treatment with matching placebo",
+          "name": "placebo",
+          "type": "DRUG"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Diabetes Mellitus, Type 2"
+      ],
+      "keywords": [
+        "Diabetes Mellitus, Type 2",
+        "Congestive Heart Failure",
+        "Cardiopulmonary exercise testing",
+        "intracellular cardiomyocyte triglycerides",
+        "thiazolidinedione",
+        "rosiglitazone",
+        "nuclear magnetic resonance"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Dallas",
+          "country": "United States",
+          "facility": "University of Texas Southwestern Medical Center",
+          "geoPoint": {
+            "lat": 32.78306,
+            "lon": -96.80667
+          },
+          "state": "Texas",
+          "zip": "75390-9034"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "University of Texas Southwestern Medical Center",
+          "name": "Darren K McGuire, MD, MHSc",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        },
+        {
+          "affiliation": "University of Texas Southwestern Medical Center",
+          "name": "Darren K McGuire, M.D., MHSc",
+          "role": "STUDY_CHAIR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "The purpose of this study is to determine if rosiglitazone treatment improves integrated cardiovascular performance in patients at risk for congestive heart failure. A second aim of this study is to determine if treatment with rosiglitazone decreases intracellular (ectopic) triglyceride (TG) deposition in cardiomyocytes using nuclear magnetic resonance (NMR) techniques, and how changes in intra-myocardial lipid content relate to changes in cardiac structure and function.",
+      "detailedDescription": "Cardiovascular disease (CVD), including congestive heart failure (CHF), accounts for over 75% of deaths among patients with diabetes. Thus, it is imperative to rigorously evaluate existing and emerging hypoglycemic therapies with regard to their cardiovascular consequences. The thiazolidinedione (TZD) class of drugs, alone or in combination with other oral hypoglycemic medications or with insulin, has emerged as a safe and effective treatment of hyperglycemia in type 2 diabetes. Both in vitro and in vivo studies have revealed favorable pleiotropic effects of TZD on myocyte and ventricular structure and function. However, approximately 10% of patients taking TZDs develop peripheral edema and some patients have developed heart failure decompensation on the drug. These observations have led to a Food and Drug Administration (FDA) warning regarding the use of TZDs in patients with or at high risk of developing congestive heart failure (CHF). The exact effects of TZDs on integrated cardiovascular performance remain unclear. The primary hypothesis of this study is that TZD treatment improves integrated cardiovascular performance in patients at risk for CHF by improving both central (i.e. cardiac output) and peripheral (i.e. vascular resistance) function.\n\nRecently, we have developed a sensitive, reproducible noninvasive assay to measure intra-cardiomyocyte fat, which varies widely in amount between individuals. The relationship between the amount of cardiomyocyte triglyceride accumulation and LV mass and function remains unclear. TZDs have been previously shown to be associated with decreases in the TG content of the liver and muscle. The secondary hypothesis being tested in this study is that TZD treatment improves cardiac function by decreasing intra-cardiac myocyte triglyceride content.\n\nComparisons:\n\n* Peak oxygen uptake (VO2) during cardiopulmonary exercise testing in individuals randomized to rosiglitazone, compared to those on placebo.\n* Amount of intra-myocardial triglycerides using NMR techniques in in individuals randomized to rosiglitazone, compared to those on placebo."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "maskingInfo": {
+          "masking": "QUADRUPLE",
+          "whoMasked": [
+            "PARTICIPANT",
+            "CARE_PROVIDER",
+            "INVESTIGATOR",
+            "OUTCOMES_ASSESSOR"
+          ]
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 150,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE4"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* type 2 diabetes mellitus (prior clinical diagnosis and current use of hypoglycemic medical therapy or by new diagnosis according to ADA criteria) with at least one of the following:\n\n  * prior diagnosis of cardiovascular disease (CAD, MI, revascularization, CVA/TIA, carotid or peripheral arterial disease)\n  * at least one additional CVD risk factor (smoking, hypertension, hypercholesterolemia, albuminuria, family history of premature CAD, or documented hsCRP\\>3)\n\nExclusion Criteria:\n\n* treatment with a TZD within prior 6 months\n* documented intolerance to TZD\n* history or evidence of CHF\n* AST/ALT\\>3X upper limits of normal\n* creatinine \\>2.5",
+      "healthyVolunteers": false,
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "Effect of Rosiglitazone Versus Placebo on Cardiovascular Performance and Myocardial Triglyceride",
+      "nctId": "NCT00424762",
+      "officialTitle": "Effect of Rosiglitazone Versus Placebo on Cardiovascular Performance and Myocardial Triglyceride",
+      "orgStudyIdInfo": {
+        "id": "GSK 102610"
+      },
+      "organization": {
+        "class": "OTHER",
+        "fullName": "University of Texas Southwestern Medical Center"
+      }
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "measurement of peak oxygen uptake (VO2peak) during treadmill exercise, in units of milliliters of oxygen per kilogram of fat-free mass per minute",
+          "measure": "Peak Oxygen Uptake (VO2)",
+          "timeFrame": "6 months"
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "description": "proton magnetic resonance spectroscopy determination of intra-myocardial triglyceride content at baseline and after 6 months, with triglyceride quantified analyzing fat and water signals assuming monoexponential signal decay and expressed as a percentage of fat-to-water (%)",
+          "measure": "Intra-myocardial Triglyceride Content Using in Vivo Magnetic Resonance Spectroscopy at 6 Months",
+          "timeFrame": "6 months"
+        },
+        {
+          "description": "clinical evaluation of peripheral edema by physical exam at each study visit by a cardiologist using standard clinical severity scale 0-4, with new/worsening edema defined as any edema in patients with none at baseline, OR increase in severity by 2 or more points in patients with edema at baseline",
+          "measure": "Percentage of Patients Developing New or Worsening Peripheral Edema",
+          "timeFrame": "6 months"
+        }
+      ]
+    },
+    "oversightModule": {
+      "oversightHasDmc": false
+    },
+    "referencesModule": {
+      "references": [
+        {
+          "citation": "McGuire DK, See R, Abdullah SM, Snell PG, McGavock JM, Ayers CR, Szczepaniak LS. The effect of rosiglitazone on integrated cardiovascular performance, cardiac structure, function and myocardial triglyceride: trial design and rationale. Diab Vasc Dis Res. 2009 Jan;6(1):43-50. doi: 10.3132/dvdr.2009.009.",
+          "pmid": "19156629",
+          "type": "BACKGROUND"
+        },
+        {
+          "citation": "McGuire DK, Abdullah SM, See R, Snell PG, McGavock J, Szczepaniak LS, Ayers CR, Drazner MH, Khera A, de Lemos JA. Randomized comparison of the effects of rosiglitazone vs. placebo on peak integrated cardiovascular performance, cardiac structure, and function. Eur Heart J. 2010 Sep;31(18):2262-70. doi: 10.1093/eurheartj/ehq228. Epub 2010 Jul 2.",
+          "pmid": "20601395",
+          "type": "RESULT"
+        },
+        {
+          "citation": "Jarvie JL, Pandey A, Ayers CR, McGavock JM, Senechal M, Berry JD, Patel KV, McGuire DK. Aerobic Fitness and Adherence to Guideline-Recommended Minimum Physical Activity Among Ambulatory Patients With Type 2 Diabetes Mellitus. Diabetes Care. 2019 Jul;42(7):1333-1339. doi: 10.2337/dc18-2634. Epub 2019 May 21.",
+          "pmid": "31221698",
+          "type": "DERIVED"
+        },
+        {
+          "citation": "McGavock J, Szczepaniak LS, Ayers CR, Abdullah SM, See R, Gore MO, Drazner MH, de Lemos JA, McGuire DK. The effects of rosiglitazone on myocardial triglyceride content in patients with type 2 diabetes: a randomised, placebo-controlled trial. Diab Vasc Dis Res. 2012 Apr;9(2):131-7. doi: 10.1177/1479164111428628. Epub 2011 Nov 8.",
+          "pmid": "22067724",
+          "type": "DERIVED"
+        },
+        {
+          "citation": "Narang N, Armstead SI, Stream A, Abdullah SM, See R, Snell PG, McGavock J, Ayers CR, Gore MO, Khera A, de Lemos JA, McGuire DK. Assessment of cardiac structure and function in patients without and with peripheral oedema during rosiglitazone treatment. Diab Vasc Dis Res. 2011 Apr;8(2):101-8. doi: 10.1177/1479164111403334.",
+          "pmid": "21562061",
+          "type": "DERIVED"
+        }
+      ]
+    },
+    "sponsorCollaboratorsModule": {
+      "collaborators": [
+        {
+          "class": "INDUSTRY",
+          "name": "GlaxoSmithKline"
+        },
+        {
+          "class": "OTHER",
+          "name": "Abbott RDx Cardiometabolic"
+        }
+      ],
+      "leadSponsor": {
+        "class": "OTHER",
+        "name": "University of Texas Southwestern Medical Center"
+      },
+      "responsibleParty": {
+        "investigatorAffiliation": "University of Texas Southwestern Medical Center",
+        "investigatorFullName": "Darren McGuire",
+        "investigatorTitle": "Associate Professor",
+        "type": "PRINCIPAL_INVESTIGATOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2007-04",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2012-04-04",
+        "type": "ESTIMATED"
+      },
+      "lastUpdateSubmitDate": "2012-04-02",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2007-04",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2012-03-30",
+        "type": "ESTIMATED"
+      },
+      "resultsFirstSubmitDate": "2011-08-10",
+      "resultsFirstSubmitQcDate": "2012-03-05",
+      "startDateStruct": {
+        "date": "2005-02"
+      },
+      "statusVerifiedDate": "2012-04",
+      "studyFirstPostDateStruct": {
+        "date": "2007-01-22",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2007-01-18",
+      "studyFirstSubmitQcDate": "2007-01-18"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "eventGroups": [
+        {
+          "description": "4mg oral tablet once daily titrated to 8mg oral tablet once daily",
+          "id": "EG000",
+          "otherNumAffected": 0,
+          "otherNumAtRisk": 74,
+          "seriousNumAffected": 3,
+          "seriousNumAtRisk": 74,
+          "title": "Rosiglitazone"
+        },
+        {
+          "description": "blinded placebo treatment matching 4mg placebo tablet oral once daily titrated to 8mg matching placebo tablet oral once daily",
+          "id": "EG001",
+          "otherNumAffected": 0,
+          "otherNumAtRisk": 76,
+          "seriousNumAffected": 2,
+          "seriousNumAtRisk": 76,
+          "title": "Placebo"
+        }
+      ],
+      "frequencyThreshold": "0",
+      "seriousEvents": [
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA (10.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 74,
+              "numEvents": 3
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 76,
+              "numEvents": 2
+            }
+          ],
+          "term": "heart failure"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA (10.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 74,
+              "numEvents": 3
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 76,
+              "numEvents": 0
+            }
+          ],
+          "term": "Heart failure"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA (10.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 74,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 76,
+              "numEvents": 2
+            }
+          ],
+          "term": "acute coronary syndrome"
+        }
+      ],
+      "timeFrame": "6 months"
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "74"
+            },
+            {
+              "groupId": "BG001",
+              "value": "76"
+            },
+            {
+              "groupId": "BG002",
+              "value": "150"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "description": "4mg oral tablet once daily titrated to 8mg oral tablet once daily",
+          "id": "BG000",
+          "title": "Rosiglitazone"
+        },
+        {
+          "description": "blinded placebo treatment matching 4mg placebo tablet oral once daily titrated to 8mg matching placebo tablet oral once daily",
+          "id": "BG001",
+          "title": "Placebo"
+        },
+        {
+          "description": "Total of all reporting groups",
+          "id": "BG002",
+          "title": "Total"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    }
+                  ],
+                  "title": "<=18 years"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "74"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "76"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "150"
+                    }
+                  ],
+                  "title": "Between 18 and 65 years"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    }
+                  ],
+                  "title": ">=65 years"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Age, Categorical",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "8.7",
+                      "value": "57.0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "spread": "8.3",
+                      "value": "55.7"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "spread": "8.4",
+                      "value": "56.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Age Continuous",
+          "unitOfMeasure": "years"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "32"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "30"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "62"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "42"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "46"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "88"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "74"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "76"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "150"
+                    }
+                  ]
+                }
+              ],
+              "title": "United States"
+            }
+          ],
+          "paramType": "NUMBER",
+          "title": "Region of Enrollment",
+          "unitOfMeasure": "participants"
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": false,
+        "restrictiveAgreement": false
+      },
+      "limitationsAndCaveats": {
+        "description": "Larger than anticipated study discontinuation-72% with complete primary data analysis with lower numbers analyzed for imaging endpoints"
+      },
+      "pointOfContact": {
+        "email": "darren.mcguire@utsouthwestern.edu",
+        "organization": "University of Texas Southwestern Medical Center at Dallas",
+        "phone": "214 645 7520",
+        "title": "Dr. Darren K. McGuire"
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "analyses": [
+            {
+              "ciPctValue": "95",
+              "groupDescription": "powered to detect at least 33% difference between groups",
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": ">0.05",
+              "statisticalMethod": "t-test, 2 sided",
+              "testedNonInferiority": false
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "0.49",
+                      "value": "0.9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "0.5",
+                      "value": "0.85"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "26"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "23"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "proton magnetic resonance spectroscopy determination of intra-myocardial triglyceride content at baseline and after 6 months, with triglyceride quantified analyzing fat and water signals assuming monoexponential signal decay and expressed as a percentage of fat-to-water (%)",
+          "dispersionType": "Standard Deviation",
+          "groups": [
+            {
+              "description": "4mg oral tablet once daily titrated to 8mg oral tablet once daily",
+              "id": "OG000",
+              "title": "Rosiglitazone"
+            },
+            {
+              "description": "blinded placebo treatment matching 4mg placebo tablet oral once daily titrated to 8mg matching placebo tablet oral once daily",
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "MEAN",
+          "populationDescription": "analysis limited to those with interpretable imaging data at baseline and end of study",
+          "reportingStatus": "POSTED",
+          "timeFrame": "6 months",
+          "title": "Intra-myocardial Triglyceride Content Using in Vivo Magnetic Resonance Spectroscopy at 6 Months",
+          "type": "SECONDARY",
+          "unitOfMeasure": "percentage of fat-to-water; %"
+        },
+        {
+          "analyses": [
+            {
+              "groupDescription": "powered to detect difference of at least 10% between groups",
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.26",
+              "statisticalMethod": "t-test, 2 sided",
+              "testedNonInferiority": false
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "7",
+                      "value": "26.1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "6.6",
+                      "value": "27.6"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "54"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "54"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "measurement of peak oxygen uptake (VO2peak) during treadmill exercise, in units of milliliters of oxygen per kilogram of fat-free mass per minute",
+          "dispersionType": "Standard Deviation",
+          "groups": [
+            {
+              "description": "4mg oral tablet once daily titrated to 8mg oral tablet once daily",
+              "id": "OG000",
+              "title": "Rosiglitazone"
+            },
+            {
+              "description": "blinded placebo treatment matching 4mg placebo tablet oral once daily titrated to 8mg matching placebo tablet oral once daily",
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "MEAN",
+          "populationDescription": "completed baseline and end-of-study cardiopulmonary exercise test",
+          "reportingStatus": "POSTED",
+          "timeFrame": "6 months",
+          "title": "Peak Oxygen Uptake (VO2)",
+          "type": "PRIMARY",
+          "unitOfMeasure": "ml O2 uptake/kg fat-free mass/minute"
+        },
+        {
+          "analyses": [
+            {
+              "ciPctValue": "95",
+              "groupDescription": "comparative incidence",
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.03",
+              "statisticalMethod": "Chi-squared",
+              "testedNonInferiority": false
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "54"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "33"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "74"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "76"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "clinical evaluation of peripheral edema by physical exam at each study visit by a cardiologist using standard clinical severity scale 0-4, with new/worsening edema defined as any edema in patients with none at baseline, OR increase in severity by 2 or more points in patients with edema at baseline",
+          "groups": [
+            {
+              "description": "4mg oral tablet once daily titrated to 8mg oral tablet once daily",
+              "id": "OG000",
+              "title": "Rosiglitazone"
+            },
+            {
+              "description": "blinded placebo treatment matching 4mg placebo tablet oral once daily titrated to 8mg matching placebo tablet oral once daily",
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "NUMBER",
+          "reportingStatus": "POSTED",
+          "timeFrame": "6 months",
+          "title": "Percentage of Patients Developing New or Worsening Peripheral Edema",
+          "type": "SECONDARY",
+          "unitOfMeasure": "percentage of patients"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "4mg oral tablet once daily titrated to 8mg oral tablet once daily",
+          "id": "FG000",
+          "title": "Rosiglitazone"
+        },
+        {
+          "description": "blinded placebo treatment matching 4mg placebo tablet oral once daily titrated to 8mg matching placebo tablet oral once daily",
+          "id": "FG001",
+          "title": "Placebo"
+        }
+      ],
+      "periods": [
+        {
+          "dropWithdraws": [
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "18"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "19"
+                }
+              ],
+              "type": "Withdrawal by Subject"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "2"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "3"
+                }
+              ],
+              "type": "Lost to Follow-up"
+            }
+          ],
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "74"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "76"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "54"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "54"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "20"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "22"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "Overall Study"
+        }
+      ],
+      "recruitmentDetails": "recruitment 2/05-10/06"
+    }
+  }
+}

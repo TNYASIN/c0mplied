@@ -1,0 +1,958 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "meshes": [
+        {
+          "id": "D019964",
+          "term": "Mood Disorders"
+        },
+        {
+          "id": "D001523",
+          "term": "Mental Disorders"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D015057",
+          "term": "1-Naphthylamine"
+        },
+        {
+          "id": "D000588",
+          "term": "Amines"
+        },
+        {
+          "id": "D009930",
+          "term": "Organic Chemicals"
+        },
+        {
+          "id": "D009281",
+          "term": "Naphthalenes"
+        },
+        {
+          "id": "D011084",
+          "term": "Polycyclic Aromatic Hydrocarbons"
+        },
+        {
+          "id": "D006841",
+          "term": "Hydrocarbons, Aromatic"
+        },
+        {
+          "id": "D006844",
+          "term": "Hydrocarbons, Cyclic"
+        },
+        {
+          "id": "D006838",
+          "term": "Hydrocarbons"
+        },
+        {
+          "id": "D011083",
+          "term": "Polycyclic Compounds"
+        },
+        {
+          "id": "D002090",
+          "term": "Butyrophenones"
+        },
+        {
+          "id": "D007659",
+          "term": "Ketones"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "C092292",
+          "term": "ziprasidone"
+        },
+        {
+          "id": "D020280",
+          "term": "Sertraline"
+        },
+        {
+          "id": "D006220",
+          "term": "Haloperidol"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "description": "Subjects in this arm received ziprasidone with a placebo to maintain the blind",
+          "interventionNames": [
+            "Drug: Ziprasidone"
+          ],
+          "label": "Ziprasidone",
+          "type": "ACTIVE_COMPARATOR"
+        },
+        {
+          "description": "Subjects in this arm received a combination of sertraline and haloperidol with a placebo to maintain the blind. Sertraline dosage was 150-200mg/day and haloperidol was 6-8mg/day based on tolerance.",
+          "interventionNames": [
+            "Drug: Sertraline",
+            "Drug: Haloperidol"
+          ],
+          "label": "Sertraline/Haloperidol",
+          "type": "ACTIVE_COMPARATOR"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "Ziprasidone"
+          ],
+          "description": "Target dosage 120-160mg/day based on tolerance",
+          "name": "Ziprasidone",
+          "otherNames": [
+            "Geodon"
+          ],
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "Sertraline/Haloperidol"
+          ],
+          "description": "Target dosage 150-200mg/day based on tolerance.",
+          "name": "Sertraline",
+          "otherNames": [
+            "Zoloft"
+          ],
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "Sertraline/Haloperidol"
+          ],
+          "description": "Target dosage 6-8mg/day based on tolerance.",
+          "name": "Haloperidol",
+          "otherNames": [
+            "Haldol"
+          ],
+          "type": "DRUG"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Affective Disorders"
+      ],
+      "keywords": [
+        "Psychotic"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Los Angeles",
+          "country": "United States",
+          "facility": "University of Southern California",
+          "geoPoint": {
+            "lat": 34.05223,
+            "lon": -118.24368
+          },
+          "state": "California",
+          "zip": "90033"
+        },
+        {
+          "city": "Alexandria",
+          "country": "Egypt",
+          "facility": "Alexandria University",
+          "geoPoint": {
+            "lat": 31.20176,
+            "lon": 29.91582
+          }
+        },
+        {
+          "city": "Bangalore",
+          "country": "India",
+          "facility": "National Institute of Mental Health and Neuroscience",
+          "geoPoint": {
+            "lat": 12.97194,
+            "lon": 77.59369
+          },
+          "zip": "560029"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "Duke University",
+          "name": "Frederick Cassidy, MD",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        },
+        {
+          "affiliation": "University of Southern California",
+          "name": "George Simpson, MD",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        },
+        {
+          "affiliation": "Duke University",
+          "name": "Ranga Krishnan, MD",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        },
+        {
+          "affiliation": "National Institute of Mental Health and Neuroscience",
+          "name": "Sumant Khanna, MD",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        },
+        {
+          "affiliation": "Alexandria University",
+          "name": "Adel Elsheshai, MD",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "The purpose of this study is to compare ziprasidone (Geodon) monotherapy for the treatment of psychotic major depression (PMD)with an antidepressant/antipsychotic combined therapy.",
+      "detailedDescription": "Psychotic depression is a well-established DSM-IV diagnostic subtype indicating the presence of hallucinations and/or delusions as part of the clinical presentation. Currently the treatment of choice for psychotic depression is either electroconvulsive therapy or combination of antipsychotic and antidepressant medications. Ziprasidone will be compared to standard of care treatment comprising a combination of an antidepressant, sertraline and an antipsychotic, haloperidol, over a 12-week period. An additional 12-week extension phase is also included for responders to the initial study."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "maskingInfo": {
+          "masking": "QUADRUPLE",
+          "whoMasked": [
+            "PARTICIPANT",
+            "CARE_PROVIDER",
+            "INVESTIGATOR",
+            "OUTCOMES_ASSESSOR"
+          ]
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 72,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE2",
+        "PHASE3"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Males or females, aged 18-70 years\n* If female, must state willingness to use medically accepted methods of birth control (if of reproductive age) and have negative pregnancy test\n* Ability to understand study procedures and provide written informed consent\n* A DSM-IV diagnosis of Major Depressive Disorder, with psychotic features, based on the Structured Clinical Interview for DSM-IV (SCID)\n* Hamilton Depression Rating Scale score (21-item HDRS) greater than or equal to 22\n\nExclusion Criteria:\n\n* A current or lifetime DSM-IV diagnosis of Bipolar Disorder, Schizophrenia or Schizoaffective Disorder\n* A DSM-IV diagnosis of alcohol or substance abuse or dependence within 3 months of study entry\n* A QTc greater than 460 msec or an abnormal EKG (except minor abnormalities considered by the site investigator to be clinically insignificant)\n* A heart rate less than or equal to 50\n* A personal or family history of QTc\n* Any current or past history of syncope\n* Concurrent treatment with medications associated with prolongation of the QTc\n* Concurrent treatment with medications that may affect magnesium or potassium, such as diuretics\n* Any acute, unstable or serious medical illness (eg, AIDS, history of seizures, history of CVAs).\n* Baseline blood chemistries that are outside local reference ranges and which are felt clinically significant by the site investigator, or a potassium, magnesium or calcium level outside of local reference ranges or liver function tests that are greater than 20% above the upper limit of local reference ranges. If magnesium and/or potassium are below the lower limit of the local laboratory norm, they may be repeated and rechecked during the screening phase, and if within laboratory norms, the subjects may be included.\n* History of unstable cardiovascular disease\n* A significant risk of suicide in the judgement of the site investigator\n* A history of allergy or hypersensitivity to haloperidol, sertraline or ziprasidone\n* Any history of neuroleptic malignant syndrome\n* Treatment with sertraline or ziprasidone within 30 days of study entry\n* History of recent treatment with any long acting psychotropic medications\n* Treatment with a MAO-inhibitor within 14 days of study entry\n* Treatment with an investigational drug within 30 days of study entry\n* Current use of carbamazepine, nefazodone, ketoconazole or erythromycin\n* A positive pregnancy test\n* A positive drug screen unless attributable to a prescribed medication (e.g. benzodiazepines)",
+      "healthyVolunteers": false,
+      "maximumAge": "75 Years",
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "Ziprasidone vs. Sertraline/Haloperidol in Psychotic Depression",
+      "nctId": "NCT00340379",
+      "officialTitle": "A Comparison of Two Different Treatments for Major Depression With Psychotic Features: Ziprasidone vs. Combined Sertraline and Haloperidol",
+      "orgStudyIdInfo": {
+        "id": "Pro00008437"
+      },
+      "organization": {
+        "class": "OTHER",
+        "fullName": "Duke University"
+      },
+      "secondaryIdInfos": [
+        {
+          "domain": "Duke legacy protocol number",
+          "id": "3846-05-6R2",
+          "type": "OTHER"
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "The scale rates 21 symptoms related to major depression. A total score of 0-7 is considered to be normal, scores of 20 or higher indicate moderately severe depression. Total scores range from a minimum of 0(not ill) to a maximum of 64 (severely ill).",
+          "measure": "21 Item Hamilton Depression Rating Scale",
+          "timeFrame": "12 week"
+        },
+        {
+          "description": "A 7 point scale that requires the clinician to assess how much the patient's illness has improved or worsened relative to a baseline state at the beginning of the intervention. and rated as: 1, very much improved; 2, much improved; 3, minimally improved; 4, no change; 5, minimally worse; 6, much worse; or 7, very much worse. Overall the scale goes from a minimum of 1(very much improved) to a maximum of 7(very much worse).",
+          "measure": "Clinical Global Impression Improvement Scale",
+          "timeFrame": "12 weeks"
+        },
+        {
+          "description": "A rating scale used to measure psychiatric symptoms such as depression, anxiety, hallucinations and unusual behaviour. Each symptom is rated 1-7 and in this version a total of 24 symptoms are scored. Thus the total range of scores is from a minimum of 24 to a maximum of 168. Lower scores are considered better, so the minimum total score of 24 indicates someone with no psychiatric symptoms, while any score over 40 is considered at least moderately severe, with only the most severely ill patients scoring over 60.",
+          "measure": "Brief Psychiatric Rating Scale at 12 Weeks",
+          "timeFrame": "12 weeks"
+        }
+      ]
+    },
+    "oversightModule": {
+      "oversightHasDmc": false
+    },
+    "sponsorCollaboratorsModule": {
+      "collaborators": [
+        {
+          "class": "INDUSTRY",
+          "name": "Pfizer"
+        },
+        {
+          "class": "OTHER",
+          "name": "National Institute of Mental Health and Neuro Sciences, India"
+        }
+      ],
+      "leadSponsor": {
+        "class": "OTHER",
+        "name": "Duke University"
+      },
+      "responsibleParty": {
+        "type": "SPONSOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2005-08",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2014-08-19",
+        "type": "ESTIMATED"
+      },
+      "lastUpdateSubmitDate": "2014-08-15",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2005-08",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2013-06-04",
+        "type": "ESTIMATED"
+      },
+      "resultsFirstSubmitDate": "2011-06-28",
+      "resultsFirstSubmitQcDate": "2013-06-03",
+      "startDateStruct": {
+        "date": "2003-04"
+      },
+      "statusVerifiedDate": "2012-02",
+      "studyFirstPostDateStruct": {
+        "date": "2006-06-21",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2006-06-20",
+      "studyFirstSubmitQcDate": "2006-06-20"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "eventGroups": [
+        {
+          "id": "EG000",
+          "otherNumAffected": 28,
+          "otherNumAtRisk": 35,
+          "seriousNumAffected": 1,
+          "seriousNumAtRisk": 35,
+          "title": "Ziprasidone"
+        },
+        {
+          "id": "EG001",
+          "otherNumAffected": 33,
+          "otherNumAtRisk": 37,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 37,
+          "title": "Sertraline/Haloperidol"
+        }
+      ],
+      "frequencyThreshold": "3",
+      "otherEvents": [
+        {
+          "organSystem": "Nervous system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 10,
+              "numAtRisk": 35
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 15,
+              "numAtRisk": 37
+            }
+          ],
+          "term": "Extrapyramidal symptoms"
+        },
+        {
+          "organSystem": "Nervous system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 13,
+              "numAtRisk": 35
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 8,
+              "numAtRisk": 37
+            }
+          ],
+          "term": "Akathisia"
+        },
+        {
+          "organSystem": "Nervous system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 35
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 9,
+              "numAtRisk": 37
+            }
+          ],
+          "term": "Tremors"
+        },
+        {
+          "organSystem": "Gastrointestinal disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 8,
+              "numAtRisk": 35
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 37
+            }
+          ],
+          "term": "Gastritis"
+        },
+        {
+          "organSystem": "Nervous system disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 35
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 37
+            }
+          ],
+          "term": "Rigidity"
+        }
+      ],
+      "seriousEvents": [
+        {
+          "notes": "Patient fell down well and died",
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 35,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 37,
+              "numEvents": 0
+            }
+          ],
+          "term": "Death"
+        }
+      ]
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "35"
+            },
+            {
+              "groupId": "BG001",
+              "value": "37"
+            },
+            {
+              "groupId": "BG002",
+              "value": "72"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "id": "BG000",
+          "title": "Ziprasidone"
+        },
+        {
+          "id": "BG001",
+          "title": "Sertraline/Haloperidol"
+        },
+        {
+          "description": "Total of all reporting groups",
+          "id": "BG002",
+          "title": "Total"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    }
+                  ],
+                  "title": "<=18 years"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "35"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "37"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "72"
+                    }
+                  ],
+                  "title": "Between 18 and 65 years"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    }
+                  ],
+                  "title": ">=65 years"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Age, Categorical",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "8.7",
+                      "value": "36.4"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "spread": "12.0",
+                      "value": "35.9"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "spread": "10.5",
+                      "value": "36.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Age, Continuous",
+          "unitOfMeasure": "years"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "21"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "20"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "41"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "14"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "17"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "31"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "14"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "15"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "29"
+                    }
+                  ]
+                }
+              ],
+              "title": "Egypt"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "3"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "5"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "8"
+                    }
+                  ]
+                }
+              ],
+              "title": "United States"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "18"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "17"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "35"
+                    }
+                  ]
+                }
+              ],
+              "title": "India"
+            }
+          ],
+          "paramType": "NUMBER",
+          "title": "Region of Enrollment",
+          "unitOfMeasure": "participants"
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": false,
+        "restrictiveAgreement": false
+      },
+      "pointOfContact": {
+        "email": "cassi002@mc.duke.edu",
+        "organization": "Duke University",
+        "phone": "919-575-7801",
+        "title": "Frederick Cassidy"
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "8.3",
+                      "value": "13.6"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "7.7",
+                      "value": "11.0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "35"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "37"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "The scale rates 21 symptoms related to major depression. A total score of 0-7 is considered to be normal, scores of 20 or higher indicate moderately severe depression. Total scores range from a minimum of 0(not ill) to a maximum of 64 (severely ill).",
+          "dispersionType": "Standard Deviation",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Ziprasidone"
+            },
+            {
+              "id": "OG001",
+              "title": "Sertraline/Haloperidol"
+            }
+          ],
+          "paramType": "MEAN",
+          "populationDescription": "Number of participants was ITT and imputed by LOCF",
+          "reportingStatus": "POSTED",
+          "timeFrame": "12 week",
+          "title": "21 Item Hamilton Depression Rating Scale",
+          "type": "PRIMARY",
+          "unitOfMeasure": "Units on Hamilton Depression Scale"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "2.0",
+                      "value": "3.1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "1.6",
+                      "value": "2.5"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "35"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "37"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "A 7 point scale that requires the clinician to assess how much the patient's illness has improved or worsened relative to a baseline state at the beginning of the intervention. and rated as: 1, very much improved; 2, much improved; 3, minimally improved; 4, no change; 5, minimally worse; 6, much worse; or 7, very much worse. Overall the scale goes from a minimum of 1(very much improved) to a maximum of 7(very much worse).",
+          "dispersionType": "Standard Deviation",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Ziprasidone"
+            },
+            {
+              "id": "OG001",
+              "title": "Sertraline/Haloperidol"
+            }
+          ],
+          "paramType": "MEAN",
+          "reportingStatus": "POSTED",
+          "timeFrame": "12 weeks",
+          "title": "Clinical Global Impression Improvement Scale",
+          "type": "PRIMARY",
+          "unitOfMeasure": "units on a Clinical Impressions Scale"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "10.1",
+                      "value": "28.7"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "6.5",
+                      "value": "25.8"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "35"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "37"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "A rating scale used to measure psychiatric symptoms such as depression, anxiety, hallucinations and unusual behaviour. Each symptom is rated 1-7 and in this version a total of 24 symptoms are scored. Thus the total range of scores is from a minimum of 24 to a maximum of 168. Lower scores are considered better, so the minimum total score of 24 indicates someone with no psychiatric symptoms, while any score over 40 is considered at least moderately severe, with only the most severely ill patients scoring over 60.",
+          "dispersionType": "Standard Deviation",
+          "groups": [
+            {
+              "id": "OG000",
+              "title": "Ziprasidone"
+            },
+            {
+              "id": "OG001",
+              "title": "Sertraline/Haloperidol"
+            }
+          ],
+          "paramType": "MEAN",
+          "reportingStatus": "POSTED",
+          "timeFrame": "12 weeks",
+          "title": "Brief Psychiatric Rating Scale at 12 Weeks",
+          "type": "PRIMARY",
+          "unitOfMeasure": "units on a Psychiatric Rating scale"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "Target dosage of 120-160mg/day based on tolerance.",
+          "id": "FG000",
+          "title": "Ziprasidone"
+        },
+        {
+          "description": "Target dosage of 150-200mg/day for sertraline and 6-8mg/day for haloperidol.",
+          "id": "FG001",
+          "title": "Sertraline/Haloperidol"
+        }
+      ],
+      "periods": [
+        {
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "35"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "37"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "27"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "28"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "8"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "9"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "Overall Study"
+        }
+      ]
+    }
+  }
+}

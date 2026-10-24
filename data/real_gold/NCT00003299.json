@@ -1,0 +1,621 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D012142",
+          "term": "Respiratory Tract Neoplasms"
+        },
+        {
+          "id": "D013899",
+          "term": "Thoracic Neoplasms"
+        },
+        {
+          "id": "D009371",
+          "term": "Neoplasms by Site"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        },
+        {
+          "id": "D008171",
+          "term": "Lung Diseases"
+        },
+        {
+          "id": "D012140",
+          "term": "Respiratory Tract Diseases"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D008175",
+          "term": "Lung Neoplasms"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D017606",
+          "term": "Chlorine Compounds"
+        },
+        {
+          "id": "D007287",
+          "term": "Inorganic Chemicals"
+        },
+        {
+          "id": "D017672",
+          "term": "Nitrogen Compounds"
+        },
+        {
+          "id": "D017671",
+          "term": "Platinum Compounds"
+        },
+        {
+          "id": "D011034",
+          "term": "Podophyllotoxin"
+        },
+        {
+          "id": "D013764",
+          "term": "Tetrahydronaphthalenes"
+        },
+        {
+          "id": "D009281",
+          "term": "Naphthalenes"
+        },
+        {
+          "id": "D011084",
+          "term": "Polycyclic Aromatic Hydrocarbons"
+        },
+        {
+          "id": "D006841",
+          "term": "Hydrocarbons, Aromatic"
+        },
+        {
+          "id": "D006844",
+          "term": "Hydrocarbons, Cyclic"
+        },
+        {
+          "id": "D006838",
+          "term": "Hydrocarbons"
+        },
+        {
+          "id": "D009930",
+          "term": "Organic Chemicals"
+        },
+        {
+          "id": "D011083",
+          "term": "Polycyclic Compounds"
+        },
+        {
+          "id": "D005960",
+          "term": "Glucosides"
+        },
+        {
+          "id": "D006027",
+          "term": "Glycosides"
+        },
+        {
+          "id": "D002241",
+          "term": "Carbohydrates"
+        },
+        {
+          "id": "D043823",
+          "term": "Taxoids"
+        },
+        {
+          "id": "D043822",
+          "term": "Cyclodecanes"
+        },
+        {
+          "id": "D003516",
+          "term": "Cycloparaffins"
+        },
+        {
+          "id": "D006840",
+          "term": "Hydrocarbons, Alicyclic"
+        },
+        {
+          "id": "D004224",
+          "term": "Diterpenes"
+        },
+        {
+          "id": "D013729",
+          "term": "Terpenes"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D002945",
+          "term": "Cisplatin"
+        },
+        {
+          "id": "D005047",
+          "term": "Etoposide"
+        },
+        {
+          "id": "D017239",
+          "term": "Paclitaxel"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": false,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "interventionNames": [
+            "Drug: cisplatin",
+            "Drug: etoposide"
+          ],
+          "label": "Cisplatin + Etoposide",
+          "type": "ACTIVE_COMPARATOR"
+        },
+        {
+          "interventionNames": [
+            "Drug: cisplatin",
+            "Drug: etoposide",
+            "Drug: paclitaxel"
+          ],
+          "label": "Cisplatin + Etoposide + Paclitaxel",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "Cisplatin + Etoposide",
+            "Cisplatin + Etoposide + Paclitaxel"
+          ],
+          "name": "cisplatin",
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "Cisplatin + Etoposide",
+            "Cisplatin + Etoposide + Paclitaxel"
+          ],
+          "name": "etoposide",
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "Cisplatin + Etoposide + Paclitaxel"
+          ],
+          "name": "paclitaxel",
+          "type": "DRUG"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Lung Cancer"
+      ],
+      "keywords": [
+        "extensive stage small cell lung cancer"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Scottsdale",
+          "country": "United States",
+          "facility": "CCOP - Scottsdale Oncology Program",
+          "geoPoint": {
+            "lat": 33.50921,
+            "lon": -111.89903
+          },
+          "state": "Arizona",
+          "zip": "85259-5404"
+        },
+        {
+          "city": "Peoria",
+          "country": "United States",
+          "facility": "CCOP - Illinois Oncology Research Association",
+          "geoPoint": {
+            "lat": 40.69365,
+            "lon": -89.58899
+          },
+          "state": "Illinois",
+          "zip": "61602"
+        },
+        {
+          "city": "Urbana",
+          "country": "United States",
+          "facility": "CCOP - Carle Cancer Center",
+          "geoPoint": {
+            "lat": 40.11059,
+            "lon": -88.20727
+          },
+          "state": "Illinois",
+          "zip": "61801"
+        },
+        {
+          "city": "Cedar Rapids",
+          "country": "United States",
+          "facility": "CCOP - Cedar Rapids Oncology Project",
+          "geoPoint": {
+            "lat": 42.00833,
+            "lon": -91.64407
+          },
+          "state": "Iowa",
+          "zip": "52403-1206"
+        },
+        {
+          "city": "Des Moines",
+          "country": "United States",
+          "facility": "CCOP - Iowa Oncology Research Association",
+          "geoPoint": {
+            "lat": 41.60054,
+            "lon": -93.60911
+          },
+          "state": "Iowa",
+          "zip": "50309-1016"
+        },
+        {
+          "city": "Sioux City",
+          "country": "United States",
+          "facility": "Siouxland Hematology-Oncology",
+          "geoPoint": {
+            "lat": 42.49999,
+            "lon": -96.40031
+          },
+          "state": "Iowa",
+          "zip": "51101-1733"
+        },
+        {
+          "city": "Wichita",
+          "country": "United States",
+          "facility": "CCOP - Wichita",
+          "geoPoint": {
+            "lat": 37.69224,
+            "lon": -97.33754
+          },
+          "state": "Kansas",
+          "zip": "67214-3882"
+        },
+        {
+          "city": "Ann Arbor",
+          "country": "United States",
+          "facility": "CCOP - Ann Arbor Regional",
+          "geoPoint": {
+            "lat": 42.27756,
+            "lon": -83.74088
+          },
+          "state": "Michigan",
+          "zip": "48106"
+        },
+        {
+          "city": "Duluth",
+          "country": "United States",
+          "facility": "CCOP - Duluth",
+          "geoPoint": {
+            "lat": 46.78327,
+            "lon": -92.10658
+          },
+          "state": "Minnesota",
+          "zip": "55805"
+        },
+        {
+          "city": "Rochester",
+          "country": "United States",
+          "facility": "Mayo Clinic Cancer Center",
+          "geoPoint": {
+            "lat": 44.02163,
+            "lon": -92.4699
+          },
+          "state": "Minnesota",
+          "zip": "55905"
+        },
+        {
+          "city": "Saint Cloud",
+          "country": "United States",
+          "facility": "CentraCare Clinic",
+          "geoPoint": {
+            "lat": 45.5608,
+            "lon": -94.16249
+          },
+          "state": "Minnesota",
+          "zip": "56303"
+        },
+        {
+          "city": "Omaha",
+          "country": "United States",
+          "facility": "CCOP - Missouri Valley Cancer Consortium",
+          "geoPoint": {
+            "lat": 41.25626,
+            "lon": -95.94043
+          },
+          "state": "Nebraska",
+          "zip": "68131"
+        },
+        {
+          "city": "Bismarck",
+          "country": "United States",
+          "facility": "Medcenter One Health System",
+          "geoPoint": {
+            "lat": 46.80833,
+            "lon": -100.78374
+          },
+          "state": "North Dakota",
+          "zip": "58501"
+        },
+        {
+          "city": "Fargo",
+          "country": "United States",
+          "facility": "CCOP - Merit Care Hospital",
+          "geoPoint": {
+            "lat": 46.87719,
+            "lon": -96.7898
+          },
+          "state": "North Dakota",
+          "zip": "58122"
+        },
+        {
+          "city": "Grand Forks",
+          "country": "United States",
+          "facility": "Altru Health Systems",
+          "geoPoint": {
+            "lat": 47.92526,
+            "lon": -97.03285
+          },
+          "state": "North Dakota",
+          "zip": "58201"
+        },
+        {
+          "city": "Toledo",
+          "country": "United States",
+          "facility": "CCOP - Toledo Community Hospital Oncology Program",
+          "geoPoint": {
+            "lat": 41.66394,
+            "lon": -83.55521
+          },
+          "state": "Ohio",
+          "zip": "43623-3456"
+        },
+        {
+          "city": "Danville",
+          "country": "United States",
+          "facility": "CCOP - Geisinger Clinic and Medical Center",
+          "geoPoint": {
+            "lat": 40.96342,
+            "lon": -76.61273
+          },
+          "state": "Pennsylvania",
+          "zip": "17822-2001"
+        },
+        {
+          "city": "Rapid City",
+          "country": "United States",
+          "facility": "Rapid City Regional Hospital",
+          "geoPoint": {
+            "lat": 44.08054,
+            "lon": -103.23101
+          },
+          "state": "South Dakota",
+          "zip": "57709"
+        },
+        {
+          "city": "Sioux Falls",
+          "country": "United States",
+          "facility": "CCOP - Sioux Community Cancer Consortium",
+          "geoPoint": {
+            "lat": 43.54369,
+            "lon": -96.72796
+          },
+          "state": "South Dakota",
+          "zip": "57105-1080"
+        },
+        {
+          "city": "Regina",
+          "country": "Canada",
+          "facility": "Allan Blair Cancer Centre",
+          "geoPoint": {
+            "lat": 50.45008,
+            "lon": -104.6178
+          },
+          "state": "Saskatchewan",
+          "zip": "S4T 7T1"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "Veterans Affairs Medical Center - Memphis",
+          "name": "Harvey B. Niell, MD",
+          "role": "STUDY_CHAIR"
+        },
+        {
+          "affiliation": "Mayo Clinic",
+          "name": "Randolph S. Marks, MD",
+          "role": "STUDY_CHAIR"
+        },
+        {
+          "affiliation": "Vanderbilt-Ingram Cancer Center",
+          "name": "Alan B. Sandler, MD",
+          "role": "STUDY_CHAIR"
+        },
+        {
+          "affiliation": "University of Colorado, Denver",
+          "name": "Karen Kelly, MD",
+          "role": "STUDY_CHAIR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "RATIONALE: Drugs used in chemotherapy use different ways to stop tumor cells from dividing so they stop growing or die. Combining more than one drug may kill more tumor cells. It is not yet known whether cisplatin, etoposide, and paclitaxel are more effective than cisplatin and etoposide alone in treating patients with extensive-stage small cell lung cancer.\n\nPURPOSE: Randomized phase III trial to compare the effectiveness of cisplatin plus etoposide with or without paclitaxel in treating patients with extensive-stage small cell lung cancer.",
+      "detailedDescription": "OBJECTIVES: I. Determine whether the addition of paclitaxel to standard chemotherapy treatment comprising etoposide and cisplatin improves the survival of patients with extensive stage small cell lung cancer. II. Compare the tumor response rate and failure-free survival of these patients treated with these regimens. III. Describe and compare the toxic effects associated with these regimens in these patients.\n\nOUTLINE: This is a randomized study. Patients are stratified according to performance status and gender. Patients are randomized to one of two treatment arms. Arm I: Patients receive cisplatin IV on day 1 and etoposide IV over 1 hour on days 1-3. Arm II: Patients receive paclitaxel IV over 3 hours on day 1 and cisplatin and etoposide as in arm I. Patients then receive filgrastim (G-CSF) subcutaneously on days 4-18. Treatment repeats in both arms every 21 days for up to 6 courses in the absence of disease progression or unacceptable toxicity. Patients are followed at least every 2 months for 2 years, every 4 months for 1 year, and then at least every 6 months for 2 years.\n\nPROJECTED ACCRUAL: Approximately 670 patients (335 per arm) will be accrued for this study within 16 months."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "maskingInfo": {
+          "masking": "NONE"
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 587,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "DISEASE CHARACTERISTICS: Histologically or cytologically documented extensive stage small cell carcinoma of the bronchus Measurable or evaluable disease No pleural effusions, bone scan abnormalities, or bone marrow biopsies as only evidence of disease\n\nPATIENT CHARACTERISTICS: Age: 18 and over Performance status: CALGB 0-1 Hematopoietic: Granulocyte count at least 1,500/mm3 Platelet count at least 100,000/mm3 Hepatic: Bilirubin less than 1.5 mg/dL SGOT less than 2 times normal Renal: Serum creatinine no greater than 1.5 mg/dL Cardiovascular: No cardiac disease Pulmonary: No interstitial pneumonia No fibroid lung Other: Not pregnant or nursing Fertile patients must use effective contraception No psychiatric illness No malabsorption disorder No uncontrolled infection No uncontrolled diabetes mellitus No prior or concurrent malignancy within the past 5 years except carcinoma in situ of the cervix or basal cell skin cancer\n\nPRIOR CONCURRENT THERAPY: Biologic therapy: Not specified Chemotherapy: No prior chemotherapy for small cell lung cancer No other concurrent chemotherapy Endocrine therapy: No chronic steroid therapy (except steroids for adrenal failure or hormones for non-disease related conditions) Radiotherapy: No prior pelvic or mediastinal radiotherapy Surgery: Not specified Other: No concurrent anticonvulsants",
+      "healthyVolunteers": false,
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "Cisplatin Plus Etoposide With or Without Paclitaxel in Treating Patients With Extensive-Stage Small Cell Lung Cancer",
+      "nctId": "NCT00003299",
+      "officialTitle": "A Randomized Phase III Study Comparing Etoposide and Cisplatin With Etoposide, Cisplatin and Paclitaxel in Patients With Extensive Small Cell Lung Cancer",
+      "orgStudyIdInfo": {
+        "id": "CALGB-9732"
+      },
+      "organization": {
+        "class": "OTHER",
+        "fullName": "Alliance for Clinical Trials in Oncology"
+      },
+      "secondaryIdInfos": [
+        {
+          "id": "U10CA031946",
+          "link": "https://reporter.nih.gov/quickSearch/U10CA031946",
+          "type": "NIH"
+        },
+        {
+          "id": "CLB-9732"
+        },
+        {
+          "id": "E-C9732"
+        },
+        {
+          "id": "NCCTG-C9732"
+        },
+        {
+          "id": "SWOG-C9732"
+        },
+        {
+          "domain": "NCI Physician Desk Reference",
+          "id": "CDR0000066238",
+          "type": "REGISTRY"
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "measure": "overall survival",
+          "timeFrame": "Up to 5 years"
+        },
+        {
+          "measure": "response rate",
+          "timeFrame": "Up to 5 years"
+        },
+        {
+          "measure": "failure-free survival",
+          "timeFrame": "Up to 5 years"
+        }
+      ]
+    },
+    "oversightModule": {
+      "oversightHasDmc": true
+    },
+    "referencesModule": {
+      "references": [
+        {
+          "citation": "Blackstock AW, Herndon JE 2nd, Paskett ED, Miller AA, Lathan C, Niell HB, Socinski MA, Vokes EE, Green MR; Cancer and Leukemia Group B. Similar outcomes between African American and non-African American patients with extensive-stage small-cell lung carcinoma: report from the Cancer and Leukemia Group B. J Clin Oncol. 2006 Jan 20;24(3):407-12. doi: 10.1200/JCO.2005.02.1436. Epub 2005 Dec 19.",
+          "pmid": "16365181",
+          "type": "BACKGROUND"
+        },
+        {
+          "citation": "Niell HB, Herndon JE 2nd, Miller AA, Watson DM, Sandler AB, Kelly K, Marks RS, Perry MC, Ansari RH, Otterson G, Ellerton J, Vokes EE, Green MR; Cancer and Leukemia Group. Randomized phase III intergroup trial of etoposide and cisplatin with or without paclitaxel and granulocyte colony-stimulating factor in patients with extensive-stage small-cell lung cancer: Cancer and Leukemia Group B Trial 9732. J Clin Oncol. 2005 Jun 1;23(16):3752-9. doi: 10.1200/JCO.2005.09.071.",
+          "pmid": "15923572",
+          "type": "RESULT"
+        },
+        {
+          "citation": "Niell HB, Herndon JE, Miller AA, et al.: Randomized phase III intergroup trial (CALGB 9732) of etoposide (VP-16) and cisplatin (DDP) with or without paclitaxel (TAX) and G-CSF in patients with extensive stage small cell lung cancer (ED-SCLC). [Abstract] Proceedings of the American Society of Clinical Oncology 21: A-1169, 2002.",
+          "type": "RESULT"
+        },
+        {
+          "citation": "Marzano L, Darwich AS, Dan A, Tendler S, Lewensohn R, De Petris L, Raghothama J, Meijer S. Exploring the discrepancies between clinical trials and real-world data: A small-cell lung cancer study. Clin Transl Sci. 2024 Aug;17(8):e13909. doi: 10.1111/cts.13909.",
+          "pmid": "39113428",
+          "type": "DERIVED"
+        },
+        {
+          "citation": "Ventz S, Khozin S, Louv B, Sands J, Wen PY, Rahman R, Comment L, Alexander BM, Trippa L. The design and evaluation of hybrid controlled trials that leverage external data and randomization. Nat Commun. 2022 Oct 2;13(1):5783. doi: 10.1038/s41467-022-33192-1.",
+          "pmid": "36184621",
+          "type": "DERIVED"
+        }
+      ]
+    },
+    "sponsorCollaboratorsModule": {
+      "collaborators": [
+        {
+          "class": "NIH",
+          "name": "National Cancer Institute (NCI)"
+        },
+        {
+          "class": "NETWORK",
+          "name": "North Central Cancer Treatment Group"
+        },
+        {
+          "class": "NETWORK",
+          "name": "Eastern Cooperative Oncology Group"
+        },
+        {
+          "class": "NETWORK",
+          "name": "SWOG Cancer Research Network"
+        }
+      ],
+      "leadSponsor": {
+        "class": "OTHER",
+        "name": "Alliance for Clinical Trials in Oncology"
+      },
+      "responsibleParty": {
+        "type": "SPONSOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2006-01",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2016-07-20",
+        "type": "ESTIMATED"
+      },
+      "lastUpdateSubmitDate": "2016-07-19",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2005-06",
+        "type": "ACTUAL"
+      },
+      "startDateStruct": {
+        "date": "1998-04"
+      },
+      "statusVerifiedDate": "2016-07",
+      "studyFirstPostDateStruct": {
+        "date": "2004-02-20",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "1999-11-01",
+      "studyFirstSubmitQcDate": "2004-02-19"
+    }
+  }
+}

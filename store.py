@@ -100,6 +100,11 @@ def add_verdict(run_id, batch, v, cond):
 def quarantine(run_id, from_batch):
     ids = [r["nct_id"] for r in q("SELECT DISTINCT nct_id FROM verdicts WHERE run_id=? AND batch>=?", (run_id, from_batch))]
     x("UPDATE verdicts SET quarantined=1 WHERE run_id=? AND batch>=?", (run_id, from_batch))
+    started = q("SELECT started FROM runs WHERE run_id=?", (run_id,))
+    for n in ids:
+        if started:
+            x("UPDATE drafts SET status='WITHHELD', updated=? WHERE nct_id=? AND created>=? AND status IN ('DRAFT','APPROVED')",
+              (time.time(), n, started[0]["started"]))
     for n in ids:
         set_status(n, "quarantined", run_id)
     return ids

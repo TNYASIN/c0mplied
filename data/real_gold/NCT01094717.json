@@ -1,0 +1,1118 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D017444",
+          "term": "Skin Diseases, Papulosquamous"
+        },
+        {
+          "id": "D012871",
+          "term": "Skin Diseases"
+        },
+        {
+          "id": "D017437",
+          "term": "Skin and Connective Tissue Diseases"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D011565",
+          "term": "Psoriasis"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D012176",
+          "term": "Retinoids"
+        },
+        {
+          "id": "D002338",
+          "term": "Carotenoids"
+        },
+        {
+          "id": "D011090",
+          "term": "Polyenes"
+        },
+        {
+          "id": "D000475",
+          "term": "Alkenes"
+        },
+        {
+          "id": "D006839",
+          "term": "Hydrocarbons, Acyclic"
+        },
+        {
+          "id": "D006838",
+          "term": "Hydrocarbons"
+        },
+        {
+          "id": "D009930",
+          "term": "Organic Chemicals"
+        },
+        {
+          "id": "D013729",
+          "term": "Terpenes"
+        },
+        {
+          "id": "D010860",
+          "term": "Pigments, Biological"
+        },
+        {
+          "id": "D001685",
+          "term": "Biological Factors"
+        },
+        {
+          "id": "D007834",
+          "term": "Lasers"
+        },
+        {
+          "id": "D055096",
+          "term": "Optical Devices"
+        },
+        {
+          "id": "D004864",
+          "term": "Equipment and Supplies"
+        },
+        {
+          "id": "D055618",
+          "term": "Radiation Equipment and Supplies"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D017255",
+          "term": "Acitretin"
+        },
+        {
+          "id": "D054018",
+          "term": "Lasers, Excimer"
+        },
+        {
+          "id": "C086827",
+          "term": "tazarotene"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "description": "patients enrolled in the acitretin arm will be treated with acitretin 25 mg daily and excimer (active) to randomly assigned left or right side of body psoriasis lesions.",
+          "interventionNames": [
+            "Drug: Acitretin 25Mg Oral Capsule",
+            "Device: Excimer laser"
+          ],
+          "label": "acitretin and active excimer laser",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "Patients in this arm were treated with acitretin 25 mg daily and sham (placebo) excimer laser to randomly assigned left or right side of body psoriasis lesions.",
+          "interventionNames": [
+            "Drug: Acitretin 25Mg Oral Capsule",
+            "Device: Sham excimer laser"
+          ],
+          "label": "acitretin and sham excimer laser",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "patients enrolled in this arm were treated with tazarotene 0.1% gel topical application daily and excimer (active) laser to randomly assigned left or right side of body psoriasis lesions.",
+          "interventionNames": [
+            "Device: Excimer laser",
+            "Drug: Tazarotene 0.1% Gel,Top"
+          ],
+          "label": "tazarotene and active excimer laser",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "patients enrolled in this arm were treated with tazarotene 0.1% gel topical application daily and sham excimer laser to randomly assigned left or right side of body psoriasis lesions.",
+          "interventionNames": [
+            "Drug: Tazarotene 0.1% Gel,Top",
+            "Device: Sham excimer laser"
+          ],
+          "label": "tazarotene and sham excimer laser",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "acitretin and active excimer laser",
+            "acitretin and sham excimer laser"
+          ],
+          "description": "Acitretin 25 mg oral daily for 12 weeks",
+          "name": "Acitretin 25Mg Oral Capsule",
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "acitretin and active excimer laser",
+            "tazarotene and active excimer laser"
+          ],
+          "description": "Lesions on randomly assigned left or right side of body were treated with 308nm excimer laser.",
+          "name": "Excimer laser",
+          "type": "DEVICE"
+        },
+        {
+          "armGroupLabels": [
+            "tazarotene and active excimer laser",
+            "tazarotene and sham excimer laser"
+          ],
+          "description": "Topical tazarotene 0.1% gel was applied daily to active lesions.",
+          "name": "Tazarotene 0.1% Gel,Top",
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "acitretin and sham excimer laser",
+            "tazarotene and sham excimer laser"
+          ],
+          "description": "Lesions on randomly assigned left or right side of body were treated with sham excimer laser (opaque cover on the laser device).",
+          "name": "Sham excimer laser",
+          "type": "DEVICE"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Psoriasis"
+      ],
+      "keywords": [
+        "psoriasis",
+        "excimer",
+        "acitretin",
+        "tazarotene"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Salt Lake City",
+          "country": "United States",
+          "facility": "University of Utah Department of Dermatology",
+          "geoPoint": {
+            "lat": 40.76078,
+            "lon": -111.89105
+          },
+          "state": "Utah",
+          "zip": "84132"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "University of Utah",
+          "name": "Kristina C Duffin, MD",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "This is a randomized, double-blind study of excimer (308-nm UVB) laser added to either tazarotene 0.1% gel or acitretin 25 mg daily for plaque psoriasis.\n\nThe primary objective of this study is to compare the improvement of psoriatic plaques with and without excimer laser (308-nm UVB) treatment, applied in a randomized and blinded fashion, in subjects on acitretin 25 mg or tazarotene gel 0.1% QD.",
+      "detailedDescription": "The hypothesis of this study is that excimer (308-nm UVB) laser added to either tazarotene 0.1% gel or acitretin 25 mg daily will lead to improved efficacy of these treatments alone.\n\nThe primary objective of this study is to compare the improvement of psoriatic plaques with and without excimer laser (308-nm UVB) treatment, applied in a randomized and blinded fashion, in subjects on acitretin 25 mg or tazarotene gel 0.1% QD. The primary endpoint will be the comparison between the change in NPF score of plaques treated with excimer laser and those treated with sham treatment.\n\nThe secondary objectives are to compare the number of excimer light treatments and time necessary to achieve an average lesion assessment score of 0 to 1 in subjects treated with acitretin 25 mg PO or tazarotene gel 0.1% QD, and to evaluate adverse events related to combinations of the study treatments."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "maskingInfo": {
+          "masking": "DOUBLE",
+          "maskingDescription": "Excimer laser active and comparator were delivered the same way by a non-blinded person who applies a cap to the laser head to block UV rays for a sham administration. The masking was done by blindfolding the patients so they could not see which side was treated with active or sham laser. The outcomes assessor did their assessment in a separate room and access restricted to the randomization assignments.",
+          "whoMasked": [
+            "PARTICIPANT",
+            "OUTCOMES_ASSESSOR"
+          ]
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 13,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "NA"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Must give written informed consent\n* Must be at least 18 years old\n* Must have been diagnosed with stable plaque type psoriasis covering between 1 and 5% BSA\n* NPF-PS ≥8 (based additive scores averaged over all lesions for erythema, scale, and thickness range of score = 0-5)\n* No systemic or phototherapy in the 4 wks prior to entering the study\n* No topical therapy other than emollients (no corticosteroids, vitamin D analogs, vitamin A analogs) in the 2 wks prior to entering the study\n* Women on tazarotene gel must not be pregnant nor planning to become pregnant during the study and must be on two forms of birth control\n* Subjects known to not tolerate oral acitretin at 25 mg/day and women of child-bearing potential may be enrolled and treated with topical tazarotene gel 0.1%\n\nExclusion Criteria:\n\nCandidates will be excluded from study entry if any of the following exclusion criteria exist at the time of enrollment:\n\n* Unstable disease\n* Only treatable sites are in intertriginous areas or on face\n* Subjects unable to tolerate frequency of visits\n* NPF-PS severity score \\<8 additive score of erythema, scale, and thickness, averaged over all lesions\n* History of inability to tolerate topical tazarotene 0.1% gel and or acitretin 25 mg/day\n* Women of childbearing potential are excluded from the actretin arm of the study.",
+      "healthyVolunteers": false,
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "Acitretin or Tazarotene Gel and Excimer Laser for Treatment of Psoriasis",
+      "nctId": "NCT01094717",
+      "officialTitle": "A Comparison of Treatment of Psoriasis With Acitretin or Tazarotene Gel 0.1% and Active or Sham Treatments With the 308 nm Excimer Laser",
+      "orgStudyIdInfo": {
+        "id": "IRB_00031865"
+      },
+      "organization": {
+        "class": "OTHER",
+        "fullName": "University of Utah"
+      }
+    },
+    "ipdSharingStatementModule": {
+      "ipdSharing": "NO"
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "mean % change in the National Psoriasis Foundation (NPF) psoriasis score of the target plaques \\[higher percent change in NPF score is consistent with improvement, while higher absolute NPF score is consistent with worse disease, minimum score of 0 (no disease) and maximum score of 30 (worst disease)\\]",
+          "measure": "Change in the NPF Psoriasis Score of Plaques",
+          "timeFrame": "week 8"
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "description": "number of patients who achieved average lesion assessment score of 0 or 1 by the Target Plaque Sum Score (TPSS) for each arm/intervention. For the TPSS, the target plaque was assessed separately for induration, scaling, and erythema using a 6-point severity scale (0 = none and 5 = severe) and the scores were summed to produce the Target Plaque Sum Score \\[15-point scale; maximum (most severe) score 15\\].",
+          "measure": "Number of Patients That Achieved an Average Lesion Assessment Score of 0 or 1 at Week 12.",
+          "timeFrame": "8 weeks"
+        },
+        {
+          "description": "We will collect number and types of adverse events for the excimer-treated vs. sham-treated sites",
+          "measure": "Number of Participants With Adverse Events",
+          "timeFrame": "12 weeks"
+        }
+      ]
+    },
+    "oversightModule": {
+      "oversightHasDmc": false
+    },
+    "sponsorCollaboratorsModule": {
+      "leadSponsor": {
+        "class": "OTHER",
+        "name": "University of Utah"
+      },
+      "responsibleParty": {
+        "investigatorAffiliation": "University of Utah",
+        "investigatorFullName": "Kristina Callis",
+        "investigatorTitle": "Assistant Professor",
+        "type": "PRINCIPAL_INVESTIGATOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2011-10",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2019-06-26",
+        "type": "ACTUAL"
+      },
+      "lastUpdateSubmitDate": "2019-06-06",
+      "overallStatus": "TERMINATED",
+      "primaryCompletionDateStruct": {
+        "date": "2011-09",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2019-06-26",
+        "type": "ACTUAL"
+      },
+      "resultsFirstSubmitDate": "2016-10-03",
+      "resultsFirstSubmitQcDate": "2019-06-06",
+      "startDateStruct": {
+        "date": "2010-01"
+      },
+      "statusVerifiedDate": "2019-06",
+      "studyFirstPostDateStruct": {
+        "date": "2010-03-29",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2010-03-25",
+      "studyFirstSubmitQcDate": "2010-03-25",
+      "whyStopped": "lack of efficacy and lack of funding"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "eventGroups": [
+        {
+          "description": "excimer vs sham excimer: half of lesions will be treated with excimer laser; half of lesions will be treated with sham excimer (opaque cover on the laser device)",
+          "id": "EG000",
+          "otherNumAffected": 2,
+          "otherNumAtRisk": 3,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 3,
+          "title": "Acitretin and Excimer"
+        },
+        {
+          "description": "excimer vs sham excimer: half of lesions will be treated with excimer laser; half of lesions will be treated with sham excimer (opaque cover on the laser device)",
+          "id": "EG001",
+          "otherNumAffected": 4,
+          "otherNumAtRisk": 10,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 10,
+          "title": "Tazarotene and Excimer"
+        }
+      ],
+      "frequencyThreshold": "0",
+      "otherEvents": [
+        {
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 3,
+              "numEvents": 2
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 10,
+              "numEvents": 0
+            }
+          ],
+          "term": "Dry lips"
+        },
+        {
+          "organSystem": "Eye disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 3,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 10,
+              "numEvents": 0
+            }
+          ],
+          "term": "Dry eyes"
+        },
+        {
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 3,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 10,
+              "numEvents": 0
+            }
+          ],
+          "term": "Myalgia"
+        },
+        {
+          "organSystem": "Psychiatric disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 3,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 10,
+              "numEvents": 0
+            }
+          ],
+          "term": "Irritability"
+        },
+        {
+          "organSystem": "General disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 3,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 10,
+              "numEvents": 0
+            }
+          ],
+          "term": "Rigors"
+        },
+        {
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 3,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 10,
+              "numEvents": 1
+            }
+          ],
+          "term": "Bump on figner"
+        },
+        {
+          "organSystem": "Endocrine disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 3,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 10,
+              "numEvents": 0
+            }
+          ],
+          "term": "Elevated triglycerides"
+        },
+        {
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 3,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 10,
+              "numEvents": 1
+            }
+          ],
+          "term": "Eczema"
+        },
+        {
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 3,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 10,
+              "numEvents": 1
+            }
+          ],
+          "term": "Hyperpigmentation"
+        },
+        {
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 3,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 10,
+              "numEvents": 3
+            }
+          ],
+          "term": "Blister"
+        },
+        {
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 3,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 10,
+              "numEvents": 1
+            }
+          ],
+          "term": "Inflamed seborrheic keratosis"
+        }
+      ]
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "3"
+            },
+            {
+              "groupId": "BG001",
+              "value": "10"
+            },
+            {
+              "groupId": "BG002",
+              "value": "13"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "description": "excimer vs sham excimer: half of lesions will be treated with excimer laser; half of lesions will be treated with sham excimer (opaque cover on the laser device)",
+          "id": "BG000",
+          "title": "Acitretin and Excimer"
+        },
+        {
+          "description": "excimer vs sham excimer: half of lesions will be treated with excimer laser; half of lesions will be treated with sham excimer (opaque cover on the laser device)",
+          "id": "BG001",
+          "title": "Tazarotene and Excimer"
+        },
+        {
+          "description": "Total of all reporting groups",
+          "id": "BG002",
+          "title": "Total"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    }
+                  ],
+                  "title": "<=18 years"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "2"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "8"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "10"
+                    }
+                  ],
+                  "title": "Between 18 and 65 years"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "2"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "3"
+                    }
+                  ],
+                  "title": ">=65 years"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Age, Categorical",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "19.4",
+                      "value": "46.6"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "spread": "17.2",
+                      "value": "46.4"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "spread": "16.9",
+                      "value": "46.6"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Age, Continuous",
+          "unitOfMeasure": "years"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "4"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "4"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "3"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "6"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "9"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "3"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "10"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "13"
+                    }
+                  ]
+                }
+              ],
+              "title": "United States"
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Region of Enrollment",
+          "unitOfMeasure": "Participants"
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": true
+      },
+      "pointOfContact": {
+        "email": "Kristina.Duffin@hsc.utah.edu",
+        "organization": "University of Utah, Derpartment of Dermatology",
+        "phone": "8015816465",
+        "title": "Kristina Callis-Duffin"
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "26.5",
+                      "value": "-64.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "36.3",
+                      "value": "-52.1"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "10.4",
+                      "value": "-32.7"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "spread": "12.8",
+                      "value": "-26.9"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "3"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "3"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "10"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "mean % change in the National Psoriasis Foundation (NPF) psoriasis score of the target plaques \\[higher percent change in NPF score is consistent with improvement, while higher absolute NPF score is consistent with worse disease, minimum score of 0 (no disease) and maximum score of 30 (worst disease)\\]",
+          "dispersionType": "Standard Deviation",
+          "groups": [
+            {
+              "description": "patients received acitretin 25 mg daily and active excimer laser excimer twice weekly to lesions on one of half of the body that was assigned to active laser (left or right determined by randomization)",
+              "id": "OG000",
+              "title": "Acitretin and Excimer"
+            },
+            {
+              "description": "patients received acitretin 25 mg daily and sham (placebo) excimer twice weekly to lesions on one of half of the body that was assigned to sham (left or right determined by randomization)",
+              "id": "OG001",
+              "title": "Acitretin and Sham (Placebo) Excimer"
+            },
+            {
+              "description": "patients received topical tazarotene gel 0.1% applied to all lesions daily, and active excimer laser excimer twice weekly to lesions on one of half of the body that was assigned to active laser (left or right determined by randomization)",
+              "id": "OG002",
+              "title": "Tazarotene Gel and Excimer Laser"
+            },
+            {
+              "description": "patients receive tazarotene gel 0.1% applied daily to all lesions, and sham excimer twice weekly to lesions on one of half of the body that was assigned to sham (left or right determined by randomization)",
+              "id": "OG003",
+              "title": "Tazarotene Gel and Sham (Placebo) Excimer"
+            }
+          ],
+          "paramType": "MEAN",
+          "reportingStatus": "POSTED",
+          "timeFrame": "week 8",
+          "title": "Change in the NPF Psoriasis Score of Plaques",
+          "type": "PRIMARY",
+          "unitOfMeasure": "percentage change"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "3"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "3"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "10"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "number of patients who achieved average lesion assessment score of 0 or 1 by the Target Plaque Sum Score (TPSS) for each arm/intervention. For the TPSS, the target plaque was assessed separately for induration, scaling, and erythema using a 6-point severity scale (0 = none and 5 = severe) and the scores were summed to produce the Target Plaque Sum Score \\[15-point scale; maximum (most severe) score 15\\].",
+          "groups": [
+            {
+              "description": "patients enrolled in the acitretin arm will be treated with acitretin 25 mg daily and excimer (active) to one side of the body and sham excimer (placebo) to the to the other side of body.\n\nexcimer vs sham excimer: half of lesions will be treated with excimer laser; half of lesions will be treated with sham excimer (opaque cover on the laser device)",
+              "id": "OG000",
+              "title": "Acitretin and Excimer"
+            },
+            {
+              "description": "patients treated with acitretin 25 mg and sham excimer laser.",
+              "id": "OG001",
+              "title": "Acitretin and Sham Excimer Laser"
+            },
+            {
+              "description": "patients enrolled in the tazarotene arm will be treated with topical tazarotene 0.1% gel and excimer (active) to one side of the body and sham excimer (placebo) to the to the other side of body.\n\nexcimer vs sham excimer: half of lesions will be treated with excimer laser; half of lesions will be treated with sham excimer (opaque cover on the laser device)",
+              "id": "OG002",
+              "title": "Tazarotene and Excimer"
+            },
+            {
+              "description": "patients receiving tazotene gel 0.1% and sham excimer laser to half of body.",
+              "id": "OG003",
+              "title": "Tazarotene and Sham Excimer Laser"
+            }
+          ],
+          "paramType": "NUMBER",
+          "reportingStatus": "POSTED",
+          "timeFrame": "8 weeks",
+          "title": "Number of Patients That Achieved an Average Lesion Assessment Score of 0 or 1 at Week 12.",
+          "type": "SECONDARY",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "2"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "4"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "4"
+                    }
+                  ]
+                }
+              ],
+              "title": "any adverse event"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "severe adverse events"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "3"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "3"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "10"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "10"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "We will collect number and types of adverse events for the excimer-treated vs. sham-treated sites",
+          "groups": [
+            {
+              "description": "patients enrolled in the acitretin arm will be treated with acitretin 25 mg daily and excimer (active) to randomly assigned left or right side of body psoriasis lesions.\n\nexcimer laser (active): Lesions on randomly assigned left or right side of body were treated with active excimer laser by an increasing dose level per a standard of care protocol.\n\nAcitretin 25 MG: Patients assigned to this intervention took oral acitretin 25 mg daily.",
+              "id": "OG000",
+              "title": "Acitretin and Active Excimer Laser"
+            },
+            {
+              "description": "Patients in this arm were treated with acitretin 25 mg daily and sham (placebo) excimer laser to randomly assigned left or right side of body psoriasis lesions.\n\nexcimer laser (sham): Lesions on randomly assigned left or right side of body were treated with sham excimer laser (opaque cover on the laser device).\n\nAcitretin 25 MG: Patients assigned to this intervention took oral acitretin 25 mg daily.",
+              "id": "OG001",
+              "title": "Acitretin and Sham Excimer Laser"
+            },
+            {
+              "description": "patients enrolled in this arm were treated with tazarotene 0.1% gel topical application daily and excimer (active) laser to randomly assigned left or right side of body psoriasis lesions.\n\nexcimer laser (active): Lesions on randomly assigned left or right side of body were treated with active excimer laser by an increasing dose level per a standard of care protocol.\n\nTazarotene 0.1% gel: Patients assigned to this intervention applied topical tazarotene gel 0.1% to all lesions daily.",
+              "id": "OG002",
+              "title": "Tazarotene and Active Excimer Laser"
+            },
+            {
+              "description": "patients enrolled in this arm were treated with tazarotene 0.1% gel topical application daily and sham excimer laser to randomly assigned left or right side of body psoriasis lesions.\n\nexcimer laser (sham): Lesions on randomly assigned left or right side of body were treated with sham excimer laser (opaque cover on the laser device).\n\nAcitretin 25 MG: Patients assigned to this intervention took oral acitretin 25 mg daily.",
+              "id": "OG003",
+              "title": "Tazarotene and Sham Excimer Laser"
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "reportingStatus": "POSTED",
+          "timeFrame": "12 weeks",
+          "title": "Number of Participants With Adverse Events",
+          "type": "SECONDARY",
+          "unitOfMeasure": "Participants"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "Patients treated with acitretin 25 mg daily and active excimer laser to lesions on one half of the body (side assigned to active laser) and sham excimer laser (opaque cover on laser lens)to lesions on the other half of the body (side assigned to sham laser).",
+          "id": "FG000",
+          "title": "Acitretin and Excimer"
+        },
+        {
+          "description": "patients in this group applied tazarotene 0.1% gel to all lesions and active excimer laser used to treat lesions on one half of the body (side assigned to active laser) and sham excimer laser (opaque cover applied over laser lens) used to treat lesions on the other half of the body (side assigned to sham laser).",
+          "id": "FG001",
+          "title": "Tazarotene Gel and Excimer Laser"
+        }
+      ],
+      "periods": [
+        {
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "3"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "10"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "3"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "10"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "Overall Study"
+        }
+      ]
+    }
+  }
+}

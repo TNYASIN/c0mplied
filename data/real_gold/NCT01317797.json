@@ -1,0 +1,3873 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D012216",
+          "term": "Rheumatic Diseases"
+        },
+        {
+          "id": "D003240",
+          "term": "Connective Tissue Diseases"
+        },
+        {
+          "id": "D017437",
+          "term": "Skin and Connective Tissue Diseases"
+        },
+        {
+          "id": "D001327",
+          "term": "Autoimmune Diseases"
+        },
+        {
+          "id": "D007154",
+          "term": "Immune System Diseases"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "meshes": [
+        {
+          "id": "C000624713",
+          "term": "namilumab"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+          "interventionNames": [
+            "Drug: namilumab (MT203)"
+          ],
+          "label": "Namilumab 150 mg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+          "interventionNames": [
+            "Drug: namilumab (MT203)"
+          ],
+          "label": "Namilumab 300 mg",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+          "interventionNames": [
+            "Drug: Placebo"
+          ],
+          "label": "Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "Namilumab 150 mg",
+            "Namilumab 300 mg"
+          ],
+          "description": "administered three times, subcutaneous in the abdomen",
+          "name": "namilumab (MT203)",
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "Placebo"
+          ],
+          "description": "administered three times, subcutaneous in the abdomen",
+          "name": "Placebo",
+          "type": "DRUG"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "keywords": [
+        "Rheumatoid Arthritis",
+        "MT203",
+        "Human IgG1 monoclonal antibody",
+        "GM-CSF monoclonal antibody"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Sofia",
+          "country": "Bulgaria",
+          "facility": "Nycomed Investigational Site",
+          "geoPoint": {
+            "lat": 42.69751,
+            "lon": 23.32415
+          }
+        },
+        {
+          "city": "Leids",
+          "country": "Netherlands",
+          "facility": "Nycomed Investigational Site"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "The purpose of this trial is primarily to investigate the safety and tolerability of repeated subcutaneous injections of MT203 in patients with mild to moderate rheumatoid arthritis. Furthermore, the amount of MT203 in the blood will be measured and it will be investigated how the body responds to MT203 treatment and if MT203 is effective in the treatment of rheumatoid arthritis.",
+      "detailedDescription": "The trial medication will be administered at 2 dose levels as subcutaneous injections. Each patient will receive three injections in total. The trial duration consists of a screening period (28 - 2 days prior to the first injection) and a treatment and observation period (4 months). The trial requires approximately 20 visits at the study site."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "SINGLE_GROUP",
+        "maskingInfo": {
+          "masking": "QUADRUPLE",
+          "whoMasked": [
+            "PARTICIPANT",
+            "CARE_PROVIDER",
+            "INVESTIGATOR",
+            "OUTCOMES_ASSESSOR"
+          ]
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 24,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE1"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n1. Out-patients with active rheumatoid arthritis (RA), according to the ACR 1987 revised criteria, with low to moderate disease activity (DAS28-ESR ≥ 2.6 and ≤ 5.1)\n2. Patients must be on stable doses of methotrexate (MTX) ≥ 7.5 and ≤ 25 mg/week for at least 12 weeks before the first injection, with appropriate folic acid supplementation\n3. Age ≥ 18 years at Screening\n4. Body weight at least 50 kg at Screening; BMI: ≥ 18.0 and ≤ 30.0 kg/m2 at Screening\n5. Negative tuberculosis test at Screening\n6. Heterosexually active male and female patients of childbearing potential are obliged to follow whatever contraceptive and / or breastfeeding restrictions may be required for their concomitant medication(s), including methotrexate.\n\nIn addition, heterosexually active male and female patients of childbearing potential are required to use effective double-method contraception (one hormonal contraceptive or intrauterine device and one other additional contraceptive method) for 1 month before the first administration of the IMP, during the course of the trial, and for 6 month after the last injection of MT203.\n\nNo special requirements are made for female patients proven to be post-menopausal (at least 2 years after last menstrual period and FSH ≥ 40IU/L), surgically sterilized or hysterectomized. Likewise no special requirements for heterosexually active male who are surgical sterilized.\n\nPregnant or lactating female patients have to be excluded.\n\nExclusion Criteria:\n\n1. Participation in another clinical trial or previous dosing in this trial\n2. Use of specified medications within certain timeframes or use of certain comedications\n3. History or presence of specified diseases\n4. Drug abuse\n5. Certain laboratory parameters outside a specified range\n6. Donation of blood\n7. Relevant decrease in lung function\n8. Infections, frequent or chronic infections, herpes zoster\n9. Females: positive pregnancy test\n10. Presence of history of tuberculosis\n11. History of malignancy",
+      "healthyVolunteers": false,
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "acronym": "PRIORA",
+      "briefTitle": "A Trial to Evaluate the Safety and Tolerability of Namilumab (MT203) in Patients With Mild to Moderate Rheumatoid Arthritis",
+      "nctId": "NCT01317797",
+      "officialTitle": "A Phase Ib Double-blind, Placebo-controlled, Randomized, Dose-escalating Trial to Investigate the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics and Efficacy of Repeated Subcutaneous Injections of MT203 in Patients With Mild to Moderate Rheumatoid Arthritis on Treatment With Methotrexate",
+      "orgStudyIdInfo": {
+        "id": "M1-1188-002-EM"
+      },
+      "organization": {
+        "class": "INDUSTRY",
+        "fullName": "Takeda"
+      },
+      "secondaryIdInfos": [
+        {
+          "id": "2010-018502-36",
+          "type": "EUDRACT_NUMBER"
+        },
+        {
+          "domain": "WHO",
+          "id": "U1111-1137-3923",
+          "type": "REGISTRY"
+        },
+        {
+          "domain": "CCMO",
+          "id": "NL33507.058.10",
+          "type": "REGISTRY"
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "Blood was collected for Haematology, Chemistry and Coagulation. Urine was collected for Urinalysis. Alert values for laboratory results include the following: Aspartate aminotransferase (ASAT), alanine aminotransferase (ALAT), gamma-glutamyl-transpeptidase (GGT), alkaline phosphatase (AP), total bilirubin (TBil): \\> 3 times upper limit of normal (ULN). Creatinine and Glucose: \\> 2 times ULN. Potassium \\> 6.0 or \\< 3.0 mmol/L. Haemoglobin: Male \\< 8.0 ;Female \\< 7.0 g/dL. Erythrocytes :Male \\< 3.5 x 10\\^12/L or \\> 7 x 10\\^12/L;Female \\< 3.0 x 10\\^12/L or \\> 6.5 x 10\\^12/L. White Blood Cells (WBC): \\< 2.8 x10\\^9/L or \\> 16.0 x 10\\^9/L. Eosinophils \\> 20 % of cells in the WBC differential. Platelet Count \\< 75 x 10\\^9/L or 600 x 10\\^9/L. No alert values were identified for Coagulation or Urinalysis.",
+          "measure": "Number of Participants With Clinically Significant Clinical Laboratory Results",
+          "timeFrame": "From Day 1 Up to Day 118"
+        },
+        {
+          "description": "Alert values for ECG were: Heart rate \\< 35 bpm or \\> 120 bpm, QTc acc. to Bazett (absolute value)\\> 500 ms or QTc acc. to Bazett (increase versus Baseline (pre-treatment).",
+          "measure": "Number of Participants With Clinically Significant Electrocardiogram (ECG) Findings",
+          "timeFrame": "From Day 1 Up to Day 118"
+        },
+        {
+          "description": "Vital signs included Systolic Blood Pressure (BP), Diastolic BP, body temperature, heart rate. Alert values were: BP systolic \\> 170 mmHg or \\< 85 mmHg, BP diastolic \\> 105 mmHg, Difference BP systolic vs. Baseline (pre-treatment) \\> 40 mmHg or Pulse rate \\< 35 bpm or \\> 120 beats per minute (bpm).",
+          "measure": "Number of Participants With Clinically Significant Vital Signs",
+          "timeFrame": "From Day 1 Up to Day 118"
+        },
+        {
+          "description": "Pulmonary function was determined by forced expiratory volume in the first second (FEV1), forced vital capacity (FVC) and peak flow.",
+          "measure": "Number of Participants With Clinically Significant Pulmonary Function Tests",
+          "timeFrame": "From Day 1 Up to Day 118"
+        },
+        {
+          "description": "The physical examination included body system assessments: eyes, head and neck (including thyroid), ears, nose and throat, lymph nodes, cardiovascular, lungs, mammae, abdomen (liver, spleen), genitals, limbs, central and peripheral nervous system, musculoskeletal system, skin \\& nails, mucosae. The Investigator classified abnormal findings as either clinically significant or not clinically significant.",
+          "measure": "Number of Participants With Clinically Significant Physical Examination Findings",
+          "timeFrame": "From Day 1 Up to Day 118"
+        },
+        {
+          "description": "An Adverse Event (AE) was defined as any untoward medical occurrence in a clinical investigation participant administered a drug; it does not necessarily have to have a causal relationship with this treatment. An AE can therefore be any unfavorable and unintended sign (eg, a clinically significant abnormal laboratory finding), symptom, or disease temporally associated with the use of a drug, whether or not it is considered related to the drug. A treatment-emergent adverse event (TEAE) is defined as an adverse event with an onset that occurs after receiving study drug.",
+          "measure": "Number of Participants Reporting One or More Treatment Emergent Adverse Events",
+          "timeFrame": "From Day 1 Up to Day 118"
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "description": "Tmax: Time to reach the maximum plasma concentration (Cmax), equal to time (hours) to Cmax",
+          "measure": "Tmax: Time to Reach the Maximum Plasma Concentration (Cmax) for MT203",
+          "timeFrame": "Day 1 and 29 (Pre-dose and 2 and 6 hours post-dose)"
+        },
+        {
+          "description": "Maximum observed plasma concentration (Cmax) is the peak plasma concentration of a drug after administration, obtained directly from the plasma concentration-time curve.",
+          "measure": "Cmax: Maximum Observed Plasma Concentration for MT203",
+          "timeFrame": "Day 1 and 29 (Pre-dose and 2 and 6 hours post-dose)"
+        },
+        {
+          "description": "AUC(0-tlqc) is a measure of total plasma exposure to the drug from Time 0 to Time of the Last Quantifiable Concentration (AUC\\[0-tlqc\\]).",
+          "measure": "AUC(0-tlqc): Area Under the Plasma Concentration-Time Curve From Time 0 to the Time of the Last Quantifiable Concentration for MT203",
+          "timeFrame": "Day 1 and 29 (Pre-dose and 2 and 6 hours post-dose)"
+        },
+        {
+          "description": "AUC(0-inf) is measure of area under the curve over the dosing interval (tau) (AUC(0-tau\\]), where tau is the length of the dosing interval in this study).",
+          "measure": "AUC(0-inf): Area Under the Plasma Concentration-time Curve From Time 0 to Infinity for MT203",
+          "timeFrame": "Day 29 (Pre-dose and 2 and 6 hours post-dose)"
+        },
+        {
+          "description": "Area under the plasma concentration-time curve during a dosing interval, where tau is the length of the dosing interval.",
+          "measure": "AUC(0-tau): Area Under the Plasma Concentration-time Curve From Time 0 to Time Tau Over the Dosing Interval for MT203",
+          "timeFrame": "Day 29 (Pre-dose and 2 and 6 hours post-dose)"
+        },
+        {
+          "description": "Terminal phase elimination half-life (T1/2) is the time required for half of the drug to be eliminated from the plasma.",
+          "measure": "Terminal Phase Elimination Half-life (T1/2) for MT203",
+          "timeFrame": "Day 29 (Pre-dose and 2 and 6 hours post-dose)"
+        },
+        {
+          "measure": "Ctrough: Maximum Observed Plasma Concentration Pre-Dose",
+          "timeFrame": "Days 1, 15 and 29 Pre-dose"
+        },
+        {
+          "description": "MT203/GM-CSF complexes were analysed using a procedure that quantified GM-CSF after dissociation from the complex. The determined concentrations corresponded to the amount of total (free and complexed) GM-CSF in the plasma sample. A positive change from Baseline indicated improvement.",
+          "measure": "Change From Baseline in Granulocyte-Macrophage Colony-Stimulating Factor (GM-CSF) in Plasma",
+          "timeFrame": "Baseline and Days 2, 4, 6, 8 15, 29, 30, 35, 43, 56, 71, 99, End of trial (EOT) Up to Day 118"
+        },
+        {
+          "description": "MT203/GM-CSF complexes were analysed using a procedure that quantified GM-CSF after dissociation from the complex. The determined concentrations corresponded to the amount of total (free and complexed) GM-CSF in the plasma sample. A positive change from Baseline indicated improvement.",
+          "measure": "Change From Baseline in MT203/GM-CSF Complexes in Plasma",
+          "timeFrame": "Baseline and Days 2, 4, 6, 8 15, 29, 30, 35, 43, 56, 71, 99, EOT Up to Day 118"
+        },
+        {
+          "description": "Serum samples were tested for the presence of anti-MT203 antibodies by a bridging Electro-chemi-luminescent assay (ECL-assay).",
+          "measure": "Number of Participants With Anti-MT203 Antibodies",
+          "timeFrame": "From Day 1 Up to Day 118"
+        },
+        {
+          "description": "ACR20 response is defined as a ≥ 20% improvement (reduction) compared with baseline for both total joint count-68 joints (TJC68) and swollen joint count-66 joints (SJC66), as well as for three of the additional five ACR core set variables: Patient's Assessment of Pain over the previous 24 hours: using a Visual Analog Scale (VAS) left end of the line 0=no pain to right end of the line 100=unbearable pain; Patient's Global Assessment of Disease Activity and Physician's Global Assessment of Disease Activity over the previous 24 hours using a VAS where left end of the line 0=no disease activity to right end of the line 100=maximum disease activity; Health Assessment Questionnaire: 20 questions, 8 components: dressing/grooming, arising, eating, walking, hygiene, reach, grip and activities, 0=without difficulty to 3=unable to do; and acute-phase reactant Erythrocyte Sedimentation Rate.",
+          "measure": "Percentage of Participants With American College of Rheumatology (ACR 20) Response",
+          "timeFrame": "Baseline and Days 13,27,43,56,71,99 and EOT Up to Day 118"
+        },
+        {
+          "description": "Ritchie articular index (RAI); a joint count that grades the tenderness of 26 joints on a scale of 0-3); the number of swollen joints from 44 joints (swollen44); ESR in mm/hour after 1 hour and the patient's global disease activity on a Visual Analogue Scale (VAS) of 100 mm (0=no disease activity to right end of the line 100=maximum disease activity) were used to calculate DAS44-ESR using the following formula: DAS44-ESR = 0.54\\*sqrt(RAI) + 0.065\\*(swollen44) + 0.33\\*ln(ESR) + 0.0072\\*VAS. Lower numbers were better. A negative change from Baseline indicated improvement.",
+          "measure": "Change From Baseline in the Disease Activity Score 44-Erythrocyte Sedimentation Rate (DAS44-ESR)",
+          "timeFrame": "Baseline and Days 13,27,43,56,71,99 and EOT Up to Day 118"
+        }
+      ]
+    },
+    "oversightModule": {
+      "oversightHasDmc": false
+    },
+    "referencesModule": {
+      "references": [
+        {
+          "citation": "Huizinga TW, Batalov A, Stoilov R, Lloyd E, Wagner T, Saurigny D, Souberbielle B, Esfandiari E. Phase 1b randomized, double-blind study of namilumab, an anti-granulocyte macrophage colony-stimulating factor monoclonal antibody, in mild-to-moderate rheumatoid arthritis. Arthritis Res Ther. 2017 Mar 9;19(1):53. doi: 10.1186/s13075-017-1267-3.",
+          "pmid": "28274253",
+          "type": "DERIVED"
+        }
+      ]
+    },
+    "sponsorCollaboratorsModule": {
+      "leadSponsor": {
+        "class": "INDUSTRY",
+        "name": "Takeda"
+      },
+      "responsibleParty": {
+        "type": "SPONSOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2013-08",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2015-08-20",
+        "type": "ESTIMATED"
+      },
+      "lastUpdateSubmitDate": "2015-07-24",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2013-08",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2015-08-20",
+        "type": "ESTIMATED"
+      },
+      "resultsFirstSubmitDate": "2015-07-24",
+      "resultsFirstSubmitQcDate": "2015-07-24",
+      "startDateStruct": {
+        "date": "2011-03"
+      },
+      "statusVerifiedDate": "2015-07",
+      "studyFirstPostDateStruct": {
+        "date": "2011-03-17",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2011-02-18",
+      "studyFirstSubmitQcDate": "2011-03-16"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "description": "At each visit the investigator had to document any occurrence of adverse events and abnormal laboratory findings. Any event spontaneously reported by the participant or observed by the investigator was recorded, irrespective of the relation to study treatment.",
+      "eventGroups": [
+        {
+          "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+          "id": "EG000",
+          "otherNumAffected": 5,
+          "otherNumAtRisk": 8,
+          "seriousNumAffected": 2,
+          "seriousNumAtRisk": 8,
+          "title": "Namilumab 150 mg"
+        },
+        {
+          "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+          "id": "EG001",
+          "otherNumAffected": 4,
+          "otherNumAtRisk": 7,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 7,
+          "title": "Namilumab 300 mg"
+        },
+        {
+          "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+          "id": "EG002",
+          "otherNumAffected": 5,
+          "otherNumAtRisk": 9,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 9,
+          "title": "Placebo"
+        }
+      ],
+      "frequencyThreshold": "5",
+      "otherEvents": [
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 2,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Rheumatoid arthritis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Musculoskeletal pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Pain in extremity"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Muscular weakness"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Abdominal pain upper"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Diarrhoea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Abdominal pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 2,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Nasopharyngitis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Urinary tract infection"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Blood and lymphatic system disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Thrombocytosis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Bradycardia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Eye disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Vitreous detachment"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Chest discomfort"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Chest pain"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Influenza like illness"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Blood creatine phosphokinase increased"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Body temperature increased"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Alanine aminotransferase increased"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Blood lactate dehydrogenase increased"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Blood pressure diastolic increased"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Blood pressure systolic increased"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "C-reactive protein increased"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Haemoglobin urine present"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Mean cell volume increased"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Red blood cell sedimentation rate increased"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Red blood cells urine positive"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Urine ketone body present"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "White blood cell count increased"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Paraesthesia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Somnolence"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Dysuria"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Nephrolithiasis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Dyspnoea"
+        }
+      ],
+      "seriousEvents": [
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Non-small cell lung cancer stage IIIa"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA 13.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 7
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 9
+            }
+          ],
+          "term": "Coronary artery stenosis"
+        }
+      ],
+      "timeFrame": "From Day 1 Up to Day 118"
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "8"
+            },
+            {
+              "groupId": "BG001",
+              "value": "7"
+            },
+            {
+              "groupId": "BG002",
+              "value": "9"
+            },
+            {
+              "groupId": "BG003",
+              "value": "24"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+          "id": "BG000",
+          "title": "Namilumab 150 mg"
+        },
+        {
+          "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+          "id": "BG001",
+          "title": "Namilumab 300 mg"
+        },
+        {
+          "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+          "id": "BG002",
+          "title": "Placebo"
+        },
+        {
+          "description": "Total of all reporting groups",
+          "id": "BG003",
+          "title": "Total"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "6.95",
+                      "value": "58.0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "spread": "15.28",
+                      "value": "56.6"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "spread": "11.05",
+                      "value": "53.4"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "spread": "11.05",
+                      "value": "55.9"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Age, Continuous",
+          "unitOfMeasure": "years"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "5"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "6"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "6"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "17"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "3"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "3"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "7"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "7"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "7"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "9"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "23"
+                    }
+                  ]
+                }
+              ],
+              "title": "White"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Black"
+            }
+          ],
+          "paramType": "NUMBER",
+          "title": "Race/Ethnicity, Customized",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "8.605",
+                      "value": "166.21"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "spread": "6.321",
+                      "value": "168.57"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "spread": "5.126",
+                      "value": "168.44"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "spread": "6.581",
+                      "value": "167.74"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Height",
+          "unitOfMeasure": "cm"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "7.140",
+                      "value": "68.13"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "spread": "7.305",
+                      "value": "80.44"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "spread": "8.617",
+                      "value": "77.80"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "spread": "9.147",
+                      "value": "75.35"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Weight",
+          "unitOfMeasure": "kg"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "2.471",
+                      "value": "24.69"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "spread": "1.778",
+                      "value": "28.30"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "spread": "2.246",
+                      "value": "27.37"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "spread": "2.607",
+                      "value": "26.75"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Body Mass Index (BMI)",
+          "unitOfMeasure": "kg/m^2"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "0.542",
+                      "value": "4.70"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "spread": "0.544",
+                      "value": "4.66"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "spread": "0.512",
+                      "value": "4.60"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "spread": "0.510",
+                      "value": "4.65"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "description": "The DAS28-ESR is expressed on a unit on a scale with the minimum score=0 (best) to maximum score=10 (worst).",
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Disease Activity Score 28-Erythrocyte Sedimentation Rate (DAS28-ESR) Score",
+          "unitOfMeasure": "score on a scale"
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "otherDetails": "The first study related publication will be a multi-center publication submitted within 24 months after conclusion or termination of a study at all sites. After such multi site publication, all proposed site publications and presentations will be submitted to sponsor for review 60 days in advance of publication. Site will remove Sponsor confidential information unrelated to study results. Sponsor can delay a proposed publication for another 60 days to preserve intellectual property.",
+        "piSponsorEmployee": false,
+        "restrictionType": "OTHER",
+        "restrictiveAgreement": true
+      },
+      "pointOfContact": {
+        "email": "trialdisclosures@takeda.com",
+        "organization": "Takeda",
+        "phone": "+1-877-825-3327",
+        "title": "Medical Director, Clinical Science"
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "3"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Haematology"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Chemistry"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Coagulation"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Urine"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "9"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Blood was collected for Haematology, Chemistry and Coagulation. Urine was collected for Urinalysis. Alert values for laboratory results include the following: Aspartate aminotransferase (ASAT), alanine aminotransferase (ALAT), gamma-glutamyl-transpeptidase (GGT), alkaline phosphatase (AP), total bilirubin (TBil): \\> 3 times upper limit of normal (ULN). Creatinine and Glucose: \\> 2 times ULN. Potassium \\> 6.0 or \\< 3.0 mmol/L. Haemoglobin: Male \\< 8.0 ;Female \\< 7.0 g/dL. Erythrocytes :Male \\< 3.5 x 10\\^12/L or \\> 7 x 10\\^12/L;Female \\< 3.0 x 10\\^12/L or \\> 6.5 x 10\\^12/L. White Blood Cells (WBC): \\< 2.8 x10\\^9/L or \\> 16.0 x 10\\^9/L. Eosinophils \\> 20 % of cells in the WBC differential. Platelet Count \\< 75 x 10\\^9/L or 600 x 10\\^9/L. No alert values were identified for Coagulation or Urinalysis.",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            },
+            {
+              "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Safety population included all randomized participants who received study drug.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "From Day 1 Up to Day 118",
+          "title": "Number of Participants With Clinically Significant Clinical Laboratory Results",
+          "type": "PRIMARY",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "9"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Alert values for ECG were: Heart rate \\< 35 bpm or \\> 120 bpm, QTc acc. to Bazett (absolute value)\\> 500 ms or QTc acc. to Bazett (increase versus Baseline (pre-treatment).",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            },
+            {
+              "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Safety population included all randomized participants who received study drug.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "From Day 1 Up to Day 118",
+          "title": "Number of Participants With Clinically Significant Electrocardiogram (ECG) Findings",
+          "type": "PRIMARY",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "3"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "9"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Vital signs included Systolic Blood Pressure (BP), Diastolic BP, body temperature, heart rate. Alert values were: BP systolic \\> 170 mmHg or \\< 85 mmHg, BP diastolic \\> 105 mmHg, Difference BP systolic vs. Baseline (pre-treatment) \\> 40 mmHg or Pulse rate \\< 35 bpm or \\> 120 beats per minute (bpm).",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            },
+            {
+              "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Safety population included all randomized participants who received study drug.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "From Day 1 Up to Day 118",
+          "title": "Number of Participants With Clinically Significant Vital Signs",
+          "type": "PRIMARY",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "9"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Pulmonary function was determined by forced expiratory volume in the first second (FEV1), forced vital capacity (FVC) and peak flow.",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            },
+            {
+              "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Safety population included all randomized participants who received study drug.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "From Day 1 Up to Day 118",
+          "title": "Number of Participants With Clinically Significant Pulmonary Function Tests",
+          "type": "PRIMARY",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "9"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "The physical examination included body system assessments: eyes, head and neck (including thyroid), ears, nose and throat, lymph nodes, cardiovascular, lungs, mammae, abdomen (liver, spleen), genitals, limbs, central and peripheral nervous system, musculoskeletal system, skin \\& nails, mucosae. The Investigator classified abnormal findings as either clinically significant or not clinically significant.",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            },
+            {
+              "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Safety population included all randomized participants who received study drug.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "From Day 1 Up to Day 118",
+          "title": "Number of Participants With Clinically Significant Physical Examination Findings",
+          "type": "PRIMARY",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "5"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "4"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "5"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "9"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "An Adverse Event (AE) was defined as any untoward medical occurrence in a clinical investigation participant administered a drug; it does not necessarily have to have a causal relationship with this treatment. An AE can therefore be any unfavorable and unintended sign (eg, a clinically significant abnormal laboratory finding), symptom, or disease temporally associated with the use of a drug, whether or not it is considered related to the drug. A treatment-emergent adverse event (TEAE) is defined as an adverse event with an onset that occurs after receiving study drug.",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            },
+            {
+              "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Safety population included all randomized participants who received study drug.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "From Day 1 Up to Day 118",
+          "title": "Number of Participants Reporting One or More Treatment Emergent Adverse Events",
+          "type": "PRIMARY",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "3.0",
+                      "upperLimit": "7.0",
+                      "value": "4.98"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "4.0",
+                      "upperLimit": "8.2",
+                      "value": "5.95"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 1"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "0.1",
+                      "upperLimit": "8.0",
+                      "value": "4.97"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "1.0",
+                      "upperLimit": "13.0",
+                      "value": "6.00"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 29"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Tmax: Time to reach the maximum plasma concentration (Cmax), equal to time (hours) to Cmax",
+          "dispersionType": "Full Range",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            }
+          ],
+          "paramType": "MEDIAN",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Day 1 and 29 (Pre-dose and 2 and 6 hours post-dose)",
+          "title": "Tmax: Time to Reach the Maximum Plasma Concentration (Cmax) for MT203",
+          "type": "SECONDARY",
+          "unitOfMeasure": "days"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "9.988",
+                      "upperLimit": "18.02",
+                      "value": "13.41"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "13.83",
+                      "upperLimit": "25.45",
+                      "value": "18.76"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 1"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "22.02",
+                      "upperLimit": "33.45",
+                      "value": "27.14"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "40.36",
+                      "upperLimit": "61.91",
+                      "value": "49.99"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 29"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Maximum observed plasma concentration (Cmax) is the peak plasma concentration of a drug after administration, obtained directly from the plasma concentration-time curve.",
+          "dispersionType": "Full Range",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            }
+          ],
+          "paramType": "GEOMETRIC_MEAN",
+          "populationDescription": "PK Analysis set included all 15 participants who were exposed to study drug for whom any PK parameters could be calculated. Method of Dispersion is the 68% range.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Day 1 and 29 (Pre-dose and 2 and 6 hours post-dose)",
+          "title": "Cmax: Maximum Observed Plasma Concentration for MT203",
+          "type": "SECONDARY",
+          "unitOfMeasure": "μg/mL"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "112.3",
+                      "upperLimit": "186.9",
+                      "value": "144.9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "151.8",
+                      "upperLimit": "292.9",
+                      "value": "210.9"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 1"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "666.9",
+                      "upperLimit": "928.3",
+                      "value": "786.8"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "1293",
+                      "upperLimit": "2225",
+                      "value": "1696"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 29"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "AUC(0-tlqc) is a measure of total plasma exposure to the drug from Time 0 to Time of the Last Quantifiable Concentration (AUC\\[0-tlqc\\]).",
+          "dispersionType": "Full Range",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            }
+          ],
+          "paramType": "GEOMETRIC_MEAN",
+          "populationDescription": "PK Analysis set included all 15 participants who were exposed to study drug for whom any PK parameters could be calculated. Method of Dispersion is the 68% range.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Day 1 and 29 (Pre-dose and 2 and 6 hours post-dose)",
+          "title": "AUC(0-tlqc): Area Under the Plasma Concentration-Time Curve From Time 0 to the Time of the Last Quantifiable Concentration for MT203",
+          "type": "SECONDARY",
+          "unitOfMeasure": "day*μg/mL"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "708.8",
+                      "upperLimit": "978.4",
+                      "value": "832.8"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "1374",
+                      "upperLimit": "2521",
+                      "value": "1861"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "6"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "AUC(0-inf) is measure of area under the curve over the dosing interval (tau) (AUC(0-tau\\]), where tau is the length of the dosing interval in this study).",
+          "dispersionType": "Full Range",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            }
+          ],
+          "paramType": "GEOMETRIC_MEAN",
+          "populationDescription": "PK Analysis set included all 15 participants who were exposed to study drug for whom any PK parameters could be calculated. Method of Dispersion is the 68% range.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Day 29 (Pre-dose and 2 and 6 hours post-dose)",
+          "title": "AUC(0-inf): Area Under the Plasma Concentration-time Curve From Time 0 to Infinity for MT203",
+          "type": "SECONDARY",
+          "unitOfMeasure": "day*μg/mL"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "263.2",
+                      "upperLimit": "385.5",
+                      "value": "318.5"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "473.3",
+                      "upperLimit": "740.3",
+                      "value": "591.9"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Area under the plasma concentration-time curve during a dosing interval, where tau is the length of the dosing interval.",
+          "dispersionType": "Full Range",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            }
+          ],
+          "paramType": "GEOMETRIC_MEAN",
+          "populationDescription": "PK Analysis set included all 15 participants who were exposed to study drug for whom any PK parameters could be calculated. Method of Dispersion is the 68% range.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Day 29 (Pre-dose and 2 and 6 hours post-dose)",
+          "title": "AUC(0-tau): Area Under the Plasma Concentration-time Curve From Time 0 to Time Tau Over the Dosing Interval for MT203",
+          "type": "SECONDARY",
+          "unitOfMeasure": "day*μg/mL"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "13.7",
+                      "upperLimit": "34.6",
+                      "value": "21.26"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "18.6",
+                      "upperLimit": "29.9",
+                      "value": "23.68"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "6"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Terminal phase elimination half-life (T1/2) is the time required for half of the drug to be eliminated from the plasma.",
+          "dispersionType": "Full Range",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            }
+          ],
+          "paramType": "MEAN",
+          "populationDescription": "PK Analysis set included all 15 participants who were exposed to study drug for whom any PK parameters could be calculated.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Day 29 (Pre-dose and 2 and 6 hours post-dose)",
+          "title": "Terminal Phase Elimination Half-life (T1/2) for MT203",
+          "type": "SECONDARY",
+          "unitOfMeasure": "days"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "7.543",
+                      "upperLimit": "11.30",
+                      "value": "9.232"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "11.33",
+                      "upperLimit": "18.72",
+                      "value": "14.56"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 1"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "13.03",
+                      "upperLimit": "18.50",
+                      "value": "15.53"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "18.89",
+                      "upperLimit": "39.41",
+                      "value": "27.28"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 15"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "16.74",
+                      "upperLimit": "24.53",
+                      "value": "20.27"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "31.85",
+                      "upperLimit": "42.70",
+                      "value": "36.88"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 29"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "dispersionType": "Full Range",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            }
+          ],
+          "paramType": "GEOMETRIC_MEAN",
+          "populationDescription": "PK Analysis set included all 15 participants who were exposed to study drug for whom any PK parameters could be calculated. Method of Dispersion is the 68% range.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Days 1, 15 and 29 Pre-dose",
+          "title": "Ctrough: Maximum Observed Plasma Concentration Pre-Dose",
+          "type": "SECONDARY",
+          "unitOfMeasure": "μg/mL"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "0.000",
+                      "value": "0.00"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "2.268",
+                      "value": "-0.86"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "2.000",
+                      "value": "0.67"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 2 (n=7, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "3.286",
+                      "value": "3.00"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "4.140",
+                      "value": "0.86"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.000",
+                      "value": "0.00"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 4 (n=6, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "3.286",
+                      "value": "3.00"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "3.207",
+                      "value": "2.57"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.000",
+                      "value": "0.00"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 6 (n=6, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "10.330",
+                      "value": "7.78"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "2.928",
+                      "value": "4.29"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.000",
+                      "value": "0.00"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 8 (n=6, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "8.825",
+                      "value": "16.86"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "8.978",
+                      "value": "8.61"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.000",
+                      "value": "0.00"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 15 (n=7, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "13.323",
+                      "value": "31.59"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "6.690",
+                      "value": "15.14"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.000",
+                      "value": "0.00"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 29 (n=7, 7, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "24.908",
+                      "value": "40.68"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "16.954",
+                      "value": "22.11"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "2.121",
+                      "value": "0.75"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 30 (n=6, 7, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "20.203",
+                      "value": "33.29"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "16.261",
+                      "value": "25.71"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.000",
+                      "value": "0.00"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 35 (n=7, 7, 7)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "18.838",
+                      "value": "40.04"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "15.013",
+                      "value": "28.10"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.000",
+                      "value": "0.00"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 43 (n=7, 7, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "20.330",
+                      "value": "38.34"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "14.337",
+                      "value": "32.32"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "2.121",
+                      "value": "0.75"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 56 (n=7, 6, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "21.759",
+                      "value": "31.48"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "12.402",
+                      "value": "35.02"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "2.121",
+                      "value": "0.75"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 71 (n=5, 6, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "11.113",
+                      "value": "9.11"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "8.881",
+                      "value": "23.77"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.000",
+                      "value": "0.00"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 99 (n=7, 6, 7)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "7.919",
+                      "value": "3.87"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "10.745",
+                      "value": "17.38"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "2.000",
+                      "value": "0.67"
+                    }
+                  ]
+                }
+              ],
+              "title": "EOT (n=7, 6, 9)"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "9"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "MT203/GM-CSF complexes were analysed using a procedure that quantified GM-CSF after dissociation from the complex. The determined concentrations corresponded to the amount of total (free and complexed) GM-CSF in the plasma sample. A positive change from Baseline indicated improvement.",
+          "dispersionType": "Standard Deviation",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            },
+            {
+              "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "MEAN",
+          "populationDescription": "All randomized participants with data available for analysis.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Baseline and Days 2, 4, 6, 8 15, 29, 30, 35, 43, 56, 71, 99, End of trial (EOT) Up to Day 118",
+          "title": "Change From Baseline in Granulocyte-Macrophage Colony-Stimulating Factor (GM-CSF) in Plasma",
+          "type": "SECONDARY",
+          "unitOfMeasure": "pg/mL"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "63.92",
+                      "value": "30.9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "16.25",
+                      "value": "12.7"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.67",
+                      "value": "-0.2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 2 (n=8, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "183.16",
+                      "value": "210.6"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "100.15",
+                      "value": "186.1"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "1.67",
+                      "value": "-0.6"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 4 (n=8, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "152.52",
+                      "value": "381.6"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "89.19",
+                      "value": "334.6"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "4.00",
+                      "value": "-1.3"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 6 (n=8, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "110.76",
+                      "value": "448.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "80.58",
+                      "value": "534.1"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "4.00",
+                      "value": "-1.3"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 8 (n=8, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "353.03",
+                      "value": "1021.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "124.65",
+                      "value": "1055.0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "11.67",
+                      "value": "-3.9"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 15 (n=8, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "391.80",
+                      "value": "1566.9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "150.43",
+                      "value": "1805.4"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "12.37",
+                      "value": "-4.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 29 (n=8, 7, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "498.31",
+                      "value": "1653.5"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "178.71",
+                      "value": "1834.9"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "12.37",
+                      "value": "-4.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 30 (n=8, 7, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "560.58",
+                      "value": "1796.9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "294.95",
+                      "value": "2052.9"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "12.37",
+                      "value": "-4.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 35 (n=8, 7, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "744.37",
+                      "value": "2213.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "282.35",
+                      "value": "2290.6"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "12.37",
+                      "value": "-4.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 43 (n=8, 7, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "614.92",
+                      "value": "2009.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "466.01",
+                      "value": "2457.2"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "12.37",
+                      "value": "-4.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 56 (n=8, 6, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "313.20",
+                      "value": "1299.6"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "492.50",
+                      "value": "2312.2"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "12.37",
+                      "value": "-4.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 71 (n=8, 6, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "275.40",
+                      "value": "462.6"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "351.34",
+                      "value": "1753.5"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "12.37",
+                      "value": "-4.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 99 (n=8, 6, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "144.03",
+                      "value": "310.4"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "460.45",
+                      "value": "1310.8"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "11.67",
+                      "value": "-3.9"
+                    }
+                  ]
+                }
+              ],
+              "title": "EOT (n=8, 6, 9)"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "9"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "MT203/GM-CSF complexes were analysed using a procedure that quantified GM-CSF after dissociation from the complex. The determined concentrations corresponded to the amount of total (free and complexed) GM-CSF in the plasma sample. A positive change from Baseline indicated improvement.",
+          "dispersionType": "Standard Deviation",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            },
+            {
+              "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "MEAN",
+          "populationDescription": "All randomized participants with data available for analysis.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Baseline and Days 2, 4, 6, 8 15, 29, 30, 35, 43, 56, 71, 99, EOT Up to Day 118",
+          "title": "Change From Baseline in MT203/GM-CSF Complexes in Plasma",
+          "type": "SECONDARY",
+          "unitOfMeasure": "pg/mL"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "9"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Serum samples were tested for the presence of anti-MT203 antibodies by a bridging Electro-chemi-luminescent assay (ECL-assay).",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            },
+            {
+              "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Safety population included all randomized participants who received study drug.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "From Day 1 Up to Day 118",
+          "title": "Number of Participants With Anti-MT203 Antibodies",
+          "type": "SECONDARY",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "50.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "14.3"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "11.1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 13"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "50.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "57.1"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "33.3"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 27"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "37.5"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "71.4"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "44.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 43"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "50.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "57.1"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "55.6"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 56"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "62.5"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "57.1"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "44.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 71"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "50.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "42.9"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "44.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 99"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "37.5"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "57.1"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "44.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "EOT"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "9"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "ACR20 response is defined as a ≥ 20% improvement (reduction) compared with baseline for both total joint count-68 joints (TJC68) and swollen joint count-66 joints (SJC66), as well as for three of the additional five ACR core set variables: Patient's Assessment of Pain over the previous 24 hours: using a Visual Analog Scale (VAS) left end of the line 0=no pain to right end of the line 100=unbearable pain; Patient's Global Assessment of Disease Activity and Physician's Global Assessment of Disease Activity over the previous 24 hours using a VAS where left end of the line 0=no disease activity to right end of the line 100=maximum disease activity; Health Assessment Questionnaire: 20 questions, 8 components: dressing/grooming, arising, eating, walking, hygiene, reach, grip and activities, 0=without difficulty to 3=unable to do; and acute-phase reactant Erythrocyte Sedimentation Rate.",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            },
+            {
+              "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "All randomized participants with data available for analysis.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Baseline and Days 13,27,43,56,71,99 and EOT Up to Day 118",
+          "title": "Percentage of Participants With American College of Rheumatology (ACR 20) Response",
+          "type": "SECONDARY",
+          "unitOfMeasure": "percentage of participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "0.7412",
+                      "value": "-0.473"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "0.5369",
+                      "value": "-0.310"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.6491",
+                      "value": "-0.344"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 13 (n=8, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "0.6432",
+                      "value": "-0.798"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "0.7094",
+                      "value": "-0.995"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.7425",
+                      "value": "-0.383"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 27 (n=8, 7, 9)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "0.6064",
+                      "value": "-0.873"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "0.8223",
+                      "value": "-0.852"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.6585",
+                      "value": "-0.469"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 43 (n=8, 7, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "0.9624",
+                      "value": "-1.002"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "0.8217",
+                      "value": "-1.190"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "1.0178",
+                      "value": "-1.184"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 56 (n=8, 6, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "0.4461",
+                      "value": "-0.853"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "0.7478",
+                      "value": "-0.980"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "1.1240",
+                      "value": "-1.134"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 71 (n=7, 6, 7)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "0.4345",
+                      "value": "-0.678"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "0.7782",
+                      "value": "-0.914"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.8533",
+                      "value": "-1.025"
+                    }
+                  ]
+                }
+              ],
+              "title": "Day 99 (n=8, 6, 8)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "0.5664",
+                      "value": "-0.591"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "0.5992",
+                      "value": "-0.974"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.9667",
+                      "value": "-1.138"
+                    }
+                  ]
+                }
+              ],
+              "title": "EOT (n=8, 6, 9)"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "8"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "7"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "9"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Ritchie articular index (RAI); a joint count that grades the tenderness of 26 joints on a scale of 0-3); the number of swollen joints from 44 joints (swollen44); ESR in mm/hour after 1 hour and the patient's global disease activity on a Visual Analogue Scale (VAS) of 100 mm (0=no disease activity to right end of the line 100=maximum disease activity) were used to calculate DAS44-ESR using the following formula: DAS44-ESR = 0.54\\*sqrt(RAI) + 0.065\\*(swollen44) + 0.33\\*ln(ESR) + 0.0072\\*VAS. Lower numbers were better. A negative change from Baseline indicated improvement.",
+          "dispersionType": "Standard Deviation",
+          "groups": [
+            {
+              "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+              "id": "OG000",
+              "title": "Namilumab 150 mg"
+            },
+            {
+              "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+              "id": "OG001",
+              "title": "Namilumab 300 mg"
+            },
+            {
+              "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+              "id": "OG002",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "MEAN",
+          "populationDescription": "All randomized participants with data available for analysis.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Baseline and Days 13,27,43,56,71,99 and EOT Up to Day 118",
+          "title": "Change From Baseline in the Disease Activity Score 44-Erythrocyte Sedimentation Rate (DAS44-ESR)",
+          "type": "SECONDARY",
+          "unitOfMeasure": "score on a scale"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "Namilumab (MT203) 150 mg (low dose), subcutaneous (SC) injection, on Days 1, 15 and 29.",
+          "id": "FG000",
+          "title": "Namilumab 150 mg"
+        },
+        {
+          "description": "Namilumab (MT203) 300 mg (high dose), SC injection, on Days 1, 15 and 29.",
+          "id": "FG001",
+          "title": "Namilumab 300 mg"
+        },
+        {
+          "description": "Namilumab-matching placebo, SC injection, on Days 1, 15 and 29.",
+          "id": "FG002",
+          "title": "Placebo"
+        }
+      ],
+      "periods": [
+        {
+          "dropWithdraws": [
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "0"
+                }
+              ],
+              "type": "Other"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "1"
+                }
+              ],
+              "type": "Withdrawal of Patient"
+            }
+          ],
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "8"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "7"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "9"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "8"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "6"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "8"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "1"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "Overall Study"
+        }
+      ],
+      "preAssignmentDetails": "Participants with a diagnosis of mild or moderate rheumatoid arthritis were enrolled into 1 of 3 treatment groups namilumab (MT203) 150mg, namilumab 300 mg or placebo.",
+      "recruitmentDetails": "Participants took part in the study at 10 investigative sites in Bulgaria, Netherlands and Spain from 09 March 2011 to 08 August 2013."
+    }
+  }
+}

@@ -26,14 +26,20 @@ def _best(found):
 
 def primary_elig(text):
     found = []
+    if re.search(r"women of child-?bearing potential may be enrolled", text, re.I) and re.search(
+            r"women of child-?bearing potential are excluded from the .{0,40} arm", text, re.I):
+        return "UNCLEAR", ""
     for sec, line in elig_candidates(text):
         l = line.lower()
-        cond = re.search(r"contracept|must|agree|negative|willing|use of|effective", l)
+        cond = re.search(r"contracept|birth control|must|agree|negative|willing|use of|effective", l)
+        if re.search(r"\b(not pregnant|not be pregnant|no pregnancy|non-pregnant)\b", l):
+            found.append(("PREGNANCY_LACTATION_EXCLUSION", line))
+            continue
         if re.search(r"child-?bearing|reproductive potential", l):
             found.append(("CONDITIONAL" if (cond or sec == "inclusion") else "BLANKET_EXCLUSION_CHILDBEARING", line))
         elif re.search(r"pregnan|lactat|breast-?\s?feed|nursing (mother|women)", l):
             found.append(("CONDITIONAL" if (cond or sec == "inclusion") else "PREGNANCY_LACTATION_EXCLUSION", line))
-        elif "contracept" in l:
+        elif "contracept" in l or "birth control" in l:
             found.append(("CONDITIONAL", line))
     return _best(found)
 

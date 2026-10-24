@@ -15,7 +15,7 @@ review, not labeled discriminatory.
 ## Criteria -> where it lives
 | Track criterion | Implementation | Demo scenario |
 |---|---|---|
-| Runs for hours unsupervised | SQLite queue = checkpoint; `--resume`/`--no-ingest`; unresolved trials auto-retried next run | `normal` |
+| Resumable batches | SQLite queue = checkpoint; `--no-ingest` requeues unresolved trials on the next run | `normal` |
 | Knows when it's **stuck** | `STUCK`: N batches resolving zero trials | `stuck` |
 | Knows when it's **looping** | identical-call fingerprints (per-task skip, then run halt); repeated fetch pages | `loop` |
 | Knows when it's **overspending** | token / call / cost / time caps checked before every call | `budget` |
@@ -44,18 +44,21 @@ python -m pytest tests
 **Real data + real LLM:** `export ANTHROPIC_API_KEY=...` then `python run_agent.py --live --limit 60 --llm anthropic`.
 Set `HEREVIDENCE_MODEL` if you want a different model. **Before trusting live mode:** run
 `python fetch_trials.py --raw heart failure` and confirm the v2 field names and the `aggFilters` string; this was written
-from the documented schema but could not be tested against the live API from the build environment.
+against the live API. The phase-1 frozen JSON records enable parser checks, but the whole live pipeline still needs end-to-end validation.
 
-## Do these in your 5 hours (the code is the skeleton, the evidence is yours)
-1. **0:00-0:30** Run offline scenarios; confirm everyone's environment works. Run `--live` once, fix any field-name issues in `fetch_trials.normalize_trial`.
-   Also fill `prevalence.csv`: the share of women among patients for each condition, **with a source per row**.
-   Without it, real runs still report the share of women among participants, but no PPR.
-2. **0:30-1:30** Pull ~60 real trials. `python eval_gold.py --template 30` and **hand-label 30** (split across the team). Save as `data/gold_set.json`:
-   `[{"nct_id":..., "eligibility":..., "sex_stratified":...}]`.
-3. **1:30-2:30** `python eval_gold.py` with the real LLM. Read the misses; tune `prompts.py`. Your accuracy number is *this*, not the synthetic one.
-4. **2:30-3:30** Real-LLM sabotage run (`--scenario sabotage --llm anthropic`); tune `Limits` in `config.py` so the halt triggers cleanly on stage but not on a normal run.
-5. **3:30-4:15** `python compare.py` (offline numbers) plus a recorded backup video. Freeze code at 4:15.
-6. **4:15-5:00** Rehearse x3. Optional: set Twilio env vars (`notify.py`) so a real phone buzzes at halt/approval time.
+## Real-record evaluation: phase 1
+
+See [`AGENT_RESEARCH_REVIEW.md`](AGENT_RESEARCH_REVIEW.md) for the DataMaster/AIBuildAI comparison, numeric evidence gate, staged draft behavior, and candidate branch stop rules. `experiment_gate.py` uses version-matched evaluation reports to stop regressions and holds promotion until an independent adjudicated holdout passes. It does not merge or deploy code.
+
+Read `LABELING_GUIDE.md` and `ARCHITECTURE_REVIEW.md`. `data/real_gold/` contains 25 frozen ClinicalTrials.gov v2 JSON records, with SHA-256 and record dates. `data/gold_set.json` contains **single-reviewer provisional labels**, not a two-person adjudicated gold set. The blind review sheets cover 7 model disagreements (`data/reviewer2_disagreements.csv`), 18 priority records (`data/reviewer2_priority.csv`), and all 25 records (`data/reviewer2_full.csv`). A second person should label from the full source records without seeing the first labels. Then run `python compare_reviewers.py data/reviewer2_full.csv`, adjudicate disagreements, and update the gold file and review status.
+
+```bash
+python eval_gold.py --llm mock             # pipeline check, not real-LLM accuracy
+python eval_gold.py --llm anthropic        # requires the package and ANTHROPIC_API_KEY
+python -m pytest tests                     # existing and phase-1 tests
+```
+
+`data/gold_eval.json` and `data/gold_eval.md` contain per-label precision, recall, F1, support, confusion matrices, coverage, abstention rate, and disagreements. The sample includes targeted challenge records, so it does not estimate population prevalence. `--template 30` remains available for exporting additional cached live records, but its candidate lines are not sufficient for labeling; read the complete source. `ARCHITECTURE_REVIEW.md` gives the remaining three-hour schedule.
 
 ## Demo UI (`python ui_server.py`)
 One page, standard library only. Left: the phone of the person running the audit; it stays silent until the agent halts
@@ -68,13 +71,12 @@ uses. **Send morning brief** summarizes the gap map. Pick **Real (ClinicalTrials
 1. **Real gap:** live run, open a flagged trial, show the verbatim quote against source text.
 2. **Sabotage:** `sabotage` scenario. Posterior climbs, supervisor halts, quarantines, prints the handoff.
 3. **Loop + budget:** `loop` (burns 15 calls, not 150) and `budget` (stops mid-run, resumable).
-4. **Numbers:** `compare.py`: unsupervised agent published N wrong findings; supervised published 0 and withheld the rest.
+4. **Numbers:** `compare.py` compares wrong verdicts eligible for the gap map in a synthetic sabotage run; its `published` column is a database count, not external publication.
 5. **Follow-up:** approve a draft (simulated), simulate new results, watch the gap close and the draft resolve.
 6. **Limits slide:** below.
 
 ## Honest limits (say them before the judges do)
-- Offline numbers come from **synthetic** trials with known ground truth; they test the plumbing and supervisor, not clinical accuracy.
-  Report accuracy on your hand-labeled real gold set only.
+- Offline numbers come from **synthetic** trials with known ground truth; they test the plumbing and supervisor, not clinical accuracy. The checked-in real-record labels are provisional and the checked-in evaluation uses mock, so neither is a validated real-LLM clinical accuracy result.
 - Verification measures *source-grounding and agreement*. An error both passes share is invisible; the sampled recheck can miss errors in
   unsampled verdicts (the supervised run shows 0 wrong published in the demo, but this is not a guarantee).
 - Loop detection uses exact call fingerprints; swap in embedding similarity if you have time.

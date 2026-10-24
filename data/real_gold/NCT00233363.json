@@ -1,0 +1,2172 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D012466",
+          "term": "Salivary Gland Diseases"
+        },
+        {
+          "id": "D009059",
+          "term": "Mouth Diseases"
+        },
+        {
+          "id": "D009057",
+          "term": "Stomatognathic Diseases"
+        },
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        },
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D012216",
+          "term": "Rheumatic Diseases"
+        },
+        {
+          "id": "D015352",
+          "term": "Dry Eye Syndromes"
+        },
+        {
+          "id": "D007766",
+          "term": "Lacrimal Apparatus Diseases"
+        },
+        {
+          "id": "D005128",
+          "term": "Eye Diseases"
+        },
+        {
+          "id": "D003240",
+          "term": "Connective Tissue Diseases"
+        },
+        {
+          "id": "D017437",
+          "term": "Skin and Connective Tissue Diseases"
+        },
+        {
+          "id": "D001327",
+          "term": "Autoimmune Diseases"
+        },
+        {
+          "id": "D007154",
+          "term": "Immune System Diseases"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D014987",
+          "term": "Xerostomia"
+        },
+        {
+          "id": "D012859",
+          "term": "Sjogren's Syndrome"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "meshes": [
+        {
+          "id": "C052785",
+          "term": "rebamipide"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "interventions": [
+        {
+          "name": "Rebamipide",
+          "type": "DRUG"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Xerostomia",
+        "Sjogren's Syndrome"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Tokyo",
+          "country": "Japan",
+          "facility": "Otsuka Pharmaceutical Co., Ltd.",
+          "geoPoint": {
+            "lat": 35.6895,
+            "lon": 139.69171
+          }
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "Division of New Product Evaluation and Development",
+          "name": "Katsuhisa Saito",
+          "role": "STUDY_DIRECTOR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "The purpose of this study is to exploratively investigate the clinical efficacy of rebamipide on dry mouth in patients with Sjögren's syndrome in comparison with placebo."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "maskingInfo": {
+          "masking": "DOUBLE"
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 104,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n1. Patients with Sjögren's syndrome (Revised Japanese criteria for Sjögren's syndrome (1999): 1998 research report on immunological intractable diseases specified by the Japanese Ministry of Health and Welfare)\n2. Patients aged 20 years or older at time of consent\n3. Patients with dry mouth\n4. Patients with decreased salivation\n\nExclusion Criteria:\n\n1. Patients who have developed dry mouth clearly due to a cause other than Sjögren's syndrome\n2. Patients in whom Saxon test cannot be performed (artificial tooth, tooth implant, etc.)\n3. Patients who have received rebamipide within 3 months prior to obtaining informed consent\n4. Patients who are pregnant, possibly pregnant, or lactating\n5. Patients with a history of hypersensitivity to rebamipide\n6. Patients who have received any other investigational drug within 3 months prior to obtaining informed consent\n7. Patients who are otherwise judged inappropriate for inclusion in the study by the investigator or subinvestigator",
+      "healthyVolunteers": false,
+      "minimumAge": "20 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "Exploratory Study for Dry Mouth in Patients With Sjögren's Syndrome",
+      "nctId": "NCT00233363",
+      "officialTitle": "An Exploratory Study of Rebamipide to Evaluate Efficacy and Safety in the Treatment of Dry Mouth in Patients With Sjögren's Syndrome",
+      "orgStudyIdInfo": {
+        "id": "037-04-001"
+      },
+      "organization": {
+        "class": "INDUSTRY",
+        "fullName": "Otsuka Pharmaceutical Co., Ltd."
+      },
+      "secondaryIdInfos": [
+        {
+          "id": "JapicCTI-050036"
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "At visits to the study site at two, four, and eight weeks after the start of administration, subjects self-assessed the overall change in their dry mouth symptoms in comparison with their symptoms before the start of treatment on the following four-grade scale: (1) Markedly improved (clearly better), (2) Improved (better) , (3) Unchanged (almost no difference), and (4) Aggravated (worse).\n\nThe improvement rate was calculated by defining improvement as an assessment of either (1) Markedly improved or (2) Improved.",
+          "measure": "Overall Improvement Rate in Dry Mouth Symptoms",
+          "timeFrame": "Weeks 2, 4, and 8"
+        }
+      ]
+    },
+    "sponsorCollaboratorsModule": {
+      "leadSponsor": {
+        "class": "INDUSTRY",
+        "name": "Otsuka Pharmaceutical Co., Ltd."
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2006-01-27",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2021-06-04",
+        "type": "ACTUAL"
+      },
+      "lastUpdateSubmitDate": "2021-05-11",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2006-01-19",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2021-06-04",
+        "type": "ACTUAL"
+      },
+      "resultsFirstSubmitDate": "2021-05-11",
+      "resultsFirstSubmitQcDate": "2021-05-11",
+      "startDateStruct": {
+        "date": "2005-04-15",
+        "type": "ACTUAL"
+      },
+      "statusVerifiedDate": "2021-05",
+      "studyFirstPostDateStruct": {
+        "date": "2005-10-05",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2005-10-04",
+      "studyFirstSubmitQcDate": "2005-10-04"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "description": "Safety analysis set included all subjects who received investigational medicinal product (IMP) at least once and from whom data on at least 1 safety endpoint were obtained after the start of IMP administration.",
+      "eventGroups": [
+        {
+          "deathsNumAffected": 0,
+          "deathsNumAtRisk": 53,
+          "description": "A rebamipide 100 mg tablet was administered orally three times a day for eight weeks.",
+          "id": "EG000",
+          "otherNumAffected": 31,
+          "otherNumAtRisk": 53,
+          "seriousNumAffected": 1,
+          "seriousNumAtRisk": 53,
+          "title": "Rebamipide"
+        },
+        {
+          "deathsNumAffected": 0,
+          "deathsNumAtRisk": 51,
+          "description": "A placebo tablet was administered orally three times a day for eight weeks.",
+          "id": "EG001",
+          "otherNumAffected": 34,
+          "otherNumAtRisk": 51,
+          "seriousNumAffected": 1,
+          "seriousNumAtRisk": 51,
+          "title": "Placebo"
+        }
+      ],
+      "frequencyThreshold": "0",
+      "otherEvents": [
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Eye disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Blepharitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Eye disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Blepharospasm"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Eye disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Conjunctivitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Eye disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Conjunctivitis allergic"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Eye disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Ocular hyperaemia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Abdominal pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Abdominal pain upper"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Aphthous stomatitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Constipation"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Diarrhoea"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Enterocolitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Gingival bleeding"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Gingival pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Glossitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Nausea"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Oral pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Parotid gland enlargement"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Salivary gland pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Stomach discomfort"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Stomatitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Vomiting"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Chapped lips"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Chest pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Face oedema"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Feeling abnormal"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Malaise"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Pyrexia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Hepatobiliary disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Hepatic function abnormal"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Hepatobiliary disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Liver disorder"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Furuncle"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Herpes simplex"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Herpes virus infection"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Herpes zoster"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 6,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Nasopharyngitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Parotitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Pharyngitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Rhinitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Tinea pedis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Arthropod sting"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Fracture"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Muscle strain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Contusion"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Blood cholesterol increased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Blood creatinine increased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Platelet count decreased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Protein total increased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "White blood cell count decreased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "White blood cell count increased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Urine bilirubin increased"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Gout"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 5,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Arthralgia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Back pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Myalgia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Pain in extremity"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Musculoskeletal stiffness"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Dizziness"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Dysgeusia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 4,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Headache"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Hypoaesthesia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Somnolence"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Intercostal neuralgia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Reproductive system and breast disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Dysmenorrhoea"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Reproductive system and breast disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Metrorrhagia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Reproductive system and breast disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Pruritus genital"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Choking sensation"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Cough"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Epistaxis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Pharyngolaryngeal pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Upper respiratory tract inflammation"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Eczema"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Erythema"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Hyperhidrosis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Prurigo"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Purpura"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Rash"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Urticaria"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Toxic skin eruption"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Raynaud's phenomenon"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Hot flush"
+        }
+      ],
+      "seriousEvents": [
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Herpes zoster"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA Ver. 8.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 53
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51
+            }
+          ],
+          "term": "Pneumonia"
+        }
+      ],
+      "timeFrame": "Treatment-emergent adverse events were collected from the start of IMP administration up to 9 weeks."
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "50"
+            },
+            {
+              "groupId": "BG001",
+              "value": "50"
+            },
+            {
+              "groupId": "BG002",
+              "value": "100"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "description": "A rebamipide 100 mg tablet was administered orally three times a day for eight weeks.",
+          "id": "BG000",
+          "title": "Rebamipide"
+        },
+        {
+          "description": "A placebo tablet was administered orally three times a day for eight weeks.",
+          "id": "BG001",
+          "title": "Placebo"
+        },
+        {
+          "description": "Total of all reporting groups",
+          "id": "BG002",
+          "title": "Total"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    }
+                  ],
+                  "title": "<=18 years"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "33"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "33"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "66"
+                    }
+                  ],
+                  "title": "Between 18 and 65 years"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "17"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "17"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "34"
+                    }
+                  ],
+                  "title": ">=65 years"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Age, Categorical",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "49"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "48"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "97"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "2"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "3"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "50"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "50"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "100"
+                    }
+                  ]
+                }
+              ],
+              "title": "Japan"
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Region of Enrollment",
+          "unitOfMeasure": "Participants"
+        }
+      ],
+      "populationDescription": "The Efficacy Analysis Set comprised subjects in the Full Analysis Set (subjects received IMP at least once) excluding ineligible subjects and subjects with protocol deviations as described below:\n\n1. Subjects violating the rules on concomitant therapy\n2. Subjects with poor treatment compliance (\\<80% of the prescribed dose at time of treatment discontinuation/completion)\n3. Subjects with missing data on the primary endpoint at all time points"
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": false,
+        "restrictiveAgreement": false
+      },
+      "pointOfContact": {
+        "email": "CL_OPCJ_RDA_Team@otsuka.jp",
+        "organization": "Otsuka Pharmaceutical Co., LTD.",
+        "phone": "+81-3-6361-7366",
+        "title": "Director of Clinical Trials"
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "13.8",
+                      "upperLimit": "38.2",
+                      "value": "26.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "8.9",
+                      "upperLimit": "31.1",
+                      "value": "20.0"
+                    }
+                  ]
+                }
+              ],
+              "denoms": [
+                {
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "50"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "50"
+                    }
+                  ],
+                  "units": "Participants"
+                }
+              ],
+              "title": "Week 2"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "30.2",
+                      "upperLimit": "57.8",
+                      "value": "44.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "14.5",
+                      "upperLimit": "39.7",
+                      "value": "27.1"
+                    }
+                  ]
+                }
+              ],
+              "denoms": [
+                {
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "50"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "48"
+                    }
+                  ],
+                  "units": "Participants"
+                }
+              ],
+              "title": "Week 4"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "33.0",
+                      "upperLimit": "60.9",
+                      "value": "46.9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "25.0",
+                      "upperLimit": "53.2",
+                      "value": "39.1"
+                    }
+                  ]
+                }
+              ],
+              "denoms": [
+                {
+                  "counts": [
+                    {
+                      "groupId": "OG000",
+                      "value": "49"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "46"
+                    }
+                  ],
+                  "units": "Participants"
+                }
+              ],
+              "title": "Week 8"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "50"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "50"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "At visits to the study site at two, four, and eight weeks after the start of administration, subjects self-assessed the overall change in their dry mouth symptoms in comparison with their symptoms before the start of treatment on the following four-grade scale: (1) Markedly improved (clearly better), (2) Improved (better) , (3) Unchanged (almost no difference), and (4) Aggravated (worse).\n\nThe improvement rate was calculated by defining improvement as an assessment of either (1) Markedly improved or (2) Improved.",
+          "dispersionType": "95% Confidence Interval",
+          "groups": [
+            {
+              "description": "A rebamipide 100 mg tablet was administered orally three times a day for eight weeks.",
+              "id": "OG000",
+              "title": "Rebamipide"
+            },
+            {
+              "description": "A placebo tablet was administered orally three times a day for eight weeks.",
+              "id": "OG001",
+              "title": "Placebo"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "The Efficacy Analysis Set comprised subjects in the Full Analysis Set (subjects received IMP at least once) excluding ineligible subjects and subjects with protocol deviations as described below:\n\n1. Subjects violating the rules on concomitant therapy\n2. Subjects with poor treatment compliance (\\<80% of the prescribed dose at time of treatment discontinuation/completion)\n3. Subjects with missing data on the primary endpoint at all time points",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Weeks 2, 4, and 8",
+          "title": "Overall Improvement Rate in Dry Mouth Symptoms",
+          "type": "PRIMARY",
+          "unitOfMeasure": "percentage of participants"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "A rebamipide 100 mg tablet was administered orally three times a day for eight weeks.",
+          "id": "FG000",
+          "title": "Rebamipide"
+        },
+        {
+          "description": "A placebo tablet was administered orally three times a day for eight weeks.",
+          "id": "FG001",
+          "title": "Placebo"
+        }
+      ],
+      "periods": [
+        {
+          "dropWithdraws": [
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "2"
+                }
+              ],
+              "type": "Adverse Event"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "2"
+                }
+              ],
+              "type": "Lack of Efficacy"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "1"
+                }
+              ],
+              "type": "Withdrawal by Subject"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                }
+              ],
+              "type": "Aggravation of complication"
+            }
+          ],
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "53"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "51"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "50"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "46"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "3"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "5"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "Overall Study"
+        }
+      ]
+    }
+  }
+}

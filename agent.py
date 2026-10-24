@@ -58,6 +58,7 @@ def run(scenario="normal", conditions=None, limit=40, offline=True, supervised=T
             llm.quality = qf[1] if qf and batch_idx >= qf[0] else "normal"
             rechecks = set(rng.sample(ids, min(len(ids), limits.rechecks_per_batch)))
             resolved = 0
+            pending = []
             for nct in ids:
                 trial = store.get_trial(nct)
                 try:
@@ -75,20 +76,25 @@ def run(scenario="normal", conditions=None, limit=40, offline=True, supervised=T
                 for v in verdicts:
                     store.add_verdict(run_id, batch_idx, v, trial["condition"])
                 outcome = decide(verdicts, store.attempts(nct), limits.max_attempts_per_trial)
-                store.set_status(nct, outcome, run_id, inc=outcome in ("retry", "review"))
+                pending.append((nct, trial, verdicts, outcome))
                 resolved += outcome in ("done", "watch")
-                if outcome == "watch":
-                    drafts.create(trial, "sex_stratified_results")
-                if any(v["chk"] == "enrollment_by_sex" and v["label"] == "NOT_REPORTED_IN_RECORD" for v in verdicts):
-                    drafts.create(trial, "enrollment_by_sex")
-                if any(v["chk"] == "sex_stratified_results" and v["label"] == "STRATIFIED_FOUND" and v["verified"] for v in verdicts):
-                    drafts.resolve(nct, "sex_stratified_results", run_id)
                 bad = [v for v in verdicts if not v["verified"]]
                 log(f"  {nct}: {outcome:<6} " + (f"REJECTED {len(bad)} verdict(s): {bad[0]['verify_note']}" if bad else ""))
                 store.upsert_run(run_id, state_json=json.dumps(sup.snapshot()))
                 if pace:
                     time.sleep(pace)
             sup.after_batch(batch_idx, resolved)
+            # Commit decisions and external-facing drafts only after the whole batch passes supervision.
+            for nct, trial, verdicts, outcome in pending:
+                store.set_status(nct, outcome, run_id, inc=outcome in ("retry", "review"))
+                if outcome == "watch":
+                    drafts.create(trial, "sex_stratified_results")
+                if outcome in ("done", "watch") and any(
+                        v["chk"] == "enrollment_by_sex" and v["label"] == "NOT_REPORTED_IN_RECORD" and v["verified"]
+                        for v in verdicts):
+                    drafts.create(trial, "enrollment_by_sex")
+                if any(v["chk"] == "sex_stratified_results" and v["label"] == "STRATIFIED_FOUND" and v["verified"] for v in verdicts):
+                    drafts.resolve(nct, "sex_stratified_results", run_id)
             s = sup.snapshot()["trackers"]
             log(f" batch {batch_idx}: resolved {resolved}/{len(ids)} | grounding {s['grounding']['errors']}/{s['grounding']['n']} "
                 f"P>10%={s['grounding']['p_exceeds']:.2f} | recheck {s['recheck']['errors']}/{s['recheck']['n']} "
@@ -99,9 +105,13 @@ def run(scenario="normal", conditions=None, limit=40, offline=True, supervised=T
         sup.halt = {"code": h.code, "reason": h.reason}
         log(f"\n*** SUPERVISOR HALT [{h.code}]: {h.reason}")
         if h.code == "ERROR_RATE":
-            ids = store.quarantine(run_id, sup.last_clean + 1)
+            ids = store.quarantine(run_id, min(sup.last_clean + 1, batch_idx))
             log(f"*** QUARANTINED {len(ids)} trials from batches after the last clean batch ({sup.last_clean}); excluded from the gap map")
             store.log_event(run_id, "quarantine", f"{len(ids)} trials quarantined")
+        else:
+            ids = store.quarantine(run_id, batch_idx)
+            if ids:
+                store.log_event(run_id, "quarantine", f"{len(ids)} unfinished-batch trials quarantined")
     snap = sup.snapshot()
     gm = report.write_reports()
     path = report.write_handoff(run_id, status, halt, snap)

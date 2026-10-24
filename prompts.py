@@ -10,13 +10,16 @@ label must be one of:
   NONE                           - no such restriction in the text
   UNCLEAR                        - text is ambiguous
 evidence_quote MUST be copied VERBATIM from the eligibility text (empty string for NONE/UNCLEAR).
+An inclusion criterion saying participants must not be pregnant excludes current pregnancy.
+If one arm excludes women of childbearing potential but another allows them, use UNCLEAR
+under this trial-level single-label scheme. Do not confuse a pregnancy test with an exclusion.
 Do not judge whether a restriction is justified. Report only what the text says."""
 
 STRAT_SYS = """You check whether a trial's posted OUTCOME results are reported separately by sex or gender.
 You are given outcome-measure lines. Return ONLY a JSON object:
 {"label": ..., "evidence_quote": ..., "confidence": 0-1, "explanation": ...}
 label must be one of:
-  STRATIFIED_FOUND    - a result is explicitly reported by sex/gender (stratified result, sex subgroup, separate female/male rows)
+  STRATIFIED_FOUND    - a posted outcome has sex/gender subgroup rows AND corresponding numeric outcome values
   NOT_FOUND_IN_RECORD - the lines mention sex/gender only as enrollment or pooled description, with no sex-specific result
   UNCLEAR             - cannot tell
 evidence_quote MUST be copied VERBATIM from the lines (empty for NOT_FOUND_IN_RECORD/UNCLEAR).

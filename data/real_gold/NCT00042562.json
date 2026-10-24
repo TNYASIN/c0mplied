@@ -1,0 +1,397 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D003866",
+          "term": "Depressive Disorder"
+        },
+        {
+          "id": "D019964",
+          "term": "Mood Disorders"
+        },
+        {
+          "id": "D001523",
+          "term": "Mental Disorders"
+        },
+        {
+          "id": "D019954",
+          "term": "Neurobehavioral Manifestations"
+        },
+        {
+          "id": "D009461",
+          "term": "Neurologic Manifestations"
+        },
+        {
+          "id": "D009422",
+          "term": "Nervous System Diseases"
+        },
+        {
+          "id": "D012816",
+          "term": "Signs and Symptoms"
+        },
+        {
+          "id": "D013568",
+          "term": "Pathological Conditions, Signs and Symptoms"
+        },
+        {
+          "id": "D019965",
+          "term": "Neurocognitive Disorders"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D003865",
+          "term": "Depressive Disorder, Major"
+        },
+        {
+          "id": "D003244",
+          "term": "Consciousness Disorders"
+        },
+        {
+          "id": "D005221",
+          "term": "Fatigue"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D013876",
+          "term": "Thiophenes"
+        },
+        {
+          "id": "D013457",
+          "term": "Sulfur Compounds"
+        },
+        {
+          "id": "D009930",
+          "term": "Organic Chemicals"
+        },
+        {
+          "id": "D006573",
+          "term": "Heterocyclic Compounds, 1-Ring"
+        },
+        {
+          "id": "D006571",
+          "term": "Heterocyclic Compounds"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D000068736",
+          "term": "Duloxetine Hydrochloride"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": false,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "interventions": [
+        {
+          "name": "duloxetine",
+          "type": "DRUG"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Major Depressive Disorder"
+      ],
+      "keywords": [
+        "Depressed",
+        "blues",
+        "sadness",
+        "feelings of guilt",
+        "hopelessness",
+        "lack of energy"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Carlsbad",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 33.15809,
+            "lon": -117.35059
+          },
+          "state": "California"
+        },
+        {
+          "city": "Los Angeles",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 34.05223,
+            "lon": -118.24368
+          },
+          "state": "California"
+        },
+        {
+          "city": "Stanford",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 37.42411,
+            "lon": -122.16608
+          },
+          "state": "California"
+        },
+        {
+          "city": "Cromwell",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 41.5951,
+            "lon": -72.64537
+          },
+          "state": "Connecticut"
+        },
+        {
+          "city": "Coral Springs",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 26.27119,
+            "lon": -80.2706
+          },
+          "state": "Florida"
+        },
+        {
+          "city": "Gainesville",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 29.65163,
+            "lon": -82.32483
+          },
+          "state": "Florida"
+        },
+        {
+          "city": "Miami",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 25.77427,
+            "lon": -80.19366
+          },
+          "state": "Florida"
+        },
+        {
+          "city": "Atlanta",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 33.749,
+            "lon": -84.38798
+          },
+          "state": "Georgia"
+        },
+        {
+          "city": "Bangor",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 44.79884,
+            "lon": -68.77265
+          },
+          "state": "Maine"
+        },
+        {
+          "city": "Boston",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 42.35843,
+            "lon": -71.05977
+          },
+          "state": "Massachusetts"
+        },
+        {
+          "city": "New York",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 40.71427,
+            "lon": -74.00597
+          },
+          "state": "New York"
+        },
+        {
+          "city": "Rochester",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 43.15478,
+            "lon": -77.61556
+          },
+          "state": "New York"
+        },
+        {
+          "city": "Cincinnati",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 39.12711,
+            "lon": -84.51439
+          },
+          "state": "Ohio"
+        },
+        {
+          "city": "Philadelphia",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 39.95238,
+            "lon": -75.16362
+          },
+          "state": "Pennsylvania"
+        },
+        {
+          "city": "Pittsburgh",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 40.44062,
+            "lon": -79.99589
+          },
+          "state": "Pennsylvania"
+        },
+        {
+          "city": "Dallas",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 32.78306,
+            "lon": -96.80667
+          },
+          "state": "Texas"
+        },
+        {
+          "city": "Houston",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 29.76328,
+            "lon": -95.36327
+          },
+          "state": "Texas"
+        },
+        {
+          "city": "San Antonio",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 29.42412,
+            "lon": -98.49363
+          },
+          "state": "Texas"
+        },
+        {
+          "city": "Charlottesville",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 38.02931,
+            "lon": -78.47668
+          },
+          "state": "Virginia"
+        },
+        {
+          "city": "Falls Church",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 38.88233,
+            "lon": -77.17109
+          },
+          "state": "Virginia"
+        },
+        {
+          "city": "Richmond",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 37.55376,
+            "lon": -77.46026
+          },
+          "state": "Virginia"
+        },
+        {
+          "city": "Seattle",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 47.60621,
+            "lon": -122.33207
+          },
+          "state": "Washington"
+        },
+        {
+          "city": "West Allis",
+          "country": "United States",
+          "geoPoint": {
+            "lat": 43.01668,
+            "lon": -88.00703
+          },
+          "state": "Wisconsin"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "The purposes of this study are to determine:\n\nThe safety of duloxetine and any side effects that might be associated with it.\n\nWhether duloxetine can help patients with major depression.\n\nThe safety associated with switching from a medication you may be taking for depression to taking duloxetine.\n\nIt is possible that information collected during this study will be analyzed by the sponsor in the future to evaluate duloxetine for other possible uses or for other medical or scientific purposes other than those currently proposed."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "NON_RANDOMIZED",
+        "interventionModel": "SINGLE_GROUP",
+        "maskingInfo": {
+          "masking": "NONE"
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* You must be at least 18 years old.\n* You must have been diagnosed with major depressive disorder.\n* You must be able to visit the doctor's office once a week to once every 2 weeks for a total of 14 weeks\n\nExclusion Criteria:\n\n* You are a woman and are pregnant or breastfeeding.\n* You have a current or previous major psychiatric disorder other than depression, such as bipolar disorder, schizophrenia, or other psychotic disorder.\n* You have had a primary diagnosis of an anxiety disorder within the past 6 months.\n* You have a history of alcohol or drug dependence or abuse within the past 6 months.",
+      "healthyVolunteers": false,
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "Open-Label Treatment With Duloxetine Hydrochloride Once-Daily Dosing for Evaluation of Stabilization Dose in Patients With Major Depression",
+      "nctId": "NCT00042562",
+      "officialTitle": "Open-Label Treatment With Duloxetine Hydrochloride Once-Daily Dosing for Evaluation of Stabilization Dose in Patients With Major Depression",
+      "orgStudyIdInfo": {
+        "id": "6476"
+      },
+      "organization": {
+        "class": "INDUSTRY",
+        "fullName": "Eli Lilly and Company"
+      },
+      "secondaryIdInfos": [
+        {
+          "id": "F1J-US-HMBZ"
+        }
+      ]
+    },
+    "sponsorCollaboratorsModule": {
+      "leadSponsor": {
+        "class": "INDUSTRY",
+        "name": "Eli Lilly and Company"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2003-12"
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2006-07-19",
+        "type": "ESTIMATED"
+      },
+      "lastUpdateSubmitDate": "2006-07-18",
+      "overallStatus": "COMPLETED",
+      "startDateStruct": {
+        "date": "2002-12"
+      },
+      "statusVerifiedDate": "2006-07",
+      "studyFirstPostDateStruct": {
+        "date": "2002-08-05",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2002-07-31",
+      "studyFirstSubmitQcDate": "2002-08-02"
+    }
+  }
+}

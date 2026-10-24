@@ -94,7 +94,7 @@ def write_reports():
     acc = ""
     if os.path.exists("data/gold_eval.json"):
         g = json.load(open("data/gold_eval.json"))
-        acc = f"\nMeasured accuracy vs hand-labeled gold set (n={g['n']}): " + \
+        acc = f"\nEvaluation vs {g.get('reference_status', 'unspecified')} references using {g.get('backend', 'unspecified')} backend (n={g['n']}): " + \
               ", ".join(f"{k}: {v:.0%}" for k, v in g["accuracy"].items()) + "\n"
     lines = ["# HerEvidence gap map", "",
              "Findings mean **not found in the registry record**, not 'was not done'. Papers may report analyses the "

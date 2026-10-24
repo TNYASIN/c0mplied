@@ -1,0 +1,5132 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D001168",
+          "term": "Arthritis"
+        },
+        {
+          "id": "D007592",
+          "term": "Joint Diseases"
+        },
+        {
+          "id": "D009140",
+          "term": "Musculoskeletal Diseases"
+        },
+        {
+          "id": "D012216",
+          "term": "Rheumatic Diseases"
+        },
+        {
+          "id": "D003240",
+          "term": "Connective Tissue Diseases"
+        },
+        {
+          "id": "D017437",
+          "term": "Skin and Connective Tissue Diseases"
+        },
+        {
+          "id": "D001327",
+          "term": "Autoimmune Diseases"
+        },
+        {
+          "id": "D007154",
+          "term": "Immune System Diseases"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D001172",
+          "term": "Arthritis, Rheumatoid"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "meshes": [
+        {
+          "id": "C511911",
+          "term": "belimumab"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "interventionNames": [
+            "Drug: Placebo"
+          ],
+          "label": "Placebo plus SOC",
+          "type": "PLACEBO_COMPARATOR"
+        },
+        {
+          "interventionNames": [
+            "Drug: Belimumab 1 mg/kg"
+          ],
+          "label": "Belimumab 1 mg/kg plus SOC",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "interventionNames": [
+            "Drug: Belimumab 4 mg/kg"
+          ],
+          "label": "Belimumab 4 mg/kg plus SOC",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "interventionNames": [
+            "Drug: Belimumab 10 mg/kg"
+          ],
+          "label": "Belimumab 10 mg/kg plus SOC",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "Placebo plus SOC"
+          ],
+          "description": "Placebo IV plus standard therapy (SOC) for RA; placebo administered on Days 0, 14, 28, and every 28 days thereafter through 24 weeks in the double-blind period. In the open-label extension period, placebo patients who opted to participate received belimumab 10 mg/kg IV plus SOC every 28 days for an additional 24 weeks.",
+          "name": "Placebo",
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "Belimumab 1 mg/kg plus SOC"
+          ],
+          "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA; belimumab 1 mg/kg administered on Days 0, 14, 28, and every 28 days thereafter through 24 weeks in the double-blind period. In the open-label extension period, patients who opted to participate either continued on the same dose of belimumab or may have been switched to belimumab 10 mg/kg at the investigator's discretion for an additional 24 weeks.",
+          "name": "Belimumab 1 mg/kg",
+          "otherNames": [
+            "LymphoStat-B®",
+            "BENLYSTA®"
+          ],
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "Belimumab 4 mg/kg plus SOC"
+          ],
+          "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA; belimumab 4 mg/kg administered on Days 0, 14, 28, and every 28 days thereafter through 24 weeks in the double-blind period. In the open-label extension period, patients who opted to participate either continued on the same dose of belimumab or may have been switched to belimumab 10 mg/kg at the investigator's discretion for an additional 24 weeks.",
+          "name": "Belimumab 4 mg/kg",
+          "otherNames": [
+            "LymphoStat-B®",
+            "BENLYSTA®"
+          ],
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "Belimumab 10 mg/kg plus SOC"
+          ],
+          "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA; belimumab 10 mg/kg administered on Days 0, 14, 28, and every 28 days thereafter through 24 weeks in the double-blind period. In the open-label extension period, patients who opted to participate continued on the same dose of belimumab (10 mg/kg) for an additional 24 weeks.",
+          "name": "Belimumab 10 mg/kg",
+          "otherNames": [
+            "LymphoStat-B®",
+            "BENLYSTA®"
+          ],
+          "type": "DRUG"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Arthritis, Rheumatoid"
+      ],
+      "keywords": [
+        "RA"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Birmingham",
+          "country": "United States",
+          "facility": "University of Alabama at Birmingham",
+          "geoPoint": {
+            "lat": 33.52066,
+            "lon": -86.80249
+          },
+          "state": "Alabama",
+          "zip": "35294-0006"
+        },
+        {
+          "city": "Paradise Valley",
+          "country": "United States",
+          "facility": "Arizona Arthritis Research",
+          "geoPoint": {
+            "lat": 33.53115,
+            "lon": -111.94265
+          },
+          "state": "Arizona",
+          "zip": "85253"
+        },
+        {
+          "city": "Tucson",
+          "country": "United States",
+          "facility": "University of Arizona",
+          "geoPoint": {
+            "lat": 32.22174,
+            "lon": -110.92648
+          },
+          "state": "Arizona",
+          "zip": "85724"
+        },
+        {
+          "city": "La Jolla",
+          "country": "United States",
+          "facility": "Scripps Clinic",
+          "geoPoint": {
+            "lat": 32.84727,
+            "lon": -117.2742
+          },
+          "state": "California",
+          "zip": "92037"
+        },
+        {
+          "city": "Los Angeles",
+          "country": "United States",
+          "facility": "University of Southern California",
+          "geoPoint": {
+            "lat": 34.05223,
+            "lon": -118.24368
+          },
+          "state": "California",
+          "zip": "90033"
+        },
+        {
+          "city": "Los Angeles",
+          "country": "United States",
+          "facility": "Cedars-Sinai Medical Center",
+          "geoPoint": {
+            "lat": 34.05223,
+            "lon": -118.24368
+          },
+          "state": "California",
+          "zip": "90048"
+        },
+        {
+          "city": "Los Angeles",
+          "country": "United States",
+          "facility": "Wallace Rheumatic Disease Center",
+          "geoPoint": {
+            "lat": 34.05223,
+            "lon": -118.24368
+          },
+          "state": "California",
+          "zip": "90048"
+        },
+        {
+          "city": "Palo Alto",
+          "country": "United States",
+          "facility": "Stanford University School of Medicine",
+          "geoPoint": {
+            "lat": 37.44188,
+            "lon": -122.14302
+          },
+          "state": "California",
+          "zip": "94304"
+        },
+        {
+          "city": "Rancho Cucamonga",
+          "country": "United States",
+          "facility": "Boling Clinical Trials",
+          "geoPoint": {
+            "lat": 34.1064,
+            "lon": -117.59311
+          },
+          "state": "California",
+          "zip": "91730"
+        },
+        {
+          "city": "Sacramento",
+          "country": "United States",
+          "facility": "UCDMC",
+          "geoPoint": {
+            "lat": 38.58157,
+            "lon": -121.4944
+          },
+          "state": "California",
+          "zip": "95817-1418"
+        },
+        {
+          "city": "San Jose",
+          "country": "United States",
+          "facility": "Arthritis Care Center, Inc.",
+          "geoPoint": {
+            "lat": 37.33939,
+            "lon": -121.89496
+          },
+          "state": "California",
+          "zip": "95126-1650"
+        },
+        {
+          "city": "Colorado Springs",
+          "country": "United States",
+          "facility": "Arthritis Associates & Osteoporosis Center Of Colorado Springs",
+          "geoPoint": {
+            "lat": 38.83388,
+            "lon": -104.82136
+          },
+          "state": "Colorado",
+          "zip": "80910"
+        },
+        {
+          "city": "Washington D.C.",
+          "country": "United States",
+          "facility": "Washington Hospital Center",
+          "geoPoint": {
+            "lat": 38.89511,
+            "lon": -77.03637
+          },
+          "state": "District of Columbia",
+          "zip": "20010"
+        },
+        {
+          "city": "Aventura",
+          "country": "United States",
+          "facility": "Arthritis and Rheumatic Disease Specialties",
+          "geoPoint": {
+            "lat": 25.95648,
+            "lon": -80.13921
+          },
+          "state": "Florida",
+          "zip": "33180"
+        },
+        {
+          "city": "Orlando",
+          "country": "United States",
+          "facility": "Rheumatology Associates of Central Florida",
+          "geoPoint": {
+            "lat": 28.53834,
+            "lon": -81.37924
+          },
+          "state": "Florida",
+          "zip": "32806"
+        },
+        {
+          "city": "Tampa",
+          "country": "United States",
+          "facility": "Tampa Medical Group, P.A.",
+          "geoPoint": {
+            "lat": 27.94752,
+            "lon": -82.45843
+          },
+          "state": "Florida",
+          "zip": "33614"
+        },
+        {
+          "city": "Boise",
+          "country": "United States",
+          "facility": "Radiant Research Boise",
+          "geoPoint": {
+            "lat": 43.6135,
+            "lon": -116.20345
+          },
+          "state": "Idaho",
+          "zip": "83704"
+        },
+        {
+          "city": "Idaho Falls",
+          "country": "United States",
+          "facility": "Institute of Arthritis and Research",
+          "geoPoint": {
+            "lat": 43.46658,
+            "lon": -112.03414
+          },
+          "state": "Idaho",
+          "zip": "83404"
+        },
+        {
+          "city": "Chicago",
+          "country": "United States",
+          "facility": "Northwestern University Medical School",
+          "geoPoint": {
+            "lat": 41.85003,
+            "lon": -87.65005
+          },
+          "state": "Illinois",
+          "zip": "60611"
+        },
+        {
+          "city": "Chicago",
+          "country": "United States",
+          "facility": "Rheumatology Associates",
+          "geoPoint": {
+            "lat": 41.85003,
+            "lon": -87.65005
+          },
+          "state": "Illinois",
+          "zip": "60612"
+        },
+        {
+          "city": "Rockford",
+          "country": "United States",
+          "facility": "Rockford Clinic",
+          "geoPoint": {
+            "lat": 42.27113,
+            "lon": -89.094
+          },
+          "state": "Illinois",
+          "zip": "61103"
+        },
+        {
+          "city": "Munster",
+          "country": "United States",
+          "facility": "Medical Specialists",
+          "geoPoint": {
+            "lat": 41.56448,
+            "lon": -87.51254
+          },
+          "state": "Indiana",
+          "zip": "46321"
+        },
+        {
+          "city": "Louisville",
+          "country": "United States",
+          "facility": "Kentuckiana Center for Better Bone and Joint Health",
+          "geoPoint": {
+            "lat": 38.25424,
+            "lon": -85.75941
+          },
+          "state": "Kentucky",
+          "zip": "40202"
+        },
+        {
+          "city": "Baton Rouge",
+          "country": "United States",
+          "facility": "Ochsner Clinic Foundation",
+          "geoPoint": {
+            "lat": 30.44332,
+            "lon": -91.18747
+          },
+          "state": "Louisiana",
+          "zip": "70809"
+        },
+        {
+          "city": "Baltimore",
+          "country": "United States",
+          "facility": "Johns Hopkins Hospital",
+          "geoPoint": {
+            "lat": 39.29038,
+            "lon": -76.61219
+          },
+          "state": "Maryland",
+          "zip": "21287"
+        },
+        {
+          "city": "Cumberland",
+          "country": "United States",
+          "facility": "The Osteoporosis and Arthritis Clinical Trial Center",
+          "geoPoint": {
+            "lat": 39.65287,
+            "lon": -78.76252
+          },
+          "state": "Maryland",
+          "zip": "21502"
+        },
+        {
+          "city": "Wheaton",
+          "country": "United States",
+          "facility": "Center for Rhematology and Bone Research",
+          "geoPoint": {
+            "lat": 39.03983,
+            "lon": -77.05526
+          },
+          "state": "Maryland",
+          "zip": "20902"
+        },
+        {
+          "city": "Boston",
+          "country": "United States",
+          "facility": "Tufts - New England Medical Center",
+          "geoPoint": {
+            "lat": 42.35843,
+            "lon": -71.05977
+          },
+          "state": "Massachusetts",
+          "zip": "02111"
+        },
+        {
+          "city": "Ann Arbor",
+          "country": "United States",
+          "facility": "The University of Michigan Health System",
+          "geoPoint": {
+            "lat": 42.27756,
+            "lon": -83.74088
+          },
+          "state": "Michigan",
+          "zip": "48109-0358"
+        },
+        {
+          "city": "Rochester",
+          "country": "United States",
+          "facility": "Mayo Clinic",
+          "geoPoint": {
+            "lat": 44.02163,
+            "lon": -92.4699
+          },
+          "state": "Minnesota",
+          "zip": "55905"
+        },
+        {
+          "city": "St Louis",
+          "country": "United States",
+          "facility": "Washington University in St. Louis",
+          "geoPoint": {
+            "lat": 38.62727,
+            "lon": -90.19789
+          },
+          "state": "Missouri",
+          "zip": "63110"
+        },
+        {
+          "city": "Lincoln",
+          "country": "United States",
+          "facility": "Arthritis Center of Nebraska",
+          "geoPoint": {
+            "lat": 40.8,
+            "lon": -96.66696
+          },
+          "state": "Nebraska",
+          "zip": "68506"
+        },
+        {
+          "city": "Concord",
+          "country": "United States",
+          "facility": "Arthritis and Osteoporosis Center",
+          "geoPoint": {
+            "lat": 43.20814,
+            "lon": -71.53757
+          },
+          "state": "New Hampshire",
+          "zip": "03301"
+        },
+        {
+          "city": "Dover",
+          "country": "United States",
+          "facility": "Strafford Medical Associates, P.A.",
+          "geoPoint": {
+            "lat": 43.19786,
+            "lon": -70.87367
+          },
+          "state": "New Hampshire",
+          "zip": "03820"
+        },
+        {
+          "city": "Albany",
+          "country": "United States",
+          "facility": "The Center For Rheumatology",
+          "geoPoint": {
+            "lat": 42.65258,
+            "lon": -73.75623
+          },
+          "state": "New York",
+          "zip": "12206"
+        },
+        {
+          "city": "Brooklyn",
+          "country": "United States",
+          "facility": "SUNY-Downstate Medical Center",
+          "geoPoint": {
+            "lat": 40.6501,
+            "lon": -73.94958
+          },
+          "state": "New York",
+          "zip": "11203"
+        },
+        {
+          "city": "Manhasset",
+          "country": "United States",
+          "facility": "North Shore University Hospital",
+          "geoPoint": {
+            "lat": 40.79788,
+            "lon": -73.69957
+          },
+          "state": "New York",
+          "zip": "11030"
+        },
+        {
+          "city": "The Bronx",
+          "country": "United States",
+          "facility": "Jacobi Medical Center",
+          "geoPoint": {
+            "lat": 40.84985,
+            "lon": -73.86641
+          },
+          "state": "New York",
+          "zip": "10461"
+        },
+        {
+          "city": "Chapel Hill",
+          "country": "United States",
+          "facility": "University of North Carolina at Chapel Hill",
+          "geoPoint": {
+            "lat": 35.9132,
+            "lon": -79.05584
+          },
+          "state": "North Carolina",
+          "zip": "27599-7280"
+        },
+        {
+          "city": "Charlotte",
+          "country": "United States",
+          "facility": "Arthritis Clinic and Carolina Bone and Joint",
+          "geoPoint": {
+            "lat": 35.22709,
+            "lon": -80.84313
+          },
+          "state": "North Carolina",
+          "zip": "28210"
+        },
+        {
+          "city": "Winston-Salem",
+          "country": "United States",
+          "facility": "Wake Forest University School of Medicine",
+          "geoPoint": {
+            "lat": 36.09986,
+            "lon": -80.24422
+          },
+          "state": "North Carolina",
+          "zip": "27157"
+        },
+        {
+          "city": "Dayton",
+          "country": "United States",
+          "facility": "Stat Research, Inc.",
+          "geoPoint": {
+            "lat": 39.75895,
+            "lon": -84.19161
+          },
+          "state": "Ohio",
+          "zip": "45402"
+        },
+        {
+          "city": "Oklahoma City",
+          "country": "United States",
+          "facility": "McBride Clinic",
+          "geoPoint": {
+            "lat": 35.46756,
+            "lon": -97.51643
+          },
+          "state": "Oklahoma",
+          "zip": "73101"
+        },
+        {
+          "city": "Oklahoma City",
+          "country": "United States",
+          "facility": "Oklahoma Medical Research Foundation",
+          "geoPoint": {
+            "lat": 35.46756,
+            "lon": -97.51643
+          },
+          "state": "Oklahoma",
+          "zip": "73104"
+        },
+        {
+          "city": "Tulsa",
+          "country": "United States",
+          "facility": "Oklahoma Center For Arthritis Therapy & Research",
+          "geoPoint": {
+            "lat": 36.15398,
+            "lon": -95.99277
+          },
+          "state": "Oklahoma",
+          "zip": "74114"
+        },
+        {
+          "city": "Philadelphia",
+          "country": "United States",
+          "facility": "Thomas Jefferson University Hospital",
+          "geoPoint": {
+            "lat": 39.95238,
+            "lon": -75.16362
+          },
+          "state": "Pennsylvania",
+          "zip": "19107"
+        },
+        {
+          "city": "Pittsburgh",
+          "country": "United States",
+          "facility": "University of Pittsburgh School of Medicine & ASPH",
+          "geoPoint": {
+            "lat": 40.44062,
+            "lon": -79.99589
+          },
+          "state": "Pennsylvania",
+          "zip": "15261"
+        },
+        {
+          "city": "Willow Grove",
+          "country": "United States",
+          "facility": "Rheumatic Disease Associates",
+          "geoPoint": {
+            "lat": 40.144,
+            "lon": -75.11573
+          },
+          "state": "Pennsylvania",
+          "zip": "19090"
+        },
+        {
+          "city": "Dallas",
+          "country": "United States",
+          "facility": "Arthritis Centers of Texas",
+          "geoPoint": {
+            "lat": 32.78306,
+            "lon": -96.80667
+          },
+          "state": "Texas",
+          "zip": "75246"
+        },
+        {
+          "city": "Dallas",
+          "country": "United States",
+          "facility": "Research Associates of North Texas",
+          "geoPoint": {
+            "lat": 32.78306,
+            "lon": -96.80667
+          },
+          "state": "Texas",
+          "zip": "75246"
+        },
+        {
+          "city": "Dallas",
+          "country": "United States",
+          "facility": "UT Southwestern Medical Center at Dallas",
+          "geoPoint": {
+            "lat": 32.78306,
+            "lon": -96.80667
+          },
+          "state": "Texas",
+          "zip": "75390-8884"
+        },
+        {
+          "city": "Houston",
+          "country": "United States",
+          "facility": "Houston Institute for Clinical Research",
+          "geoPoint": {
+            "lat": 29.76328,
+            "lon": -95.36327
+          },
+          "state": "Texas",
+          "zip": "77074"
+        },
+        {
+          "city": "Sugar Land",
+          "country": "United States",
+          "facility": "Texas Research Center",
+          "geoPoint": {
+            "lat": 29.61968,
+            "lon": -95.63495
+          },
+          "state": "Texas",
+          "zip": "77479"
+        },
+        {
+          "city": "Morgan",
+          "country": "United States",
+          "facility": "Arthritis and Rheumatic Diseases Clinic",
+          "geoPoint": {
+            "lat": 41.03606,
+            "lon": -111.67688
+          },
+          "state": "Utah",
+          "zip": "84403"
+        },
+        {
+          "city": "Arlington",
+          "country": "United States",
+          "facility": "Arthritis Clinic of Northern Virginia, P.C.",
+          "geoPoint": {
+            "lat": 38.88101,
+            "lon": -77.10428
+          },
+          "state": "Virginia",
+          "zip": "22205"
+        },
+        {
+          "city": "Edmonds",
+          "country": "United States",
+          "facility": "Edmonds Rheumatology Associates",
+          "geoPoint": {
+            "lat": 47.81065,
+            "lon": -122.37736
+          },
+          "state": "Washington",
+          "zip": "98026-8047"
+        },
+        {
+          "city": "Edmonds",
+          "country": "United States",
+          "facility": "Evergreen Clinical Reserach",
+          "geoPoint": {
+            "lat": 47.81065,
+            "lon": -122.37736
+          },
+          "state": "Washington",
+          "zip": "98026-8047"
+        },
+        {
+          "city": "Spokane",
+          "country": "United States",
+          "facility": "Arthritis Northwest Rheumatology",
+          "geoPoint": {
+            "lat": 47.65966,
+            "lon": -117.42908
+          },
+          "state": "Washington",
+          "zip": "99204"
+        },
+        {
+          "city": "Yakima",
+          "country": "United States",
+          "facility": "Rheumatology Northwest Clinical Trials",
+          "geoPoint": {
+            "lat": 46.60207,
+            "lon": -120.5059
+          },
+          "state": "Washington",
+          "zip": "98902"
+        },
+        {
+          "city": "Glendale",
+          "country": "United States",
+          "facility": "Rheumatic Disease Center",
+          "geoPoint": {
+            "lat": 43.13529,
+            "lon": -87.93564
+          },
+          "state": "Wisconsin",
+          "zip": "53217"
+        },
+        {
+          "city": "La Crosse",
+          "country": "United States",
+          "facility": "Gundersen Clinic, Ltd.",
+          "geoPoint": {
+            "lat": 43.80136,
+            "lon": -91.23958
+          },
+          "state": "Wisconsin",
+          "zip": "54610"
+        },
+        {
+          "city": "Milwaukee",
+          "country": "United States",
+          "facility": "The Medical College of Wisconsin , Inc",
+          "geoPoint": {
+            "lat": 43.0389,
+            "lon": -87.90647
+          },
+          "state": "Wisconsin",
+          "zip": "53226"
+        },
+        {
+          "city": "Wausau",
+          "country": "United States",
+          "facility": "Marshfield Medical Research Foundation",
+          "geoPoint": {
+            "lat": 44.95914,
+            "lon": -89.63012
+          },
+          "state": "Wisconsin",
+          "zip": "54401"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "GlaxoSmithKline",
+          "name": "GSK Clinical Trials",
+          "role": "STUDY_DIRECTOR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "The purpose of this study is to evaluate the safety and efficacy of 3 different doses of belimumab, administered in addition to standard therapy, in patients with rheumatoid arthritis (RA).",
+      "detailedDescription": "The purpose of this study is to evaluate the safety and efficacy of three different doses of belimumab (1 mg/kg, 4 mg/kg, and 10 mg/kg), administered in addition to standard therapy, compared to placebo plus standard therapy in patients with RA. All patients were to be dosed on Days 0, 14, and 28, then every 28 days for the remainder of 24 weeks. Patients completing the 24-week period could enter a 24-week open-label extension; belimumab patients received the same dose or were switched to 10 mg/kg at the investigator's discretion and former placebo patients received belimumab 10 mg/kg."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "maskingInfo": {
+          "masking": "DOUBLE",
+          "whoMasked": [
+            "PARTICIPANT",
+            "INVESTIGATOR"
+          ]
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 283,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Primary Inclusion Criteria:\n\n* Diagnosis of RA for at least 1 year\n* Failed at least 1 disease modifying anti-rheumatic drug (DMARD) due to toxicity or lack of efficacy. These drugs must include 1 or more of the following: methotrexate, parenteral gold, sulfasalazine, leflunomide, and tumor necrosis factor-alpha (TNFα) inhibitors (infliximab, etanercept or adalimumab)\n* Active RA disease of at least moderate disease activity\n* Be on a stable RA treatment regimen for at least the past 60 days (for DMARDS); if on non-steroidal anti-inflammatory drugs (NSAIDs) or steroids these must be at a stable dose for the last 30 days\n\nPrimary Exclusion Criteria:\n\n* Received a non-FDA approved investigational agent within the last 28 days\n* Currently receiving or received within the last 60 days the following: TNFα-inhibitors (infliximab, etanercept, adalimumab) or interleukin-1 receptor antagonist (anakinra)\n* Currently receiving or received within the last 6 months the following: anti-CD20 antibody (rituximab) or cyclophosphamide\n* Steroid injection into any joint within the last 30 days\n* History of hypogammaglobulinemia or immunoglobulin A (IgA) deficiency\n* History of chronic infection that has been active within last 6 months, or herpes zoster within last 90 days, or any infection requiring hospitalization or intravenous medication within last 60 days\n* Human immunodeficiency virus (HIV), Hepatitis-B, Hepatitis-C",
+      "healthyVolunteers": false,
+      "maximumAge": "65 Years",
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "A Safety and Efficacy Study of LymphoStat-B™ (Monoclonal Anti-BLyS Antibody) in Subjects With Rheumatoid Arthritis (RA)",
+      "nctId": "NCT00071812",
+      "officialTitle": "A Phase 2, Multi-Center, Double-Blind, Placebo-Controlled, Dose-Ranging Study to Evaluate the Safety, Tolerability, and Efficacy of LymphoStat-B™ Antibody (Monoclonal Anti-BLyS Antibody) in Subjects With Rheumatoid Arthritis (RA)",
+      "orgStudyIdInfo": {
+        "id": "LBRA01"
+      },
+      "organization": {
+        "class": "INDUSTRY",
+        "fullName": "Human Genome Sciences Inc."
+      }
+    },
+    "outcomesModule": {
+      "otherOutcomes": [
+        {
+          "description": "Includes AEs reported in patients from the first dose of study agent throughout the study up to the Week 48/exit visit or 8 weeks following the last dose of study agent for patients who withdrew from this study or decided not to participate in the optional continuation protocol (LBRA99/NCT00583557).",
+          "measure": "Adverse Events (AE) Overview",
+          "timeFrame": "Up to 56 weeks"
+        }
+      ],
+      "primaryOutcomes": [
+        {
+          "description": "An ACR20 response is defined as having at least a 20% improvement in tender and swollen joints as well as a 20% improvement in 3 of 5 other criteria (patient assessment, physician assessment, pain scale, disability/functional questionnaire, and acute phase reactant value based on erythrocyte sedimentation rate \\[ESR\\]).",
+          "measure": "Percentage of Patients With ACR20 (American College of Rheumatology) Response at Week 24, Based on Erythrocyte Sedimentation Rate (ESR)",
+          "timeFrame": "Baseline, 24 weeks"
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "description": "An ACR50 response is defined as having at least a 50% improvement in tender and swollen joints as well as a 50% improvement in 3 of 5 other criteria (patient assessment, physician assessment, pain scale, disability/functional questionnaire, and acute phase reactant value based on erythrocyte sedimentation rate \\[ESR\\]).",
+          "measure": "Percentage of Patients With an ACR50 Response at Week 24, Based on ESR",
+          "timeFrame": "Baseline, 24 weeks"
+        },
+        {
+          "description": "An ACR70 response is defined as having at least a 70% improvement in tender and swollen joints as well as a 70% improvement in 3 of 5 other criteria (patient assessment, physician assessment, pain scale, disability/functional questionnaire, and acute phase reactant value based on erythrocyte sedimentation rate \\[ESR\\]).",
+          "measure": "Percentage of Patients With an ACR70 Response at Week 24, Based on ESR",
+          "timeFrame": "Baseline, 24 weeks"
+        },
+        {
+          "description": "The time to first ACR20 response (based on ESR) is defined as the time from the first dose to the first visit at which a patient first exhibited an ACR20 response, which may or may not have been sustained through Week 24.",
+          "measure": "Time to First ACR20 Response, Based on ESR",
+          "timeFrame": "0 to 24 weeks"
+        },
+        {
+          "description": "Measure not posted because time to ACR50 response was unable to be determined due to the small number of patients achieving an ACR50 response in the study.",
+          "measure": "Time to First ACR50 Response, Based on ESR",
+          "timeFrame": "0 to 24 weeks"
+        },
+        {
+          "description": "Measure not posted because time to ACR70 response was unable to be determined due to the small number of patients achieving an ACR70 response in the study.",
+          "measure": "Time to First ACR70 Response, Based on ESR",
+          "timeFrame": "0 to 24 weeks"
+        },
+        {
+          "description": "DAS is a composite index of a patient's level of RA disease activity. DAS28 is an abbreviated version of DAS, using a subset of 28 joints in the assessment, calculated based on 4 variables: 1) number of tender joints out of a total of 28 joints, 2) number of swollen joints out of a total of 28 joints, 3) ESR, 4) patient's global assessment of disease activity based on a 100-mm visual analog scale. The calculation provides a number on a scale from 0 to 10 (\\>5.1=active disease; \\<3.2=well controlled disease; \\<2.6=remission). Change from baseline \\>1.2 = good response and ≤0.6 = non-response.",
+          "measure": "Mean Change in Disease Activity Score 28 (DAS28) at Week 24",
+          "timeFrame": "Baseline, 24 weeks"
+        },
+        {
+          "description": "DAS28 response is defined as the time from the first dose to the first time at which a patient exhibited a \"good\" or a \"moderate\" improvement in RA disease activity, based on DAS28 improvements compared to baseline. Good response was defined as \\>1.2 change from baseline and DAS28 score ≤ 3.2. No response was defined as ≤ 0.6 change from baseline in DAS28 score or change between ≤ 1.2 and \\> 0.6 with a DAS28 score of \\> 5.1.",
+          "measure": "Time to First DAS28 Response",
+          "timeFrame": "0 to 24 weeks"
+        },
+        {
+          "description": "The modified total Sharp score method was used to evaluate radiographs of hands/wrists for erosions (ERO) and joint space narrowing (JSN). The total modified Sharp score ranges from 0 (no radiographic damage) to 200 (worst possible radiographic damage) and is the sum of the normalized ERO score (range 0-100) and the normalized JSN score (range 0-100). Higher scores indicated more damage.",
+          "measure": "Mean Change in Modified Total Sharp Score at Week 24",
+          "timeFrame": "Baseline, 24 weeks"
+        }
+      ]
+    },
+    "oversightModule": {
+      "oversightHasDmc": true
+    },
+    "referencesModule": {
+      "references": [
+        {
+          "citation": "Stohl W, Merrill JT, McKay JD, Lisse JR, Zhong ZJ, Freimuth WW, Genovese MC. Efficacy and safety of belimumab in patients with rheumatoid arthritis: a phase II, randomized, double-blind, placebo-controlled, dose-ranging Study. J Rheumatol. 2013 May;40(5):579-89. doi: 10.3899/jrheum.120886. Epub 2013 Apr 1.",
+          "pmid": "23547209",
+          "type": "DERIVED"
+        }
+      ]
+    },
+    "sponsorCollaboratorsModule": {
+      "leadSponsor": {
+        "class": "INDUSTRY",
+        "name": "Human Genome Sciences Inc."
+      },
+      "responsibleParty": {
+        "type": "SPONSOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2005-12",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2013-08-14",
+        "type": "ESTIMATED"
+      },
+      "lastUpdateSubmitDate": "2013-08-01",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2005-01",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2012-06-25",
+        "type": "ESTIMATED"
+      },
+      "resultsFirstSubmitDate": "2012-02-27",
+      "resultsFirstSubmitQcDate": "2012-05-22",
+      "startDateStruct": {
+        "date": "2003-12"
+      },
+      "statusVerifiedDate": "2013-08",
+      "studyFirstPostDateStruct": {
+        "date": "2003-11-05",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2003-10-31",
+      "studyFirstSubmitQcDate": "2003-11-04"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "description": "Includes AEs reported in patients from the first dose of study agent throughout the study up to the Week 48/exit visit or 8 weeks following the last dose of study agent for patients who withdrew from this study or decided not to participate in the optional continuation protocol (LBRA99/NCT00583557).",
+      "eventGroups": [
+        {
+          "description": "Placebo IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+          "id": "EG000",
+          "otherNumAffected": 50,
+          "otherNumAtRisk": 69,
+          "seriousNumAffected": 5,
+          "seriousNumAtRisk": 69,
+          "title": "Placebo Plus SOC"
+        },
+        {
+          "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+          "id": "EG001",
+          "otherNumAffected": 47,
+          "otherNumAtRisk": 72,
+          "seriousNumAffected": 5,
+          "seriousNumAtRisk": 72,
+          "title": "Belimumab 1 mg/kg Plus SOC"
+        },
+        {
+          "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+          "id": "EG002",
+          "otherNumAffected": 48,
+          "otherNumAtRisk": 71,
+          "seriousNumAffected": 5,
+          "seriousNumAtRisk": 71,
+          "title": "Belimumab 4 mg/kg Plus SOC"
+        },
+        {
+          "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+          "id": "EG003",
+          "otherNumAffected": 54,
+          "otherNumAtRisk": 71,
+          "seriousNumAffected": 6,
+          "seriousNumAtRisk": 71,
+          "title": "Belimumab 10 mg/kg Plus SOC"
+        },
+        {
+          "description": "Includes all patients who completed the 24-week double blind period and opted to continue in the 24-week open-label extension period. Belimumab patients received the same dose or were switched to 10 mg/kg at investigator discretion and former placebo patients received belimumab 10 mg/kg. AE onset may be during the extension phase or continuing from the double-blind period.",
+          "id": "EG004",
+          "otherNumAffected": 165,
+          "otherNumAtRisk": 237,
+          "seriousNumAffected": 26,
+          "seriousNumAtRisk": 237,
+          "title": "Open-label Extension Period: All Active"
+        }
+      ],
+      "frequencyThreshold": "5",
+      "otherEvents": [
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 6,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 6,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 2,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 8,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 15,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Diarrhoea"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 4,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 3,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Mouth ulceration"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 5,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 6,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 3,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 10,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Nausea"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 5,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 6,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 7,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 18,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Fatigue"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 4,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 2,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 4,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Infusion site reaction"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 9,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 3,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 25,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Oedema peripheral"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 4,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 2,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 2,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 7,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Bronchitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 4,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 9,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Nasopharyngitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 7,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 3,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 13,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Sinusitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 9,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 6,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 9,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 10,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 38,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Upper respiratory tract infection"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 6,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 8,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 8,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 4,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 17,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Urinary tract infection"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 4,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 3,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 2,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Contusion"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 16,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 21,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 15,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 24,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 75,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Arthralgia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 2,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 2,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 18,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Back pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 4,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 6,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 11,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 21,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Joint swelling"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 6,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 4,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 4,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 14,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Pain in extremity"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 2,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 4,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 9,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Dizziness"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 7,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 5,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 8,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 12,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Headache"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 4,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Haematuria"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 3,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 8,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 12,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Cough"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 7,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 2,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 7,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Pruritus"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 4,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 2,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 2,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 10,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Hypertension"
+        }
+      ],
+      "seriousEvents": [
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Blood and lymphatic system disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Anaemia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Acute coronary syndrome"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Angina pectoris"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Cardiac arrest"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Coronary artery disease"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Myocardial infarction"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Cardiac disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Supraventricular tachycardia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Congenital, familial and genetic disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 2,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Spondylolisthesis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Gastric ulcer"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Pancreatitis acute"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Small intestinal obstruction"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Malaise"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Non-cardiac chest pain"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Pyrexia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Hepatobiliary disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Cholecystitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Hepatobiliary disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Cholelithiasis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 2,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Cellulitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Clostridium colitis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Groin abscess"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Pneumonia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Pneumonia primary atypical"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Pyelonephritis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Viral infection"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Femur fracture"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Injury, poisoning and procedural complications",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Medical device complication"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 3,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Arthralgia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Arthropathy"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Intervertebral disc protrusion"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Intervertebral disc space narrowing"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 2,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Localised osteoarthritis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Osteoarthritis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Basal cell carcinoma"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Breast cancer"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Lung squamous cell carcinoma stage unspecified"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Squamous cell carcinoma of skin"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Vulval cancer"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Headache"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Psychiatric disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Major depression"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Psychiatric disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Obsessive-compulsive disorder"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 1,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Cystocele"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Nephrolithiasis"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Renal and urinary disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Renal colic"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Reproductive system and breast disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Endometrial hypertrophy"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Reproductive system and breast disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Ovarian cyst"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Pleurisy"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Pneumonia aspiration"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Hypertension"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 1,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Peripheral ischaemia"
+        },
+        {
+          "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "MedDRA 7.1",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 69
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 72
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG003",
+              "numAffected": 0,
+              "numAtRisk": 71
+            },
+            {
+              "groupId": "EG004",
+              "numAffected": 0,
+              "numAtRisk": 237
+            }
+          ],
+          "term": "Peripheral vascular disorder"
+        }
+      ],
+      "timeFrame": "Up to 56 weeks"
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "69"
+            },
+            {
+              "groupId": "BG001",
+              "value": "72"
+            },
+            {
+              "groupId": "BG002",
+              "value": "71"
+            },
+            {
+              "groupId": "BG003",
+              "value": "71"
+            },
+            {
+              "groupId": "BG004",
+              "value": "283"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "description": "Placebo IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+          "id": "BG000",
+          "title": "Placebo Plus SOC"
+        },
+        {
+          "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+          "id": "BG001",
+          "title": "Belimumab 1 mg/kg Plus SOC"
+        },
+        {
+          "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+          "id": "BG002",
+          "title": "Belimumab 4 mg/kg Plus SOC"
+        },
+        {
+          "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+          "id": "BG003",
+          "title": "Belimumab 10 mg/kg Plus SOC"
+        },
+        {
+          "description": "Total of all reporting groups",
+          "id": "BG004",
+          "title": "Total"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "8.8",
+                      "value": "50.7"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "spread": "8.3",
+                      "value": "50.6"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "spread": "10.2",
+                      "value": "50.7"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "spread": "9.3",
+                      "value": "49.5"
+                    },
+                    {
+                      "groupId": "BG004",
+                      "spread": "9.1",
+                      "value": "50.4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Age Continuous",
+          "unitOfMeasure": "years"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "56"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "56"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "60"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "54"
+                    },
+                    {
+                      "groupId": "BG004",
+                      "value": "226"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "13"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "16"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "11"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "17"
+                    },
+                    {
+                      "groupId": "BG004",
+                      "value": "57"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "55"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "61"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "59"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "59"
+                    },
+                    {
+                      "groupId": "BG004",
+                      "value": "234"
+                    }
+                  ]
+                }
+              ],
+              "title": "United States"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "14"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "11"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "12"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "12"
+                    },
+                    {
+                      "groupId": "BG004",
+                      "value": "49"
+                    }
+                  ]
+                }
+              ],
+              "title": "Poland"
+            }
+          ],
+          "paramType": "NUMBER",
+          "title": "Region of Enrollment",
+          "unitOfMeasure": "participants"
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "otherDetails": "For multi-center trials, no investigator will be authorized to publish study results from an individual center until the multi-center trial results are published. All manuscripts and abstracts must be submitted to the sponsor for review at least 30 days prior to submission for publication or for presentation at a scientific meeting. Proposed abstracts and publications will be reviewed promptly.",
+        "piSponsorEmployee": false,
+        "restrictionType": "OTHER",
+        "restrictiveAgreement": true
+      },
+      "pointOfContact": {
+        "organization": "GlaxoSmithKline",
+        "phone": "866-435-7343",
+        "title": "GSK Response Center"
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "analyses": [
+            {
+              "ciLowerLimit": "4.8",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": "32.8",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data.",
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.0097",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "paramType": "percent difference from placebo",
+              "paramValue": "18.8",
+              "statisticalMethod": "Likelihood ratio chi-squared",
+              "testedNonInferiority": false
+            },
+            {
+              "ciLowerLimit": "-3.9",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": "22.7",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data.",
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.1677",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "paramType": "percent difference from placebo",
+              "paramValue": "9.4",
+              "statisticalMethod": "Likelihood ratio chi-squared",
+              "testedNonInferiority": false
+            },
+            {
+              "ciLowerLimit": "-1.3",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": "25.8",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data.",
+              "groupIds": [
+                "OG000",
+                "OG003"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.0796",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "paramType": "percent difference from placebo",
+              "paramValue": "12.2",
+              "statisticalMethod": "Likelihood ratio chi-squared",
+              "testedNonInferiority": false
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "15.9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "34.7"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "25.4"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "28.2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "69"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "72"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "71"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "71"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "An ACR20 response is defined as having at least a 20% improvement in tender and swollen joints as well as a 20% improvement in 3 of 5 other criteria (patient assessment, physician assessment, pain scale, disability/functional questionnaire, and acute phase reactant value based on erythrocyte sedimentation rate \\[ESR\\]).",
+          "groups": [
+            {
+              "description": "Placebo IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG000",
+              "title": "Placebo Plus SOC"
+            },
+            {
+              "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG001",
+              "title": "Belimumab 1 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG002",
+              "title": "Belimumab 4 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG003",
+              "title": "Belimumab 10 mg/kg Plus SOC"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Analysis was performed on a modified intention-to-treat (MITT) population, defined as all patients who were randomized and received at least 1 dose of study agent.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Baseline, 24 weeks",
+          "title": "Percentage of Patients With ACR20 (American College of Rheumatology) Response at Week 24, Based on Erythrocyte Sedimentation Rate (ESR)",
+          "type": "PRIMARY",
+          "unitOfMeasure": "percentage of participants"
+        },
+        {
+          "analyses": [
+            {
+              "ciLowerLimit": "-3.0",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": "13.7",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data.",
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.2074",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "paramType": "percent difference from placebo",
+              "paramValue": "5.4",
+              "statisticalMethod": "Likelihood ratio chi-squared",
+              "testedNonInferiority": false
+            },
+            {
+              "ciLowerLimit": "-4.0",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": "12.2",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data.",
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.3177",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "paramType": "percent difference from placebo",
+              "paramValue": "4.1",
+              "statisticalMethod": "Likelihood ratio chi-squared",
+              "testedNonInferiority": false
+            },
+            {
+              "ciLowerLimit": "0.3",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": "19.2",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data.",
+              "groupIds": [
+                "OG000",
+                "OG003"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.0418",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "paramType": "percent difference from placebo",
+              "paramValue": "9.7",
+              "statisticalMethod": "Likelihood ratio chi-squared",
+              "testedNonInferiority": false
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "4.3"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "9.7"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "8.5"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "14.1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "69"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "72"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "71"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "71"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "An ACR50 response is defined as having at least a 50% improvement in tender and swollen joints as well as a 50% improvement in 3 of 5 other criteria (patient assessment, physician assessment, pain scale, disability/functional questionnaire, and acute phase reactant value based on erythrocyte sedimentation rate \\[ESR\\]).",
+          "groups": [
+            {
+              "description": "Placebo IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG000",
+              "title": "Placebo Plus SOC"
+            },
+            {
+              "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG001",
+              "title": "Belimumab 1 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG002",
+              "title": "Belimumab 4 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG003",
+              "title": "Belimumab 10 mg/kg Plus SOC"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Analysis was performed on a MITT population, defined as all patients who were randomized and received at least 1 dose of study agent.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Baseline, 24 weeks",
+          "title": "Percentage of Patients With an ACR50 Response at Week 24, Based on ESR",
+          "type": "SECONDARY",
+          "unitOfMeasure": "percentage of participants"
+        },
+        {
+          "analyses": [
+            {
+              "ciLowerLimit": "-4.0",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": "9.3",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data.",
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.4299",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "paramType": "percent difference from placebo",
+              "paramValue": "2.7",
+              "statisticalMethod": "Likelihood ratio chi-squared",
+              "testedNonInferiority": false
+            },
+            {
+              "ciLowerLimit": "-6.3",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": "3.3",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data.",
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.5393",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "paramType": "percent difference from placebo",
+              "paramValue": "-1.5",
+              "statisticalMethod": "Likelihood ratio chi-squared",
+              "testedNonInferiority": false
+            },
+            {
+              "ciLowerLimit": "-5.6",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": "5.4",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data.",
+              "groupIds": [
+                "OG000",
+                "OG003"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.9769",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "paramType": "percent difference from placebo",
+              "paramValue": "-0.1",
+              "statisticalMethod": "Likelihood ratio chi-squared",
+              "testedNonInferiority": false
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2.9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "5.6"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "1.4"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "2.8"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "69"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "72"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "71"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "71"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "An ACR70 response is defined as having at least a 70% improvement in tender and swollen joints as well as a 70% improvement in 3 of 5 other criteria (patient assessment, physician assessment, pain scale, disability/functional questionnaire, and acute phase reactant value based on erythrocyte sedimentation rate \\[ESR\\]).",
+          "groups": [
+            {
+              "description": "Placebo IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG000",
+              "title": "Placebo Plus SOC"
+            },
+            {
+              "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG001",
+              "title": "Belimumab 1 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG002",
+              "title": "Belimumab 4 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG003",
+              "title": "Belimumab 10 mg/kg Plus SOC"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Analysis was performed on a MITT population, defined as all patients who were randomized and received at least 1 dose of study agent.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Baseline, 24 weeks",
+          "title": "Percentage of Patients With an ACR70 Response at Week 24, Based on ESR",
+          "type": "SECONDARY",
+          "unitOfMeasure": "percentage of participants"
+        },
+        {
+          "analyses": [
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data. Patients who did not have any ACR response were censored at the last visit or exit visit, whichever occurred first. Patients who did not have an ACR response and discontinued from the study prior to study completion were censored at the last date on study.",
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.1752",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "Log Rank",
+              "testedNonInferiority": false
+            },
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data. Patients who did not have any ACR response were censored at the last visit or exit visit, whichever occurred first. Patients who did not have an ACR response and discontinued from the study prior to study completion were censored at the last date on study.",
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.3440",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "Log Rank",
+              "testedNonInferiority": false
+            },
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data. Patients who did not have any ACR response were censored at the last visit or exit visit, whichever occurred first. Patients who did not have an ACR response and discontinued from the study prior to study completion were censored at the last date on study.",
+              "groupIds": [
+                "OG000",
+                "OG003"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.4308",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "Log Rank",
+              "testedNonInferiority": false
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "comment": "75th percentile could not be estimated because ≥40% of patients had no response",
+                      "groupId": "OG000",
+                      "lowerLimit": "84",
+                      "upperLimit": "NA",
+                      "value": "112"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "60",
+                      "upperLimit": "168",
+                      "value": "109"
+                    },
+                    {
+                      "comment": "75th percentile could not be estimated because ≥40% of patients had no response",
+                      "groupId": "OG002",
+                      "lowerLimit": "49",
+                      "upperLimit": "NA",
+                      "value": "112"
+                    },
+                    {
+                      "comment": "75th percentile could not be estimated because ≥40% of patients had no response",
+                      "groupId": "OG003",
+                      "lowerLimit": "57",
+                      "upperLimit": "NA",
+                      "value": "111"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "69"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "72"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "71"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "71"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "The time to first ACR20 response (based on ESR) is defined as the time from the first dose to the first visit at which a patient first exhibited an ACR20 response, which may or may not have been sustained through Week 24.",
+          "dispersionType": "Inter-Quartile Range",
+          "groups": [
+            {
+              "description": "Placebo IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG000",
+              "title": "Placebo Plus SOC"
+            },
+            {
+              "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG001",
+              "title": "Belimumab 1 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG002",
+              "title": "Belimumab 4 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG003",
+              "title": "Belimumab 10 mg/kg Plus SOC"
+            }
+          ],
+          "paramType": "MEDIAN",
+          "populationDescription": "Analysis was performed on a MITT population, defined as all patients who were randomized and received at least 1 dose of study agent.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "0 to 24 weeks",
+          "title": "Time to First ACR20 Response, Based on ESR",
+          "type": "SECONDARY",
+          "unitOfMeasure": "days"
+        },
+        {
+          "description": "Measure not posted because time to ACR50 response was unable to be determined due to the small number of patients achieving an ACR50 response in the study.",
+          "reportingStatus": "NOT_POSTED",
+          "timeFrame": "0 to 24 weeks",
+          "title": "Time to First ACR50 Response, Based on ESR",
+          "type": "SECONDARY"
+        },
+        {
+          "description": "Measure not posted because time to ACR70 response was unable to be determined due to the small number of patients achieving an ACR70 response in the study.",
+          "reportingStatus": "NOT_POSTED",
+          "timeFrame": "0 to 24 weeks",
+          "title": "Time to First ACR70 Response, Based on ESR",
+          "type": "SECONDARY"
+        },
+        {
+          "analyses": [
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Missing data was handled by using last observation carried forward (LOCF) imputation.",
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.0958",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "t-test, 2 sided",
+              "testedNonInferiority": false
+            },
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Missing data was handled by using LOCF imputation.",
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.7864",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "t-test, 2 sided",
+              "testedNonInferiority": false
+            },
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Missing data was handled by using LOCF imputation.",
+              "groupIds": [
+                "OG000",
+                "OG003"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.0051",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "t-test, 2 sided",
+              "testedNonInferiority": false
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "0.15",
+                      "value": "-0.9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "0.18",
+                      "value": "-1.3"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.14",
+                      "value": "-0.9"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "spread": "0.15",
+                      "value": "-1.5"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "69"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "72"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "71"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "70"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "DAS is a composite index of a patient's level of RA disease activity. DAS28 is an abbreviated version of DAS, using a subset of 28 joints in the assessment, calculated based on 4 variables: 1) number of tender joints out of a total of 28 joints, 2) number of swollen joints out of a total of 28 joints, 3) ESR, 4) patient's global assessment of disease activity based on a 100-mm visual analog scale. The calculation provides a number on a scale from 0 to 10 (\\>5.1=active disease; \\<3.2=well controlled disease; \\<2.6=remission). Change from baseline \\>1.2 = good response and ≤0.6 = non-response.",
+          "dispersionType": "Standard Error",
+          "groups": [
+            {
+              "description": "Placebo IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG000",
+              "title": "Placebo Plus SOC"
+            },
+            {
+              "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG001",
+              "title": "Belimumab 1 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG002",
+              "title": "Belimumab 4 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG003",
+              "title": "Belimumab 10 mg/kg Plus SOC"
+            }
+          ],
+          "paramType": "MEAN",
+          "populationDescription": "Analysis was performed on a MITT population, defined as all patients who were randomized and received at least 1 dose of study agent and who had both a baseline and a Week 24 DAS28 score.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Baseline, 24 weeks",
+          "title": "Mean Change in Disease Activity Score 28 (DAS28) at Week 24",
+          "type": "SECONDARY",
+          "unitOfMeasure": "scores on a scale"
+        },
+        {
+          "analyses": [
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data. Patients who did not have good or moderate improvement in DAS28 were censored at the last visit or exit visit, whichever occurred first. Patients who did not have good or moderate improvement in DAS28 and discontinued from the study prior to study completion were censored at the last date on study.",
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.0960",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "Log Rank",
+              "testedNonInferiority": false
+            },
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data. Patients who did not have good or moderate improvement in DAS28 were censored at the last visit or exit visit, whichever occurred first. Patients who did not have good or moderate improvement in DAS28 and discontinued from the study prior to study completion were censored at the last date on study.",
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.2859",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "Log Rank",
+              "testedNonInferiority": false
+            },
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Patients who required rescue RA medications were declared nonresponders, as were patients who dropped out or were missing Week 24 data. Patients who did not have good or moderate improvement in DAS28 were censored at the last visit or exit visit, whichever occurred first. Patients who did not have good or moderate improvement in DAS28 and discontinued from the study prior to study completion were censored at the last date on study.",
+              "groupIds": [
+                "OG000",
+                "OG003"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.0109",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "Log Rank",
+              "testedNonInferiority": false
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "56",
+                      "upperLimit": "168",
+                      "value": "111"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "51",
+                      "upperLimit": "114",
+                      "value": "82"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "lowerLimit": "33",
+                      "upperLimit": "168",
+                      "value": "84"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "lowerLimit": "30",
+                      "upperLimit": "111",
+                      "value": "57"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "69"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "72"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "71"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "71"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "DAS28 response is defined as the time from the first dose to the first time at which a patient exhibited a \"good\" or a \"moderate\" improvement in RA disease activity, based on DAS28 improvements compared to baseline. Good response was defined as \\>1.2 change from baseline and DAS28 score ≤ 3.2. No response was defined as ≤ 0.6 change from baseline in DAS28 score or change between ≤ 1.2 and \\> 0.6 with a DAS28 score of \\> 5.1.",
+          "dispersionType": "Full Range",
+          "groups": [
+            {
+              "description": "Placebo IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG000",
+              "title": "Placebo Plus SOC"
+            },
+            {
+              "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG001",
+              "title": "Belimumab 1 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG002",
+              "title": "Belimumab 4 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG003",
+              "title": "Belimumab 10 mg/kg Plus SOC"
+            }
+          ],
+          "paramType": "MEDIAN",
+          "populationDescription": "Analysis was performed on a MITT population, defined as all patients who were randomized and received at least 1 dose of study agent.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "0 to 24 weeks",
+          "title": "Time to First DAS28 Response",
+          "type": "SECONDARY",
+          "unitOfMeasure": "days"
+        },
+        {
+          "analyses": [
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Missing data was handled by using LOCF imputation.",
+              "groupIds": [
+                "OG000",
+                "OG001"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.1940",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "t-test, 2 sided",
+              "testedNonInferiority": false
+            },
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Missing data was handled by using LOCF imputation.",
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.2561",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "t-test, 2 sided",
+              "testedNonInferiority": false
+            },
+            {
+              "ciPctValue": "95",
+              "groupDescription": "Missing data was handled by using LOCF imputation.",
+              "groupIds": [
+                "OG000",
+                "OG003"
+              ],
+              "nonInferiorityType": "SUPERIORITY_OR_OTHER",
+              "pValue": "0.8707",
+              "pValueComment": "P-value was not adjusted for multiple testing.",
+              "statisticalMethod": "t-test, 2 sided",
+              "testedNonInferiority": false
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "0.2",
+                      "value": "0.7"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "0.2",
+                      "value": "0.3"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "0.2",
+                      "value": "0.3"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "spread": "0.2",
+                      "value": "0.6"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "67"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "70"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "66"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "68"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "The modified total Sharp score method was used to evaluate radiographs of hands/wrists for erosions (ERO) and joint space narrowing (JSN). The total modified Sharp score ranges from 0 (no radiographic damage) to 200 (worst possible radiographic damage) and is the sum of the normalized ERO score (range 0-100) and the normalized JSN score (range 0-100). Higher scores indicated more damage.",
+          "dispersionType": "Standard Error",
+          "groups": [
+            {
+              "description": "Placebo IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG000",
+              "title": "Placebo Plus SOC"
+            },
+            {
+              "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG001",
+              "title": "Belimumab 1 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG002",
+              "title": "Belimumab 4 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG003",
+              "title": "Belimumab 10 mg/kg Plus SOC"
+            }
+          ],
+          "paramType": "MEAN",
+          "populationDescription": "Analysis was performed on a MITT population, defined as all patients who were randomized and received at least 1 dose of study agent and who had both a modified total Sharp score at baseline and at Week 24.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Baseline, 24 weeks",
+          "title": "Mean Change in Modified Total Sharp Score at Week 24",
+          "type": "SECONDARY",
+          "unitOfMeasure": "scores on a scale"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "89.9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "84.7"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "90.1"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "93.0"
+                    },
+                    {
+                      "groupId": "OG004",
+                      "value": "91.6"
+                    }
+                  ]
+                }
+              ],
+              "title": "Percent of patients with at least 1 AE"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "7.2"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "6.9"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "7.0"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "8.5"
+                    },
+                    {
+                      "groupId": "OG004",
+                      "value": "11.0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Percent of patients with at least 1 SAE"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1.5"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG003",
+                      "value": "1.4"
+                    },
+                    {
+                      "groupId": "OG004",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Percent of patients with an AE resulting in death"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "69"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "72"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "71"
+                },
+                {
+                  "groupId": "OG003",
+                  "value": "71"
+                },
+                {
+                  "groupId": "OG004",
+                  "value": "237"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Includes AEs reported in patients from the first dose of study agent throughout the study up to the Week 48/exit visit or 8 weeks following the last dose of study agent for patients who withdrew from this study or decided not to participate in the optional continuation protocol (LBRA99/NCT00583557).",
+          "groups": [
+            {
+              "description": "Placebo IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG000",
+              "title": "Placebo Plus SOC"
+            },
+            {
+              "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG001",
+              "title": "Belimumab 1 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG002",
+              "title": "Belimumab 4 mg/kg Plus SOC"
+            },
+            {
+              "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study",
+              "id": "OG003",
+              "title": "Belimumab 10 mg/kg Plus SOC"
+            },
+            {
+              "description": "Includes all patients who completed the 24-week double-blind period and opted to continue in a 24-week open-label extension period. Belimumab patients received the same dose or were switched to 10 mg/kg at the investigator's discretion and former placebo patients received belimumab 10 mg/kg. AE onset may be during the extension phase or continuing from the double-blind period.",
+              "id": "OG004",
+              "title": "Open-label Extension Period: All Active"
+            }
+          ],
+          "paramType": "NUMBER",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Up to 56 weeks",
+          "title": "Adverse Events (AE) Overview",
+          "type": "OTHER_PRE_SPECIFIED",
+          "unitOfMeasure": "percentage of participants"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "Placebo IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study.",
+          "id": "FG000",
+          "title": "Placebo Plus SOC"
+        },
+        {
+          "description": "Belimumab 1 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study. The 24-week open-label extension period of the study included patients who completed the 24-week double-blind period and opted to continue to receive the same dose in the 24-week open-label extension period of the study.",
+          "id": "FG001",
+          "title": "Belimumab 1 mg/kg Plus SOC"
+        },
+        {
+          "description": "Belimumab 4 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study. The 24-week open-label extension period of the study included patients who completed the 24-week double-blind period and opted to continue to receive the same dose in the 24-week open-label extension period of the study.",
+          "id": "FG002",
+          "title": "Belimumab 4 mg/kg Plus SOC"
+        },
+        {
+          "description": "Belimumab 10 mg/kg IV plus standard therapy (SOC) for RA for 24-week double-blind period of the study. The 24 week-open label extension period of the study included patients who completed the 24-week double-blind period and opted to continue in the 24-week open-label period of the study and included patients who were originally randomized to the belimumab 10 mg/kg group in the double-blind period, patients who switched to belimumab 10 mg/kg at the investigator's discretion, and former placebo patients.",
+          "id": "FG003",
+          "title": "Belimumab 10 mg/kg Plus SOC"
+        }
+      ],
+      "periods": [
+        {
+          "dropWithdraws": [
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "2"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "3"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "4"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "4"
+                }
+              ],
+              "type": "Adverse Event"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "3"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "2"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "1"
+                }
+              ],
+              "type": "Lack of Efficacy"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "0"
+                }
+              ],
+              "type": "Lost to Follow-up"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "5"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "5"
+                }
+              ],
+              "type": "Withdrawal by Subject"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "1"
+                }
+              ],
+              "type": "Protocol Violation"
+            }
+          ],
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "69"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "72"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "71"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "71"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "59"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "66"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "63"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "60"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "10"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "6"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "8"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "11"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "24-Week Double-Blind Period"
+        },
+        {
+          "dropWithdraws": [
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "7"
+                }
+              ],
+              "type": "Adverse Event"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "17"
+                }
+              ],
+              "type": "Lack of Efficacy"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "2"
+                }
+              ],
+              "type": "Lost to Follow-up"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "12"
+                }
+              ],
+              "type": "Withdrawal by Subject"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "2"
+                }
+              ],
+              "type": "Lack of Compliance"
+            }
+          ],
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "comment": "Of 59: 56 switched to 10 mg/kg; 3 elected not to continue in the open-label extension.",
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "comment": "Of 66: 53 switched to 10 mg/kg; 2 elected not continue in the open-label extension.",
+                  "groupId": "FG001",
+                  "numSubjects": "11"
+                },
+                {
+                  "comment": "Of 63: 53 switched to 10 mg/kg; 2 elected not continue in the open-label extension.",
+                  "groupId": "FG002",
+                  "numSubjects": "8"
+                },
+                {
+                  "comment": "Of 60: 56 continued with 10 mg/kg; 4 elected not to continue in the open-label extension.",
+                  "groupId": "FG003",
+                  "numSubjects": "218"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "11"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "7"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "178"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG003",
+                  "numSubjects": "40"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "24-Week Open-Label Extension Period"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "source": "https://clinicaltrials.gov/api/v2/studies",
+  "sample_type": "convenience + sex-term challenge",
+  "selection": "first three NCT IDs with results, first without results, and highest sex-term outcome candidate per condition among first 100 API matches",
+  "fetched_at_utc": "2026-10-24T23:20:48.795912+00:00",
+  "records": [
+    {
+      "nct_id": "NCT00074724",
+      "condition_query": "heart failure",
+      "has_results": true,
+      "last_update_posted": "2021-04-08",
+      "sha256": "e64eaef74e04e405b8c25a7b3d3a1414eb486507856266f1066809230096d38f",
+      "path": "data/real_gold/NCT00074724.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:49.452302+00:00"
+    },
+    {
+      "nct_id": "NCT00209339",
+      "condition_query": "heart failure",
+      "has_results": true,
+      "last_update_posted": "2018-11-07",
+      "sha256": "56d9367789756c803c87d823ff8a74a17e6427eb2b4de325e8ba5d6479a57645",
+      "path": "data/real_gold/NCT00209339.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:49.454273+00:00"
+    },
+    {
+      "nct_id": "NCT00424762",
+      "condition_query": "heart failure",
+      "has_results": true,
+      "last_update_posted": "2012-04-04",
+      "sha256": "ab57bfa46e64627955e3784439621efc2af13120c7f685630df61065996a6095",
+      "path": "data/real_gold/NCT00424762.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:49.469360+00:00"
+    },
+    {
+      "nct_id": "NCT00012870",
+      "condition_query": "heart failure",
+      "has_results": false,
+      "last_update_posted": "2015-04-07",
+      "sha256": "daa5d71aacfbb7497b6dc95144785777bb82c30c7f869a13c77de937a8fb8f01",
+      "path": "data/real_gold/NCT00012870.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:49.469958+00:00"
+    },
+    {
+      "nct_id": "NCT00547729",
+      "condition_query": "heart failure",
+      "has_results": true,
+      "last_update_posted": "2021-09-02",
+      "sha256": "92666642af0dea9203820ea955dcc9389f01f0adbb51399e7552c96ceb2a0cc4",
+      "path": "data/real_gold/NCT00547729.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:49.471000+00:00"
+    },
+    {
+      "nct_id": "NCT00043550",
+      "condition_query": "major depressive disorder",
+      "has_results": true,
+      "last_update_posted": "2017-06-02",
+      "sha256": "42353219cd6221d9fd6f0986e4fdf164a30961702230ab55527e8e3b6ff45b9c",
+      "path": "data/real_gold/NCT00043550.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:49.951355+00:00"
+    },
+    {
+      "nct_id": "NCT00151372",
+      "condition_query": "major depressive disorder",
+      "has_results": true,
+      "last_update_posted": "2010-01-11",
+      "sha256": "a40a0e18688310691fdbe04bd284c91f6f4fee1fbaf622cc8426569f4c5aa42f",
+      "path": "data/real_gold/NCT00151372.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:49.952355+00:00"
+    },
+    {
+      "nct_id": "NCT00340379",
+      "condition_query": "major depressive disorder",
+      "has_results": true,
+      "last_update_posted": "2014-08-19",
+      "sha256": "75dd455873f540c9f2cdfa8ed775e3f15132dd8ebeb16aa3ab401739e5ce8277",
+      "path": "data/real_gold/NCT00340379.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:49.953354+00:00"
+    },
+    {
+      "nct_id": "NCT00042562",
+      "condition_query": "major depressive disorder",
+      "has_results": false,
+      "last_update_posted": "2006-07-19",
+      "sha256": "6259b06550d8e050ddae6d8a6b9f0fae8180332c77f754c060534c1c7c312249",
+      "path": "data/real_gold/NCT00042562.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:49.953354+00:00"
+    },
+    {
+      "nct_id": "NCT01187407",
+      "condition_query": "major depressive disorder",
+      "has_results": true,
+      "last_update_posted": "2018-04-24",
+      "sha256": "8c6be885e6f6bcf49747a9e38b2e876c75f856e5f05d577671525afd0b58d589",
+      "path": "data/real_gold/NCT01187407.json",
+      "outcome_sex_term_score": 2,
+      "fetched_at_utc": "2026-10-24T23:20:49.955387+00:00"
+    },
+    {
+      "nct_id": "NCT00071812",
+      "condition_query": "rheumatoid arthritis",
+      "has_results": true,
+      "last_update_posted": "2013-08-14",
+      "sha256": "681d90129b5c00dd2e95513a9058b21a6dd565f107bd3cdfcb42c31db75d5430",
+      "path": "data/real_gold/NCT00071812.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:50.861657+00:00"
+    },
+    {
+      "nct_id": "NCT00162266",
+      "condition_query": "rheumatoid arthritis",
+      "has_results": true,
+      "last_update_posted": "2012-06-01",
+      "sha256": "6bd43c2c704bd236e89321a67454b151fdb645e4607d1a48067e1bdc331f060a",
+      "path": "data/real_gold/NCT00162266.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:50.871603+00:00"
+    },
+    {
+      "nct_id": "NCT00233363",
+      "condition_query": "rheumatoid arthritis",
+      "has_results": true,
+      "last_update_posted": "2021-06-04",
+      "sha256": "987396b1c8f9cbac848c8291d8e7b11397e134d6a8e73e5bd4a299c60792262a",
+      "path": "data/real_gold/NCT00233363.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:50.901569+00:00"
+    },
+    {
+      "nct_id": "NCT00001731",
+      "condition_query": "rheumatoid arthritis",
+      "has_results": false,
+      "last_update_posted": "2008-03-04",
+      "sha256": "b06356b356a1a3f8639fff411ad717a427e2e29463b709257038e8280d11c5de",
+      "path": "data/real_gold/NCT00001731.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:50.902572+00:00"
+    },
+    {
+      "nct_id": "NCT01317797",
+      "condition_query": "rheumatoid arthritis",
+      "has_results": true,
+      "last_update_posted": "2015-08-20",
+      "sha256": "6a7c528329a3ada525262228f27c8a6472e82f53b9cf433bf6839abc9645a39b",
+      "path": "data/real_gold/NCT01317797.json",
+      "outcome_sex_term_score": 4,
+      "fetched_at_utc": "2026-10-24T23:20:50.903572+00:00"
+    },
+    {
+      "nct_id": "NCT00182689",
+      "condition_query": "lung cancer",
+      "has_results": true,
+      "last_update_posted": "2014-05-21",
+      "sha256": "26ba169a8f5baf2865dc339bfb088353c70f82fd129585b8aa2e98e7b74d1143",
+      "path": "data/real_gold/NCT00182689.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:51.937832+00:00"
+    },
+    {
+      "nct_id": "NCT00365053",
+      "condition_query": "lung cancer",
+      "has_results": true,
+      "last_update_posted": "2018-06-07",
+      "sha256": "95c1859bc1799957f09c18f17f93a84162d3036d337250666e88b93676904dc7",
+      "path": "data/real_gold/NCT00365053.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:51.940872+00:00"
+    },
+    {
+      "nct_id": "NCT00385996",
+      "condition_query": "lung cancer",
+      "has_results": true,
+      "last_update_posted": "2018-12-28",
+      "sha256": "f6dfc4a1d92b6de1c41c0892197c5476215160db3f910c5cc86697c84fee48b4",
+      "path": "data/real_gold/NCT00385996.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:52.023710+00:00"
+    },
+    {
+      "nct_id": "NCT00003299",
+      "condition_query": "lung cancer",
+      "has_results": false,
+      "last_update_posted": "2016-07-20",
+      "sha256": "c4c0831c6bfc81c0a8891e70497882fe2ca3eef34b21dbb99f103f9632dccd7c",
+      "path": "data/real_gold/NCT00003299.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:52.027706+00:00"
+    },
+    {
+      "nct_id": "NCT00560573",
+      "condition_query": "lung cancer",
+      "has_results": true,
+      "last_update_posted": "2013-03-21",
+      "sha256": "8b138035e3872a5c1acb583d4f31fa0512173b9d8ec7ec3719c72c4d47156983",
+      "path": "data/real_gold/NCT00560573.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:20:52.038728+00:00"
+    },
+    {
+      "nct_id": "NCT00381303",
+      "condition_query": "targeted challenge",
+      "has_results": true,
+      "last_update_posted": "2014-04-21",
+      "sha256": "df14d95ff27b775a96d1086f36fb19565fd2881c975cd05527f7b8c6c588b01c",
+      "path": "data/real_gold/NCT00381303.json",
+      "outcome_sex_term_score": 25,
+      "fetched_at_utc": "2026-10-24T23:21:37.439868+00:00"
+    },
+    {
+      "nct_id": "NCT03844321",
+      "condition_query": "targeted challenge",
+      "has_results": true,
+      "last_update_posted": "2021-05-13",
+      "sha256": "e3aa3c4325588e95b32527423fec2586d5e3067a609a58dd9de44e7cd892b1d1",
+      "path": "data/real_gold/NCT03844321.json",
+      "outcome_sex_term_score": 10,
+      "fetched_at_utc": "2026-10-24T23:21:37.447854+00:00"
+    },
+    {
+      "nct_id": "NCT01541852",
+      "condition_query": "targeted challenge",
+      "has_results": false,
+      "last_update_posted": "2015-03-17",
+      "sha256": "eb84c86ef59f84f587216dd343a51d278420b1411bbeb0def27e085ec322c73d",
+      "path": "data/real_gold/NCT01541852.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:22:12.034642+00:00"
+    },
+    {
+      "nct_id": "NCT01094717",
+      "condition_query": "targeted challenge",
+      "has_results": true,
+      "last_update_posted": "2019-06-26",
+      "sha256": "776b6e611d0f7970db7da2c4b0827bc96f4bd1585c333f82ec1bc0b0f7411d69",
+      "path": "data/real_gold/NCT01094717.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:22:12.035637+00:00"
+    },
+    {
+      "nct_id": "NCT04680273",
+      "condition_query": "targeted challenge",
+      "has_results": true,
+      "last_update_posted": "2023-02-02",
+      "sha256": "e5e958970f5e5ac14f648c014d05c3ea8080a474d2205196c954063d22819e2a",
+      "path": "data/real_gold/NCT04680273.json",
+      "outcome_sex_term_score": 0,
+      "fetched_at_utc": "2026-10-24T23:22:21.853320+00:00"
+    }
+  ]
+}

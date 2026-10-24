@@ -123,10 +123,10 @@ class Supervisor:
         fails = getattr(self, "_batch_fails", 0)
         self._batch_fails = 0
         self.batches.append({"idx": idx, "fails": fails, "resolved": resolved})
-        if fails == 0:
-            self.last_clean = idx
         self.no_progress = 0 if resolved > 0 else self.no_progress + 1
         if not self.enabled:
+            if fails == 0:
+                self.last_clean = idx
             return
         for name, t in self.trackers.items():
             if t.n >= self.l.min_observations:
@@ -138,6 +138,8 @@ class Supervisor:
         if self.no_progress >= self.l.stuck_batches:
             raise HaltRun("STUCK", f"{self.no_progress} consecutive batches resolved zero trials")
         self.check_budget()
+        if fails == 0:
+            self.last_clean = idx
 
     # ---- observability -----------------------------------------------------
     def snapshot(self):

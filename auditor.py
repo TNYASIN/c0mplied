@@ -25,7 +25,9 @@ def audit_trial(trial, llm):
 
     # A. eligibility language
     cands = elig_candidates(trial.get("eligibility_text"))
-    if not cands:
+    if not (trial.get("eligibility_text") or "").strip():
+        out.append(V(nct, "eligibility_exclusion", "UNCLEAR", "", 0.0, "rule"))
+    elif not cands:
         out.append(V(nct, "eligibility_exclusion", "NONE", "", 0.9, "rule"))
     else:
         payload = {"nct_id": nct, "text": (trial.get("eligibility_text") or "")[:6000],
@@ -39,16 +41,33 @@ def audit_trial(trial, llm):
     if not trial.get("has_results"):
         out.append(V(nct, "enrollment_by_sex", "NO_RESULTS_POSTED", "", 1.0, "rule"))
     else:
-        hit = [b for b in trial.get("baseline_measures") or [] if re.search(r"\b(sex|gender)\b", b.get("title", ""), re.I)]
-        if hit:
-            out.append(V(nct, "enrollment_by_sex", "REPORTED", hit[0]["title"], 1.0, "rule"))
+        if trial.get("female_n") is not None or trial.get("male_n") is not None:
+            quote = f"baseline sex counts: female={trial.get('female_n')}, male={trial.get('male_n')}"
+            out.append(V(nct, "enrollment_by_sex", "REPORTED", quote, 1.0, "rule"))
         else:
             out.append(V(nct, "enrollment_by_sex", "NOT_REPORTED_IN_RECORD", "", 1.0, "rule"))
 
     # C. sex-stratified outcome results
     if not trial.get("has_results"):
         out.append(V(nct, "sex_stratified_results", "NO_RESULTS_POSTED", "", 1.0, "rule"))
+    elif not trial.get("outcome_measures"):
+        out.append(V(nct, "sex_stratified_results", "UNCLEAR", "", 0.0, "rule"))
     else:
+        proven = []
+        for i, measure in enumerate(trial["outcome_measures"], 1):
+            values = measure.get("sex_values") or {}
+            for female in values.get("female", []):
+                male = next((m for m in values.get("male", []) if m.get("match_key") == female.get("match_key")), None)
+                if male:
+                    proven.append((i, female, male))
+        if proven:
+            i, female, male = proven[0]
+            quote = (f"Outcome {i}: female={female['value']} ({female['path']}); "
+                     f"male={male['value']} ({male['path']})")
+            v = V(nct, "sex_stratified_results", "STRATIFIED_FOUND", quote, 1.0, "structured_rule")
+            v["evidence_paths"] = [female["path"], male["path"]]
+            out.append(v)
+            return out
         hits, lines = strat_payload_lines(trial)
         if not hits:
             out.append(V(nct, "sex_stratified_results", "NOT_FOUND_IN_RECORD", "", 0.9, "rule"))
@@ -56,6 +75,9 @@ def audit_trial(trial, llm):
             payload = {"nct_id": nct, "lines": lines}
             r = _llm_json(llm, "stratified", payload)
             v = V(nct, "sex_stratified_results", r["label"], r["evidence_quote"], r["confidence"], "llm")
+            if v["label"] == "STRATIFIED_FOUND":
+                v["label"], v["quote"], v["confidence"], v["method"] = "UNCLEAR", "", 0.0, "evidence_gate"
+                v["verify_note"] = "sex-specific outcome values absent; human review required"
             v["_task"], v["_payload"] = "stratified", payload
             out.append(v)
     return out

@@ -1,0 +1,876 @@
+[
+  {
+    "nct_id": "NCT00074724",
+    "condition": "heart failure",
+    "source_url": "https://clinicaltrials.gov/study/NCT00074724",
+    "snapshot_sha256": "e64eaef74e04e405b8c25a7b3d3a1414eb486507856266f1066809230096d38f",
+    "last_update_posted": "2021-04-08",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "NONE",
+    "enrollment_by_sex": "NOT_REPORTED_IN_RECORD",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "",
+        "note": "Full eligibilityCriteria reviewed; no qualifying restriction found"
+      },
+      "enrollment_by_sex": {
+        "reviewed_path": "resultsSection.baselineCharacteristicsModule.measures",
+        "note": "Sex measure title has no posted numeric measurement"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 2,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00209339",
+    "condition": "heart failure",
+    "source_url": "https://clinicaltrials.gov/study/NCT00209339",
+    "snapshot_sha256": "56d9367789756c803c87d823ff8a74a17e6427eb2b4de325e8ba5d6479a57645",
+    "last_update_posted": "2018-11-07",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "NONE",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "",
+        "note": "Full eligibilityCriteria reviewed; no qualifying restriction found"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "23"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 79,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00424762",
+    "condition": "heart failure",
+    "source_url": "https://clinicaltrials.gov/study/NCT00424762",
+    "snapshot_sha256": "ab57bfa46e64627955e3784439621efc2af13120c7f685630df61065996a6095",
+    "last_update_posted": "2012-04-04",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "NONE",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "",
+        "note": "Full eligibilityCriteria reviewed; no qualifying restriction found"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[2].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[2].classes[0].categories[0].measurements[0].value",
+        "example_value": "32"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 3,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00012870",
+    "condition": "heart failure",
+    "source_url": "https://clinicaltrials.gov/study/NCT00012870",
+    "snapshot_sha256": "daa5d71aacfbb7497b6dc95144785777bb82c30c7f869a13c77de937a8fb8f01",
+    "last_update_posted": "2015-04-07",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "NONE",
+    "enrollment_by_sex": "NO_RESULTS_POSTED",
+    "sex_stratified": "NO_RESULTS_POSTED",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "",
+        "note": "Full eligibilityCriteria reviewed; no qualifying restriction found"
+      },
+      "enrollment_by_sex": {
+        "path": "hasResults",
+        "quote": "false"
+      },
+      "sex_stratified": {
+        "path": "hasResults",
+        "quote": "false"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00547729",
+    "condition": "heart failure",
+    "source_url": "https://clinicaltrials.gov/study/NCT00547729",
+    "snapshot_sha256": "92666642af0dea9203820ea955dcc9389f01f0adbb51399e7552c96ceb2a0cc4",
+    "last_update_posted": "2021-09-02",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "CONDITIONAL",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Female subjects of childbearing potential must have a negative pregnancy test",
+        "note": "Pregnancy test condition; no blanket exclusion"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "19"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 1,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00043550",
+    "condition": "major depressive disorder",
+    "source_url": "https://clinicaltrials.gov/study/NCT00043550",
+    "snapshot_sha256": "42353219cd6221d9fd6f0986e4fdf164a30961702230ab55527e8e3b6ff45b9c",
+    "last_update_posted": "2017-06-02",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "NONE",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "",
+        "note": "Full eligibilityCriteria reviewed; no qualifying restriction found"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[2].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[2].classes[0].categories[0].measurements[0].value",
+        "example_value": "30"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 1,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00151372",
+    "condition": "major depressive disorder",
+    "source_url": "https://clinicaltrials.gov/study/NCT00151372",
+    "snapshot_sha256": "a40a0e18688310691fdbe04bd284c91f6f4fee1fbaf622cc8426569f4c5aa42f",
+    "last_update_posted": "2010-01-11",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "NONE",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "",
+        "note": "Full eligibilityCriteria reviewed; no qualifying restriction found"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "42"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 2,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00340379",
+    "condition": "major depressive disorder",
+    "source_url": "https://clinicaltrials.gov/study/NCT00340379",
+    "snapshot_sha256": "75dd455873f540c9f2cdfa8ed775e3f15132dd8ebeb16aa3ab401739e5ce8277",
+    "last_update_posted": "2014-08-19",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "A positive pregnancy test",
+        "note": "Also has contraception condition"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[2].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[2].classes[0].categories[0].measurements[0].value",
+        "example_value": "21"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 3,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00042562",
+    "condition": "major depressive disorder",
+    "source_url": "https://clinicaltrials.gov/study/NCT00042562",
+    "snapshot_sha256": "6259b06550d8e050ddae6d8a6b9f0fae8180332c77f754c060534c1c7c312249",
+    "last_update_posted": "2006-07-19",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+    "enrollment_by_sex": "NO_RESULTS_POSTED",
+    "sex_stratified": "NO_RESULTS_POSTED",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "You are a woman and are pregnant or breastfeeding.",
+        "note": "Explicit exclusion"
+      },
+      "enrollment_by_sex": {
+        "path": "hasResults",
+        "quote": "false"
+      },
+      "sex_stratified": {
+        "path": "hasResults",
+        "quote": "false"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT01187407",
+    "condition": "major depressive disorder",
+    "source_url": "https://clinicaltrials.gov/study/NCT01187407",
+    "snapshot_sha256": "8c6be885e6f6bcf49747a9e38b2e876c75f856e5f05d577671525afd0b58d589",
+    "last_update_posted": "2018-04-24",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "CONDITIONAL",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Using a reliable method of birth control",
+        "note": "Birth-control condition omitted by current keyword trigger"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "149"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 20,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00071812",
+    "condition": "rheumatoid arthritis",
+    "source_url": "https://clinicaltrials.gov/study/NCT00071812",
+    "snapshot_sha256": "681d90129b5c00dd2e95513a9058b21a6dd565f107bd3cdfcb42c31db75d5430",
+    "last_update_posted": "2013-08-14",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "NONE",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "",
+        "note": "Full eligibilityCriteria reviewed; no qualifying restriction found"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "56"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 10,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00162266",
+    "condition": "rheumatoid arthritis",
+    "source_url": "https://clinicaltrials.gov/study/NCT00162266",
+    "snapshot_sha256": "6bd43c2c704bd236e89321a67454b151fdb645e4607d1a48067e1bdc331f060a",
+    "last_update_posted": "2012-06-01",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "not nursing and not pregnant",
+        "note": "Also permits WOCBP with contraception"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "86"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 68,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00233363",
+    "condition": "rheumatoid arthritis",
+    "source_url": "https://clinicaltrials.gov/study/NCT00233363",
+    "snapshot_sha256": "987396b1c8f9cbac848c8291d8e7b11397e134d6a8e73e5bd4a299c60792262a",
+    "last_update_posted": "2021-06-04",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Patients who are pregnant, possibly pregnant, or lactating",
+        "note": "Explicit exclusion"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "49"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 1,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00001731",
+    "condition": "rheumatoid arthritis",
+    "source_url": "https://clinicaltrials.gov/study/NCT00001731",
+    "snapshot_sha256": "b06356b356a1a3f8639fff411ad717a427e2e29463b709257038e8280d11c5de",
+    "last_update_posted": "2008-03-04",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "CONDITIONAL",
+    "enrollment_by_sex": "NO_RESULTS_POSTED",
+    "sex_stratified": "NO_RESULTS_POSTED",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Female patients of childbearing potential must use reliable forms of contraception",
+        "note": "Contraception condition"
+      },
+      "enrollment_by_sex": {
+        "path": "hasResults",
+        "quote": "false"
+      },
+      "sex_stratified": {
+        "path": "hasResults",
+        "quote": "false"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT01317797",
+    "condition": "rheumatoid arthritis",
+    "source_url": "https://clinicaltrials.gov/study/NCT01317797",
+    "snapshot_sha256": "6a7c528329a3ada525262228f27c8a6472e82f53b9cf433bf6839abc9645a39b",
+    "last_update_posted": "2015-08-20",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Pregnant or lactating female patients have to be excluded.",
+        "note": "Also has contraception condition"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "5"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 18,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00182689",
+    "condition": "lung cancer",
+    "source_url": "https://clinicaltrials.gov/study/NCT00182689",
+    "snapshot_sha256": "26ba169a8f5baf2865dc339bfb088353c70f82fd129585b8aa2e98e7b74d1143",
+    "last_update_posted": "2014-05-21",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "patients must not be pregnant or nursing",
+        "note": "Also has contraception condition"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "18"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 3,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00365053",
+    "condition": "lung cancer",
+    "source_url": "https://clinicaltrials.gov/study/NCT00365053",
+    "snapshot_sha256": "95c1859bc1799957f09c18f17f93a84162d3036d337250666e88b93676904dc7",
+    "last_update_posted": "2018-06-07",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Not pregnant or nursing",
+        "note": "Also has contraception condition"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "5"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 6,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00385996",
+    "condition": "lung cancer",
+    "source_url": "https://clinicaltrials.gov/study/NCT00385996",
+    "snapshot_sha256": "f6dfc4a1d92b6de1c41c0892197c5476215160db3f910c5cc86697c84fee48b4",
+    "last_update_posted": "2018-12-28",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "CONDITIONAL",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Women of child-bearing potential must be taking adequate contraceptive precautions",
+        "note": "Contraception condition"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "11"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 4,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00003299",
+    "condition": "lung cancer",
+    "source_url": "https://clinicaltrials.gov/study/NCT00003299",
+    "snapshot_sha256": "c4c0831c6bfc81c0a8891e70497882fe2ca3eef34b21dbb99f103f9632dccd7c",
+    "last_update_posted": "2016-07-20",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+    "enrollment_by_sex": "NO_RESULTS_POSTED",
+    "sex_stratified": "NO_RESULTS_POSTED",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Not pregnant or nursing",
+        "note": "Restriction appears beyond the current 300-character line truncation"
+      },
+      "enrollment_by_sex": {
+        "path": "hasResults",
+        "quote": "false"
+      },
+      "sex_stratified": {
+        "path": "hasResults",
+        "quote": "false"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00560573",
+    "condition": "lung cancer",
+    "source_url": "https://clinicaltrials.gov/study/NCT00560573",
+    "snapshot_sha256": "8b138035e3872a5c1acb583d4f31fa0512173b9d8ec7ec3719c72c4d47156983",
+    "last_update_posted": "2013-03-21",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "NONE",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "",
+        "note": "Full eligibilityCriteria reviewed; no qualifying restriction found"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "9"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 17,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT00381303",
+    "condition": "targeted challenge",
+    "source_url": "https://clinicaltrials.gov/study/NCT00381303",
+    "snapshot_sha256": "df14d95ff27b775a96d1086f36fb19565fd2881c975cd05527f7b8c6c588b01c",
+    "last_update_posted": "2014-04-21",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "PREGNANCY_LACTATION_EXCLUSION",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "STRATIFIED_FOUND",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Not pregnant or breastfeeding",
+        "note": "Explicit exclusion"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "287"
+      },
+      "sex_stratified": {
+        "path": "resultsSection.outcomeMeasuresModule.outcomeMeasures[0].title",
+        "quote": "Number of Viral Load (VL) < 50 HIV-1 RNA Copies/mL (Time to Loss of Virologic Response[TLOVR]) Subjects by Sex",
+        "sex_groups": [
+          "Female",
+          "Male"
+        ],
+        "sex_classes": [],
+        "value_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures[0].classes[0].categories[0].measurements[0].value",
+        "example_value": "146",
+        "note": "Outcome values map to sex-named groups/classes; inspect full outcome for mapping"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT03844321",
+    "condition": "targeted challenge",
+    "source_url": "https://clinicaltrials.gov/study/NCT03844321",
+    "snapshot_sha256": "e3aa3c4325588e95b32527423fec2586d5e3067a609a58dd9de44e7cd892b1d1",
+    "last_update_posted": "2021-05-13",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "NONE",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "STRATIFIED_FOUND",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "",
+        "note": "Full eligibilityCriteria reviewed; no qualifying restriction found"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex/Gender, Customized",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "1780"
+      },
+      "sex_stratified": {
+        "path": "resultsSection.outcomeMeasuresModule.outcomeMeasures[17].title",
+        "quote": "Estimated Weekly Change in World Health Organization-5 (WHO-5) Stratified by Sex",
+        "sex_groups": [],
+        "sex_classes": [
+          "Baseline to 8 Weeks: Male",
+          "Baseline to 8 Weeks: Female",
+          "Baseline to 20 Weeks: Male",
+          "Baseline to 20 Weeks: Female"
+        ],
+        "value_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures[17].classes[0].categories[0].measurements[0].value",
+        "example_value": "0.49",
+        "note": "Outcome values map to sex-named groups/classes; inspect full outcome for mapping"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT01541852",
+    "condition": "targeted challenge",
+    "source_url": "https://clinicaltrials.gov/study/NCT01541852",
+    "snapshot_sha256": "eb84c86ef59f84f587216dd343a51d278420b1411bbeb0def27e085ec322c73d",
+    "last_update_posted": "2015-03-17",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "BLANKET_EXCLUSION_CHILDBEARING",
+    "enrollment_by_sex": "NO_RESULTS_POSTED",
+    "sex_stratified": "NO_RESULTS_POSTED",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Women of childbearing potential are excluded from this trial.",
+        "note": "Whole-trial exclusion"
+      },
+      "enrollment_by_sex": {
+        "path": "hasResults",
+        "quote": "false"
+      },
+      "sex_stratified": {
+        "path": "hasResults",
+        "quote": "false"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT01094717",
+    "condition": "targeted challenge",
+    "source_url": "https://clinicaltrials.gov/study/NCT01094717",
+    "snapshot_sha256": "776b6e611d0f7970db7da2c4b0827bc96f4bd1585c333f82ec1bc0b0f7411d69",
+    "last_update_posted": "2019-06-26",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "ALL",
+    "eligibility": "UNCLEAR",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "ALL"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Women of childbearing potential are excluded from the actretin arm of the study.",
+        "note": "Arm-specific exclusion; another arm explicitly permits enrollment"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[2].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[2].classes[0].categories[0].measurements[0].value",
+        "example_value": "0"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 3,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  },
+  {
+    "nct_id": "NCT04680273",
+    "condition": "targeted challenge",
+    "source_url": "https://clinicaltrials.gov/study/NCT04680273",
+    "snapshot_sha256": "e5e958970f5e5ac14f648c014d05c3ea8080a474d2205196c954063d22819e2a",
+    "last_update_posted": "2023-02-02",
+    "review_status": "single_reviewer_provisional",
+    "reviewer": "Codex",
+    "sex_restriction": "FEMALE",
+    "eligibility": "BLANKET_EXCLUSION_CHILDBEARING",
+    "enrollment_by_sex": "REPORTED",
+    "sex_stratified": "NOT_FOUND_IN_RECORD",
+    "evidence": {
+      "sex_restriction": {
+        "path": "protocolSection.eligibilityModule.sex",
+        "quote": "FEMALE"
+      },
+      "eligibility": {
+        "path": "protocolSection.eligibilityModule.eligibilityCriteria",
+        "quote": "Women of childbearing potential, women who are pregnant or breastfeeding",
+        "note": "Whole-trial exclusion; female-only trial"
+      },
+      "enrollment_by_sex": {
+        "path": "resultsSection.baselineCharacteristicsModule.measures[1].title",
+        "quote": "Sex: Female, Male",
+        "value_path": "resultsSection.baselineCharacteristicsModule.measures[1].classes[0].categories[0].measurements[0].value",
+        "example_value": "6"
+      },
+      "sex_stratified": {
+        "reviewed_path": "resultsSection.outcomeMeasuresModule.outcomeMeasures",
+        "outcomes_reviewed": 35,
+        "note": "No outcome values mapped to sex/gender groups in the frozen result module"
+      }
+    }
+  }
+]

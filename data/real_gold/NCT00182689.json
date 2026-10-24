@@ -1,0 +1,3286 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D002283",
+          "term": "Carcinoma, Bronchogenic"
+        },
+        {
+          "id": "D001984",
+          "term": "Bronchial Neoplasms"
+        },
+        {
+          "id": "D008175",
+          "term": "Lung Neoplasms"
+        },
+        {
+          "id": "D012142",
+          "term": "Respiratory Tract Neoplasms"
+        },
+        {
+          "id": "D013899",
+          "term": "Thoracic Neoplasms"
+        },
+        {
+          "id": "D009371",
+          "term": "Neoplasms by Site"
+        },
+        {
+          "id": "D009369",
+          "term": "Neoplasms"
+        },
+        {
+          "id": "D008171",
+          "term": "Lung Diseases"
+        },
+        {
+          "id": "D012140",
+          "term": "Respiratory Tract Diseases"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D055752",
+          "term": "Small Cell Lung Carcinoma"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D010671",
+          "term": "Phenylurea Compounds"
+        },
+        {
+          "id": "D014508",
+          "term": "Urea"
+        },
+        {
+          "id": "D000577",
+          "term": "Amides"
+        },
+        {
+          "id": "D009930",
+          "term": "Organic Chemicals"
+        },
+        {
+          "id": "D001555",
+          "term": "Benzene Derivatives"
+        },
+        {
+          "id": "D006841",
+          "term": "Hydrocarbons, Aromatic"
+        },
+        {
+          "id": "D006844",
+          "term": "Hydrocarbons, Cyclic"
+        },
+        {
+          "id": "D006838",
+          "term": "Hydrocarbons"
+        },
+        {
+          "id": "D009536",
+          "term": "Niacinamide"
+        },
+        {
+          "id": "D009539",
+          "term": "Nicotinic Acids"
+        },
+        {
+          "id": "D000147",
+          "term": "Acids, Heterocyclic"
+        },
+        {
+          "id": "D006571",
+          "term": "Heterocyclic Compounds"
+        },
+        {
+          "id": "D011725",
+          "term": "Pyridines"
+        },
+        {
+          "id": "D006573",
+          "term": "Heterocyclic Compounds, 1-Ring"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D000077157",
+          "term": "Sorafenib"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "description": "Patients receive oral sorafenib twice daily on days 1-28. Courses repeat every 28 days in the absence of disease progression or unacceptable toxicity.",
+          "interventionNames": [
+            "Drug: sorafenib tosylate"
+          ],
+          "label": "Treatment (sorafenib tosylate)",
+          "type": "EXPERIMENTAL"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "Treatment (sorafenib tosylate)"
+          ],
+          "description": "Given orally",
+          "name": "sorafenib tosylate",
+          "otherNames": [
+            "BAY 43-9006",
+            "BAY 43-9006 Tosylate Salt",
+            "BAY 54-9085",
+            "Nexavar",
+            "SFN"
+          ],
+          "type": "DRUG"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Extensive Stage Small Cell Lung Cancer",
+        "Recurrent Small Cell Lung Cancer"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Portland",
+          "country": "United States",
+          "facility": "SWOG",
+          "geoPoint": {
+            "lat": 45.52345,
+            "lon": -122.67621
+          },
+          "state": "Oregon",
+          "zip": "97239"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "SWOG Cancer Research Network",
+          "name": "Barbara Gitlitz",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "This phase II trial is studying how well sorafenib works in treating patients with extensive stage small cell lung cancer. Sorafenib may stop the growth of small cell lung cancer by blocking blood flow to the tumor and by blocking some of the enzymes needed for cell growth.",
+      "detailedDescription": "PRIMARY OBJECTIVES:\n\nI. To evaluate the efficacy of BAY 43-0006 in previously-treated, platinum-sensitive and platinum-refractory patients with measurable disease and extensive stage small cell lung cancer (E-SCLC) in terms of response rate (confirmed and unconfirmed, complete and partial).\n\nSECONDARY OBJECTIVES:\n\nI. To assess the qualitative and quantitative toxicities of BAY 43-9006 in this patient population.\n\nII. To assess overall survival in this group of patients treated with BAY 43-9006.\n\nIII. To collect specimens via the Lung Cancer Specimen Repository Protocol (S9925) in order to perform exploratory analyses of the relationship between selected markers and patient outcomes.\n\nOUTLINE: This is a multicenter study. Patients are stratified according to platinum sensitivity status (platinum sensitive vs platinum refractory).\n\nPatients receive oral sorafenib twice daily on days 1-28. Courses repeat every 28 days in the absence of disease progression or unacceptable toxicity.\n\nAfter completion of study treatment, patients are followed every 3 months for up to 2 years from study entry."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "NA",
+        "interventionModel": "SINGLE_GROUP",
+        "maskingInfo": {
+          "masking": "NONE"
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 89,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE2"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion Criteria:\n\n* Patients must have histologically or cytologically-confirmed diagnosis of small cell lung cancer and must have extensive disease with progression or recurrence after receiving a standard first-time regimen containing either cisplatin or carboplatin; patients who receive primary curative chemoradiation therapy for limited disease, but who recur within the primary tumor site, previously radiated field or with distant metastases are also allowed to participate; diagnosis based on sputum cytology is acceptable if confirmation by an independent pathologic review at the institution is documented; patients who have clinical evidence of recurrent small cell lung cancer do not require a confirmatory biopsy to be eligible for this trial\n* Patients must have measurable disease per RECIST criteria; patients must have evidence of disease by plain radiographs, CT scan or MRI scan; all x-rays/scans to assess measurable disease must have been performed within 28 days prior to registration; all other required test to assess non-measurable disease must be performed within 42 days prior to registration; all disease must be assessed\n* Patients must have been previously treated with exactly one regimen; this must have included cisplatin or carboplatin; in addition, information must be available to place the patient in one of the two following categories:\n\n  * Platinum sensitive disease: defined as an initial response to platinum-based chemotherapy who subsequently progressed \\> 90 days after last platinum treatment; best response to platinum-based treatment: CR, PR, stable or progression while on treatment (circle one); NOTE: Prior chemotherapy must have been completed at least 90 days prior to registration OR\n  * Platinum refractory disease; no response to platinum-based chemotherapy, progression during platinum-based therapy, or progression within 90 days of completing platinum-based therapy\n* Patient may have receive previous radiation therapy, but it must have been completed at least 21 days prior to registration and the patient should have recovered from all associated toxicities; there must be no plans for the patients to receive concurrent radiation therapy to measurable lesions; measurable disease may be present inside the area of prior radiation therapy provided that the lesion is demonstrated to be progressing by CT scan or there is measurable disease outside the prior radiation field\n* Patients may have received prior surgery provided that at least 14 days have elapsed since surgery (thoracic or other major surgeries) and the patient has recovered from all associated toxicities; patients must have disease outside the area of previous surgical resection or a new lesion must be present\n* CORRELATIVE SCIENCE STUDIES: Institutions must have IRB approval of S9925 (the Lung Cancer Specimen Repository); patients must be offered participation in S9925; with the patient's consent, specimens will be submitted for testing via S9925; patients must be registered separately to S9925 in order for institutions to receive credit for specimen submission\n* Serum creatinine =\\< the institutional upper limit of normal OR creatinine clearance \\>= 60 cc/min\n* Bilirubin =\\< 2 x the institutional upper limit of normal\n* Alkaline phosphatase =\\< 2 x the institutional upper limit of normal\n* SGOT or SGPT =\\< 2 x the institutional upper limit of normal\n* PTT and either PT or INR \\< 1.5 x the institutional upper limit of normal (except in patients who are on warfarin \\[Coumadin or heparin\\] obtained within 28 days prior to registration); patients who receive anti-coagulation treatment with an agent such as warfarin or heparin, prophylactically or therapeutically, will be allowed to participate\n* Patients must not have any evidence of bleeding diathesis\n* ANC \\>= 1,500/uL\n* Platelet count \\>= 100,000/uL\n* Patients must have a Zubrod performance status 0-1\n* Patients with known brain and/or leptomeningeal metastases are eligible only if he/she is asymptomatic, without deficits on neurologic exam and is not receiving corticosteroid therapy to control symptoms; only a non-enzyme inducing anticonvulsant (e.g., Keppra) will be permitted for those patients requiring anticonvulsants; all patients must have a pretreatment CT or MRI scan of the brain to evaluate CNS disease within 28 days prior to registration\n* Any ongoing requirement for systemic corticosteroid therapy is not permitted; topical and/or inhaled steroids are allowed\n* Patients must either be able to swallow and/or receive enteral medications via gastrostomy feeding tube; patients with intractable nausea or vomiting are not eligible; patients with GI tract disease resulting in an inability to take oral medication, malabsorption syndrome, a requirement for IV alimentation, prior surgical procedures affecting absorption, or uncontrolled inflammatory GI disease (e.g., Crohn's, ulcerative colitis) are not eligible\n* The effects of BAY 43-9006 on the developing human fetus at the recommended therapeutic dose are unknown; for this reason, patients must not be pregnant or nursing; women/men of reproductive potential must have agreed to use an effective contraceptive method (hormonal or barrier method of birth control, abstinence) prior to study entry and for the duration of study participation; should a woman become pregnant or suspect she is pregnant while participating in this study, she should inform her treating physician immediately\n* Patients must not have a significant history of cardiac disease, e.g., uncontrolled hypertension, unstable angina, congestive-heart failure, and myocardial infarction within the last six months, or cardiac ventricular arrhythmias requiring medication\n* Patients must be willing to provide prior smoking history\n* No other prior malignancy is allowed except for the following: adequately treated basal cell or squamous cell skin cancer, in situ cervical cancer, adequately treated stage I or II cancer from which the patient is currently in complete remission, or any other cancer from which the patient has been disease-free for 5 years\n* All patients must be informed of the investigational nature of this study and must sign and give written informed consent in accordance with institutional and federal guidelines\n* At the time of patient registration, the treating institution's name and ID number must be provided to the Data Operations Center in Seattle in order to ensure that the current (within 365 days) date of institutional review board approval for this study has been entered into the data base",
+      "healthyVolunteers": false,
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "Sorafenib in Treating Patients With Extensive Stage Small Cell Lung Cancer",
+      "nctId": "NCT00182689",
+      "officialTitle": "A Phase II Trial of BAY 43-9006 (NSC-724772) in Patients With Platinum-Treated Extensive Stage Small Cell Lung Cancer",
+      "orgStudyIdInfo": {
+        "id": "NCI-2012-03074"
+      },
+      "organization": {
+        "class": "NIH",
+        "fullName": "National Cancer Institute (NCI)"
+      },
+      "secondaryIdInfos": [
+        {
+          "domain": "CTRP (Clinical Trial Reporting Program)",
+          "id": "NCI-2012-03074",
+          "type": "REGISTRY"
+        },
+        {
+          "id": "U10CA032102",
+          "link": "https://reporter.nih.gov/quickSearch/U10CA032102",
+          "type": "NIH"
+        },
+        {
+          "domain": "SWOG",
+          "id": "S0435",
+          "type": "OTHER"
+        },
+        {
+          "domain": "CTEP",
+          "id": "S0435",
+          "type": "OTHER"
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "Complete Response (CR) is a complete disappearance of all measurable and non-measurable disease. No new lesions, no disease related symptoms. Normalization of markers and other abnormal lab values. Partial Response (PR) is greater than or equal to 30% decrease under baseline of the sum of longest diameters of all target measurable lesions. No unequivocal progression of non-measurable disease. No new lesions. Confirmation of CR or PR means a repeat scan at least 4 weeks apart documented before progression or symptomatic deterioration.",
+          "measure": "Objective Response (Confirmed and Unconfirmed, Complete and Partial Responses Per RECIST)",
+          "timeFrame": "8 weeks to 2 years"
+        }
+      ],
+      "secondaryOutcomes": [
+        {
+          "description": "Adverse Events (AEs) are reported by the CTCAE (NCI Common Terminology Criteria for Adverse Events) Version 3.0. For each patient, worst grade of each event type is reported. Grade 3 = Severe, Grade 4 = Life-threatening, Grade 5 = Fatal.",
+          "measure": "Number of Patients With Grade 3 Through 5 Adverse Events That Are Related to Study Drug",
+          "timeFrame": "Patients were assessed for adverse events after completion of every 28-day cycle."
+        },
+        {
+          "description": "Measured from time of registration to death, or last contact date",
+          "measure": "Overall Survival",
+          "timeFrame": "0 - 2 years"
+        }
+      ]
+    },
+    "referencesModule": {
+      "references": [
+        {
+          "citation": "Lara PN Jr, Moon J, Redman MW, Semrad TJ, Kelly K, Allen JW, Gitlitz BJ, Mack PC, Gandara DR. Relevance of platinum-sensitivity status in relapsed/refractory extensive-stage small-cell lung cancer in the modern era: a patient-level analysis of southwest oncology group trials. J Thorac Oncol. 2015 Jan;10(1):110-5. doi: 10.1097/JTO.0000000000000385.",
+          "pmid": "25490004",
+          "type": "DERIVED"
+        }
+      ]
+    },
+    "sponsorCollaboratorsModule": {
+      "leadSponsor": {
+        "class": "NIH",
+        "name": "National Cancer Institute (NCI)"
+      },
+      "responsibleParty": {
+        "type": "SPONSOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2008-10",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2014-05-21",
+        "type": "ESTIMATED"
+      },
+      "lastUpdateSubmitDate": "2014-05-06",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2008-10",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2012-09-19",
+        "type": "ESTIMATED"
+      },
+      "resultsFirstSubmitDate": "2012-08-20",
+      "resultsFirstSubmitQcDate": "2012-08-20",
+      "startDateStruct": {
+        "date": "2005-07"
+      },
+      "statusVerifiedDate": "2012-12",
+      "studyFirstPostDateStruct": {
+        "date": "2005-09-16",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2005-09-15",
+      "studyFirstSubmitQcDate": "2005-09-15"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "eventGroups": [
+        {
+          "id": "EG000",
+          "otherNumAffected": 37,
+          "otherNumAtRisk": 38,
+          "seriousNumAffected": 6,
+          "seriousNumAtRisk": 38,
+          "title": "Platinum Sensitive"
+        },
+        {
+          "id": "EG001",
+          "otherNumAffected": 38,
+          "otherNumAtRisk": 44,
+          "seriousNumAffected": 7,
+          "seriousNumAtRisk": 44,
+          "title": "Platinum Refractory"
+        }
+      ],
+      "frequencyThreshold": "5",
+      "otherEvents": [
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Blood and lymphatic system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 7,
+              "numAtRisk": 38,
+              "numEvents": 7
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 10,
+              "numAtRisk": 44,
+              "numEvents": 10
+            }
+          ],
+          "term": "Hemoglobin"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 38,
+              "numEvents": 4
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 6,
+              "numAtRisk": 44,
+              "numEvents": 6
+            }
+          ],
+          "term": "Constipation"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 8,
+              "numAtRisk": 38,
+              "numEvents": 8
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 15,
+              "numAtRisk": 44,
+              "numEvents": 15
+            }
+          ],
+          "term": "Diarrhea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 38,
+              "numEvents": 4
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44,
+              "numEvents": 0
+            }
+          ],
+          "term": "Flatulence"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 38,
+              "numEvents": 2
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44,
+              "numEvents": 0
+            }
+          ],
+          "term": "Gastrointestinal-Other (Specify)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 44,
+              "numEvents": 3
+            }
+          ],
+          "term": "Heartburn/dyspepsia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 38,
+              "numEvents": 4
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 4,
+              "numAtRisk": 44,
+              "numEvents": 4
+            }
+          ],
+          "term": "Mucositis/stomatitis (clinical exam) - Oral cavity"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 38,
+              "numEvents": 4
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 44,
+              "numEvents": 3
+            }
+          ],
+          "term": "Mucositis/stomatitis (functional/symptomatic) - Oral cavity"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 13,
+              "numAtRisk": 38,
+              "numEvents": 13
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 10,
+              "numAtRisk": 44,
+              "numEvents": 10
+            }
+          ],
+          "term": "Nausea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 38,
+              "numEvents": 2
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44,
+              "numEvents": 0
+            }
+          ],
+          "term": "Pain - Abdomen NOS"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 7,
+              "numAtRisk": 38,
+              "numEvents": 7
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 7,
+              "numAtRisk": 44,
+              "numEvents": 7
+            }
+          ],
+          "term": "Vomiting"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 25,
+              "numAtRisk": 38,
+              "numEvents": 25
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 21,
+              "numAtRisk": 44,
+              "numEvents": 21
+            }
+          ],
+          "term": "Fatigue (asthenia, lethargy, malaise)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 38,
+              "numEvents": 2
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44,
+              "numEvents": 0
+            }
+          ],
+          "term": "Pain-Other (Specify)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 38,
+              "numEvents": 2
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44,
+              "numEvents": 0
+            }
+          ],
+          "term": "Infection with normal ANC or Grade 1 or 2 neutrophils - Skin (cellulitis)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 38,
+              "numEvents": 4
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 6,
+              "numAtRisk": 44,
+              "numEvents": 6
+            }
+          ],
+          "term": "ALT, SGPT (serum glutamic pyruvic transaminase)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 6,
+              "numAtRisk": 38,
+              "numEvents": 6
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 7,
+              "numAtRisk": 44,
+              "numEvents": 7
+            }
+          ],
+          "term": "AST, SGOT (serum glutamic oxaloacetic transaminase)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 38,
+              "numEvents": 4
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 8,
+              "numAtRisk": 44,
+              "numEvents": 8
+            }
+          ],
+          "term": "Alkaline phosphatase"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 38,
+              "numEvents": 3
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44,
+              "numEvents": 0
+            }
+          ],
+          "term": "Bilirubin (hyperbilirubinemia)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 38,
+              "numEvents": 2
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 7,
+              "numAtRisk": 44,
+              "numEvents": 7
+            }
+          ],
+          "term": "Leukocytes (total WBC)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 6,
+              "numAtRisk": 38,
+              "numEvents": 6
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 4,
+              "numAtRisk": 44,
+              "numEvents": 4
+            }
+          ],
+          "term": "Platelets"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 14,
+              "numAtRisk": 38,
+              "numEvents": 14
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 15,
+              "numAtRisk": 44,
+              "numEvents": 15
+            }
+          ],
+          "term": "Weight loss"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 18,
+              "numAtRisk": 38,
+              "numEvents": 18
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 17,
+              "numAtRisk": 44,
+              "numEvents": 17
+            }
+          ],
+          "term": "Anorexia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 44,
+              "numEvents": 3
+            }
+          ],
+          "term": "Calcium, serum-low (hypocalcemia)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 44,
+              "numEvents": 3
+            }
+          ],
+          "term": "Magnesium, serum-low (hypomagnesemia)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 38,
+              "numEvents": 3
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44,
+              "numEvents": 0
+            }
+          ],
+          "term": "Phosphate, serum-low (hypophosphatemia)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Potassium, serum-low (hypokalemia)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Musculoskeletal/Soft Tissue-Other (Specify)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Pain - Extremity-limb"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 5,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Pain - Joint"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Dizziness"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 8,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Neuropathy: sensory"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Pain - Head/headache"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 5,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 7,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Dyspnea (shortness of breath)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Dermatology/Skin-Other (Specify)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 6,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 14,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Dry skin"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 5,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 4,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Hair loss/Alopecia (scalp or body)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 3,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Nail changes"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 4,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 8,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Pruritus/itching"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 9,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 10,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Rash/desquamation"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 7,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 6,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Rash: acne/acneiform"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 3,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Rash: erythema multiforme (e.g., Stevens-Johnson syndrome, toxic epidermal necrolysis)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Skin and subcutaneous tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 18,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 17,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Rash: hand-foot skin reaction"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 2,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Flushing"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 7,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 6,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Hypertension"
+        }
+      ],
+      "seriousEvents": [
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Diarrhea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Heartburn/dyspepsia"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Nausea"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Pain - Abdomen NOS"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Gastrointestinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Pancreatitis"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "General disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Fatigue (asthenia, lethargy, malaise)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Infections and infestations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Infection with normal ANC or Grade 1 or 2 neutrophils - Urinary tract NOS"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "AST, SGOT (serum glutamic oxaloacetic transaminase)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Investigations",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Lipase"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Dehydration"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Metabolism and nutrition disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Sodium, serum-low (hyponatremia)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Muscle weakness, generalized or specific area (not due to neuropathy) - Whole body/generalized"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Musculoskeletal and connective tissue disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Pain - Joint"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Ataxia (incoordination)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Dizziness"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Neuropathy: motor"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Neuropathy: sensory"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Pain - Head/headache"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Speech impairment (e.g., dysphasia or aphasia)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Syncope (fainting)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Nervous system disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Tremor"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Psychiatric disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 2,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Confusion"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Dyspnea (shortness of breath)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Respiratory, thoracic and mediastinal disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Pleural effusion (non-malignant)"
+        },
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "organSystem": "Vascular disorders",
+          "sourceVocabulary": "CTCAE (3.0)",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 1,
+              "numAtRisk": 38
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 0,
+              "numAtRisk": 44
+            }
+          ],
+          "term": "Hypertension"
+        }
+      ],
+      "timeFrame": "Patients were assessed for adverse events after completion of every 28-day cycle."
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "38"
+            },
+            {
+              "groupId": "BG001",
+              "value": "45"
+            },
+            {
+              "groupId": "BG002",
+              "value": "83"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "description": "Platinum-sensitive disease defined as an initial response to platinum-based chemotherapy and progression \\>90 days after the last platinum treatment. All eligible patients who received treatment were included in baseline measures.",
+          "id": "BG000",
+          "title": "Platinum-Sensitive"
+        },
+        {
+          "description": "Platinum-refractory disease defined as no response to platinum-based chemotherapy or progression during or \\<=90 days after the last platinum treatment. All eligible patients who received treatment were included in baseline measures.",
+          "id": "BG001",
+          "title": "Platinum-Refractory"
+        },
+        {
+          "description": "Total of all reporting groups",
+          "id": "BG002",
+          "title": "Total"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "lowerLimit": "48",
+                      "upperLimit": "85",
+                      "value": "65"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "lowerLimit": "44",
+                      "upperLimit": "80",
+                      "value": "60"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "lowerLimit": "44",
+                      "upperLimit": "85",
+                      "value": "62"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "FULL_RANGE",
+          "paramType": "MEDIAN",
+          "title": "Age, Continuous",
+          "unitOfMeasure": "years"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "18"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "18"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "36"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "20"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "27"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "47"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "2"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "3"
+                    }
+                  ],
+                  "title": "American Indian or Alaska Native"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    }
+                  ],
+                  "title": "Asian"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    }
+                  ],
+                  "title": "Native Hawaiian or Other Pacific Islander"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "2"
+                    }
+                  ],
+                  "title": "Black or African American"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "35"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "41"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "76"
+                    }
+                  ],
+                  "title": "White"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "1"
+                    }
+                  ],
+                  "title": "More than one race"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "1"
+                    }
+                  ],
+                  "title": "Unknown or Not Reported"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Race (NIH/OMB)",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "4"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "7"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "11"
+                    }
+                  ]
+                }
+              ],
+              "title": "Single organ"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "32"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "34"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "66"
+                    }
+                  ]
+                }
+              ],
+              "title": "Multiple organs"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "3"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "4"
+                    }
+                  ]
+                }
+              ],
+              "title": "None"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Not reported"
+            }
+          ],
+          "paramType": "NUMBER",
+          "title": "Sites of Metastases",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "15"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "15"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "30"
+                    }
+                  ]
+                }
+              ],
+              "title": "0"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "22"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "29"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "51"
+                    }
+                  ]
+                }
+              ],
+              "title": "1"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Not reported"
+            }
+          ],
+          "description": "Performance status is graded according to the Zubrod Scale (0-4). 0: Fully active, able to carry on all pre-disease performance without restriction. 1: Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light housework, office work. 2: Ambulatory and capable of self-care but unable to carry out any work activities; up and about more than 50% of waking hours. 3: Capable of limited self-care, confined to bed/chair \\> 50% of waking hours. 4: Completely disabled; cannot carry on any self-care; totally confined to bed/chair.",
+          "paramType": "NUMBER",
+          "title": "Performance Status",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "17"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "25"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "42"
+                    }
+                  ]
+                }
+              ],
+              "title": "Current"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "21"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "19"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "40"
+                    }
+                  ]
+                }
+              ],
+              "title": "Former"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Never"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Not reported"
+            }
+          ],
+          "paramType": "NUMBER",
+          "title": "Smoking History",
+          "unitOfMeasure": "participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "26"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "31"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "57"
+                    }
+                  ]
+                }
+              ],
+              "title": "< 5%"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "5"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "6"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "11"
+                    }
+                  ]
+                }
+              ],
+              "title": "5% to < 10%"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "5"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "6"
+                    }
+                  ]
+                }
+              ],
+              "title": "10% to < 20%"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "> or = 20%"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "5"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "2"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "7"
+                    }
+                  ]
+                }
+              ],
+              "title": "Not reported"
+            }
+          ],
+          "paramType": "NUMBER",
+          "title": "Weight Loss Prior 6 Months",
+          "unitOfMeasure": "participants"
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": false,
+        "restrictionType": "LTE60",
+        "restrictiveAgreement": true
+      },
+      "pointOfContact": {
+        "organization": "SWOG Statistical Center",
+        "phone": "206-667-4623",
+        "title": "Study Statistician"
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "AST, SGOT"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Allergic reaction/hypersensitivity"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Anorexia"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Ataxia (incoordination)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Bilirubin (hyperbilirubinemia)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Confusion"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Dehydration"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Diarrhea"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Dizziness"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "3"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Dyspnea (shortness of breath)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "5"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "3"
+                    }
+                  ]
+                }
+              ],
+              "title": "Fatigue (asthenia, lethargy, malaise)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Fever in absence of neutropenia, ANC lt1.0x10e9/L"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Hemoglobin"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "3"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Hypertension"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "INR (of prothrombin time)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Inf w/normal ANC or Gr 1-2 neutrophils - Skin"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Inf w/normal ANC or Gr 1-2 neutrophils - UTI"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Lipase"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Muscle weakness, not d/t neuropathy - body/general"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Nausea"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Neuropathy: sensory"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "PTT (Partial thromboplastin time)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Pain - Abdomen NOS"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Pain - Extremity-limb"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Pain - Joint"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Pain-Other (Specify)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Pancreatitis"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Phosphate, serum-low (hypophosphatemia)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Pleural effusion (non-malignant)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Pneumonitis/pulmonary infiltrates"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Potassium, serum-low (hypokalemia)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Rash/desquamation"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "2"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Rash: acne/acneiform"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Rash: erythema multiforme"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "8"
+                    }
+                  ]
+                }
+              ],
+              "title": "Rash: hand-foot skin reaction"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ],
+              "title": "Sodium, serum-low (hyponatremia)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Speech impairment (e.g., dysphasia or aphasia)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "1"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "title": "Syncope (fainting)"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Vomiting"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "value": "1"
+                    }
+                  ]
+                }
+              ],
+              "title": "Weight loss"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "38"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "44"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Adverse Events (AEs) are reported by the CTCAE (NCI Common Terminology Criteria for Adverse Events) Version 3.0. For each patient, worst grade of each event type is reported. Grade 3 = Severe, Grade 4 = Life-threatening, Grade 5 = Fatal.",
+          "groups": [
+            {
+              "description": "Platinum-sensitive disease defined as an initial response to platinum-based chemotherapy and progression \\>90 days after the last platinum treatment.",
+              "id": "OG000",
+              "title": "Platinum Sensitive"
+            },
+            {
+              "description": "Platinum-refractory disease defined as no response to platinum-based chemotherapy or progression during or \\<=90 days after the last platinum treatment.",
+              "id": "OG001",
+              "title": "Platinum Refractory"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "Eligible patients who received any treatment and were assessed for toxicity were included in the adverse event summaries. Any CTCAE 3.0 event of Grade 3 (severe), Grade 4 (life threatening) or Grade 5 (fatal) which were deemed to be related to protocol treatment are included.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "Patients were assessed for adverse events after completion of every 28-day cycle.",
+          "title": "Number of Patients With Grade 3 Through 5 Adverse Events That Are Related to Study Drug",
+          "type": "SECONDARY",
+          "unitOfMeasure": "Participants with a given type of AE"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "3",
+                      "upperLimit": "25",
+                      "value": "11"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "0",
+                      "upperLimit": "12",
+                      "value": "2"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "38"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "45"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Complete Response (CR) is a complete disappearance of all measurable and non-measurable disease. No new lesions, no disease related symptoms. Normalization of markers and other abnormal lab values. Partial Response (PR) is greater than or equal to 30% decrease under baseline of the sum of longest diameters of all target measurable lesions. No unequivocal progression of non-measurable disease. No new lesions. Confirmation of CR or PR means a repeat scan at least 4 weeks apart documented before progression or symptomatic deterioration.",
+          "dispersionType": "95% Confidence Interval",
+          "groups": [
+            {
+              "description": "Platinum-sensitive disease defined as an initial response to platinum-based chemotherapy and progression \\>90 days after the last platinum treatment.",
+              "id": "OG000",
+              "title": "Platinum-Sensitive"
+            },
+            {
+              "description": "Platinum-refractory disease defined as no response to platinum-based chemotherapy or progression during or \\<=90 days after the last platinum treatment.",
+              "id": "OG001",
+              "title": "Platinum-Refractory"
+            }
+          ],
+          "paramType": "NUMBER",
+          "populationDescription": "All eligible patients who received treatment were included in this measure.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "8 weeks to 2 years",
+          "title": "Objective Response (Confirmed and Unconfirmed, Complete and Partial Responses Per RECIST)",
+          "type": "PRIMARY",
+          "unitOfMeasure": "percentage of participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "lowerLimit": "6.1",
+                      "upperLimit": "9.1",
+                      "value": "6.7"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "lowerLimit": "3.3",
+                      "upperLimit": "7.5",
+                      "value": "5.3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "38"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "45"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Measured from time of registration to death, or last contact date",
+          "dispersionType": "95% Confidence Interval",
+          "groups": [
+            {
+              "description": "Platinum-sensitive disease defined as an initial response to platinum-based chemotherapy and progression \\>90 days after the last platinum treatment. All eligible patients who received treatment were included in baseline measures.",
+              "id": "OG000",
+              "title": "Platinum-Sensitive"
+            },
+            {
+              "description": "Platinum-refractory disease defined as no response to platinum-based chemotherapy or progression during or \\<=90 days after the last platinum treatment. All eligible patients who received treatment were included in baseline measures.",
+              "id": "OG001",
+              "title": "Platinum-Refractory"
+            }
+          ],
+          "paramType": "MEDIAN",
+          "reportingStatus": "POSTED",
+          "timeFrame": "0 - 2 years",
+          "title": "Overall Survival",
+          "type": "SECONDARY",
+          "unitOfMeasure": "months"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "Platinum-sensitive disease defined as an initial response to platinum-based chemotherapy and progression \\>90 days after the last platinum treatment.",
+          "id": "FG000",
+          "title": "Platinum-Sensitive"
+        },
+        {
+          "description": "Platinum-refractory disease defined as no response to platinum-based chemotherapy or progression during or \\<=90 days after the last platinum treatment.",
+          "id": "FG001",
+          "title": "Platinum-Refractory"
+        }
+      ],
+      "periods": [
+        {
+          "dropWithdraws": [
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "8"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "11"
+                }
+              ],
+              "type": "Adverse Event"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "2"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "2"
+                }
+              ],
+              "type": "Withdrawal by Subject"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "27"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "29"
+                }
+              ],
+              "type": "Progression"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                }
+              ],
+              "type": "Death"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "3"
+                }
+              ],
+              "type": "not protocol specified"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "4"
+                }
+              ],
+              "type": "Ineligible"
+            },
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "1"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                }
+              ],
+              "type": "Never received treatment"
+            }
+          ],
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "40"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "49"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "39"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "45"
+                }
+              ],
+              "type": "Eligible"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "38"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "45"
+                }
+              ],
+              "type": "Eligible and Began Protocol Therapy"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "0"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "0"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "40"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "49"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "Overall Study"
+        }
+      ]
+    }
+  }
+}

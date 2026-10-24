@@ -1,0 +1,1013 @@
+{
+  "derivedSection": {
+    "conditionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D001526",
+          "term": "Behavioral Symptoms"
+        },
+        {
+          "id": "D001519",
+          "term": "Behavior"
+        },
+        {
+          "id": "D003866",
+          "term": "Depressive Disorder"
+        },
+        {
+          "id": "D019964",
+          "term": "Mood Disorders"
+        },
+        {
+          "id": "D001523",
+          "term": "Mental Disorders"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D003863",
+          "term": "Depression"
+        },
+        {
+          "id": "D003865",
+          "term": "Depressive Disorder, Major"
+        }
+      ]
+    },
+    "interventionBrowseModule": {
+      "ancestors": [
+        {
+          "id": "D015057",
+          "term": "1-Naphthylamine"
+        },
+        {
+          "id": "D000588",
+          "term": "Amines"
+        },
+        {
+          "id": "D009930",
+          "term": "Organic Chemicals"
+        },
+        {
+          "id": "D009281",
+          "term": "Naphthalenes"
+        },
+        {
+          "id": "D011084",
+          "term": "Polycyclic Aromatic Hydrocarbons"
+        },
+        {
+          "id": "D006841",
+          "term": "Hydrocarbons, Aromatic"
+        },
+        {
+          "id": "D006844",
+          "term": "Hydrocarbons, Cyclic"
+        },
+        {
+          "id": "D006838",
+          "term": "Hydrocarbons"
+        },
+        {
+          "id": "D011083",
+          "term": "Polycyclic Compounds"
+        },
+        {
+          "id": "D003511",
+          "term": "Cyclohexanols"
+        },
+        {
+          "id": "D000441",
+          "term": "Hexanols"
+        },
+        {
+          "id": "D005233",
+          "term": "Fatty Alcohols"
+        },
+        {
+          "id": "D000438",
+          "term": "Alcohols"
+        },
+        {
+          "id": "D010627",
+          "term": "Phenethylamines"
+        },
+        {
+          "id": "D005021",
+          "term": "Ethylamines"
+        },
+        {
+          "id": "D003510",
+          "term": "Cyclohexanes"
+        },
+        {
+          "id": "D003516",
+          "term": "Cycloparaffins"
+        },
+        {
+          "id": "D006840",
+          "term": "Hydrocarbons, Alicyclic"
+        },
+        {
+          "id": "D008055",
+          "term": "Lipids"
+        }
+      ],
+      "meshes": [
+        {
+          "id": "D020280",
+          "term": "Sertraline"
+        },
+        {
+          "id": "D000069470",
+          "term": "Venlafaxine Hydrochloride"
+        }
+      ]
+    },
+    "miscInfoModule": {
+      "versionHolder": "2026-10-23"
+    }
+  },
+  "hasResults": true,
+  "protocolSection": {
+    "armsInterventionsModule": {
+      "armGroups": [
+        {
+          "description": "Participants receive sertraline for the first 8 weeks. Participants will receive venlafaxine if they do not respond to sertraline by week 8",
+          "interventionNames": [
+            "Drug: Sertraline",
+            "Drug: Venlafaxine"
+          ],
+          "label": "1 Sertraline/Venlafaxine",
+          "type": "EXPERIMENTAL"
+        },
+        {
+          "description": "Participants will receive supportive-expressive psychotherapy.",
+          "interventionNames": [
+            "Behavioral: Supportive Expressive Therapy"
+          ],
+          "label": "2 Supportive Expressive Therapy",
+          "type": "ACTIVE_COMPARATOR"
+        },
+        {
+          "description": "Participants receive placebo.",
+          "interventionNames": [
+            "Drug: Pill Placebo"
+          ],
+          "label": "3 Pill Placebo",
+          "type": "PLACEBO_COMPARATOR"
+        }
+      ],
+      "interventions": [
+        {
+          "armGroupLabels": [
+            "2 Supportive Expressive Therapy"
+          ],
+          "description": "The aim of supportive-expressive psychotherapy is to help patients understand the causes of relationship conflicts in the context of a supportive relationship.",
+          "name": "Supportive Expressive Therapy",
+          "type": "BEHAVIORAL"
+        },
+        {
+          "armGroupLabels": [
+            "1 Sertraline/Venlafaxine"
+          ],
+          "description": "Participants will receive sertraline.",
+          "name": "Sertraline",
+          "otherNames": [
+            "Zoloft"
+          ],
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "3 Pill Placebo"
+          ],
+          "description": "Participants will receive a pill placebo.",
+          "name": "Pill Placebo",
+          "type": "DRUG"
+        },
+        {
+          "armGroupLabels": [
+            "1 Sertraline/Venlafaxine"
+          ],
+          "description": "Participants will receive venlafaxine.",
+          "name": "Venlafaxine",
+          "otherNames": [
+            "Effexor"
+          ],
+          "type": "DRUG"
+        }
+      ]
+    },
+    "conditionsModule": {
+      "conditions": [
+        "Depression"
+      ],
+      "keywords": [
+        "Major Depressive Disorder"
+      ]
+    },
+    "contactsLocationsModule": {
+      "locations": [
+        {
+          "city": "Philadelphia",
+          "country": "United States",
+          "facility": "University of Pennsylvania",
+          "geoPoint": {
+            "lat": 39.95238,
+            "lon": -75.16362
+          },
+          "state": "Pennsylvania",
+          "zip": "19104"
+        }
+      ],
+      "overallOfficials": [
+        {
+          "affiliation": "University of Pennsylvania",
+          "name": "Jacques Barber, PhD",
+          "role": "PRINCIPAL_INVESTIGATOR"
+        }
+      ]
+    },
+    "descriptionModule": {
+      "briefSummary": "This 4-8 month study, with a 2-year follow up period, will compare sertraline (Zoloft®), venlafaxine (Effexor®), supportive-expressive psychotherapy, and placebo to determine which is more effective in treating major depression.",
+      "detailedDescription": "MDD is one of the most prevalent psychiatric disorders. Different forms of psychotherapy for depression have been found effective. This study compares a form of dynamic psychotherapy called supportive-expressive psychotherapy to medication and to placebo.\n\nParticipants are evaluated on 2 occasions, 1 week apart, before they are randomly assigned to receive either supportive-expressive psychotherapy, sertraline (Zoloft) (followed by venlafaxine \\[Effexor\\] if patients do not respond to sertraline), or placebo. The active phase of treatment lasts 4 months. The frequency of patients' visits depends on the assigned treatment.\n\nPatients who are randomized to receive medication or placebo are initially seen on a weekly basis, then less often, depending on the rate of symptomatic improvement. Patients who are randomized to psychotherapy are seen twice a week for the first 4 weeks, then once a week for the remaining 12 weeks. Outcome is monitored at week 2,4,6,7,8, 12, 15 and 16. At the end of the first 16 weeks of treatment, patients are thoroughly evaluated. Those who have responded to treatment are assigned to a continuation phase and are seen once a month for another 16 weeks. At the end of the 16-week continuation phase, patients are again evaluated and all treatments are stopped. Follow-up continues every 3 months for up to 2 years to ensure that the patients' depression remains under control."
+    },
+    "designModule": {
+      "designInfo": {
+        "allocation": "RANDOMIZED",
+        "interventionModel": "PARALLEL",
+        "maskingInfo": {
+          "masking": "QUADRUPLE",
+          "whoMasked": [
+            "PARTICIPANT",
+            "CARE_PROVIDER",
+            "INVESTIGATOR",
+            "OUTCOMES_ASSESSOR"
+          ]
+        },
+        "primaryPurpose": "TREATMENT"
+      },
+      "enrollmentInfo": {
+        "count": 156,
+        "type": "ACTUAL"
+      },
+      "phases": [
+        "PHASE3"
+      ],
+      "studyType": "INTERVENTIONAL"
+    },
+    "eligibilityModule": {
+      "eligibilityCriteria": "Inclusion criteria:\n\n* Major Depressive Disorder diagnosis\n\nExclusion criteria:\n\n* Psychotic or bipolar disorder diagnosis\n* Substance dependence in the last 6 months",
+      "healthyVolunteers": false,
+      "maximumAge": "70 Years",
+      "minimumAge": "18 Years",
+      "sex": "ALL",
+      "stdAges": [
+        "ADULT",
+        "OLDER_ADULT"
+      ]
+    },
+    "identificationModule": {
+      "briefTitle": "Treatments for Depression: Drug Versus Psychotherapy",
+      "nctId": "NCT00043550",
+      "officialTitle": "Efficacy of Dynamic Therapy Versus Selective Serotonin Reuptake Inhibitor for Depression",
+      "orgStudyIdInfo": {
+        "id": "R01MH061410",
+        "link": "https://reporter.nih.gov/quickSearch/R01MH061410",
+        "type": "NIH"
+      },
+      "organization": {
+        "class": "OTHER",
+        "fullName": "University of Pennsylvania"
+      },
+      "secondaryIdInfos": [
+        {
+          "id": "R01MH061410",
+          "link": "https://reporter.nih.gov/quickSearch/R01MH061410",
+          "type": "NIH"
+        },
+        {
+          "id": "DSIR 83-ATAS"
+        }
+      ]
+    },
+    "outcomesModule": {
+      "primaryOutcomes": [
+        {
+          "description": "Hamilton Rating Scale for Depression (HRSD) (Hamilton, 1960). We used the 17-item version of the 27-item HRSD, a measure of depression severity. The Structured Interview Guide was used to conduct the interviews (SIGH-D; Williams, 1988). The reliability and validity of the HRSD are well documented (Rabkin \\& Klein, 1987). Interjudge reliability as assessed by interclass correlations was .92 in our sample. Total 17-item scores could range from 17-48 with higher scores indicating greater distress.",
+          "measure": "Hamilton Rating Scale for Depression-17 Item",
+          "timeFrame": "symptoms assessed during past 7 days, measure taken at baseline, week 8 and week 16"
+        }
+      ]
+    },
+    "oversightModule": {
+      "oversightHasDmc": true
+    },
+    "referencesModule": {
+      "references": [
+        {
+          "citation": "Barber JP, Muenz LR. The role of avoidance and obsessiveness in matching patients to cognitive and interpersonal psychotherapy: empirical findings from the treatment for depression collaborative research program. J Consult Clin Psychol. 1996 Oct;64(5):951-8. doi: 10.1037//0022-006x.64.5.951.",
+          "pmid": "8916624",
+          "type": "RESULT"
+        },
+        {
+          "citation": "Kuprian N, Aafjes-van Doorn K, Gutterman D, Barber JP. Therapeutic immediacy in psychodynamic psychotherapy for depression: A mixed-method study. Psychotherapy (Chic). 2022 Dec;59(4):554-566. doi: 10.1037/pst0000452. Epub 2022 Aug 1.",
+          "pmid": "35913883",
+          "type": "DERIVED"
+        },
+        {
+          "citation": "Solomonov N, Falkenstrom F, Gorman BS, McCarthy KS, Milrod B, Rudden MG, Chambless DL, Barber JP. Differential effects of alliance and techniques on Panic-Specific Reflective Function and misinterpretation of bodily sensations in two treatments for panic. Psychother Res. 2020 Jan;30(1):97-111. doi: 10.1080/10503307.2019.1585591. Epub 2019 Mar 1.",
+          "pmid": "30821630",
+          "type": "DERIVED"
+        },
+        {
+          "citation": "Solomonov N, McCarthy KS, Gorman BS, Barber JP. The Multitheoretical List of Therapeutic Interventions - 30 items (MULTI-30). Psychother Res. 2019 Jul;29(5):565-580. doi: 10.1080/10503307.2017.1422216. Epub 2018 Jan 16.",
+          "pmid": "29336228",
+          "type": "DERIVED"
+        },
+        {
+          "citation": "Zilcha-Mano S, Keefe JR, Chui H, Rubin A, Barrett MS, Barber JP. Reducing Dropout in Treatment for Depression: Translating Dropout Predictors Into Individualized Treatment Recommendations. J Clin Psychiatry. 2016 Dec;77(12):e1584-e1590. doi: 10.4088/JCP.15m10081.",
+          "pmid": "28086005",
+          "type": "DERIVED"
+        },
+        {
+          "citation": "Zilcha-Mano S, Dinger U, McCarthy KS, Barrett MS, Barber JP. Changes in well-being and quality of life in a randomized trial comparing dynamic psychotherapy and pharmacotherapy for major depressive disorder. J Affect Disord. 2014 Jan;152-154:538-42. doi: 10.1016/j.jad.2013.10.015. Epub 2013 Oct 16.",
+          "pmid": "24176534",
+          "type": "DERIVED"
+        },
+        {
+          "citation": "Barber JP, Barrett MS, Gallop R, Rynn MA, Rickels K. Short-term dynamic psychotherapy versus pharmacotherapy for major depressive disorder: a randomized, placebo-controlled trial. J Clin Psychiatry. 2012 Jan;73(1):66-73. doi: 10.4088/JCP.11m06831. Epub 2011 Nov 29.",
+          "pmid": "22152401",
+          "type": "DERIVED"
+        }
+      ]
+    },
+    "sponsorCollaboratorsModule": {
+      "collaborators": [
+        {
+          "class": "NIH",
+          "name": "National Institute of Mental Health (NIMH)"
+        }
+      ],
+      "leadSponsor": {
+        "class": "OTHER",
+        "name": "University of Pennsylvania"
+      },
+      "responsibleParty": {
+        "type": "SPONSOR"
+      }
+    },
+    "statusModule": {
+      "completionDateStruct": {
+        "date": "2009-06",
+        "type": "ACTUAL"
+      },
+      "expandedAccessInfo": {
+        "hasExpandedAccess": false
+      },
+      "lastUpdatePostDateStruct": {
+        "date": "2017-06-02",
+        "type": "ACTUAL"
+      },
+      "lastUpdateSubmitDate": "2017-04-28",
+      "overallStatus": "COMPLETED",
+      "primaryCompletionDateStruct": {
+        "date": "2009-06",
+        "type": "ACTUAL"
+      },
+      "resultsFirstPostDateStruct": {
+        "date": "2017-06-02",
+        "type": "ACTUAL"
+      },
+      "resultsFirstSubmitDate": "2015-08-26",
+      "resultsFirstSubmitQcDate": "2017-04-28",
+      "startDateStruct": {
+        "date": "2001-11"
+      },
+      "statusVerifiedDate": "2017-04",
+      "studyFirstPostDateStruct": {
+        "date": "2002-08-12",
+        "type": "ESTIMATED"
+      },
+      "studyFirstSubmitDate": "2002-08-09",
+      "studyFirstSubmitQcDate": "2002-08-09"
+    }
+  },
+  "resultsSection": {
+    "adverseEventsModule": {
+      "eventGroups": [
+        {
+          "description": "Participants receive sertraline.\n\nSertraline : Participants will receive sertraline.",
+          "id": "EG000",
+          "otherNumAffected": 0,
+          "otherNumAtRisk": 55,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 55,
+          "title": "1 Sertraline"
+        },
+        {
+          "description": "Participants will receive supportive-expressive psychotherapy.\n\nSupportive Expressive Therapy : The aim of supportive-expressive psychotherapy is to help patients understand the causes of relationship conflicts in the context of a supportive relationship.",
+          "id": "EG001",
+          "otherNumAffected": 1,
+          "otherNumAtRisk": 51,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 51,
+          "title": "2 Supportive-expressive Psychotherapy"
+        },
+        {
+          "description": "Participants receive placebo.\n\nPill Placebo : Participants will receive a pill placebo.",
+          "id": "EG002",
+          "otherNumAffected": 0,
+          "otherNumAtRisk": 50,
+          "seriousNumAffected": 0,
+          "seriousNumAtRisk": 50,
+          "title": "3 Pill Placebo"
+        }
+      ],
+      "frequencyThreshold": "0",
+      "otherEvents": [
+        {
+          "assessmentType": "SYSTEMATIC_ASSESSMENT",
+          "notes": "patient reported taking 4.5 mg of alprazolam . An hour later he took venlafaxine 187.5 mg, methylphenidate 30mg, and oxycodone 5mg with acetominophen. Patient was taken to the hospital ER and released without medical intervention.",
+          "organSystem": "Psychiatric disorders",
+          "stats": [
+            {
+              "groupId": "EG000",
+              "numAffected": 0,
+              "numAtRisk": 55,
+              "numEvents": 0
+            },
+            {
+              "groupId": "EG001",
+              "numAffected": 1,
+              "numAtRisk": 51,
+              "numEvents": 1
+            },
+            {
+              "groupId": "EG002",
+              "numAffected": 0,
+              "numAtRisk": 50,
+              "numEvents": 0
+            }
+          ],
+          "term": "passive suicide attempt"
+        }
+      ]
+    },
+    "baselineCharacteristicsModule": {
+      "denoms": [
+        {
+          "counts": [
+            {
+              "groupId": "BG000",
+              "value": "55"
+            },
+            {
+              "groupId": "BG001",
+              "value": "51"
+            },
+            {
+              "groupId": "BG002",
+              "value": "50"
+            },
+            {
+              "groupId": "BG003",
+              "value": "156"
+            }
+          ],
+          "units": "Participants"
+        }
+      ],
+      "groups": [
+        {
+          "description": "Participants receive sertraline.\n\nSertraline : Participants will receive sertraline.",
+          "id": "BG000",
+          "title": "1 Sertraline"
+        },
+        {
+          "description": "Participants will receive supportive-expressive psychotherapy.\n\nSupportive Expressive Therapy : The aim of supportive-expressive psychotherapy is to help patients understand the causes of relationship conflicts in the context of a supportive relationship.",
+          "id": "BG001",
+          "title": "2 Supportive-expressive Psychotherapy"
+        },
+        {
+          "description": "Participants receive placebo.\n\nPill Placebo : Participants will receive a pill placebo.",
+          "id": "BG002",
+          "title": "3 Pill Placebo"
+        },
+        {
+          "description": "Total of all reporting groups",
+          "id": "BG003",
+          "title": "Total"
+        }
+      ],
+      "measures": [
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "0"
+                    }
+                  ],
+                  "title": "<=18 years"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "55"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "51"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "50"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "156"
+                    }
+                  ],
+                  "title": "Between 18 and 65 years"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "0"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "0"
+                    }
+                  ],
+                  "title": ">=65 years"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Age, Categorical",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "spread": "12.5",
+                      "value": "38.0"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "spread": "12.2",
+                      "value": "36.2"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "spread": "12.0",
+                      "value": "38.3"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "spread": "12.2",
+                      "value": "37.5"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "dispersionType": "STANDARD_DEVIATION",
+          "paramType": "MEAN",
+          "title": "Age, Continuous",
+          "unitOfMeasure": "years"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "30"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "31"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "31"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "92"
+                    }
+                  ],
+                  "title": "Female"
+                },
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "25"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "20"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "19"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "64"
+                    }
+                  ],
+                  "title": "Male"
+                }
+              ]
+            }
+          ],
+          "paramType": "COUNT_OF_PARTICIPANTS",
+          "title": "Sex: Female, Male",
+          "unitOfMeasure": "Participants"
+        },
+        {
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "BG000",
+                      "value": "55"
+                    },
+                    {
+                      "groupId": "BG001",
+                      "value": "51"
+                    },
+                    {
+                      "groupId": "BG002",
+                      "value": "50"
+                    },
+                    {
+                      "groupId": "BG003",
+                      "value": "156"
+                    }
+                  ]
+                }
+              ],
+              "title": "United States"
+            }
+          ],
+          "paramType": "NUMBER",
+          "title": "Region of Enrollment",
+          "unitOfMeasure": "participants"
+        }
+      ]
+    },
+    "moreInfoModule": {
+      "certainAgreement": {
+        "piSponsorEmployee": false,
+        "restrictiveAgreement": false
+      },
+      "limitationsAndCaveats": {
+        "description": "Two limitations are the relatively high level of attrition and small sample size for specific combinations within our moderation analysis."
+      },
+      "pointOfContact": {
+        "email": "jbarber@adelphi.edu",
+        "organization": "Adelphi University, The Derner Institute of Advanced Psychological Studies",
+        "phone": "516.877.4807",
+        "title": "Jacques P.Barber, PhD, Dean and Professor"
+      }
+    },
+    "outcomeMeasuresModule": {
+      "outcomeMeasures": [
+        {
+          "analyses": [
+            {
+              "ciNumSides": "TWO_SIDED",
+              "groupDescription": "Comparison of conditions",
+              "groupIds": [
+                "OG000",
+                "OG001",
+                "OG002"
+              ],
+              "nonInferiorityComment": "The proposed sample size had at least 80% power to detect effect sizes of 0.36 between the two active treatment conditions and placebo during the active phase. These power calculations were based on a priori values of within-subject correlation of 0.50, 10% attrition, and 6 assessment points.",
+              "nonInferiorityType": "SUPERIORITY",
+              "pValue": ".95",
+              "pValueComment": "Overall significant effect for treatment, as well as the two moderating effects, used a Bonferroni-corrected alpha level of 0.0167 (0.05/3).",
+              "paramType": "Slope",
+              "paramValue": "1",
+              "statisticalMethod": "HLM"
+            },
+            {
+              "groupDescription": "effects of conditions over time",
+              "groupIds": [
+                "OG000",
+                "OG001",
+                "OG002"
+              ],
+              "nonInferiorityType": "SUPERIORITY",
+              "pValue": "<.0001",
+              "statisticalMethod": "HLM"
+            },
+            {
+              "ciLowerLimit": "-.35",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": ".41",
+              "groupIds": [
+                "OG000",
+                "OG002"
+              ],
+              "nonInferiorityType": "SUPERIORITY",
+              "paramType": "Slope",
+              "paramValue": ".03"
+            },
+            {
+              "ciLowerLimit": "-.33",
+              "ciNumSides": "TWO_SIDED",
+              "ciPctValue": "95",
+              "ciUpperLimit": ".45",
+              "groupIds": [
+                "OG001",
+                "OG002"
+              ],
+              "nonInferiorityType": "SUPERIORITY",
+              "paramType": "Slope",
+              "paramValue": ".06"
+            }
+          ],
+          "classes": [
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "3.4",
+                      "value": "19.0"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "3.9",
+                      "value": "19.9"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "3.7",
+                      "value": "19.4"
+                    }
+                  ]
+                }
+              ],
+              "title": "Initial HRSD-17"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "7.2",
+                      "value": "13.9"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "6.9",
+                      "value": "12.5"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "6.8",
+                      "value": "12.7"
+                    }
+                  ]
+                }
+              ],
+              "title": "Mid-treatment HRSD-17"
+            },
+            {
+              "categories": [
+                {
+                  "measurements": [
+                    {
+                      "groupId": "OG000",
+                      "spread": "7.6",
+                      "value": "14.2"
+                    },
+                    {
+                      "groupId": "OG001",
+                      "spread": "8.3",
+                      "value": "14.5"
+                    },
+                    {
+                      "groupId": "OG002",
+                      "spread": "7.6",
+                      "value": "14.3"
+                    }
+                  ]
+                }
+              ],
+              "title": "LOCF HRSD-17"
+            }
+          ],
+          "denoms": [
+            {
+              "counts": [
+                {
+                  "groupId": "OG000",
+                  "value": "51"
+                },
+                {
+                  "groupId": "OG001",
+                  "value": "46"
+                },
+                {
+                  "groupId": "OG002",
+                  "value": "48"
+                }
+              ],
+              "units": "Participants"
+            }
+          ],
+          "description": "Hamilton Rating Scale for Depression (HRSD) (Hamilton, 1960). We used the 17-item version of the 27-item HRSD, a measure of depression severity. The Structured Interview Guide was used to conduct the interviews (SIGH-D; Williams, 1988). The reliability and validity of the HRSD are well documented (Rabkin \\& Klein, 1987). Interjudge reliability as assessed by interclass correlations was .92 in our sample. Total 17-item scores could range from 17-48 with higher scores indicating greater distress.",
+          "dispersionType": "Standard Deviation",
+          "groups": [
+            {
+              "description": "Participants receive sertraline.\n\nSertraline : Participants will receive sertraline.",
+              "id": "OG000",
+              "title": "1 Sertraline"
+            },
+            {
+              "description": "Participants will receive supportive-expressive psychotherapy.\n\nSupportive Expressive Therapy : The aim of supportive-expressive psychotherapy is to help patients understand the causes of relationship conflicts in the context of a supportive relationship.",
+              "id": "OG001",
+              "title": "2 Supportive-expressive Psychotherapy"
+            },
+            {
+              "description": "Participants receive placebo.\n\nPill Placebo : Participants will receive a pill placebo.",
+              "id": "OG002",
+              "title": "3 Pill Placebo"
+            }
+          ],
+          "paramType": "MEAN",
+          "populationDescription": "Numbers vary from consented due to dropout prior to start of study. 156 patients consented and randomized. 11 patients did not complete at least one post-randomization measure and were therefore not included in these analyses.",
+          "reportingStatus": "POSTED",
+          "timeFrame": "symptoms assessed during past 7 days, measure taken at baseline, week 8 and week 16",
+          "title": "Hamilton Rating Scale for Depression-17 Item",
+          "type": "PRIMARY",
+          "unitOfMeasure": "units on a scale"
+        }
+      ]
+    },
+    "participantFlowModule": {
+      "groups": [
+        {
+          "description": "Participants receive sertraline.\n\nSertraline : Participants will receive sertraline.",
+          "id": "FG000",
+          "title": "1 Sertraline"
+        },
+        {
+          "description": "Participants will receive supportive-expressive psychotherapy.\n\nSupportive Expressive Therapy : The aim of supportive-expressive psychotherapy is to help patients understand the causes of relationship conflicts in the context of a supportive relationship.",
+          "id": "FG001",
+          "title": "2 Supportive-expressive Psychotherapy"
+        },
+        {
+          "description": "Participants receive placebo.\n\nPill Placebo : Participants will receive a pill placebo.",
+          "id": "FG002",
+          "title": "3 Pill Placebo"
+        }
+      ],
+      "periods": [
+        {
+          "dropWithdraws": [
+            {
+              "reasons": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "22"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "12"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "20"
+                }
+              ],
+              "type": "Withdrawal by Subject"
+            }
+          ],
+          "milestones": [
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "55"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "51"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "50"
+                }
+              ],
+              "type": "STARTED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "35"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "40"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "35"
+                }
+              ],
+              "type": "Week 8 Completed"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "33"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "39"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "30"
+                }
+              ],
+              "type": "COMPLETED"
+            },
+            {
+              "achievements": [
+                {
+                  "groupId": "FG000",
+                  "numSubjects": "22"
+                },
+                {
+                  "groupId": "FG001",
+                  "numSubjects": "12"
+                },
+                {
+                  "groupId": "FG002",
+                  "numSubjects": "20"
+                }
+              ],
+              "type": "NOT COMPLETED"
+            }
+          ],
+          "title": "Overall Study"
+        }
+      ],
+      "preAssignmentDetails": "Individuals not meeting MDD diagnostic criteria11 using the Structured Clinical Interviews for DSM-IV12 or scoring less than 14 on the 17-item Hamilton Rating Scale for Depression (HRSD)13,14 at two evaluations one week apart were excluded (n=88).",
+      "recruitmentDetails": "374 individuals, ages 18 to 70 years, were recruited through advertisements on public transportation, free news publications, area physicians, and outpatient clinics during the period of 2001-2006."
+    }
+  }
+}

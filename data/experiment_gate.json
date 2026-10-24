@@ -1,0 +1,21 @@
+{
+  "decision": "HOLD",
+  "reasons": [
+    "independent holdout evaluation missing"
+  ],
+  "development_risk": {
+    "baseline": {
+      "strat_false_found": 0,
+      "strat_missed_found": 0,
+      "elig_false_restriction": 0,
+      "elig_missed_restriction": 2
+    },
+    "candidate": {
+      "strat_false_found": 0,
+      "strat_missed_found": 0,
+      "elig_false_restriction": 0,
+      "elig_missed_restriction": 0
+    }
+  },
+  "development_accuracy_gain_sum": 0.28
+}

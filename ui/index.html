@@ -133,6 +133,25 @@ td { font-variant-numeric: tabular-nums; }
 .tag.warn { color: var(--warn); background: var(--warn-soft); }
 .tag.n { color: var(--muted); background: var(--line); }
 
+.log button.id { font: inherit; color: var(--accent); background: none; border: 0; padding: 0; text-align: left;
+  text-decoration: underline; text-underline-offset: 2px; }
+.log li.sel button.id { font-weight: 600; }
+
+.drafts { display: grid; gap: 6px; }
+.drafts details { border-top: 1px solid var(--line); padding-top: 6px; }
+.drafts summary { cursor: pointer; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.drafts summary span:last-child { min-width: 0; overflow-wrap: anywhere; }
+pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(--f-data); color: var(--ink);
+  background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; margin: 8px 0; max-height: 360px; overflow-y: auto; }
+.ev-head { display: grid; gap: 2px; margin-bottom: 8px; }
+.ev-head a { color: var(--accent); font-size: .8rem; overflow-wrap: anywhere; }
+.verdict { border-top: 1px solid var(--line); padding: 8px 0; display: grid; gap: 4px; }
+.verdict .row { display: flex; flex-wrap: wrap; gap: 6px; align-items: baseline; }
+.verdict blockquote { margin: 0; padding-left: 10px; border-left: 3px solid var(--accent-soft); font-size: .85rem; }
+.verdict .note2 { font-size: .78rem; color: var(--muted); overflow-wrap: anywhere; }
+.msg { font-size: .8rem; color: var(--muted); margin: 8px 0 0; }
+.kv { display: grid; grid-template-columns: auto auto; justify-content: start; gap: 2px 16px; margin: 6px 0 0; }
+
 .how { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .how div { display: grid; gap: 4px; align-content: start; }
 .how p { margin: 0; color: var(--muted); font-size: .85rem; }
@@ -253,6 +272,42 @@ td { font-variant-numeric: tabular-nums; }
     <div class="panel-head"><h2>Latest trials</h2><span class="label">Newest first</span></div>
     <ul id="log" class="log"><li class="empty">Nothing audited yet.</li></ul>
   </section>
+
+  <div class="grid" data-live hidden>
+    <section class="panel" aria-label="Draft requests">
+      <div class="panel-head"><h2>Draft requests to trial teams</h2><span class="label">Waiting on you</span></div>
+      <div class="controls">
+        <button id="followup">A trial publishes results by sex</button>
+      </div>
+      <p class="msg" id="followup-msg">Simulates one trial team answering a draft by adding results by sex to its record. The agent re-audits it, and the draft closes on its own.</p>
+      <div id="drafts" class="drafts"><p class="msg">No drafts yet. Run an audit; trials missing results by sex get a draft request.</p></div>
+      <p class="foot">Nothing is ever sent automatically. Approving here is simulated: no email leaves this laptop.</p>
+    </section>
+
+    <section class="panel" aria-label="Trial evidence">
+      <div class="panel-head"><h2>Evidence</h2><span class="label">What the agent quoted</span></div>
+      <div id="evidence"><p class="msg">Click a trial ID under Latest trials to see each verdict, the quote it rests on, and the record's eligibility text.</p></div>
+    </section>
+  </div>
+
+  <div class="grid" data-live hidden>
+    <section class="panel" aria-label="Handoff report">
+      <div class="panel-head"><h2>Handoff report</h2><span class="label">Written when a run ends or halts</span></div>
+      <pre id="handoff" class="text">No handoff report yet.</pre>
+    </section>
+
+    <section class="panel" aria-label="Measured results">
+      <div class="panel-head"><h2>Measured results</h2><span class="label">Supervisor off vs on</span></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Scenario</th><th>Supervisor</th><th>Outcome</th><th class="r">Wrong answers published</th><th class="r">Withheld</th><th class="r">Cost</th></tr></thead>
+          <tbody id="compare"><tr><td class="empty-row" colspan="6">Run python compare.py to measure.</td></tr></tbody>
+        </table>
+      </div>
+      <div id="gold"></div>
+      <p class="foot">Refresh with <span class="num">python compare.py</span> and <span class="num">python eval_gold.py</span>. Synthetic numbers test the plumbing only.</p>
+    </section>
+  </div>
 </div>
 
 <script>
@@ -523,6 +578,15 @@ td { font-variant-numeric: tabular-nums; }
       const res = await fetch("/api/run", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
       return { ok: res.ok, out: await res.json() };
     },
+    // Drafts, follow-up and evidence need the agent's database, so they exist only with ui_server.py.
+    async post(path, body) {
+      const res = await fetch(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body || {}) });
+      return { ok: res.ok, out: await res.json() };
+    },
+    async trial(id) {
+      const res = await fetch("/api/trial?id=" + encodeURIComponent(id), { cache: "no-store" });
+      return res.json();
+    },
   };
   async function detect() {
     try {
@@ -532,6 +596,7 @@ td { font-variant-numeric: tabular-nums; }
       if (res.ok) { const j = await res.json(); if (j && Array.isArray(j.scenarios)) mode = "live"; }
     } catch (e) { /* no agent server: simulate */ }
     $("data-wrap").hidden = mode !== "live";
+    document.querySelectorAll("[data-live]").forEach(el => el.hidden = mode !== "live");
     $("cmd").textContent = mode === "live" ? "Connected to the agent." :
       "Simulated in your browser with the agent's own rules. On the laptop, python ui_server.py runs the real agent with these same buttons.";
   }
@@ -540,6 +605,7 @@ td { font-variant-numeric: tabular-nums; }
   // UI
   // =====================================================================
   let S = null, lastKey = null, notes = [], booted = false, pollTimer = null, ignoreRun = null;
+  let draftsKey = null, lastEvent = null, selected = null;
 
   const clock = d => d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
   function notify(kind, title, body, say) {
@@ -695,11 +761,113 @@ td { font-variant-numeric: tabular-nums; }
         const extra = (t.looped ? `<span class="tag bad">skipped: repeated call</span>` : "") +
                       (t.quarantined ? `<span class="tag bad">set aside</span>` : "") +
                       (t.rejected ? `<span class="tag bad">${t.rejected} rejected</span>` : "");
-        li.innerHTML = `<span></span><span></span><span>${tag(t.checks.eligibility_exclusion)}${tag(t.checks.sex_stratified_results)}${extra}</span>`;
+        const id = mode === "live" ? `<button type="button" class="id"></button>` : `<span></span>`;
+        li.innerHTML = `${id}<span></span><span>${tag(t.checks.eligibility_exclusion)}${tag(t.checks.sex_stratified_results)}${extra}</span>`;
         li.children[0].textContent = t.nct_id; li.children[1].textContent = t.condition;
+        if (mode === "live") li.children[0].addEventListener("click", () => showTrial(t.nct_id));
+        li.classList.toggle("sel", t.nct_id === selected);
         return li;
       }));
     }
+    if (mode === "live") renderBackstage();
+  }
+
+  const DRAFT_TAG = { DRAFT: ["waiting", "warn"], APPROVED: ["approved", "ok"], REJECTED: ["rejected", "n"], RESOLVED: ["gap closed", "ok"] };
+  function renderBackstage() {
+    $("followup").disabled = S.running || !S.drafts.some(d => d.kind === "sex_stratified_results" && (d.status === "DRAFT" || d.status === "APPROVED"));
+
+    // Rebuild drafts only when they change, so an expanded draft stays open between polls
+    const key = JSON.stringify(S.drafts.map(d => [d.id, d.status]));
+    if (key !== draftsKey && !S.drafts.length) {
+      $("drafts").innerHTML = `<p class="msg">No drafts yet. Run an audit; trials missing results by sex get a draft request.</p>`;
+    } else if (key !== draftsKey) {
+      const open = new Set([...document.querySelectorAll("#drafts details[open]")].map(d => d.dataset.id));
+      $("drafts").replaceChildren(...S.drafts.map(d => {
+        const el = document.createElement("details");
+        el.dataset.id = d.id; el.open = open.has(String(d.id));
+        const [txt, lvl] = DRAFT_TAG[d.status] || [d.status.toLowerCase(), "n"];
+        el.innerHTML = `<summary><span class="tag ${lvl}">${txt}</span><span></span></summary><pre class="text"></pre>`;
+        el.querySelector("summary span:last-child").textContent = d.subject;
+        el.querySelector("pre").textContent = d.body;
+        if (d.status === "DRAFT") {
+          const row = document.createElement("div"); row.className = "controls";
+          for (const [label, status, cls] of [["Approve", "APPROVED", "primary"], ["Reject", "REJECTED", ""]]) {
+            const b = document.createElement("button"); b.type = "button"; b.textContent = label; b.className = cls;
+            b.addEventListener("click", async () => { b.disabled = true; await api.post("/api/draft", { id: d.id, status }); poll(); });
+            row.append(b);
+          }
+          el.append(row);
+        }
+        return el;
+      }));
+    }
+    draftsKey = key;
+
+    // A closed gap reaches the phone, like a halt does
+    const top = S.events[0];
+    if (top && lastEvent != null && top.id !== lastEvent) {
+      const fresh = S.events.filter(e => e.id > lastEvent && e.kind === "gap_closed");
+      fresh.reverse().forEach(e => notify("brief", "Gap closed", e.detail, "Gap closed. " + e.detail));
+    }
+    lastEvent = top ? top.id : 0;
+
+    if ($("handoff").textContent !== (S.handoff || "No handoff report yet.")) $("handoff").textContent = S.handoff || "No handoff report yet.";
+
+    const cmp = (S.measured && S.measured.compare) || [];
+    if (cmp.length) {
+      $("compare").replaceChildren(...cmp.map(c => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td></td><td>${c.supervisor ? "on" : "off"}</td><td></td>
+          <td class="r num ${c.wrong_published ? "lowppr" : ""}">${c.wrong_published} of ${c.published}</td>
+          <td class="r num">${c.withheld}</td><td class="r num">$${Number(c.cost_usd).toFixed(3)}</td>`;
+        tr.children[0].textContent = c.scenario;
+        tr.children[2].textContent = String(c.status).replace(/_/g, " ").toLowerCase();
+        return tr;
+      }));
+    }
+    const gold = S.measured && S.measured.gold;
+    $("gold").replaceChildren();
+    if (gold) {
+      const h = document.createElement("p"); h.className = "label"; h.style.marginTop = "14px";
+      h.textContent = `Accuracy vs hand-labelled gold set (n=${gold.n})`;
+      const kv = document.createElement("div"); kv.className = "kv";
+      for (const [k, v] of Object.entries(gold.accuracy || {})) {
+        const a = document.createElement("span"); a.textContent = k.replace(/_/g, " ");
+        const b = document.createElement("span"); b.className = "num";
+        b.textContent = typeof v === "number" ? (v <= 1 ? Math.round(100 * v) + "%" : v) : JSON.stringify(v);
+        kv.append(a, b);
+      }
+      $("gold").append(h, kv);
+    }
+  }
+
+  async function showTrial(id) {
+    selected = id;
+    document.querySelectorAll("#log li").forEach(li => li.classList.toggle("sel", li.children[0].textContent === id));
+    const box = $("evidence");
+    let t;
+    try { t = await api.trial(id); } catch (e) { box.innerHTML = `<p class="msg">Couldn't load that trial.</p>`; return; }
+    if (t.error) { box.innerHTML = `<p class="msg"></p>`; box.firstChild.textContent = t.error; return; }
+    const head = document.createElement("div"); head.className = "ev-head";
+    head.innerHTML = `<strong></strong><span class="msg" style="margin:0"></span><a target="_blank" rel="noopener"></a>`;
+    head.children[0].textContent = `${t.nct_id}: ${t.title || "(untitled)"}`;
+    head.children[1].textContent = `${t.condition} · open to: ${t.sex || "?"} · results posted: ${t.has_results ? "yes" : "no"}`;
+    if (/^https?:/.test(t.link)) { head.children[2].href = t.link; head.children[2].textContent = t.link; } else head.children[2].remove();
+    const vs = t.verdicts.map(v => {
+      const d = document.createElement("div"); d.className = "verdict";
+      const [txt, lvl] = SHORT[v.label] || [String(v.label).toLowerCase(), "n"];
+      const trust = v.quarantined ? `<span class="tag bad">set aside</span>` : v.verified ? `<span class="tag ok">verified</span>` : `<span class="tag bad">rejected</span>`;
+      d.innerHTML = `<div class="row"><span class="label"></span><span class="tag ${lvl}">${txt}</span>${trust}<span class="note2"></span></div>`;
+      d.querySelector(".label").textContent = v.chk.replace(/_/g, " ");
+      d.querySelector(".note2").textContent = v.method || "";
+      if (v.quote) { const q = document.createElement("blockquote"); q.textContent = "“" + v.quote + "”"; d.append(q); }
+      if (v.verify_note) { const n = document.createElement("div"); n.className = "note2"; n.textContent = v.verify_note; d.append(n); }
+      return d;
+    });
+    const el = document.createElement("details");
+    el.innerHTML = `<summary class="label" style="cursor:pointer;margin-top:8px">Eligibility text from the record</summary><pre class="text"></pre>`;
+    el.querySelector("pre").textContent = t.eligibility_text || "(none)";
+    box.replaceChildren(head, ...(vs.length ? vs : [Object.assign(document.createElement("p"), { className: "msg", textContent: "No verdicts yet." })]), el);
   }
 
   async function poll() {
@@ -733,6 +901,17 @@ td { font-variant-numeric: tabular-nums; }
     start({ scenario: b.dataset.scenario, live: mode === "live" && $("data").value === "live" })));
   $("resume").addEventListener("click", () => start({ scenario: "normal", resume: true, live: mode === "live" && $("data").value === "live" }));
   $("brief").addEventListener("click", morningBrief);
+  $("followup").addEventListener("click", async () => {
+    $("followup").disabled = true;
+    try {
+      const { ok, out } = await api.post("/api/followup");
+      $("followup-msg").textContent = ok
+        ? `${out.nct_id} now reports results by sex (simulated). The agent is re-auditing it; watch its draft close.`
+        : out.error;
+      if (ok) { $("cmd").textContent = "$ python " + out.started; lastKey = "starting"; ignoreRun = S && S.run ? S.run.run_id : null; }
+    } catch (e) { $("followup-msg").textContent = "The agent server isn't reachable."; }
+    poll();
+  });
   $("speak").addEventListener("click", () => {
     if (!notes.length) return;
     try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(notes[0].say); u.rate = 0.95; speechSynthesis.speak(u); }

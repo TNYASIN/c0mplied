@@ -1,15 +1,19 @@
-"""Backstage UI for judges, standard library only (no Streamlit needed).
+"""Backstage UI for judges, standard library only.
 
     python ui_server.py            # then open http://localhost:8501
 
-GET  /             the page (ui/index.html)
-GET  /api/state    live state read from the agent's SQLite checkpoint
-POST /api/run      {"scenario": "sabotage", "live": false, "resume": false} starts run_agent.py in the background
+GET  /                 the page (ui/index.html)
+GET  /api/state        live state read from the agent's SQLite checkpoint
+GET  /api/trial?id=X   one trial's verdicts, quotes and eligibility text
+POST /api/run          {"scenario": "sabotage", "live": false, "resume": false} starts run_agent.py in the background
+POST /api/draft        {"id": 3, "status": "APPROVED" | "REJECTED"}  (approval is simulated: nothing is sent)
+POST /api/followup     simulates a trial publishing results by sex, then re-audits the queue
 """
 import json, os, subprocess, sys
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
+from urllib.parse import urlparse, parse_qs
 
-import config, store, report
+import config, store, report, drafts, followup
 from config import Limits
 from supervisor import BetaTracker
 from agent import SCENARIOS
@@ -74,6 +78,36 @@ def recent(run_id, n=8):
     return list(by.values())[:n]
 
 
+def handoff():
+    """Latest handoff report (written whenever a run ends or halts), as markdown text."""
+    d = config.REPORT_DIR
+    files = [os.path.join(d, f) for f in os.listdir(d) if f.startswith("handoff_")] if os.path.isdir(d) else []
+    if not files:
+        return None
+    with open(max(files, key=os.path.getmtime)) as f:
+        return f.read()
+
+
+def measured():
+    out = {}
+    for key, path in (("compare", "data/compare.json"), ("gold", "data/gold_eval.json")):
+        if os.path.exists(path):
+            with open(path) as f:
+                out[key] = json.load(f)
+    return out
+
+
+def trial(nct):
+    t = store.get_trial(nct)
+    if not t:
+        return 404, {"error": f"No trial {nct!r}"}
+    vs = store.q("SELECT chk, label, quote, method, verified, quarantined, verify_note, run_id FROM verdicts "
+                 "WHERE nct_id=? ORDER BY id DESC LIMIT 12", (nct,))
+    return 200, {"nct_id": nct, "title": t.get("title"), "condition": t.get("condition"), "sex": t.get("sex"),
+                 "has_results": t.get("has_results"), "eligibility_text": t.get("eligibility_text", ""),
+                 "link": drafts.link(t), "verdicts": vs}
+
+
 def state():
     store.init()
     runs = store.q("SELECT * FROM runs ORDER BY started DESC LIMIT 1")
@@ -100,7 +134,38 @@ def state():
         "gap": [{GAP_KEYS[k]: v for k, v in r.items() if k in GAP_KEYS} for r in report.gap_map()],
         "recent": recent(rid) if rid else [],
         "scenarios": list(SCENARIOS),
+        "drafts": store.q("SELECT id, nct_id, kind, subject, body, status FROM drafts ORDER BY updated DESC, id DESC LIMIT 25"),
+        "events": store.q("SELECT id, ts, kind, detail FROM events ORDER BY id DESC LIMIT 12"),
+        "handoff": handoff(),
+        "measured": measured(),
     }
+
+
+def set_draft(body):
+    status = body.get("status")
+    if status not in ("APPROVED", "REJECTED"):
+        return 400, {"error": "status must be APPROVED or REJECTED"}
+    rows = store.q("SELECT status FROM drafts WHERE id=?", (body.get("id"),))
+    if not rows:
+        return 404, {"error": "No such draft"}
+    if rows[0]["status"] != "DRAFT":
+        return 409, {"error": f"Draft is already {rows[0]['status']}"}
+    drafts.set_status(int(body["id"]), status)
+    return 200, {"ok": True}
+
+
+def follow_up():
+    """The Streamlit dashboard's 'Simulate: new results published' + 'Resume queue', as one step."""
+    if running():
+        return 409, {"error": "A run is already in progress. Wait for it to finish."}
+    rows = store.q("SELECT nct_id FROM drafts WHERE kind='sex_stratified_results' AND status IN ('DRAFT','APPROVED') "
+                   "ORDER BY id LIMIT 1")
+    if not rows:
+        return 409, {"error": "No open draft request yet. Run an audit first."}
+    nct = rows[0]["nct_id"]
+    followup.simulate_new_results(nct)
+    code, out = start({"scenario": "normal", "resume": True})
+    return code, {**out, "nct_id": nct}
 
 
 def start(body):
@@ -139,22 +204,26 @@ class H(BaseHTTPRequestHandler):
                         b'<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">'
                         b'</head><body>' + f.read() + b'</body></html>')
             return self._send(200, page, "text/html; charset=utf-8")
-        if self.path.startswith("/api/state"):
-            try:
+        url = urlparse(self.path)
+        try:
+            if url.path == "/api/state":
                 return self._send(200, state())
-            except Exception as e:   # e.g. DB busy mid-write: the page just polls again
-                return self._send(503, {"error": str(e)})
+            if url.path == "/api/trial":
+                return self._send(*trial(parse_qs(url.query).get("id", [""])[0]))
+        except Exception as e:   # e.g. DB busy mid-write: the page just polls again
+            return self._send(503, {"error": str(e)})
         self._send(404, {"error": "not found"})
 
     def do_POST(self):
-        if self.path != "/api/run":
+        routes = {"/api/run": start, "/api/draft": set_draft, "/api/followup": lambda body: follow_up()}
+        if self.path not in routes:
             return self._send(404, {"error": "not found"})
         n = int(self.headers.get("Content-Length") or 0)
         try:
             body = json.loads(self.rfile.read(n) or b"{}")
         except json.JSONDecodeError:
             return self._send(400, {"error": "Body must be JSON"})
-        self._send(*start(body))
+        self._send(*routes[self.path](body))
 
     def log_message(self, *a):
         pass

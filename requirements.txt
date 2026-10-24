@@ -1,5 +1,3 @@
 requests
-pandas
-streamlit
 anthropic      # optional: only needed for real LLM mode (set ANTHROPIC_API_KEY)
 pytest         # optional

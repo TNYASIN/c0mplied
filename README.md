@@ -2,7 +2,7 @@
 
 **Track: Unsupervised.** An agent audits ClinicalTrials.gov records for gaps in sex-specific reporting,
 runs unattended, and *knows when it is stuck, looping, overspending, or unreliable, and stops itself.*
-Only reaches a human when it needs approval or has halted. The dashboard is backstage for judges.
+Only reaches a human when it needs approval or has halted. The demo page (`ui_server.py`) is backstage for judges.
 
 ## Problem / solution
 **Problem:** Women have been under-represented in clinical research, and registry records often do not show whether
@@ -21,7 +21,7 @@ review, not labeled discriminatory.
 | Knows when it's **overspending** | token / call / cost / time caps checked before every call | `budget` |
 | Knows when to **stop** | Beta-Binomial posterior on measured error rates; halt if P(rate>10%) >= 0.8; quarantine since last clean batch | `sabotage` |
 | Hands off cleanly | `reports/handoff_<run>.md` with why, spend, what's quarantined, what to do | all |
-| Human-in-the-loop | drafts need approval; nothing is sent automatically | dashboard |
+| Human-in-the-loop | drafts need approval; nothing is sent automatically | demo page |
 
 **Representation (who is enrolled):** the gap map also reports the share of women among participants, read from each
 record's structured baseline table (no LLM), against the share of women among patients from `prevalence.csv`. The ratio
@@ -38,8 +38,7 @@ python run_agent.py --scenario stuck             # ambiguous trials -> stuck det
 python run_agent.py --scenario budget            # tiny token cap
 python compare.py                                # same sabotage, supervisor OFF vs ON (headline numbers)
 python followup.py --simulate && python run_agent.py --no-ingest   # gap closes -> draft marked RESOLVED
-python ui_server.py                              # demo UI: http://localhost:8501 (no Streamlit needed)
-streamlit run app.py                             # older Streamlit dashboard (optional)
+python ui_server.py                              # the demo page: http://localhost:8501
 python -m pytest tests
 ```
 **Real data + real LLM:** `export ANTHROPIC_API_KEY=...` then `python run_agent.py --live --limit 60 --llm anthropic`.
@@ -85,4 +84,4 @@ uses. **Send morning brief** summarizes the gap map. Pick **Real (ClinicalTrials
 ## Files
 `agent.py` loop | `supervisor.py` guards + Beta-Binomial | `verifier.py` quote grounding + sampled recheck | `auditor.py` rules-first, LLM-second |
 `fetch_trials.py` API + cache + enrollment counts by sex | `prevalence.csv` women's share of patients (sourced) | `store.py` checkpoint DB | `report.py` gap map + handoff | `drafts.py`/`notify.py`/`followup.py` actions |
-`mock_llm.py` offline model w/ sabotage modes | `eval_gold.py` | `compare.py` | `app.py` dashboard | `tests/`
+`mock_llm.py` offline model w/ sabotage modes | `eval_gold.py` | `compare.py` | `ui_server.py` + `ui/index.html` demo page | `tests/`

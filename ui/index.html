@@ -166,19 +166,115 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
   .log li > span:nth-child(3) { grid-column: 1 / -1; justify-content: flex-start; }
 }
 @media (prefers-reduced-motion: reduce) { .meter i { transition: none; } .phone.buzz { animation: none; } }
+
+/* ===== Friendly layer: explanations, help, tour, accessibility ===== */
+:root { --info: #1f5f8b; --info-soft: rgba(31, 95, 139, .10); --info-line: rgba(31, 95, 139, .35); --ts: 1; }
+:root[data-theme="dark"] { --info: #7fb0e8; --info-soft: rgba(127, 176, 232, .13); --info-line: rgba(127, 176, 232, .4); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --info: #7fb0e8; --info-soft: rgba(127, 176, 232, .13); --info-line: rgba(127, 176, 232, .4); } }
+html { font-size: calc(100% * var(--ts)); scroll-behavior: smooth; scroll-padding-top: 64px; }
+body { font-size: .875rem; }
+button, select { min-height: 38px; }
+:focus-visible { outline: 3px solid var(--info); outline-offset: 2px; }
+.skip { position: fixed; z-index: 200; top: 8px; left: 8px; transform: translateY(-160%); padding: 10px 14px; border-radius: 8px; background: var(--ink); color: var(--surface); }
+.skip:focus { transform: none; }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; align-items: center; }
+.toolbar button { min-width: 40px; }
+.toolbar button[aria-pressed="true"] { background: var(--info-soft); border-color: var(--info); color: var(--info); }
+.jump { position: sticky; top: 0; z-index: 30; display: flex; gap: 6px; overflow-x: auto; padding: 8px 2px; margin-inline: -2px; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); scrollbar-width: none; }
+.jump a { flex: none; padding: 7px 13px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: .82rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.jump a:hover { border-color: var(--accent); }
+.jump a.active { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+
+.start { display: grid; gap: 14px; border-left: 5px solid var(--accent); }
+.start h2 { font-size: 1.2rem; }
+.steps3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.steps3 li { display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: start; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+.steps3 b { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--surface); font-size: .8rem; }
+.steps3 p { margin: 2px 0 0; color: var(--muted); font-size: .85rem; }
+.try-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.try-row button.primary { min-height: 44px; padding-inline: 18px; }
+.status-line { display: flex; gap: 10px; align-items: flex-start; padding: 11px 14px; border-radius: 8px; background: var(--info-soft); border: 1px solid var(--info-line); }
+.status-line strong { white-space: nowrap; }
+.status-line.halted { background: var(--bad-soft); border-color: var(--bad); }
+.status-line.done, .status-line.running { background: var(--ok-soft); border-color: var(--ok); }
+
+.i { display: inline-grid; place-items: center; flex: none; width: 19px; height: 19px; border-radius: 50%; background: var(--info); color: var(--surface); font: italic 700 .7rem Georgia, serif; }
+.ex { margin: 0 0 12px; border: 1px solid var(--info-line); border-left: 4px solid var(--info); border-radius: 8px; background: var(--info-soft); }
+.ex > summary { display: flex; align-items: center; gap: 8px; padding: 9px 12px; color: var(--info); font-weight: 600; cursor: pointer; list-style: none; }
+.ex > summary::-webkit-details-marker { display: none; }
+.ex > summary::after { content: "Hide"; margin-left: auto; font-size: .72rem; text-decoration: underline; }
+.ex:not([open]) > summary::after { content: "Show"; }
+.ex > div { display: grid; gap: 6px; padding: 0 12px 11px 39px; font-size: .88rem; }
+.ex p { margin: 0; }
+.hint { display: flex; gap: 8px; align-items: flex-start; margin: 8px 0 0; padding: 8px 11px; border-radius: 8px; background: var(--info-soft); font-size: .8rem; color: var(--ink); }
+.hint .i { width: 17px; height: 17px; font-size: .65rem; margin-top: 1px; }
+.demos { display: grid; gap: 8px; margin: 12px 0 0; padding: 0; list-style: none; }
+.demos li { display: grid; grid-template-columns: minmax(130px, auto) 1fr; gap: 4px 12px; align-items: baseline; padding-top: 8px; border-top: 1px solid var(--line); font-size: .82rem; }
+.demos b { color: var(--bad); }
+.demos span { color: var(--muted); }
+.stat .hint-t { font-size: .72rem; color: var(--muted); line-height: 1.3; }
+body.help-off .ex, body.help-off .hint, body.help-off .stat .hint-t, body.help-off .demos, body.help-off .status-line .more { display: none; }
+abbr[title] { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
+
+.gloss { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; margin: 0; }
+.gloss div { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+.gloss dt { font-weight: 600; color: var(--accent); margin-bottom: 2px; }
+.gloss dd { margin: 0; color: var(--muted); font-size: .85rem; }
+.gloss-search { display: block; width: 100%; max-width: 360px; min-height: 40px; margin: 6px 0 12px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); font: inherit; }
+
+.tour { position: fixed; z-index: 120; left: 50%; bottom: 20px; transform: translateX(-50%); width: min(440px, calc(100% - 24px)); padding: 16px 18px 14px; border-radius: 14px; background: var(--ink); color: var(--surface); box-shadow: 0 20px 60px rgba(0,0,0,.4); }
+.tour strong { display: block; padding-right: 30px; margin-bottom: 4px; font-size: 1rem; }
+.tour p { margin: 0 0 12px; font-size: .9rem; opacity: .9; }
+.tour-row { display: flex; align-items: center; gap: 8px; }
+.tour-row .c { margin-right: auto; font-size: .78rem; opacity: .7; }
+.tour button { color: var(--ink); background: var(--surface); }
+.tour .x { position: absolute; top: 6px; right: 6px; width: 36px; min-height: 36px; padding: 0; border: 0; background: transparent; color: var(--surface); }
+.tour-focus { outline: 4px solid #f5b83d; outline-offset: 6px; border-radius: 10px; }
+.back-top { position: fixed; right: 14px; bottom: 14px; z-index: 40; padding: 8px 12px; border-radius: 999px; background: var(--ink); color: var(--surface); font-weight: 600; text-decoration: none; opacity: 0; pointer-events: none; transition: opacity .2s; }
+.back-top.show { opacity: 1; pointer-events: auto; }
+@media (max-width: 860px) { .steps3 { grid-template-columns: 1fr; } .demos li { grid-template-columns: 1fr; } .ex > div { padding-left: 12px; } .tour { bottom: 12px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
 
-<div class="wrap">
+<a class="skip" href="#sec-run">Skip to the controls</a>
+<div class="wrap" role="main" id="top">
   <header>
     <h1>HerEvidence <span id="datatag" class="tag-data">SYNTHETIC DATA</span></h1>
     <p>An agent audits clinical trial records unattended: are women enrolled in proportion to who has the disease, were results reported by sex, and does eligibility exclude women? It checks its own work and stops itself when it can't be trusted.</p>
+    <div class="toolbar" role="group" aria-label="Reading preferences">
+      <button id="tour-start" class="primary" type="button">▶ 1-minute tour</button>
+      <button id="ts-down" type="button" aria-label="Smaller text" title="Smaller text">A−</button>
+      <button id="ts-up" type="button" aria-label="Larger text" title="Larger text">A+</button>
+      <button id="help-toggle" type="button" aria-pressed="true" title="Show or hide the blue explanation boxes">Help: On</button>
+      <button id="theme-toggle" type="button" title="Switch between automatic, light and dark">Theme: Auto</button>
+    </div>
   </header>
 
-  <div id="offline" class="offline" hidden>Lost contact with the agent. Check that <span class="num">python ui_server.py</span> is still running, then reload.</div>
+  <nav class="jump" aria-label="Jump to a section">
+    <a href="#sec-start">Start</a><a href="#sec-phone">Phone</a><a href="#sec-run">Run it</a><a href="#sec-supervisor">Safety checks</a><a href="#sec-gap">Gap map</a><a href="#sec-trials">Trials</a><a href="#sec-glossary">Glossary</a>
+  </nav>
+
+  <section id="sec-start" class="panel start" aria-labelledby="start-h">
+    <h2 id="start-h">New here? Start with this</h2>
+    <p style="margin:0">HerEvidence is an AI helper that reads public clinical-trial records and looks for <strong>gaps that affect women</strong>: are women included, were results reported separately for women and men, and do the rules keep women out? It <strong>double-checks its own work and stops itself</strong> if it stops being reliable. With <strong>Synthetic</strong> data everything is made up for practice; choose <strong>Real</strong> to audit live ClinicalTrials.gov records.</p>
+    <ol class="steps3">
+      <li><b>1</b><div><strong>Press “Run audit”</strong><p>The agent starts checking trials by itself. Nothing for you to do while it works.</p></div></li>
+      <li><b>2</b><div><strong>Watch the safety checks</strong><p>The counters and the chart show it checking its own mistakes as it goes.</p></div></li>
+      <li><b>3</b><div><strong>Read the results</strong><p>The gap map ranks health conditions where women are least well covered.</p></div></li>
+    </ol>
+    <div class="try-row"><button id="try-run" class="primary" type="button">▶ Try it now: run a demo audit</button><span class="msg" style="margin:0">Uses made-up data unless Data is set to Real.</span></div>
+    <div id="plain-status" class="status-line idle" role="status" aria-live="polite"><strong>Right now:</strong><span id="plain-text">Nothing is running yet. Press “Run audit” to start.</span></div>
+  </section>
+
+  <div id="offline" class="offline" role="alert" hidden><strong>We lost contact with the agent.</strong> Please check that the program is still running (start it with <span class="num">python ui_server.py</span>), then reload this page. Your saved progress is not lost.</div>
 
   <div class="top">
-    <section class="side" aria-label="What the person running it gets">
+    <section class="side" id="sec-phone" aria-label="What the person running it gets">
       <span class="label">What the person running it gets</span>
+      <details class="ex" open><summary><span class="i" aria-hidden="true">i</span>What is this phone?</summary><div>
+        <p>This shows what <strong>you</strong> would get on your own phone. The agent works alone and stays quiet. It only sends a message when it <strong>finishes</strong> or has <strong>stopped itself</strong>.</p>
+        <p><strong>Send morning brief</strong> shows a short summary. <strong>Hear latest</strong> reads the newest message aloud. <strong>Fix and resume</strong> appears after a stop so you can carry on.</p></div></details>
       <div id="phone" class="phone" aria-live="polite">
         <div class="clock" id="p-clock">--:--</div>
         <div class="date" id="p-date"></div>
@@ -198,7 +294,10 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
         <span class="label">Behind the scenes, for judges</span>
         <span id="pill" class="pill idle">Idle</span>
       </div>
-      <section class="panel" aria-label="Run controls and status">
+      <section class="panel" id="sec-run" aria-label="Run controls and status">
+        <details class="ex" open><summary><span class="i" aria-hidden="true">i</span>How do I use these controls?</summary><div>
+          <p><strong>Run audit</strong> starts a normal check. The red <strong>“Break it”</strong> buttons make something go wrong on purpose so you can watch the safety system react. They are safe: with real records, the agent's answers are corrupted on purpose before it sees them, and nothing is sent anywhere.</p>
+          <p>The numbers below update live. The status pill at the top right says if the agent is idle, running, finished or stopped.</p></div></details>
         <div class="controls">
           <button class="primary" data-scenario="normal">Run audit</button>
           <span id="data-wrap" hidden>
@@ -209,23 +308,29 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
             </select>
           </span>
           <span class="sep" aria-hidden="true"></span>
-          <span class="label">Break it</span>
+          <span class="label" id="break-label">Break it</span>
           <button class="break" data-scenario="sabotage">Model degrades</button>
           <button class="break" data-scenario="loop">Model loops</button>
           <button class="break" data-scenario="stuck">Ambiguous trials</button>
           <button class="break" data-scenario="budget">Tiny budget</button>
         </div>
+        <ul id="sec-break" class="demos" aria-label="What each Break it button does">
+          <li><b>Model degrades</b><span>The AI starts giving bad answers halfway. The supervisor notices, stops the run and sets the bad results aside.</span></li>
+          <li><b>Model loops</b><span>The AI repeats the same step again and again. The supervisor spots the repeat and halts.</span></li>
+          <li><b>Ambiguous trials</b><span>The records are too unclear to settle. After a few rounds with no progress, the supervisor stops.</span></li>
+          <li><b>Tiny budget</b><span>A very small spending limit runs out fast. The agent stops before it overspends.</span></li>
+        </ul>
         <div class="cmd" id="cmd"></div>
         <div class="status-row">
-          <div class="stat"><span class="label">Trials audited</span><span class="v" id="s-n">0</span></div>
-          <div class="stat"><span class="label">Running time</span><span class="v" id="s-time">0s</span></div>
-          <div class="stat"><span class="label">LLM calls</span><span class="v" id="s-calls">0</span></div>
-          <div class="stat"><span class="label">Spend</span><span class="v" id="s-cost">$0.000</span><div class="meter"><i id="m-cost"></i></div></div>
-          <div class="stat"><span class="label">Tokens</span><span class="v" id="s-tok">0</span><div class="meter"><i id="m-tok"></i></div></div>
-          <div class="stat"><span class="label">Rejected · set aside</span><span class="v" id="s-bad">0 · 0</span></div>
+          <div class="stat"><span class="label">Trials audited</span><span class="hint-t">Clinical-trial records checked so far.</span><span class="v" id="s-n">0</span></div>
+          <div class="stat"><span class="label">Running time</span><span class="hint-t">How long this run has been going.</span><span class="v" id="s-time">0s</span></div>
+          <div class="stat"><span class="label">LLM calls</span><span class="hint-t">Times the AI was asked a question.</span><span class="v" id="s-calls">0</span></div>
+          <div class="stat"><span class="label">Spend</span><span class="hint-t">Estimated cost of the AI use. The bar shows the share of the limit used.</span><span class="v" id="s-cost">$0.000</span><div class="meter"><i id="m-cost"></i></div></div>
+          <div class="stat"><span class="label">Tokens</span><span class="hint-t">Amount of text the AI has read and written. The bar shows the share of the limit.</span><span class="v" id="s-tok">0</span><div class="meter"><i id="m-tok"></i></div></div>
+          <div class="stat"><span class="label">Rejected · set aside</span><span class="hint-t">Rejected = claims dropped for failing checks. Set aside = results held back as untrusted.</span><span class="v" id="s-bad">0 · 0</span></div>
         </div>
       </section>
-      <section class="panel how" aria-label="How it works">
+      <section class="panel how" aria-label="How it works" id="sec-how">
         <div><span class="label">Rules first, no LLM</span><p>Enrollment counts by sex come straight from each record's baseline table, so the representation numbers can't be hallucinated.</p></div>
         <div><span class="label">LLM, with evidence</span><p>The model only judges eligibility wording and sex-stratified results. Every claim must quote the record, and code checks the quote exists.</p></div>
         <div><span class="label">Supervisor</span><p>Watches error rates, loops, progress and spend. On a halt it sets aside everything since the last clean batch and writes a handoff report.</p></div>
@@ -234,7 +339,10 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
   </div>
 
   <div class="grid">
-    <section class="panel" aria-label="Supervisor">
+    <section class="panel" id="sec-supervisor" aria-label="Supervisor">
+      <details class="ex" open><summary><span class="i" aria-hidden="true">i</span>What am I looking at?</summary><div>
+        <p>The <strong>supervisor</strong> is a watchdog that checks the AI’s work. The chart shows how likely it is that the AI is making too many mistakes. If a line crosses the red <strong>halt line</strong>, the run is stopped.</p>
+        <p><strong>Green</strong> = healthy. <strong>Amber</strong> = getting worse. <strong>Red</strong> = stopped. Each row below explains one check.</p></div></details>
       <div class="panel-head"><h2>Supervisor</h2><span class="label">Chance its error rate is above 10%</span></div>
       <svg id="chart" class="chart" viewBox="0 0 460 210" role="img" aria-label="Probability that each check's error rate exceeds 10 percent, by batch, with the halt line at 0.8"></svg>
       <div class="legend"><span>Quote check</span><span class="s2">Independent recheck</span><span class="lim">Halt line</span></div>
@@ -252,15 +360,18 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
       </div>
     </section>
 
-    <section class="panel" aria-label="Gap map">
+    <section class="panel" id="sec-gap" aria-label="Gap map">
+      <details class="ex" open><summary><span class="i" aria-hidden="true">i</span>How do I read the gap map?</summary><div>
+        <p>Each row is a health condition. A <strong>higher gap score</strong> means women are less well covered in its trials, so it deserves a closer look first.</p>
+        <p><strong>Example:</strong> if women are 26% of trial participants but 45% of patients, the <abbr title="Participation-to-prevalence ratio">PPR</abbr> is about 0.58. Below 0.8 is usually read as under-representation. A gap is a question to follow up, never proof that something is wrong.</p></div></details>
       <div class="panel-head"><h2>Gap map</h2><span class="label">Ranked by gap score · trusted verdicts only</span></div>
       <div class="table-wrap">
         <table>
           <thead><tr>
-            <th>Condition</th><th class="r">Trials</th><th class="r">Women in trials / patients</th><th class="r">PPR</th>
-            <th class="r">No result by sex</th><th class="r">Blanket exclusion</th><th>Gap score</th>
+            <th>Condition</th><th class="r">Trials</th><th class="r">Women in trials / patients</th><th class="r"><abbr title="Participation-to-prevalence ratio: share of women in trials divided by share of women among patients. Below 0.8 usually means under-representation.">PPR</abbr></th>
+            <th class="r"><abbr title="Results exist but were not reported separately for women and men in the record checked.">No result by sex</abbr></th><th class="r"><abbr title="Eligibility rules that exclude all women who could become pregnant outright. Flagged for review, not judged: some have safety reasons.">Blanket exclusion</abbr></th><th><abbr title="0 to 100. Higher means a bigger gap and a higher priority to review.">Gap score</abbr></th>
           </tr></thead>
-          <tbody id="gap"><tr><td class="empty-row" colspan="7">Run an audit to fill the gap map.</td></tr></tbody>
+          <tbody id="gap"><tr><td class="empty-row" colspan="7">Nothing to rank yet. Press “Run audit” and this table fills in.</td></tr></tbody>
         </table>
       </div>
       <p class="foot gapnote" id="gapnote" hidden></p>
@@ -268,13 +379,15 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
     </section>
   </div>
 
-  <section class="panel" aria-label="Latest trials">
+  <section class="panel" id="sec-trials" aria-label="Latest trials">
+    <p class="hint" style="margin:0 0 10px"><span class="i" aria-hidden="true">i</span><span>The newest trials the agent checked. <strong>In the full app, click a trial ID</strong> to see exactly what the agent quoted and why. Tags show what was found or set aside.</span></p>
     <div class="panel-head"><h2>Latest trials</h2><span class="label">Newest first</span></div>
-    <ul id="log" class="log"><li class="empty">Nothing audited yet.</li></ul>
+    <ul id="log" class="log"><li class="empty">Nothing here yet. Press “Run audit” at the top and trials will appear as they are checked.</li></ul>
   </section>
 
   <div class="grid" data-live hidden>
-    <section class="panel" aria-label="Draft requests">
+    <section class="panel" id="sec-drafts" aria-label="Draft requests">
+      <p class="hint" style="margin:0 0 10px"><span class="i" aria-hidden="true">i</span><span>A <strong>draft</strong> is a polite message asking a trial team to add missing information. <strong>You decide</strong> whether to approve or reject it, and nothing is ever sent on its own.</span></p>
       <div class="panel-head"><h2>Draft requests to trial teams</h2><span class="label">Waiting on you</span></div>
       <div class="controls">
         <button id="followup">A trial publishes results by sex</button>
@@ -291,12 +404,14 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
   </div>
 
   <div class="grid" data-live hidden>
-    <section class="panel" aria-label="Handoff report">
+    <section class="panel" id="sec-report" aria-label="Handoff report">
+      <p class="hint" style="margin:0 0 10px"><span class="i" aria-hidden="true">i</span><span>A short note the supervisor writes when a run ends or stops: what happened, what it cost, what was set aside and what to do next.</span></p>
       <div class="panel-head"><h2>Handoff report</h2><span class="label">Written when a run ends or halts</span></div>
       <pre id="handoff" class="text">No handoff report yet.</pre>
     </section>
 
     <section class="panel" aria-label="Measured results">
+      <p class="hint" style="margin:0 0 10px"><span class="i" aria-hidden="true">i</span><span>Saved test scores comparing the same failure with the supervisor <strong>Off</strong> and <strong>On</strong>. Fewer “wrong answers published” with it On means the safety system works.</span></p>
       <div class="panel-head"><h2>Measured results</h2><span class="label">Supervisor off vs on</span></div>
       <div class="table-wrap">
         <table>
@@ -308,7 +423,37 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
       <p class="foot">Refresh with <span class="num">python compare.py</span> and <span class="num">python eval_gold.py</span>. Synthetic numbers test the plumbing only.</p>
     </section>
   </div>
+
+  <section id="sec-glossary" class="panel" aria-labelledby="gloss-h">
+    <div class="panel-head"><h2 id="gloss-h">Glossary: words explained simply</h2><span class="label">No background needed</span></div>
+    <label class="label" for="gloss-q">Search the glossary</label>
+    <input id="gloss-q" class="gloss-search" type="search" placeholder="e.g. PPR, token, halt" autocomplete="off">
+    <dl id="gloss-list" class="gloss">
+      <div><dt>Clinical trial</dt><dd>A research study with people, used to test whether a treatment is safe and works.</dd></div>
+      <div><dt>Registry record</dt><dd>The public summary page of a trial. It may not contain everything in the full paper.</dd></div>
+      <div><dt>Agent / auditor</dt><dd>The AI program that reads trial records by itself and notes what it finds.</dd></div>
+      <div><dt>Supervisor</dt><dd>A watchdog that stops the agent if it makes too many mistakes, repeats itself, gets stuck or overspends.</dd></div>
+      <div><dt>Halt</dt><dd>When the supervisor stops a run. This is the safety system working. Even an unexpected error stops the run cleanly, with a report.</dd></div>
+      <div><dt>Set aside (quarantine)</dt><dd>Results held back because they came from a stretch of work that could not be trusted.</dd></div>
+      <div><dt>Quote check</dt><dd>Every claim must quote the record. If the quote isn’t really there, the claim is rejected.</dd></div>
+      <div><dt>Independent recheck</dt><dd>A few answers are asked again separately. If the two answers disagree, it counts as an error.</dd></div>
+      <div><dt>Loop detector</dt><dd>Notices the same step repeated and skips it, so the agent doesn’t go in circles.</dd></div>
+      <div><dt>Stuck detector</dt><dd>Stops the run if several rounds in a row make no progress.</dd></div>
+      <div><dt>PPR</dt><dd>Participation-to-prevalence ratio. The share of women in trials divided by the share of women among patients. Below 0.8 usually means under-representation.</dd></div>
+      <div><dt>No result by sex</dt><dd>The record doesn’t show results separately for women and men. It does not prove the analysis wasn’t done.</dd></div>
+      <div><dt>Blanket exclusion</dt><dd>A rule that excludes all women who could become pregnant outright. It is flagged for a person to review, not judged: some exclusions have safety reasons.</dd></div>
+      <div><dt>Gap score</dt><dd>0 to 100 priority score. Higher means a bigger gap. It mixes the PPR shortfall, missing results by sex and blanket exclusions.</dd></div>
+      <div><dt>Token</dt><dd>A small piece of text (about ¾ of a word). AI usage and cost are counted in tokens.</dd></div>
+      <div><dt>LLM call</dt><dd>One request to the AI language model.</dd></div>
+      <div><dt>Synthetic data</dt><dd>Made-up records for practice. Never cite them as research.</dd></div>
+      <div><dt>Draft request</dt><dd>A message to a trial team asking for missing information. It is only sent if a person approves it.</dd></div>
+      <div><dt>Handoff report</dt><dd>The note left at the end of a run explaining what happened and what to do next.</dd></div>
+      <div><dt>Gold set</dt><dd>A small set of studies with known correct labels, used as an answer key to measure accuracy. Ours is so far labelled by one AI reviewer, not yet checked by a person.</dd></div>
+    </dl>
+    <p id="gloss-none" class="msg" hidden>No matching word. Try a shorter search.</p>
+  </section>
 </div>
+<a class="back-top" href="#top" aria-label="Back to top">↑ Top</a>
 
 <script>
 (() => {
@@ -928,5 +1073,125 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
   setInterval(renderPhone, 15000);
   renderPhone();
   detect().then(poll);
+})();
+</script>
+
+<script>
+/* Friendly layer: reading comfort, plain-language status, guided tour, glossary. Does not touch the agent logic above. */
+(() => {
+  const $ = id => document.getElementById(id);
+  const root = document.documentElement;
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch (_) { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch (_) { /* private mode */ } },
+  };
+
+  // ---- text size, help boxes, theme ----
+  let ts = Number(store.get("he-ts")) || 1;
+  const applyTs = () => { ts = Math.min(1.4, Math.max(.9, Math.round(ts * 10) / 10)); root.style.setProperty("--ts", ts); store.set("he-ts", ts); };
+  applyTs();
+  $("ts-up").addEventListener("click", () => { ts += .1; applyTs(); });
+  $("ts-down").addEventListener("click", () => { ts -= .1; applyTs(); });
+
+  const help = $("help-toggle");
+  const applyHelp = on => { document.body.classList.toggle("help-off", !on); help.setAttribute("aria-pressed", on ? "true" : "false"); help.textContent = on ? "Help: On" : "Help: Off"; store.set("he-help", on ? "on" : "off"); };
+  applyHelp(store.get("he-help") !== "off");
+  help.addEventListener("click", () => applyHelp(document.body.classList.contains("help-off")));
+
+  const themes = ["auto", "light", "dark"];
+  let theme = themes.includes(store.get("he-theme")) ? store.get("he-theme") : "auto";
+  const applyTheme = () => {
+    if (theme === "auto") root.removeAttribute("data-theme"); else root.setAttribute("data-theme", theme);
+    $("theme-toggle").textContent = "Theme: " + theme[0].toUpperCase() + theme.slice(1); store.set("he-theme", theme);
+  };
+  applyTheme();
+  $("theme-toggle").addEventListener("click", () => { theme = themes[(themes.indexOf(theme) + 1) % themes.length]; applyTheme(); });
+
+  // remember which blue boxes the person closed
+  document.querySelectorAll("details.ex").forEach((box, i) => {
+    const key = "he-ex-" + i;
+    if (store.get(key) === "closed") box.open = false;
+    box.addEventListener("toggle", () => store.set(key, box.open ? "open" : "closed"));
+  });
+
+  // ---- try it now ----
+  $("try-run").addEventListener("click", () => {
+    const run = document.querySelector('[data-scenario="normal"]');
+    if (run && !run.disabled) run.click();
+    $("sec-run").scrollIntoView({ block: "start" });
+  });
+
+  // ---- plain-language status, mirrored from the status pill ----
+  const pill = $("pill"), line = $("plain-status"), text = $("plain-text");
+  const why = r => /error/.test(r) ? "its error rate got too high" : /loop/.test(r) ? "it kept repeating the same step"
+    : /stuck/.test(r) ? "it stopped making progress" : /token|call|cost|budget/.test(r) ? "it reached its spending limit"
+    : /time/.test(r) ? "it ran out of time" : /crash/.test(r) ? "it hit an unexpected error" : r || "it could not be trusted";
+  function mirror() {
+    const kind = ["running", "done", "halted"].find(c => pill.classList.contains(c)) || "idle";
+    const n = $("s-n").textContent;
+    line.className = "status-line " + kind;
+    if (kind === "running") text.textContent = `The agent is checking trials on its own (${n} so far). Nothing for you to do. Watch the counters and the phone.`;
+    else if (kind === "done") text.textContent = `Finished. ${n} trials were checked and the safety system had nothing to stop. See the gap map below, or try a “Break it” button.`;
+    else if (kind === "halted") text.textContent = `The agent stopped itself because ${why(pill.textContent.replace(/^Halted:\s*/i, "").trim())}. This is the safety system working. The phone and the report say what to do next.`;
+    else text.textContent = "Nothing is running yet. Press “Run audit” to start.";
+  }
+  new MutationObserver(mirror).observe(pill, { attributes: true, childList: true, characterData: true, subtree: true });
+  mirror();
+
+  // ---- jump bar highlight + back to top ----
+  const links = [...document.querySelectorAll(".jump a")];
+  const targets = links.map(a => $(a.getAttribute("href").slice(1))).filter(Boolean);
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(es => {
+      const v = es.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (v) links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + v.target.id));
+    }, { rootMargin: "-20% 0px -60% 0px", threshold: [0, .1, .4] });
+    targets.forEach(t => io.observe(t));
+  }
+  const top = document.querySelector(".back-top");
+  const onScroll = () => top.classList.toggle("show", window.scrollY > 800);
+  window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+
+  // ---- glossary search ----
+  $("gloss-q").addEventListener("input", e => {
+    const q = e.target.value.trim().toLowerCase(); let n = 0;
+    document.querySelectorAll("#gloss-list > div").forEach(d => { const m = !q || d.textContent.toLowerCase().includes(q); d.hidden = !m; if (m) n++; });
+    $("gloss-none").hidden = n > 0;
+  });
+
+  // ---- guided tour ----
+  const steps = [
+    ["sec-start", "Welcome", "This 1-minute tour shows the main parts. Press Next, or Esc to leave at any time."],
+    ["sec-phone", "1. The phone", "This is what the person running the agent sees. The agent stays quiet and only messages when it finishes or stops itself."],
+    ["sec-run", "2. Run it", "Press “Run audit” to start. The numbers update live while the agent works."],
+    ["sec-break", "3. Break it on purpose", "These red buttons make something go wrong on purpose, so you can watch the safety system react."],
+    ["sec-supervisor", "4. The safety checks", "The supervisor watches the agent’s mistakes. If a line crosses the red halt line, the run is stopped."],
+    ["sec-gap", "5. The gap map", "Conditions are ranked by gap score. Higher means women are less well covered in those trials."],
+    ["sec-trials", "6. Latest trials", "The newest trials checked, with tags for what was found."],
+    ["help-toggle", "7. Make it comfortable", "A+ makes text bigger. Help hides or shows the blue boxes. Theme switches light and dark. You’re ready!"],
+  ];
+  const box = document.createElement("div");
+  box.className = "tour"; box.hidden = true; box.setAttribute("role", "dialog"); box.setAttribute("aria-label", "Guided tour");
+  box.innerHTML = '<button class="x" type="button" aria-label="Close tour">✕</button><strong></strong><p></p><div class="tour-row"><span class="c"></span><button class="b" type="button">Back</button><button class="n primary" type="button">Next</button></div>';
+  document.body.append(box);
+  let list = [], i = 0, lit = null;
+  const q = s => box.querySelector(s);
+  function show(n) {
+    i = n; const [id, title, body] = list[i];
+    if (lit) lit.classList.remove("tour-focus");
+    lit = $(id); lit.classList.add("tour-focus"); lit.scrollIntoView({ behavior: "smooth", block: "center" });
+    q("strong").textContent = title; q("p").textContent = body; q(".c").textContent = `${i + 1} / ${list.length}`;
+    q(".b").disabled = i === 0; q(".n").textContent = i === list.length - 1 ? "Finish" : "Next";
+  }
+  function end() { box.hidden = true; if (lit) lit.classList.remove("tour-focus"); lit = null; $("tour-start").focus(); }
+  q(".n").addEventListener("click", () => i === list.length - 1 ? end() : show(i + 1));
+  q(".b").addEventListener("click", () => show(i - 1));
+  q(".x").addEventListener("click", end);
+  document.addEventListener("keydown", e => { if (!box.hidden && e.key === "Escape") end(); });
+  $("tour-start").addEventListener("click", () => {
+    list = steps.filter(([id]) => { const el = $(id); return el && !el.closest("[hidden]"); });
+    if (!list.length) return;
+    box.hidden = false; show(0); q(".n").focus();
+  });
 })();
 </script>

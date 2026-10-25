@@ -804,13 +804,19 @@ abbr[title] { text-decoration: underline dotted; text-underline-offset: 3px; cur
   const ranked = g => [...g].map(r => ({ ...r, score: score(r) })).sort((a, b) => b.score - a.score);
 
   function morningBrief() {
-    if (!S || !S.gap.length) { notify("brief", "Morning brief", "Nothing audited yet.", "Nothing audited yet."); return; }
-    const top = ranked(S.gap)[0];
-    let body = `${S.counts.audited} trials audited in the last run. Biggest gap: ${top.condition}.`;
-    if (top.ppr != null) body += ` Women are ${pct(top.women_trials)} of participants but ${pct(top.women_patients)} of patients.`;
-    if (top.no_strat != null) body += ` ${pct(top.no_strat)} of its trials with results show no result by sex in the record.`;
-    if (S.synthetic) body += " These are synthetic demo numbers.";
+    let body = "Nothing audited yet.";
+    if (S && S.gap.length) {
+      const top = ranked(S.gap)[0];
+      body = `${S.counts.audited} trials audited in the last run. Biggest gap: ${top.condition}.`;
+      if (top.ppr != null) body += ` Women are ${pct(top.women_trials)} of participants but ${pct(top.women_patients)} of patients.`;
+      if (top.no_strat != null) body += ` ${pct(top.no_strat)} of its trials with results show no result by sex in the record.`;
+      if (S.synthetic) body += " These are synthetic demo numbers.";
+    }
     notify("brief", "Morning brief", body, "Morning brief. " + body);
+    if (mode === "live")   // also push it to the real phone
+      api.post("/api/brief", { text: body })
+        .then(({ out }) => { $("cmd").textContent = out.sent ? "Morning brief sent to your phone." : (out.note || out.error || "The brief couldn't be sent to the phone."); })
+        .catch(() => { $("cmd").textContent = "The agent server isn't reachable."; });
   }
 
   function svg(tag, attrs, text) {

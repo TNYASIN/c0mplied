@@ -8,6 +8,7 @@ GET  /api/trial?id=X   one trial's verdicts, quotes, eligibility text, registry 
 POST /api/run          {"scenario": "sabotage", "live": false, "resume": false} starts run_agent.py in the background
 POST /api/draft        {"id": 3, "status": "APPROVED" | "REJECTED"}  (approval is simulated: nothing is sent)
 POST /api/followup     simulates a trial publishing results by sex, then re-audits the queue
+POST /api/brief        {"text": "..."} pushes the morning brief to the real phone
 """
 import json, os, subprocess, sys
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
@@ -158,6 +159,16 @@ def set_draft(body):
     return 200, {"ok": True}
 
 
+def send_brief(body):
+    """The page's morning brief, also pushed to the real phone (ntfy / Twilio) when notifications are on."""
+    text = str(body.get("text", "")).strip()[:500]
+    if not text:
+        return 400, {"error": "Empty brief"}
+    if not notify.channels():
+        return 200, {"sent": False, "note": "Phone notifications are off: start the server with NTFY_TOPIC set."}
+    return 200, {"sent": notify.send("Morning brief: " + text)}
+
+
 def follow_up():
     """The Streamlit dashboard's 'Simulate: new results published' + 'Resume queue', as one step."""
     if running():
@@ -219,7 +230,8 @@ class H(BaseHTTPRequestHandler):
         self._send(404, {"error": "not found"})
 
     def do_POST(self):
-        routes = {"/api/run": start, "/api/draft": set_draft, "/api/followup": lambda body: follow_up()}
+        routes = {"/api/run": start, "/api/draft": set_draft, "/api/followup": lambda body: follow_up(),
+                  "/api/brief": send_brief}
         if self.path not in routes:
             return self._send(404, {"error": "not found"})
         n = int(self.headers.get("Content-Length") or 0)

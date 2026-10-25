@@ -51,7 +51,7 @@ def run(scenario="normal", conditions=None, limit=40, offline=True, supervised=T
         store.requeue(limits.max_attempts_per_trial)
         while True:
             sup.check_budget()
-            ids = store.next_batch(limits.batch_size)
+            ids = store.next_batch(limits.batch_size, "synthetic" if offline else "live")
             if not ids:
                 break
             qf = cfg.get("quality_from")

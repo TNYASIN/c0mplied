@@ -9,10 +9,14 @@ def simulate_new_results(nct):
     t = store.get_trial(nct)
     t["outcome_measures"].append({"title": "Primary endpoint, stratified by sex",
                                   "description": "Added in a (simulated) registry update.",
-                                  "groups": [], "classes": ["Female", "Male"], "categories": [], "analyses": []})
+                                  "groups": [], "classes": ["Female", "Male"], "categories": [], "analyses": [],
+                                  # The evidence gate needs actual values tied to each sex, as a real update would post
+                                  "sex_values": {"female": [{"value": "14.2", "match_key": "simulated", "path": "simulated.update.female"}],
+                                                 "male": [{"value": "11.8", "match_key": "simulated", "path": "simulated.update.male"}]}})
     t["has_results"] = True
     t["results_fingerprint"] = fixtures.fingerprint(t)
-    store.save_trial(t, "synthetic")
+    src = store.q("SELECT source FROM trials WHERE nct_id=?", (nct,))
+    store.save_trial(t, src[0]["source"] if src else "synthetic")   # keep a real trial in the real-data queue
     store.set_status(nct, "pending", None)
     store.log_event(None, "new_results", f"{nct}: simulated registry update; queued for re-audit")
     return t

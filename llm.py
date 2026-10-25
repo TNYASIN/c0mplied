@@ -19,7 +19,8 @@ class AnthropicBackend:
             r = self.client.messages.create(model=config.MODEL, max_tokens=400, system=system,
                                             messages=[{"role": "user", "content": user}])
             return r.content[0].text, r.usage.input_tokens, r.usage.output_tokens
-        except self.anthropic.APIError:
+        except self.anthropic.APIError as e:
+            print(f"  [llm] API error: {type(e).__name__}: {str(e)[:300]}", flush=True)
             time.sleep(2)               # transient failure -> counted as an invalid reply;
             return "", 0, 0             # repeated identical failures get caught as a loop
 

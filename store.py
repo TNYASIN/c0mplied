@@ -72,7 +72,11 @@ def reset_synthetic():
         x(f"DELETE FROM {table} WHERE nct_id IN {sub}")
 
 
-def next_batch(n):
+def next_batch(n, source=None):
+    """Pending trials, optionally only 'live' or 'synthetic' ones so the two kinds never mix in one run."""
+    if source:
+        return [r["nct_id"] for r in q("SELECT q.nct_id FROM queue q JOIN trials t ON t.nct_id=q.nct_id "
+                                       "WHERE q.status='pending' AND t.source=? ORDER BY q.rowid LIMIT ?", (source, n))]
     return [r["nct_id"] for r in q("SELECT nct_id FROM queue WHERE status='pending' ORDER BY rowid LIMIT ?", (n,))]
 
 

@@ -7,9 +7,14 @@ CREATE TABLE IF NOT EXISTS trials(nct_id TEXT PRIMARY KEY, condition TEXT, json 
 CREATE TABLE IF NOT EXISTS queue(nct_id TEXT PRIMARY KEY, condition TEXT, status TEXT, attempts INTEGER DEFAULT 0, run_id TEXT, updated REAL);
 CREATE TABLE IF NOT EXISTS verdicts(id INTEGER PRIMARY KEY AUTOINCREMENT, run_id TEXT, nct_id TEXT, condition TEXT, chk TEXT, label TEXT, quote TEXT, confidence REAL, method TEXT, verified INTEGER, verify_note TEXT, quarantined INTEGER DEFAULT 0, batch INTEGER, ts REAL);
 CREATE TABLE IF NOT EXISTS runs(run_id TEXT PRIMARY KEY, started REAL, ended REAL, scenario TEXT, status TEXT, halt_code TEXT, halt_reason TEXT, state_json TEXT);
-CREATE TABLE IF NOT EXISTS drafts(id INTEGER PRIMARY KEY AUTOINCREMENT, nct_id TEXT, kind TEXT, subject TEXT, body TEXT, status TEXT, created REAL, updated REAL);
+CREATE TABLE IF NOT EXISTS drafts(id INTEGER PRIMARY KEY AUTOINCREMENT, nct_id TEXT, kind TEXT, subject TEXT, body TEXT, status TEXT, created REAL, updated REAL, to_name TEXT, to_org TEXT, to_email TEXT, to_role TEXT, to_source TEXT);
 CREATE TABLE IF NOT EXISTS events(id INTEGER PRIMARY KEY AUTOINCREMENT, run_id TEXT, ts REAL, kind TEXT, detail TEXT);
+CREATE TABLE IF NOT EXISTS publications(pmid TEXT PRIMARY KEY, title TEXT, journal TEXT, year TEXT, doi TEXT, abstract TEXT, source TEXT, fetched_at REAL);
+CREATE TABLE IF NOT EXISTS trial_publications(nct_id TEXT, pmid TEXT, link TEXT, PRIMARY KEY(nct_id, pmid));
+CREATE TABLE IF NOT EXISTS pubmed_checks(nct_id TEXT PRIMARY KEY, status TEXT, checked_at REAL);
 """
+# Columns added after the first release; init() adds them to databases created before then.
+MIGRATIONS = {"drafts": ("to_name", "to_org", "to_email", "to_role", "to_source")}
 
 
 def conn():
@@ -36,6 +41,11 @@ def init():
     c = conn()
     try:
         c.executescript(SCHEMA)
+        for table, cols in MIGRATIONS.items():
+            have = {r["name"] for r in c.execute(f"PRAGMA table_info({table})")}
+            for col in cols:
+                if col not in have:
+                    c.execute(f"ALTER TABLE {table} ADD COLUMN {col} TEXT")
         c.commit()
     finally:
         c.close()
@@ -68,8 +78,29 @@ def reset_synthetic():
     """Clear queue, verdicts and drafts for SYNTHETIC trials so each offline demo scenario starts fresh.
     Live (real) trials are untouched, so resuming a live run still works."""
     sub = "(SELECT nct_id FROM trials WHERE source='synthetic')"
-    for table in ("queue", "verdicts", "drafts"):
+    for table in ("queue", "verdicts", "drafts", "trial_publications", "pubmed_checks"):
         x(f"DELETE FROM {table} WHERE nct_id IN {sub}")
+
+
+def save_publications(nct, status, links, pubs, source):
+    """Record one PubMed lookup. On ERROR, keep the previous links rather than erasing them."""
+    if status == "OK" or source == "synthetic":
+        x("DELETE FROM trial_publications WHERE nct_id=?", (nct,))
+        for p in pubs:
+            x("INSERT OR REPLACE INTO publications VALUES(?,?,?,?,?,?,?,?)",
+              (p["pmid"], p.get("title", ""), p.get("journal", ""), p.get("year", ""), p.get("doi", ""),
+               p.get("abstract", ""), source, time.time()))
+        for l in links:
+            x("INSERT OR REPLACE INTO trial_publications VALUES(?,?,?)", (nct, l["pmid"], l["link"]))
+    x("INSERT OR REPLACE INTO pubmed_checks VALUES(?,?,?)", (nct, status, time.time()))
+
+
+def publications_for(nct):
+    """(lookup status or None if never checked, [publication dicts with their link type])."""
+    chk = q("SELECT status FROM pubmed_checks WHERE nct_id=?", (nct,))
+    pubs = q("SELECT p.*, tp.link FROM trial_publications tp JOIN publications p ON p.pmid=tp.pmid "
+             "WHERE tp.nct_id=? ORDER BY p.year DESC, p.pmid", (nct,))
+    return (chk[0]["status"] if chk else None), pubs
 
 
 def next_batch(n, source=None):

@@ -694,7 +694,9 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
   function setCheck(id, text, level) { const el = $(id); el.textContent = text; el.className = "s " + level; }
   const SHORT = { BLANKET_EXCLUSION_CHILDBEARING: ["blanket exclusion", "bad"], PREGNANCY_LACTATION_EXCLUSION: ["pregnancy excl.", "n"],
     CONDITIONAL: ["conditional", "n"], NONE: ["no exclusion", "n"], UNCLEAR: ["unclear", "warn"],
-    STRATIFIED_FOUND: ["by sex: found", "ok"], NOT_FOUND_IN_RECORD: ["by sex: not in record", "warn"], NO_RESULTS_POSTED: ["no results", "n"] };
+    STRATIFIED_FOUND: ["by sex: found", "ok"], NOT_FOUND_IN_RECORD: ["by sex: not in record", "warn"], NO_RESULTS_POSTED: ["no results", "n"],
+    MENTIONED_IN_PUBLICATION: ["paper mentions by-sex", "ok"], NOT_FOUND_IN_ABSTRACTS: ["not in abstracts", "n"],
+    NO_LINKED_PUBLICATION: ["no linked paper", "n"], NOT_CHECKED: ["PubMed not checked", "n"] };
 
   function render() {
     renderPhone();
@@ -793,6 +795,7 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
           if (d.to.status === "no_email") el.querySelector("p.msg").classList.add("gapnote");
         } else el.querySelector("p.msg").remove();
         el.querySelector("pre").textContent = d.body;
+        if (d.to) { const to = document.createElement("p"); to.className = "msg"; to.textContent = d.to; el.querySelector("pre").before(to); }
         if (d.status === "DRAFT") {
           const row = document.createElement("div"); row.className = "controls";
           for (const [label, status, cls] of [["Approve", "APPROVED", "primary"], ["Reject", "REJECTED", ""]]) {
@@ -871,7 +874,25 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
     const el = document.createElement("details");
     el.innerHTML = `<summary class="label" style="cursor:pointer;margin-top:8px">Eligibility text from the record</summary><pre class="text"></pre>`;
     el.querySelector("pre").textContent = t.eligibility_text || "(none)";
-    box.replaceChildren(head, ...(vs.length ? vs : [Object.assign(document.createElement("p"), { className: "msg", textContent: "No verdicts yet." })]), el);
+    const list = (title, items) => {
+      const d = document.createElement("details");
+      d.innerHTML = `<summary class="label" style="cursor:pointer;margin-top:8px"></summary><ul class="msg"></ul>`;
+      d.querySelector("summary").textContent = title;
+      d.querySelector("ul").append(...items.map(([text, href]) => {
+        const li = document.createElement("li");
+        if (href) { const a = document.createElement("a"); a.href = href; a.target = "_blank"; a.rel = "noopener"; a.textContent = text; li.append(a); }
+        else li.textContent = text;
+        return li;
+      }));
+      return d;
+    };
+    const who = (t.contacts || []).map(c => [`${c.role}: ${[c.name, c.organization].filter(Boolean).join(", ")}` +
+      (c.email ? ` <${c.email}>` : "") + (c.phone ? ` · ${c.phone}` : ""), null]);
+    const pubs = (t.publications || []).map(p => [`PMID ${p.pmid} (${p.year || "?"}) ${p.title}. ${p.link}`,
+      /^\d+$/.test(p.pmid) ? `https://pubmed.ncbi.nlm.nih.gov/${p.pmid}/` : null]);
+    const extra = [list(`Who to contact (from the record): ${who.length}`, who.length ? who : [["No contacts in the record.", null]]),
+      list(`Linked publications (PubMed): ${pubs.length}`, pubs.length ? pubs : [[t.pubmed_status ? "None found." : "Not checked yet.", null]])];
+    box.replaceChildren(head, ...(vs.length ? vs : [Object.assign(document.createElement("p"), { className: "msg", textContent: "No verdicts yet." })]), el, ...extra);
   }
 
   async function poll() {

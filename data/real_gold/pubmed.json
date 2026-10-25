@@ -1,0 +1,554 @@
+{
+ "fetched_at": "2026-10-25T00:30:46Z",
+ "query": "RESULT/DERIVED refs + {nct}[si]",
+ "trials": {
+  "NCT00074724": {
+   "status": "OK",
+   "links": []
+  },
+  "NCT00209339": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "19679246",
+     "link": "registry RESULT reference"
+    },
+    {
+     "pmid": "23633132",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "21492763",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "21422390",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT00424762": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "20601395",
+     "link": "registry RESULT reference"
+    },
+    {
+     "pmid": "31221698",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "22067724",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "21562061",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "19156629",
+     "link": "PubMed [si] NCT link"
+    }
+   ]
+  },
+  "NCT00012870": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "15950833",
+     "link": "registry RESULT reference"
+    },
+    {
+     "pmid": "8656241",
+     "link": "registry RESULT reference"
+    },
+    {
+     "pmid": "15632812",
+     "link": "registry RESULT reference"
+    }
+   ]
+  },
+  "NCT00547729": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "23448187",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "21920328",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "20176990",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT00043550": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "8916624",
+     "link": "registry RESULT reference"
+    },
+    {
+     "pmid": "35913883",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "30821630",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "29336228",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "28086005",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "24176534",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "22152401",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT00151372": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "40960814",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT00340379": {
+   "status": "OK",
+   "links": []
+  },
+  "NCT00042562": {
+   "status": "OK",
+   "links": []
+  },
+  "NCT01187407": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "27685842",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "27035159",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT00071812": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "23547209",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT00162266": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "25005467",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT00233363": {
+   "status": "OK",
+   "links": []
+  },
+  "NCT00001731": {
+   "status": "OK",
+   "links": []
+  },
+  "NCT01317797": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "28274253",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT00182689": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "25490004",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT00365053": {
+   "status": "OK",
+   "links": []
+  },
+  "NCT00385996": {
+   "status": "OK",
+   "links": []
+  },
+  "NCT00003299": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "15923572",
+     "link": "registry RESULT reference"
+    },
+    {
+     "pmid": "39113428",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "36184621",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT00560573": {
+   "status": "OK",
+   "links": []
+  },
+  "NCT00381303": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "24396625",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "23092052",
+     "link": "registry DERIVED reference"
+    },
+    {
+     "pmid": "20855799",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT03844321": {
+   "status": "OK",
+   "links": [
+    {
+     "pmid": "36094813",
+     "link": "registry DERIVED reference"
+    }
+   ]
+  },
+  "NCT01541852": {
+   "status": "OK",
+   "links": []
+  },
+  "NCT01094717": {
+   "status": "OK",
+   "links": []
+  },
+  "NCT04680273": {
+   "status": "OK",
+   "links": []
+  }
+ },
+ "publications": {
+  "19679246": {
+   "pmid": "19679246",
+   "title": "Percutaneous mitral repair with the MitraClip system: safety and midterm durability in the initial EVEREST (Endovascular Valve Edge-to-Edge REpair Study) cohort.",
+   "journal": "Journal of the American College of Cardiology",
+   "year": "2009",
+   "doi": "10.1016/j.jacc.2009.03.077",
+   "abstract": "OBJECTIVES: We undertook a prospective multicenter single-arm study to evaluate the feasibility, safety, and efficacy of the MitraClip system (Evalve Inc., Menlo Park, California).\nBACKGROUND: Mitral valve repair for mitral regurgitation (MR) has been performed by the use of a surgically created double orifice. Percutaneous repair based on this surgical approach has been developed by use of the Evalve MitraClip device to secure the mitral leaflets.\nMETHODS: Patients with 3 to 4+ MR were selected in accordance with the American Heart Association/American College of Cardiology guidelines for intervention and a core echocardiographic laboratory.\nRESULTS: A total of 107 patients were treated. Ten (9%) had a major adverse event, including 1 nonprocedural death. Freedom from clip embolization was 100%. Partial clip detachment occurred in 10 (9%) patients. Overall, 79 of 107 (74%) patients achieved acute procedural success, and 51 (64%) were discharged with MR of < or =1+. Thirty-two patients (30%) had mitral valve surgery during the 3.2 years after clip procedures. When repair was planned, 84% (21 of 25) were successful. Thus, surgical options were preserved. A total of 50 of 76 (66%) successfully treated patients were free from death, mitral valve surgery, or MR >2+ at 12 months (primary efficacy end point). Kaplan-Meier freedom from death was 95.9%, 94.0%, and 90.1%, and Kaplan-Meier freedom from surgery was 88.5%, 83.2%, and 76.3% at 1, 2, and 3 years, respectively. The 23 patients with functional MR had similar acute results and durability.\nCONCLUSIONS: Percutaneous repair with the MitraClip system can be accomplished with low rates of morbidity and mortality and with acute MR reduction to < 2+ in the majority of patients, and with sustained freedom from death, surgery, or recurrent MR in a substantial proportion (EVEREST I; NCT00209339. EVEREST II; NCT00209274)."
+  },
+  "23633132": {
+   "pmid": "23633132",
+   "title": "Percutaneous mitral valve repair in the initial EVEREST cohort: evidence of reverse left ventricular remodeling.",
+   "journal": "Circulation. Cardiovascular imaging",
+   "year": "2013",
+   "doi": "10.1161/CIRCIMAGING.112.000098",
+   "abstract": "BACKGROUND: Percutaneous repair of mitral regurgitation (MR) permits examination of the effect of MR reduction without surgery and cardiopulmonary bypass on left ventricular (LV) dimensions and function. The goal of this analysis was to determine the extent of reverse remodeling at 12 months after successful percutaneous reduction of MR with the MitraClip device.\nMETHODS AND RESULTS: Of 64 patients with 3 and 4+ MR who achieved acute procedural success after treatment with the MitraClip device, 49 patients had moderate or less MR at 12-month follow-up. Their baseline and 12-month echocardiograms were compared between the group with and without LV dysfunction. In patients with persistent MR reduction and pre-existing LV dysfunction, there was a reduction in LV wall stress, reduced LV end-diastolic volume, LV end-systolic volume and increase in LV ejection fraction in contrast to those with normal baseline LV function, who showed reduction in LV end-diastolic volume, LV wall stress, no change in LV end-systolic volume, and a fall in LV ejection fraction.\nCONCLUSIONS: Patients with pre-existing LV dysfunction demonstrate reverse remodeling and improved LV ejection fraction after percutaneous mitral valve repair.\nCLINICAL TRIAL REGISTRATION: URL: http://www.clinicaltrials.gov. Unique identifiers: NCT00209339, NCT00209274."
+  },
+  "21492763": {
+   "pmid": "21492763",
+   "title": "The acute hemodynamic effects of MitraClip therapy.",
+   "journal": "Journal of the American College of Cardiology",
+   "year": "2011",
+   "doi": "10.1016/j.jacc.2010.11.043",
+   "abstract": "OBJECTIVES: The objective of this study was to evaluate the acute hemodynamic consequences of mitral valve (MV) repair with the MitraClip device (Abbott Vascular, Menlo Park, California).\nBACKGROUND: Whether surgical correction of mitral regurgitation (MR) results in a low cardiac output (CO) state because of an acute increase in afterload remains controversial. The acute hemodynamic consequences of MR reduction with the MitraClip device have not been studied.\nMETHODS: We evaluated 107 patients with cardiac catheterization before and immediately following percutaneous MV repair with the MitraClip device. In addition, pre- and post-procedural hemodynamic parameters were studied by transthoracic echocardiography.\nRESULTS: MitraClip treatment was attempted in 107 patients, and in 96 (90%) patients, a MitraClip was deployed. Successful MitraClip treatment resulted in: 1) an increase in CO from 5.0 ± 2.0 l/min to 5.7 ± 1.9 l/min (p = 0.003); 2) an increase in forward stroke volume (FSV) from 57 ± 17 ml to 65 ± 18 ml (p < 0.001); and 3) a decrease in systemic vascular resistance from 1,226 ± 481 dyn·s/cm(5) to 1,004 ± 442 dyn·s/cm(5) (p < 0.001). In addition, there was left ventricular (LV) unloading manifested by a decrease in LV end-diastolic pressure from 11.4 ± 9.0 mm Hg to 8.8 ± 5.8 mm Hg (p = 0.016) and a decrease in LV end-diastolic volume from 172 ± 37 ml to 158 ± 38 ml (p < 0.001). None of the patients developed acute post-procedural low CO state.\nCONCLUSIONS: Successful MV repair with the MitraClip system results in an immediate and significant improvement in FSV, CO, and LV loading conditions. There was no evidence of a low CO state following MitraClip treatment for MR. These favorable hemodynamic effects with the MitraClip appear to reduce the risk of developing a low CO state, a complication occasionally observed after surgical MV repair for severe MR."
+  },
+  "21422390": {
+   "pmid": "21422390",
+   "title": "Pathological healing response of explanted MitraClip devices.",
+   "journal": "Circulation",
+   "year": "2011",
+   "doi": "10.1161/CIRCULATIONAHA.110.978130",
+   "abstract": "BACKGROUND: The safety and effectiveness of the MitraClip device (Abbott Vascular, Menlo Park, CA) is being evaluated in the Endovascular Valve Edge-to-Edge Repair Study (EVEREST) clinical studies. The healing response after device implantation has not previously been characterized in humans.\nMETHODS AND RESULTS: A total of 67 explanted devices (implantation duration, 1 to 1878 days) from 50 patients were submitted for histological evaluation. Explants were analyzed in 4 implantation intervals: acute (≤30 days; n=7), subacute (31 to 90 days; n=23), chronic (91 to 300 days; n=18), and long term (>300 days; n=19). The acute healing response consisted of platelet/fibrin deposition. The subacute response exhibited granulation tissue with early fibrous encapsulation (pannus). The chronic response was characterized by various degrees of tissue bridging between the device arms. The long-term healing response demonstrated collagen-rich matrix (by type I collagen), incorporating the device components with complete encapsulation by organized, fibrous growth. In long-term devices with minimal surgical disruption, a fibrous tissue bridge (mean area, 7.39±4.3 mm(2)) was observed over and between the device arms, resulting in atrial tissue continuity between the 2 valve leaflets. Devices demonstrated no evidence of endocarditis, mechanical wear, component fracture, or corrosion up to the time of explantation (median, 119 days; first and third quartiles, 42 and 365 days).\nCONCLUSIONS: In all patients, device mechanical integrity was maintained up to the time of explantation. Four phases of physiological healing were observed: platelet and fibrin deposition, inflammation, granulation tissue, and finally, fibrous encapsulation. Long-term device fibrous encapsulation with extension over adjacent mitral leaflets and tissue bridge formation adds structural stability. Clinical Trial Registration- URL: http://clinicaltrials.gov/show/NCT00209274. Unique identifiers: NCT00209339 and NCT00209274."
+  },
+  "20601395": {
+   "pmid": "20601395",
+   "title": "Randomized comparison of the effects of rosiglitazone vs. placebo on peak integrated cardiovascular performance, cardiac structure, and function.",
+   "journal": "European heart journal",
+   "year": "2010",
+   "doi": "10.1093/eurheartj/ehq228",
+   "abstract": "AIMS: To assess the effect of rosiglitazone on cardiovascular performance and cardiac function.\nMETHODS AND RESULTS: One hundred and fifty type 2 diabetes patients with cardiovascular disease (CVD) or ≥ 1 other CVD risk factor were randomized to receive rosiglitazone vs. placebo for 6 months. The primary outcome was peak oxygen uptake indexed to fat-free mass (VO(2peak)-FFM) during maximum exercise. A subset of 102 subjects underwent cardiac magnetic resonance imaging (cMRI). On hundred and eight subjects completed the study, including 75 completing the cMRI substudy. No significant differences were observed in mean VO(2peak)-FFM between rosiglitazone and placebo (26.1 ± 7.0 vs. 27.6 ± 6.6 mL/kg-FFM/min; P = 0.26). Compared with placebo, the rosiglitazone group had lower hematocrit (38 vs. 41%; P < 0.001) and more peripheral oedema (53.7 vs. 33.3%; P = 0.03). In the cMRI substudy, compared with placebo, the rosiglitazone group had larger end-diastolic volume (128.1 vs. 112.0 mL; P = 0.01) and stroke volume (83.7 vs. 72.9 mL; P = 0.01), and a trend toward increased peak ventricular filling rate (79.4 vs. 60.5; P = 0.07).\nCONCLUSION: Rosiglitazone increased peripheral oedema but had no pernicious effects on cardiovascular performance or cardiac function, with modest improvement in selected cMRI measures. Changes in indirect markers of plasma volume suggest expansion with rosiglitazone.\nTRIAL REGISTRATION: clinicaltrials.gov identifier: NCT00424762."
+  },
+  "31221698": {
+   "pmid": "31221698",
+   "title": "Aerobic Fitness and Adherence to Guideline-Recommended Minimum Physical Activity Among Ambulatory Patients With Type 2 Diabetes Mellitus.",
+   "journal": "Diabetes care",
+   "year": "2019",
+   "doi": "10.2337/dc18-2634",
+   "abstract": "OBJECTIVE: Lifestyle intervention remains the cornerstone of management of type 2 diabetes mellitus (T2DM). However, adherence to physical activity (PA) recommendations and the impact of that adherence on cardiorespiratory fitness in this population have been poorly described. We sought to investigate adherence to PA recommendations and its association with cardiorespiratory fitness in a population of patients with T2DM.\nRESEARCH DESIGN AND METHODS: A cross-sectional analysis of baseline data from a randomized clinical trial (NCT00424762) was performed. A total of 150 individuals with medically treated T2DM and atherosclerotic cardiovascular disease (ASCVD) or risk factors for ASCVD were recruited from outpatient clinics at a single academic medical center. All individuals underwent a graded maximal exercise treadmill test to exhaustion with breath-by-breath gas exchange analysis to determine VO2peak. PA was estimated using a structured 7-Day Physical Activity Recall interview.\nRESULTS: Participants had a mean ± SD age of 54.9 ± 9.0 years; 41% were women, 40% were black, and 21% were Hispanic. The mean HbA1c was 7.7 ± 1.8% and the mean BMI, 34.5 ± 7.2 kg/m2. A total of 72% had hypertension, 73% had hyperlipidemia, and 35% had prevalent ASCVD. The mean ± SD reported daily PA was 34.3 ± 4 kcal/kg, only 7% above a sedentary state; 47% of the cohort failed to achieve the minimum recommended PA. Mean ± SD VO2peak was 27.4 ± 6.5 mL/kg fat-free mass/min (18.8 ± 5.0 mL/kg/min).\nCONCLUSIONS: On average, patients with T2DM who have or are at risk for ASCVD report low levels of PA and have low measured cardiopulmonary fitness. This underscores the importance of continued efforts to close this therapeutic gap."
+  },
+  "22067724": {
+   "pmid": "22067724",
+   "title": "The effects of rosiglitazone on myocardial triglyceride content in patients with type 2 diabetes: a randomised, placebo-controlled trial.",
+   "journal": "Diabetes & vascular disease research",
+   "year": "2012",
+   "doi": "10.1177/1479164111428628",
+   "abstract": "This was a nested sub-study of a randomised placebo-controlled trial of the effect of 6 months of treatment with rosiglitazone added to existing therapy on myocardial triglyceride (mTG) content in patients with type 2 diabetes (T2D) and prevalent cardiovascular disease (CVD) or at least one additional risk factor. The primary endpoint, mTG content, was measured with cardiac (1)H-magnetic resonance spectroscopy. Of the 99 randomised participants selected for the imaging sub-study, 49 (48%) had complete and interpretable spectroscopy data (age = 58 years, duration of T2D = 9.5 years; 57% women and 69% non-white). There was no significant change in mTG in either group (-0.1 ± 0.6% and -0.05 ± 0.8% respectively) and the changes in mTG were not associated with changes in left ventricular structure or function. Compared with placebo, treatment with rosiglitazone for 6 months had no discernible effect on mTG or left ventricular function in this population with long-standing diabetes and CVD."
+  },
+  "21562061": {
+   "pmid": "21562061",
+   "title": "Assessment of cardiac structure and function in patients without and with peripheral oedema during rosiglitazone treatment.",
+   "journal": "Diabetes & vascular disease research",
+   "year": "2011",
+   "doi": "10.1177/1479164111403334",
+   "abstract": "BACKGROUND: Thiazolidinediones cause peripheral oedema, the aetiology of which remains poorly understood.\nMETHODS: In a sub-study of a 6-month trial comparing rosiglitazone (Rsg) versus placebo, we compared those with versus without oedema among the 74 subjects treated with Rsg with respect to peak oxygen consumption indexed to fat-free mass (VO(2peak-FFM) ), cardiac MRI and markers of plasma volume expansion.\nRESULTS: Almost half (49%) of the Rsg-treated patients developed oedema. Baseline VO(2peak-FFM) was not different between those with versus without oedema (25.8 versus 28.2 ml/kg/min; p = 0.22) and declined 5% in the oedema group (Δ -1.3 ml/min/kg; p = 0.005) with no change in those without oedema. Stroke volume increased in both groups (Δ 8.7 and 8.8 ml; p < 0.001 for each); end-diastolic volume increased only in those with oedema (+13.1 ml; p = 0.001). No other cardiac function changes were observed. In both groups, weight increased (3.6 and 2.2 kg) and haematocrit decreased (-3.2% and -2.1%; p < 0.001 for each). In those with oedema, albumin decreased (-0.2 g/dl) and brain natriuretic peptide increased (11.9 pg/ml; p < 0.03 for each).\nCONCLUSIONS: Oedema was associated with a small decline in VO(2peak FFM), no adverse effects on cardiac function, and changes in selected measures suggesting that volume expansion underpins Rsg oedema."
+  },
+  "19156629": {
+   "pmid": "19156629",
+   "title": "The effect of rosiglitazone on integrated cardiovascular performance, cardiac structure, function and myocardial triglyceride: trial design and rationale.",
+   "journal": "Diabetes & vascular disease research",
+   "year": "2009",
+   "doi": "10.3132/dvdr.2009.009",
+   "abstract": "The thiazolidinedione (TZD) class of medications has been associated with increased risk for peripheral oedema, as well as incident and worsening heart failure (HF). The mechanism of these observed effects remains unclear. Here we present the rationale and study design for a randomised clinical trial designed to evaluate the cardiac effects of rosiglitazone on integrated cardiovascular performance, cardiac structure and function. The study is a randomised, single-centre, double-blind, placebo-controlled, parallel-group clinical trial to evaluate the effect of rosiglitazone on integrated cardiovascular performance in a cohort of patients with type 2 diabetes mellitus (T2DM) at increased risk for developing heart failure (HF). Participants will be randomised to receive rosiglitazone or matching placebo for six months. All subjects will undergo maximal treadmill cardiopulmonary exercise testing at baseline and after six months on study drug, with the primary trial end point of peak oxygen uptake indexed to fat-free mass (VO 2peak-FFM). Approximately two-thirds of the study cohort will undergo cardiac magnetic resonance imaging (MRI) and spectroscopy (MRS) at baseline and after six months of study therapy to assess cardiac structure, function and myocardial triglyceride content. While concerns for peripheral oedema and HF continue to confound clinical use of TZD medications, the direct cardiac effects of these drugs remain poorly understood and the clinical relevance of these clinical observations remains unclear. The present study will combine a series of state-of-the-art assessments to evaluate the cardiac effects of rosiglitazone treatment."
+  },
+  "15950833": {
+   "pmid": "15950833",
+   "title": "Effect of behavioral management on quality of life in mild heart failure: a randomized controlled trial.",
+   "journal": "Patient education and counseling",
+   "year": "2005",
+   "doi": "",
+   "abstract": "There has been a lack of research regarding nonpharmacologic interventions in heart failure. The objective was to determine the effect of behavioral management on health related quality of life (HRQL) in patients with heart failure. Participants (N = 116) were randomly assigned to one of two groups: usual care for heart failure (n = 58) and the 15-week behavioral management program (n = 58). Outcomes included exercise performance (6-min walk), physical and mental functioning (SF-36), general health perceptions (SF-36), and disease specific HRQL (Minnesota Living with Heart Failure Questionnaire-MLHF). Outcomes were assessed at baseline, 4, 10 and 16 months. Participants were mostly male (95%) and Caucasian (75%), with a mean age of 67 years (S.D. = 10). Intervention patients showed significantly improved self-reported disease specific HRQL (MLHF physical dimension scores) over time compared to control patients. There were no group differences in exercise performance, physical functioning, mental functioning or general health perceptions."
+  },
+  "8656241": {
+   "pmid": "8656241",
+   "title": "Health-related quality of life as an outcome for patients with heart failure.",
+   "journal": "The Journal of cardiovascular nursing",
+   "year": "1996",
+   "doi": "",
+   "abstract": "The Agency for Health Care Policy and Research Clinical Practice Guidelines on heart failure recommends that providers assess patients' health-related quality of life (HRQOL) and recommends using HRQOL information to modify treatment and guide patient and family teaching to facilitate adaptation to heart failure. This research column reviews eight studies that measured HRQOL as an outcome for patients with medically managed heart failure."
+  },
+  "15632812": {
+   "pmid": "15632812",
+   "title": "Improving quality of life in patients with heart failure: an innovative behavioral intervention.",
+   "journal": "The Journal of cardiovascular nursing",
+   "year": "2005",
+   "doi": "",
+   "abstract": "Nurses play a major role in assisting patients with chronic diseases manage their symptoms, adhere to treatment, and change behavior. This article describes an innovative behavioral intervention for patients with heart failure. The rationale and theoretical basis for the intervention, implementation, and evaluation of the intervention and its implications for use in clinical practice and further research are presented."
+  },
+  "23448187": {
+   "pmid": "23448187",
+   "title": "An implantable left atrial pressure sensor lead designed for percutaneous extraction using standard techniques.",
+   "journal": "Pacing and clinical electrophysiology : PACE",
+   "year": "2013",
+   "doi": "10.1111/pace.12111",
+   "abstract": "BACKGROUND: An implantable left atrial pressure (LAP) monitoring system for guiding the management of patients with advanced heart failure has the potential to require extraction, particularly in the setting of infection. The LAP sensor lead was designed to be suitable for ease of percutaneous extraction using standard techniques for extracting pacemaker and defibrillator leads. The clinical experience, to date, with percutaneous extraction of the LAP sensor lead is presented.\nMETHODS: A total of 82 patients underwent successful implantation of the LAP sensor lead using transseptal catheterization. Five patients of the 82 patients during a cumulative follow-up period of 267 patient-years (median of 2.9 years/patient) underwent percutaneous extraction using manual traction with a locking stylet and/or an excimer laser sheath to bore through adhesions. The distal fixation anchors of the LAP sensor lead are designed to fold forward during extraction so that the sensor module can easily separate from the interatrial septum.\nRESULTS: Percutaneous extraction of the LAP sensor lead was accomplished successfully in all five patients with no embolic events, vascular tears, perforations, or other complications requiring surgical intervention. Manual traction alone was sufficient to detach the LAP sensor lead from the interatrial septum in all cases. Use of the excimer laser sheath was needed in selected cases to bore through scar tissue within the venous insertion site, but not within the heart.\nCONCLUSIONS: The extraction of the LAP sensor lead was accomplished safely using standard techniques and equipment for percutaneously extracting pacemaker and defibrillator leads."
+  },
+  "21920328": {
+   "pmid": "21920328",
+   "title": "Serial Doppler echocardiography and tissue Doppler imaging in the detection of elevated directly measured left atrial pressure in ambulant subjects with chronic heart failure.",
+   "journal": "JACC. Cardiovascular imaging",
+   "year": "2011",
+   "doi": "10.1016/j.jcmg.2011.07.004",
+   "abstract": "OBJECTIVES: This study sought to determine the accuracy of Doppler echocardiography and tissue Doppler imaging (TDI) measurements in detecting elevated left atrial pressure (LAP) in ambulant subjects with chronic heart failure using directly measured LAP as the reference.\nBACKGROUND: Echocardiographic indexes including the ratio of transmitral to annular early diastolic velocities (E/e') may identify raised invasively measured left ventricular filling pressures when tested in cross-sectional studies in some populations. The accuracy of these indexes when measured sequentially remains untested. We determined the accuracy of Doppler echocardiography and TDI measurements in detecting elevated directly measured LAP in ambulant subjects with stable chronic heart failure.\nMETHODS: Fifteen patients with New York Heart Association functional class II to III heart failure and a permanently implanted direct LAP monitoring device underwent serial echocardiography. Simultaneous resting mean LAP, Doppler mitral inflow, mitral annular TDI, and pulmonary venous inflow velocities were obtained on each occasion. Receiver-operator characteristic curve analysis was used to compare the accuracy of the Doppler variables to detect an elevated device LAP ≥15 and ≥20 mm Hg.\nRESULTS: The patients (13 men, mean age: 71 years, mean left ventricular ejection fraction: 32 ± 12%) underwent 60 simultaneous echocardiographic studies and LAP measurements with a median of 4 (1 to 7) studies per patient. Mean LAP was 16.9 (range 5 to 39 mm Hg) at echocardiography (n = 60). E/e' had the greatest accuracy for detection of LAP ≥15 mm Hg with an area beneath the receiver-operator characteristic curve >0.9. In comparison, area under the curve for mitral E velocity and mitral E/A were 0.77 and 0.76, respectively (p < 0.008 vs. E/e' medial and average).\nCONCLUSIONS: Single and serial measurements of mitral inflow and mitral annular TDI velocities (E/e') can reliably detect raised directly measured LAP in ambulant subjects with compensated chronic heart failure. (Hemodynamically Guided Home Self-Therapy in Severe Heart Failure Patients [HOMEOSTASIS]; NCT00547729)."
+  },
+  "20176990": {
+   "pmid": "20176990",
+   "title": "Physician-directed patient self-management of left atrial pressure in advanced chronic heart failure.",
+   "journal": "Circulation",
+   "year": "2010",
+   "doi": "10.1161/CIRCULATIONAHA.108.800490",
+   "abstract": "BACKGROUND: Previous studies suggest that management of ambulatory hemodynamics may improve outcomes in chronic heart failure. We conducted a prospective, observational, first-in-human study of a physician-directed patient self-management system targeting left atrial pressure.\nMETHODS AND RESULTS: Forty patients with reduced or preserved left ventricular ejection fraction and a history of New York Heart Association class III or IV heart failure and acute decompensation were implanted with an investigational left atrial pressure monitor, and readings were acquired twice daily. For the first 3 months, patients and clinicians were blinded as to these readings, and treatment continued per usual clinical assessment. Thereafter, left atrial pressure and individualized therapy instructions guided by these pressures were disclosed to the patient. Event-free survival was determined over a median follow-up of 25 months (range 3 to 38 months). Survival without decompensation was 61% at 3 years, and events tended to be less frequent after the first 3 months (hazard ratio 0.16 [95% confidence interval 0.04 to 0.68], P=0.012). Mean daily left atrial pressure fell from 17.6 mm Hg (95% confidence interval 15.8 to 19.4 mm Hg) in the first 3 months to 14.8 mm Hg (95% confidence interval 13.0 to 16.6 mm Hg; P=0.003) during pressure-guided therapy. The frequency of elevated readings (>25 mm Hg) was reduced by 67% (P<0.001). There were improvements in New York Heart Association class (-0.7+/-0.8, P<0.001) and left ventricular ejection fraction (7+/-10%, P<0.001). Doses of angiotensin-converting enzyme/angiotensin-receptor blockers and beta-blockers were uptitrated by 37% (P<0.001) and 40% (P<0.001), respectively, whereas doses of loop diuretics fell by 27% (P=0.15).\nCONCLUSIONS: Physician-directed patient self-management of left atrial pressure has the potential to improve hemodynamics, symptoms, and outcomes in advanced heart failure. Clinical Trial Registration Information- URL: http://www.clinicaltrials.gov. Unique identifier: NCT00547729."
+  },
+  "8916624": {
+   "pmid": "8916624",
+   "title": "The role of avoidance and obsessiveness in matching patients to cognitive and interpersonal psychotherapy: empirical findings from the treatment for depression collaborative research program.",
+   "journal": "Journal of consulting and clinical psychology",
+   "year": "1996",
+   "doi": "",
+   "abstract": "This article examines the hypothesis that cognitive therapy (CT) is more effective than interpersonal therapy (IPT) for treatment of depressed patients with an elevated level of avoidant personality, whereas the reverse holds for depressed patients with elevated level of obsessive personality. This hypothesis was derived in part from the preliminary results of previous unpublished pilot work, which examined the course of dynamic and cognitive therapies for avoidant and obsessive-compulsive personality disorders. With the \"completer\" data set available from the Treatment for Depression Collaborative Research Program (I. Elkin et al., 1989), the expected significant interactions between treatment (CT vs. IPT) and avoidance and between treatment and obsessiveness were found. A significant interaction was also found between marital status and treatment, indicating that married patients did better after CT, whereas single and noncohabiting patients improved more after IPT. Similar patterns of results were found using the Hamilton Rating Scale for Depression and the Beck Depression Inventory. A matching factor formula of patients to CT vs. IPT is presented."
+  },
+  "35913883": {
+   "pmid": "35913883",
+   "title": "Therapeutic immediacy in psychodynamic psychotherapy for depression: A mixed-method study.",
+   "journal": "Psychotherapy (Chicago, Ill.)",
+   "year": "2022",
+   "doi": "10.1037/pst0000452",
+   "abstract": "This exploratory study assesses the use and quality of therapeutic immediacy in short-term psychodynamic psychotherapy for depression. We aimed to identify what constitutes effective here-and-now discussions of the therapeutic relationship by examining a sample of four treatment cases drawn from a previous randomized clinical trial for depression. Transcripts of 16 treatment sessions (four time points per treatment) were analyzed using the consensual qualitative research for case study method. The therapists' contributions to therapeutic immediacy were assessed qualitatively by independent judges and then quantitatively analyzed in relation to immediate session outcome as well as overall treatment outcome (reduction in depressive symptoms). A total of 41 immediacy events were identified across 16 sessions, of which 35 were therapist-initiated and subsequently organized into 18 discrete categories. High-quality immediacy events (as assessed by the judges) were associated with higher patient involvement. Two immediacy categories were significantly different between good and poor outcome cases. Therapists \"acknowledged their patient's progress in therapy\" more often in good outcome cases, whereas they \"assessed patients' feelings about the overall progress of therapy\" more often in poor outcome cases. No significant relationship was found between frequency, rated quality of immediacy events, and treatment outcome. Four immediacy events rated by the judges as high- and low-quality are presented as clinical examples illustrating positive and negative therapists' contributions to therapeutic immediacy. Therapist behaviors that may improve the effectiveness of therapeutic immediacy are discussed. (PsycInfo Database Record (c) 2022 APA, all rights reserved)."
+  },
+  "30821630": {
+   "pmid": "30821630",
+   "title": "Differential effects of alliance and techniques on Panic-Specific Reflective Function and misinterpretation of bodily sensations in two treatments for panic.",
+   "journal": "Psychotherapy research : journal of the Society for Psychotherapy Research",
+   "year": "2020",
+   "doi": "10.1080/10503307.2019.1585591",
+   "abstract": "ABSTRACTObjective: To examine whether working alliance quality and use of techniques predict improvement in Panic-Specific Reflection Function (PSRF), and misinterpretation of bodily sensations in treatments for panic disorder. Method: A sample of 161 patients received either CBT or PFPP (Panic-focused Psychodynamic therapy) within a larger RCT. Data were collected on patient-reported working alliance, misinterpretations, PSRF, observer-coded use of techniques, and interviewer-rated panic severity. Random-Intercept Cross-Lagged Panel Models assessed bi-directional associations, disentangling within- and between-patient effects, and accounting for prior change. Results: Higher alliance predicted subsequent within-patient improvement in PSRF in PFPP, but worsening in CBT. In both treatments, focus on interpersonal relationships predicted PRSF improvement (with stronger effects in CBT), while focus on thoughts and behaviors predicted worsening in PSRF. In CBT only, early focus on affect and moment-to-moment experience predicted reduced misinterpretation, while high focus on thoughts and cognitions predicted subsequent increase in misinterpretation. Conclusion: The quality of the alliance has differential effects on PSRF in distinct treatments. Interpersonal, rather than cognitive or behavioral focus, even when delivered differently within distinct treatments with high adherence, could facilitate improvement in PSRF. Additionally, early focus on affect and moment-to-moment experiences in CBT could reduce misinterpretations."
+  },
+  "29336228": {
+   "pmid": "29336228",
+   "title": "The Multitheoretical List of Therapeutic Interventions - 30 items (MULTI-30).",
+   "journal": "Psychotherapy research : journal of the Society for Psychotherapy Research",
+   "year": "2019",
+   "doi": "10.1080/10503307.2017.1422216",
+   "abstract": "Objective: To develop a brief version of the Multitheoretical List of Therapeutic Interventions (MULTI-60) in order to decrease completion time burden by approximately half, while maintaining content coverage. Study 1 aimed to select 30 items. Study 2 aimed to examine the reliability and internal consistency of the MULTI-30. Study 3 aimed to validate the MULTI-30 and ensure content coverage. Method: In Study 1, the sample included 186 therapist and 255 patient MULTI ratings, and 164 ratings of sessions coded by trained observers. Internal consistency (Chronbach's alpha and McDonald's omega) was calculated and confirmatory factor analysis was conducted. Psychotherapy experts rated content relevance. Study 2 included a sample of 644 patient and 522 therapist ratings, and 793 codings of psychotherapy sessions. In Study 3, the sample included 33 codings of sessions. A series of regression analyses was conducted to examine replication of previously published findings using the MULTI-30. Results: The MULTI-30 was found valid, reliable, and internally consistent across 2564 ratings examined across the three studies presented. Conclusion: The MULTI-30 a brief and reliable process measure. Future studies are required for further validation. Clinical or methodological significance of this article: The MULTI-30, developed and validated in this study, is a valid, reliable, and cost-effective brief measure which could be used to assess patients, therapists, and observers' perceptions of use of interventions from eight major therapeutic approaches. The MULTI-30 could be used to examine the role of use of specific interventions on process and outcome of different treatment modalities. It could also be used as a clinical tool in teaching, training, and supervision."
+  },
+  "28086005": {
+   "pmid": "28086005",
+   "title": "Reducing Dropout in Treatment for Depression: Translating Dropout Predictors Into Individualized Treatment Recommendations.",
+   "journal": "The Journal of clinical psychiatry",
+   "year": "2016",
+   "doi": "10.4088/JCP.15m10081",
+   "abstract": "OBJECTIVE: Premature discontinuation of therapy is a widespread problem that hampers the delivery of mental health treatment. A high degree of variability has been found among rates of premature treatment discontinuation, suggesting that rates may differ depending on potential moderators. In the current study, our aim was to identify demographic and interpersonal variables that moderate the association between treatment assignment and dropout.\nMETHODS: Data from a randomized controlled trial conducted from November 2001 through June 2007 (N = 156) comparing supportive-expressive therapy, antidepressant medication, and placebo for the treatment of depression (based on DSM-IV criteria) were used. Twenty prerandomization variables were chosen based on previous literature. These variables were subjected to exploratory bootstrapped variable selection and included in the logistic regression models if they passed variable selection.\nRESULTS: Three variables were found to moderate the association between treatment assignment and dropout: age, pretreatment therapeutic alliance expectations, and the presence of vindictive tendencies in interpersonal relationships. When patients were divided into those randomly assigned to their optimal treatment and those assigned to their least optimal treatment, dropout rates in the optimal treatment group (24.4%) were significantly lower than those in the least optimal treatment group (47.4%; P = .03).\nCONCLUSIONS: Present findings suggest that a patient's age and pretreatment interpersonal characteristics predict the association between common depression treatments and dropout rate. If validated by further studies, these characteristics can assist in reducing dropout through targeted treatment assignment.\nTRIAL REGISTRATION: Secondary analysis of data from ClinicalTrials.gov identifier: NCT00043550."
+  },
+  "24176534": {
+   "pmid": "24176534",
+   "title": "Changes in well-being and quality of life in a randomized trial comparing dynamic psychotherapy and pharmacotherapy for major depressive disorder.",
+   "journal": "Journal of affective disorders",
+   "year": "2014",
+   "doi": "10.1016/j.jad.2013.10.015",
+   "abstract": "BACKGROUND: Major depressive disorder (MDD) is associated with a decrease in quality of life (QOL) and well-being. Therefore, researchers are increasingly complementing traditional symptom measurements with QOL and well-being assessments in order to broaden the evaluation of treatment outcomes. The current prospective study investigated the effectiveness of supportive-expressive therapy (SET), antidepressant medication (MED) and placebo (PBO) in improving QOL and well-being in patients with MDD.\nMETHODS: Data from a randomized controlled trial (trial registration: NCT00043550) comparing SET, MED and PBO for the treatment of depression (N=156) were analyzed. Outcome measures addressed patients' QOL and physical and mental well-being. Changes in outcomes were assessed across and between treatments using linear mixed models.\nRESULTS: Across treatments, patients showed significant improvement in QOL and mental and physical health measures, as well as a reduction in interpersonal distress and depressive and anxiety symptoms (p≤.002 for all measures). Those changes were not only the products of a decrease in depressive symptoms, but also predicted subsequent reduction in symptoms. No significant differences were found between the three treatment conditions.\nLIMITATIONS: The limitation is the study's moderate sample size.\nCONCLUSIONS: Current treatments for depression significantly improve patients' QOL and well-being. No significant differences were found between the three conditions examined in this study. The current study highlights the role of well-being in predicting subsequent symptomatic change."
+  },
+  "22152401": {
+   "pmid": "22152401",
+   "title": "Short-term dynamic psychotherapy versus pharmacotherapy for major depressive disorder: a randomized, placebo-controlled trial.",
+   "journal": "The Journal of clinical psychiatry",
+   "year": "2012",
+   "doi": "10.4088/JCP.11m06831",
+   "abstract": "OBJECTIVE: To determine whether supportive-expressive psychotherapy (SET), a form of dynamic psychotherapy, and pharmacotherapy + clinical management (MED) for major depressive disorder (MDD) are more effective than pill-placebo + clinical management (PBO).\nMETHOD: This National Institute of Mental Health (NIMH)-sponsored randomized controlled trial was conducted (from November 2001 through June 2007) at the University of Pennsylvania Medical School. The sample included 156 patients diagnosed with MDD (DSM-IV) and having a 17-item Hamilton Rating Scale for Depression (HRSD(17)) score ≥ 14 for at least 2 consecutive weeks. This was an underserved sample in which 41% were male, 52% were self-designated minorities, and 76% had an annual income under $30,000. Treatment lasted 16 weeks. Medication patients not responsive by week 8 (maximum dose 200 mg/d of sertraline) were switched to venlafaxine (maximum dose 375 mg/d). Nonresponsive placebo patients at week 8 were switched to a different placebo.\nRESULTS: Patients' depression improved over the 16 weeks (P < .0001), with no between-group differences (P = .95), even among severely (HRSD(17) score ≥ 20) depressed patients (P = .45). Response rates did not differ between groups (P = .73). Gender and minority status moderated outcome (P = .014), with psychotherapy more efficacious for minority men than MED (P = .027, Cohen d = 1.02) and PBO (P = .019, d = 1.09). PBO was more efficacious for white men than MED (P = .03, d = 0.62) and SET (P = .003, d = 1.07). For white women, MED (P = .005, d = 0.77) and SET (P = .033, d = 0.71) were more efficacious than placebo. No differences among treatments were found for minority women.\nCONCLUSIONS: This trial of urban MDD patients failed to confirm that either active treatment was better than placebo. Minority status and gender had significant and differential effects on outcome that warrant replication in future studies.\nTRIAL REGISTRATION: clinicaltrials.gov Identifier: NCT00043550."
+  },
+  "40960814": {
+   "pmid": "40960814",
+   "title": "Precision Assignment to Psychosocial Interventions for Late-Life Depression: An Automated Treatment Decision Rule.",
+   "journal": "JAMA psychiatry",
+   "year": "2025",
+   "doi": "10.1001/jamapsychiatry.2025.2518",
+   "abstract": "IMPORTANCE: Most older adults with depression lack access to efficacious psychotherapies due to a critical clinician shortage. Even when treated, response rates are limited to approximately 50%. A treatment decision rule (TDR) may maximize treatment efficacy and resources by assigning patients to their optimal intervention. This is the first study to propose a TDR for late-life depression designed for community settings.\nOBJECTIVE: To develop a scalable TDR for assignment to a psychotherapy or usual care intervention for late-life depression that can be delivered easily in community settings.\nDESIGN, SETTING, AND PARTICIPANTS: In this prognostic study, adults 60 years or older with major depression participated in randomized controlled trials comparing psychotherapy with usual care. Participants were recruited from outpatient and community settings of Weill Cornell Medicine and the University of California San Francisco between 2002 and 2011. Data were analyzed from May 2023 to May 2025.\nINTERVENTIONS: Participants received either psychotherapy (problem-solving therapy, psychotherapy for late-life depression and medical burden) or usual care (supportive therapy, treatment as usual, or case management).\nMAIN OUTCOMES AND MEASURES: The primary outcome was mean reduction in depression severity (measured by the Hamilton Depression Rating Scale [HAM-D]). A generated effect modifier TDR was applied to identify the optimal intervention for each patient based on baseline characteristics (demographics, depression severity, social support, cognition, and disability). The TDR maximized depression severity reduction and the proportion of patients treated with the usual care intervention.\nRESULTS: In 427 older adults with late-life depression (mean [SD] age, 72.7 [8.7] years; 70% female), the predicted HAM-D score reduction with TDR-based intervention was a mean of 49.1% (95% CI, 47.4%-51.0%). The TDR improved expected depression severity reduction by 34% compared with usual care (HAM-D reduction, 36.6% [95% CI, 34.5%-38.7%]) and the TDR was somewhat superior to assigning all patients to receive psychotherapy (HAM-D reduction, 46.7% [95% CI, 44.2%-48.8%]). Older adults with higher depression severity, stronger social support, and lower cognitive functioning should receive psychotherapy; those with lower depression severity, higher cognitive functioning, and low social support would benefit from usual care.\nCONCLUSIONS AND RELEVANCE: In this study of older adults with depression, pending prospective testing, the automatic TDR may be used in community settings to inform treatment assignment. The TDR has the potential to increase precision, cost-effectiveness, and response rates among older adults with depression.\nTRIAL REGISTRATION: ClinicalTrials.gov Identifiers: NCT00601055, NCT00151372, NCT00052091, NCT00540865."
+  },
+  "27685842": {
+   "pmid": "27685842",
+   "title": "Is the Noradrenergic Symptom Cluster a Valid Construct in Adjunctive Treatment of Major Depressive Disorder?",
+   "journal": "The Journal of clinical psychiatry",
+   "year": "2017",
+   "doi": "10.4088/JCP.15m09972",
+   "abstract": "OBJECTIVE: To identify symptoms potentially representative of a noradrenergic symptom cluster as possible predictors of response to the selective norepinephrine reuptake inhibitor (NRI) edivoxetine when used as monotherapy or adjunctive treatment in patients with DSM-IV-TR major depressive disorder (MDD).\nMETHODS: Pooled data from 4 adjunctive treatment trials (selective serotonin reuptake inhibitor [SSRI] + edivoxetine 6-18 mg/d vs SSRI + placebo; N = 2,066) and data from 1 monotherapy trial (edivoxetine 6-18 mg/d versus placebo; N = 495) were used to identify predictors of response related to noradrenergic symptoms using a resampling-based ensemble tree method. The trials were conducted from 2008 to 2013.\nRESULTS: In the pooled adjunctive trials, no subgroup was identified that demonstrated a greater edivoxetine-placebo treatment difference than the overall patient cohort. In the edivoxetine monotherapy trial, no subgroup showing greater mean edivoxetine-placebo differences on the Montgomery-Asberg Depression Rating Scale versus the overall patient cohort was identified; a subgroup (67%) with high b​aseline Massachusetts General Hospital Cognitive and Physical Functioning Questionnaire (CPFQ) total score (≥ 28) showed statistically significantly (P = .02) greater mean edivoxetine-placebo differences on the Sheehan Disability Scale versus the overall patient cohort, and subgroups with baseline CPFQ total score ≥ 28 (65%), CPFQ cognition dimension score ≥ 16 (63%), or CPFQ physical dimension score ≥ 13 (59%) showed statistically significantly (P ≤ .025) greater mean edivoxetine-placebo differences on the CPFQ total score versus the overall patient cohort.\nCONCLUSIONS: While we could not identify symptoms predictive of response to the selective NRI edivoxetine used as adjunctive treatment, impaired cognition and physical symptoms may predict greater improvement during monotherapy.\nTRIAL REGISTRATION: ClinicalTrials.gov identifiers: NCT00840034, NCT01173601, NCT01187407, NCT01185340, NCT00795821."
+  },
+  "27035159": {
+   "pmid": "27035159",
+   "title": "Efficacy outcomes from 3 clinical trials of edivoxetine as adjunctive treatment for patients with major depressive disorder who are partial responders to selective serotonin reuptake inhibitor treatment.",
+   "journal": "The Journal of clinical psychiatry",
+   "year": "2016",
+   "doi": "10.4088/JCP.14m09619",
+   "abstract": "OBJECTIVE: Three studies examined whether edivoxetine (a highly selective norepinephrine reuptake inhibitor) had efficacy as adjunctive therapy for patients with major depressive disorder (DSM-IV-TR) who were partial responders to selective serotonin reuptake inhibitor (SSRI) treatment of at least 6 weeks' duration.\nMETHOD: Studies were 8-week randomized, placebo-controlled trials with a 3-week double-blind placebo lead-in phase, conducted from December 16, 2010, to October 21, 2013. Patients entered the double-blind adjunctive treatment phase if they met randomization criteria (< 25% improvement on Montgomery-Asberg Depression Rating Scale [MADRS] and MADRS total score ≥ 14); patients not randomized remained on adjunctive placebo. Study 1 compared fixed-dose edivoxetine (12 or 18 mg daily) + SSRI (N = 231 and N = 230, respectively) with placebo + SSRI (N = 240); study 2 compared flexible-dose edivoxetine (12-18 mg daily) + SSRI (N = 232) and fixed-dose edivoxetine (6 mg daily) + SSRI (N = 226) with placebo + SSRI (N = 231); and study 3 compared flexible-dose edivoxetine (12-18 mg daily) + SSRI (N = 230) with placebo + SSRI (N = 219). The primary outcome was mean change from randomization baseline to week 8 in MADRS total score, analyzed using repeated measures analysis.\nRESULTS: Each trial failed to meet the primary and most of the secondary objectives. The least-squares mean changes in MADRS total score were as follows-study 1: -8.5 (edivoxetine 12 mg + SSRI), -8.7 (edivoxetine 18 mg + SSRI), and -7.8 (placebo + SSRI); study 2: -9.4 (edivoxetine 12-18 mg + SSRI), -9.6 (edivoxetine 6 mg + SSRI), and -9.4 (placebo + SSRI); and study 3: -8.7 (edivoxetine 12-18 mg + SSRI) and -8.5 (placebo + SSRI).\nCONCLUSIONS: Adjunctive edivoxetine treatment for patients with major depressive disorder who were partial responders to SSRIs did not significantly improve efficacy outcomes.\nTRIALS REGISTRATIONS: ClinicalTrials.gov identifiers: NCT01173601, NCT01187407, NCT01185340."
+  },
+  "23547209": {
+   "pmid": "23547209",
+   "title": "Efficacy and safety of belimumab in patients with rheumatoid arthritis: a phase II, randomized, double-blind, placebo-controlled, dose-ranging Study.",
+   "journal": "The Journal of rheumatology",
+   "year": "2013",
+   "doi": "10.3899/jrheum.120886",
+   "abstract": "OBJECTIVE: To evaluate the efficacy/safety of belimumab in patients with rheumatoid arthritis (RA).\nMETHODS: Patients fulfilling American College of Rheumatology (ACR) criteria for RA for ≥ 1 year who had at least moderate disease activity while receiving stable disease-modifying antirheumatic drug (DMARD) therapy and failed ≥ 1 DMARD were randomly assigned to placebo or belimumab 1, 4, or 10 mg/kg, administered intravenously on Days 1, 14, and 28, and then every 4 weeks for 24 weeks (n = 283). This was followed by an optional 24-week extension (n = 237) in which all patients received belimumab. Primary efficacy endpoint was the Week 24 ACR20 response.\nRESULTS: Week 24 ACR20 responses with placebo and belimumab 1, 4, and 10 mg/kg were 15.9%, 34.7% (p = 0.010), 25.4% (p = 0.168), and 28.2% (p = 0.080), respectively. Patients taking any belimumab dose who continued with belimumab in the open-label extension had an ACR20 response of 41% at 48 weeks. A similar ACR20 response (42%) at 48 weeks was seen in patients taking placebo who switched in the extension to belimumab 10 mg/kg. Greater response rates were observed in patients who at baseline were rheumatoid factor-positive, anticitrullinated protein antibody-positive, or tumor necrosis factor inhibitor-naive, or had elevated C-reactive protein levels, Disease Activity Score 28 > 5.1, or low B lymphocyte stimulator levels (< 0.858 ng/ml). Adverse event rates were similar across treatment groups.\nCONCLUSION: In this phase II trial, belimumab demonstrated efficacy and was generally well tolerated in patients with RA who had failed previous therapies. [ClinicalTrials.gov identifier NCT00071812]."
+  },
+  "25005467": {
+   "pmid": "25005467",
+   "title": "Long-term safety and efficacy of abatacept in patients with rheumatoid arthritis and an inadequate response to methotrexate: a 7-year extended study.",
+   "journal": "Clinical and experimental rheumatology",
+   "year": "2014",
+   "doi": "",
+   "abstract": "OBJECTIVES: To assess the safety and efficacy of intravenous (IV) abatacept plus methotrexate (MTX) over 7 years, the longest observational period to date, in patients with established rheumatoid arthritis (RA) and an inadequate response to MTX.\nMETHODS: Patients randomised to IV abatacept (10 or 2 mg/kg) or placebo, plus MTX, during the 1-year double-blind (DB) period of a Phase 2b study could enter the long-term extension (LTE) and receive IV abatacept 10 mg/kg monthly. Safety was assessed in patients who received ≥1 dose of abatacept; efficacy was assessed in patients originally randomised to 10 mg/kg abatacept (as-observed data).\nRESULTS: A total of 219 patients entered the LTE; 114 (52.1%) completed 7 years of treatment with abatacept plus MTX. Cumulative (DB + LTE) incidence rates of serious adverse events, serious infections, malignancies, and autoimmune events were 17.6, 3.2, 1.8, and 1.2/100 patient-years, respectively. Safety was consistent between the DB (n=220) and cumulative (n=287) periods. Improvements in American College of Rheumatology responses, disease activity, and normalisation of physical function and health-related quality of life were maintained over time. Approximately 80% of patients who achieved low disease activity or normalised modified Health Assessment Questionnaire scores at Year 1, and who remained in the study, sustained these responses in each subsequent year.\nCONCLUSIONS: IV abatacept in combination with MTX demonstrated consistent safety and sustained efficacy over 7 years in MTX inadequate responders with established RA. Furthermore, some patients demonstrated a normalisation of physical function and health-related quality of life that was sustained over time."
+  },
+  "28274253": {
+   "pmid": "28274253",
+   "title": "Phase 1b randomized, double-blind study of namilumab, an anti-granulocyte macrophage colony-stimulating factor monoclonal antibody, in mild-to-moderate rheumatoid arthritis.",
+   "journal": "Arthritis research & therapy",
+   "year": "2017",
+   "doi": "10.1186/s13075-017-1267-3",
+   "abstract": "BACKGROUND: Namilumab (AMG203) is an immunoglobulin G1 monoclonal antibody that binds with high affinity to the GM-CSF ligand. This was a phase 1b, randomized, double-blind study (PRIORA) to assess namilumab in active, mild-to-moderate rheumatoid arthritis (RA). The primary outcome was the safety and tolerability of repeated subcutaneous injections of namilumab in patients with mild-to-moderate RA.\nMETHODS: Adults with mild-to-moderate RA on stable methotrexate doses for ≥12 weeks were eligible. Patients received three subcutaneous injections of namilumab 150 or 300 mg, or placebo on days 1, 15, and 29, with 12 weeks' follow-up. Primary objective was safety/tolerability.\nRESULTS: Patients in cohort 1 were randomized to namilumab 150 mg (n = 8) or placebo (n = 5). In cohort 2, patients were randomized to namilumab 300 mg (n = 7) or placebo (n = 4). Incidence of treatment-emergent adverse events (TEAEs) was similar across the three groups (namilumab 150 mg: 63%; namilumab 300 mg: 57%; placebo: 56%). TEAEs in ≥10% of patients were nasopharyngitis (17%) and exacerbation/worsening of RA (13%). No anti-namilumab antibodies were detected. The pharmacokinetics of namilumab were linear and typical of a monoclonal antibody with subcutaneous administration. In a post hoc efficacy, per protocol analysis (n = 21), patients randomized to namilumab showed greater improvement in Disease Activity Score 28 (erythrocyte sedimentation rate and C-reactive protein [CRP]), swelling joint counts and tender joint counts compared with placebo. Difference in mean DAS28-CRP changes from baseline between namilumab and placebo favored namilumab at both doses and at all time points. In addition area under the curve for DAS28-CRP was analyzed as time-adjusted mean change from baseline. A significant improvement in DAS28-CRP was shown with namilumab (150 and 300 mg groups combined) compared with placebo at day 43 (p = 0.0117) and also 8 weeks after last dosing at day 99 (p = 0.0154).\nCONCLUSIONS: Subcutaneous namilumab was generally well tolerated. Although namilumab demonstrated preliminary evidence of efficacy, patient numbers were small; phase 2 studies are ongoing.\nTRIAL REGISTRATION: ClinicalTrials.gov, NCT01317797 . Registered 18 February 2011."
+  },
+  "25490004": {
+   "pmid": "25490004",
+   "title": "Relevance of platinum-sensitivity status in relapsed/refractory extensive-stage small-cell lung cancer in the modern era: a patient-level analysis of southwest oncology group trials.",
+   "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+   "year": "2015",
+   "doi": "10.1097/JTO.0000000000000385",
+   "abstract": "BACKGROUND: Extensive-stage small-cell lung cancer (SCLC) patients who progress after platinum-based chemotherapy are traditionally categorized as platinum sensitive (progression ≥ 90 days from last platinum dose) or refractory (progression < 90 days), a practice arising from seminal observations of worse survival in refractory patients. Subsequent trials accounted for platinum sensitivity, resulting in higher sample sizes and increased resource use.\nMETHODS: To assess whether platinum-sensitivity status remains associated with outcomes, patient-level data from recent Southwest Oncology Group trials in second- and/or third-line extensive-stage SCLC were pooled. Hazard ratios (HRs) for progression-free survival (PFS) and overall survival (OS) accounting for platinum sensitivity were calculated using unadjusted and adjusted Cox Proportional Hazard models. Recursive partitioning was performed to define prognostic risk groups.\nRESULTS: Of 329 patients, 151 were platinum sensitive and 178 refractory. HRs from unadjusted Cox PFS and OS models for refractory versus sensitive disease were 1.0 (95% confidence interval, 0.81-1.25; p = 0.98) and 1.24 (0.99-1.57; p = 0.06), respectively. Adjusted Cox models showed that only elevated serum lactate dehydrogenase (HR, 2.04; p < 0.001), males (HR, 1.36; p = 0.04), performance status of 1 (HR, 1.25; p = 0.02), and weight loss greater than or equal to 5% (1.53, p = 0.01) were independently associated with OS. Platinum-sensitivity status was not associated with PFS (HR, 1.11; p = 0.49) or OS (HR, 1.25; p = 0.14), except in a model that excluded 36 patients who received more than one prior chemotherapy regimen (HR, 1.34; p = 0.049). Prognostic groups with differential OS outcomes (high, intermediate, and poor risk) were identified.\nCONCLUSIONS: Platinum-sensitivity status may no longer be strongly associated with PFS or OS in at least one multivariate model. Validation of prognostic risk groups identified here is warranted. These data have critical implications in the design of future SCLC trials."
+  },
+  "15923572": {
+   "pmid": "15923572",
+   "title": "Randomized phase III intergroup trial of etoposide and cisplatin with or without paclitaxel and granulocyte colony-stimulating factor in patients with extensive-stage small-cell lung cancer: Cancer and Leukemia Group B Trial 9732.",
+   "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+   "year": "2005",
+   "doi": "",
+   "abstract": "PURPOSE: To determine, in a randomized comparison, whether the addition of paclitaxel to etoposide and cisplatin improves the time to progression and overall survival in patients with extensive small-cell lung cancer (SCLC) compared with standard etoposide and cisplatin and to compare the regimens' toxicity.\nPATIENTS AND METHODS: Eligible patients (N=587) with untreated extensive SCLC were randomly assigned to receive either cisplatin 80 mg/m2 on day 1 and etoposide 80 mg/m2 on days 1 through 3 administered every 3 weeks for six cycles (EP) or cisplatin 80 mg/m2 on day 1, paclitaxel 175 mg/m2 over 4 hours on day 1, and etoposide 80 mg/m2 on days 1 to 3 followed by recombinant human granulocyte colony-stimulating factor on days 4 to 18 administered every 3 weeks for six cycles (PET).\nRESULTS: Reporting of demographics, response, and survival included 565 patients, of whom 282 were randomly assigned to receive EP and 283 were assigned to receive PET. Overall response rates were 68% for the EP arm and 75% for the PET arm. Median failure-free survival time was 5.9 months for the EP arm and 6 months for the PET arm (P = .179). Median overall survival time was 9.9 months for patients on EP and 10.6 months for patients on PET (P = .169). Toxic deaths occurred in 2.4% of the patients on EP and 6.5% of patients on PET.\nCONCLUSION: PET did not improve the time to progression or survival in patients with extensive SCLC compared with EP alone and was associated with unacceptable toxicity."
+  },
+  "39113428": {
+   "pmid": "39113428",
+   "title": "Exploring the discrepancies between clinical trials and real-world data: A small-cell lung cancer study.",
+   "journal": "Clinical and translational science",
+   "year": "2024",
+   "doi": "10.1111/cts.13909",
+   "abstract": "The potential of real-world data to inform clinical trial design and supplement control arms has gained much interest in recent years. The most common approach relies on reproducing control arm outcomes by matching real-world patient cohorts to clinical trial baseline populations. However, recent studies pointed out that there is a lack of replicability, generalisability, and consensus. In this article, we propose a novel approach that aims to explore and examine these discrepancies by concomitantly investigating the impact of selection criteria and operations on the measurements of outcomes from the patient data. We tested the approach on a dataset consisting of small-cell lung cancer patients receiving platinum-based chemotherapy regimens from a real-world data cohort (n = 223) and six clinical trial control arms (n = 1224). The results showed that the discrepancy between real-world and clinical trial data potentially depends on differences in both patient populations and operational conditions (e.g., frequency of assessments, and censoring), for which further investigation is required. Discovering and accounting for confounders, including hidden effects of differences in operations related to the treatment process and clinical trial study protocol, would potentially allow for improved translation between clinical trials and real-world data. Continued development of the method presented here to systematically explore and account for these differences could pave the way for transferring learning across clinical studies and developing mutual translation between the real-world and clinical trials to inform clinical study design."
+  },
+  "36184621": {
+   "pmid": "36184621",
+   "title": "The design and evaluation of hybrid controlled trials that leverage external data and randomization.",
+   "journal": "Nature communications",
+   "year": "2022",
+   "doi": "10.1038/s41467-022-33192-1",
+   "abstract": "Patient-level data from completed clinical studies or electronic health records can be used in the design and analysis of clinical trials. However, these external data can bias the evaluation of the experimental treatment when the statistical design does not appropriately account for potential confounders. In this work, we introduce a hybrid clinical trial design that combines the use of external control datasets and randomization to experimental and control arms, with the aim of producing efficient inference on the experimental treatment effects. Our analysis of the hybrid trial design includes scenarios where the distributions of measured and unmeasured prognostic patient characteristics differ across studies. Using simulations and datasets from clinical studies in extensive-stage small cell lung cancer and glioblastoma, we illustrate the potential advantages of hybrid trial designs compared to externally controlled trials and randomized trial designs."
+  },
+  "24396625": {
+   "pmid": "24396625",
+   "title": "Improvements in Immune Function and Activation with 48-Week Darunavir/Ritonavir-Based Therapy: GRACE Substudy.",
+   "journal": "ISRN AIDS",
+   "year": "2013",
+   "doi": "10.1155/2013/358294",
+   "abstract": "Objective. During the course of HIV infection, progressive immune deficiency occurs. The aim of this prospective substudy was to evaluate the recovery of functional immunity in a subset of patients from the GRACE (Gender, Race, And Clinical Experience) study treated with a DRV/r-based regimen. Methods. The recovery of functional immunity with a darunavir/ritonavir-based regimen was assessed in a subset of treatment-experienced, HIV-1 infected patients from the GRACE study. Results. 19/32 patients (59%) enrolled in the substudy were virologically suppressed (<50 copies/mL). In these patients, median (range) CD4+ cell count increased from 222 (2, 398) cells/mm(3) at baseline to 398 (119, 812) cells/mm(3) at Week 48. CD8+% decreased significantly from baseline to Week 48 (P = .03). Proliferation of CD4+ lymphocytes in response to CD3+/CD28+, phytohemagglutinin, and pokeweed was significantly increased (P < .01) by Week 12. Proliferation in response to Candida and tetanus was significantly increased by Week 48 (P < .01 and P = .014, resp.). Staphylococcal enterotoxin B-stimulated tumor necrosis factor-alpha and interleukin-2 in CD4+ cells was significantly increased by Week 12 (P = .046) and Week 48 (P < .01), respectively. Conclusions. Darunavir/ritonavir-based therapy demonstrated improvements in CD4+ cell recovery and association with progressive functional immune recovery over 48 weeks. This trial is registered with NCT00381303."
+  },
+  "23092052": {
+   "pmid": "23092052",
+   "title": "Assessing darunavir/ritonavir-based therapy in a racially diverse population: 48-week outcomes from GRACE.",
+   "journal": "Journal of the National Medical Association",
+   "year": "2012",
+   "doi": "",
+   "abstract": "The Gender, Race, and Clinical Experience (GRACE) study was designed to assess sex-based differences in darunavir/ ritonavir-based therapy and to enroll a female population representative of the racial demographics of women with human immunodeficiency virus (HIV)/AIDS in the United States. Here, we report week 48 results, stratified by race. GRACE was a multicenter, open-label, phase 3b study. Patients received 600 mg of darunavir and 100 mg of ritonavir twice daily plus an investigator-selected optimized background regimen. Virologic response (HIV-1 RNA < 50 copies/ mL) and safety were assessed over 48 weeks. Post hoc multivariate analyses were performed to investigate factors associated with response. Of 429 patients enrolled, 61.5% were black, 22.4% were Hispanic, and 15.2% were white. Black patients had more advanced disease at baseline, and more black patients discontinued (32.6%) than Hispanic (24%) or white (26.2%) patients. In the intent-to-treat population, similar response rates were seen in Hispanic (61.5%) and white patients (60.0%); lower response rates were observed in black patients (48.5%). Similar trends were observed in the nonvirologic failure censored population. The multivariate analysis revealed that being of a nonblack race was significantly associated with improved response (P = .009). Overall, darunavir/ritonavir-based therapy was well tolerated, regardless of race. Diarrhea, nausea, and rash were the most commonly reported grade 2 to 4 adverse events (at least possibly related to darunavir/ritonavir). Darunavir/ritonavir treatment is safe and effective in treatment-experienced patients, irrespective of sex or race. Despite the controlled trial environment, more black patients discontinued and experienced virologic failure than Hispanic or white patients."
+  },
+  "20855799": {
+   "pmid": "20855799",
+   "title": "Sex-based outcomes of darunavir-ritonavir therapy: a single-group trial.",
+   "journal": "Annals of internal medicine",
+   "year": "2010",
+   "doi": "10.7326/0003-4819-153-6-201009210-00002",
+   "abstract": "BACKGROUND: Women account for an increasing proportion of patients with HIV-1 but remain underrepresented in antiretroviral clinical trials.\nOBJECTIVE: To evaluate sex-based differences in efficacy and adverse events in treatment-experienced, HIV-positive women and men receiving darunavir-ritonavir therapy over 48 weeks.\nDESIGN: Multicenter, open-label, phase 3b study designed to enroll a high proportion of women, with sample size determined on the basis of a noninferiority design with a maximum allowable difference of 15% in virologic response favoring men. (ClinicalTrials.gov registration number: NCT00381303)\nSETTING: 65 sites in the United States, Puerto Rico, and Canada.\nPATIENTS: 287 women and 142 men.\nINTERVENTION: Patients received darunavir-ritonavir, 600/100 mg twice daily, plus an investigator-selected optimized background regimen.\nMEASUREMENTS: Virologic response (HIV RNA <50 copies/mL using a time-to-loss of virologic response [TLOVR] algorithm) and adverse events were assessed over 48 weeks.\nRESULTS: 67% of patients were women; 84% of patients were black or Hispanic. A higher proportion of women discontinued treatment than men (32.8% vs. 23.2%; P = 0.042); more women than men discontinued treatment for reasons other than virologic failure. Response rates in women and men at week 48 were 50.9% and 58.5%, respectively (intention-to-treat TLOVR), and 73.0% and 73.5%, respectively (TLOVR censored for patients who withdrew for reasons other than virologic failure). The absolute difference in response, based on logistic regression and adjusted for baseline log(10) viral load and CD4(+) cell count, was -9.6 percentage points (95% CI, -19.9 to 0.7 percentage points; P = 0.067) for intention-to-treat TLOVR and -3.9 percentage points (CI, -13.9 to 6.0 percentage points; P = 0.438) for TLOVR population that censored patients who withdrew for reasons other than virologic failure. Adverse events were similar between the sexes. The most common grade 2 to 4 adverse events that were considered at least possibly treatment related in women and men were nausea (5.2% and 2.8%, respectively), diarrhea (4.5% and 4.9%, respectively), and rash (2.1% and 2.8%, respectively).\nLIMITATION: Baseline characteristics differed between sexes.\nCONCLUSION: Nonsignificant, sex-based differences in response were found during the 48-week study; however, these differences were probably due to higher discontinuation rates in women, suggesting that additional efforts are needed to retain women in clinical trials."
+  },
+  "36094813": {
+   "pmid": "36094813",
+   "title": "Web-Based Mindfulness-Based Interventions for Well-being: Randomized Comparative Effectiveness Trial.",
+   "journal": "Journal of medical Internet research",
+   "year": "2022",
+   "doi": "10.2196/35620",
+   "abstract": "BACKGROUND: Mindfulness can improve overall well-being by training individuals to focus on the present moment without judging their thoughts. However, it is unknown how much mindfulness practice and training are necessary to improve well-being.\nOBJECTIVE: The primary aim of this study was to determine whether a standard 8-session web-based mindfulness-based cognitive therapy (MBCT) program, compared with a brief 3-session mindfulness intervention, improved overall participant well-being. In addition, we sought to explore whether the treatment effects differed based on the baseline characteristics of the participants (ie, moderators).\nMETHODS: Participants were recruited from 17 patient-powered research networks, web-based communities of stakeholders interested in a common research area. Participants were randomized to either a standard 8-session MBCT or a brief 3-session mindfulness training intervention accessed on the web. The participants were followed for 12 weeks. The primary outcome of the study was well-being, as measured by the World Health Organization-Five Well-Being Index. We hypothesized that MBCT would be superior to a brief mindfulness training.\nRESULTS: We randomized 4411 participants, 3873 (87.80%) of whom were White and 3547 (80.41%) of female sex assigned at birth. The mean baseline World Health Organization-Five Well-Being Index score was 50.3 (SD 20.7). The average self-reported well-being in each group increased over the intervention period (baseline to 8 weeks; model-based slope for the MBCT group: 0.78, 95% CI 0.63-0.93, and brief mindfulness group: 0.76, 95% CI 0.60-0.91) as well as the full study period (ie, intervention plus follow-up; baseline to 20 weeks; model-based slope for MBCT group: 0.41, 95% CI 0.34-0.48; and brief mindfulness group: 0.33, 95% CI 0.26-0.40). Changes in self-reported well-being were not significantly different between MBCT and brief mindfulness during the intervention period (model-based difference in slopes: -0.02, 95% CI -0.24 to 0.19; P=.80) or during the intervention period plus 12-week follow-up (-0.08, 95% CI -0.18 to 0.02; P=.10). During the intervention period, younger participants (P=.05) and participants who completed a higher percentage of intervention sessions (P=.005) experienced greater improvements in well-being across both interventions, with effects that were stronger for participants in the MBCT condition. Attrition was high (ie, 2142/4411, 48.56%), which is an important limitation of this study.\nCONCLUSIONS: Standard MBCT improved well-being but was not superior to a brief mindfulness intervention. This finding suggests that shorter mindfulness programs could yield important benefits across the general population of individuals with various medical conditions. Younger people and participants who completed more intervention sessions reported greater improvements in well-being, an effect that was more pronounced for participants in the MBCT condition. This finding suggests that standard MBCT may be a better choice for younger people as well as treatment-adherent individuals.\nTRIAL REGISTRATION: ClinicalTrials.gov NCT03844321; https://clinicaltrials.gov/ct2/show/NCT03844321."
+  }
+ }
+}

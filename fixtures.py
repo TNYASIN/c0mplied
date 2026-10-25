@@ -101,6 +101,8 @@ def make_synthetic(n=40, seed=7, conditions=None, ambiguous=False):
                 t["sex"], min(0.97, max(0.03, r2.gauss(SYNTHETIC_TRIAL_WOMEN.get(t["condition"], 0.5), 0.10))))
             t["female_n"] = round(n_enrolled * share)
             t["male_n"] = n_enrolled - t["female_n"]
+        t["contacts"] = synthetic_contacts(t["nct_id"], random.Random(f"{seed}-{i}-contact"))
+        t["references"] = []
         t["results_fingerprint"] = fingerprint(t)
         trials.append(t)
         truth[t["nct_id"]] = {
@@ -109,3 +111,36 @@ def make_synthetic(n=40, seed=7, conditions=None, ambiguous=False):
             "enrollment_by_sex": ("REPORTED" if has_sex_measure else "NOT_REPORTED_IN_RECORD")
                                  if has_res else "NO_RESULTS_POSTED"}
     return trials, truth
+
+
+def synthetic_contacts(nct, rng):
+    """Same shape as contacts.extract(). Emails use the reserved .invalid domain, so they can never be delivered."""
+    sponsor = f"Synthetic Sponsor {rng.randint(1, 5)}"
+    poc = {"role": "Results point of contact", "name": "Director, Clinical Trial Disclosure", "organization": sponsor,
+           "email": f"disclosure.{nct.lower()}@synthetic.invalid" if rng.random() < 0.8 else "", "phone": "",
+           "source_path": "synthetic.pointOfContact"}
+    return [poc, {"role": "Principal Investigator", "name": f"Dr. Synthetic Investigator {rng.randint(1, 99)}",
+                  "organization": sponsor, "email": "", "phone": "", "source_path": "synthetic.overallOfficials[0]"},
+            {"role": "Lead sponsor", "name": "", "organization": sponsor, "email": "", "phone": "",
+             "source_path": "synthetic.leadSponsor"}]
+
+
+SYN_SEX_SENTENCE = ("In a prespecified subgroup analysis by sex, the treatment effect was similar in women "
+                    "(difference 4.1) and men (difference 3.8).")
+SYN_DECOY_SENTENCE = "Analyses were adjusted for age, sex and baseline severity."
+
+
+def synthetic_publications(trials, seed=7):
+    """nct_id -> [publication] for some results-posted synthetic trials. Own random stream, so trials are unchanged."""
+    out = {}
+    for i, t in enumerate(trials):
+        rng = random.Random(f"{seed}-{i}-pubs")
+        if not t["has_results"] or rng.random() >= 0.45:
+            continue
+        mentions = rng.random() < 0.40
+        out[t["nct_id"]] = [{
+            "pmid": f"SYNPMID{seed:02d}{i:05d}", "title": f"Results of synthetic trial {i} in {t['condition']}",
+            "journal": "Journal of Synthetic Results (SYNTHETIC)", "year": "2024", "doi": "",
+            "abstract": "BACKGROUND: Synthetic abstract for the offline demo.\nRESULTS: The primary endpoint improved "
+                        "versus placebo. " + (SYN_SEX_SENTENCE if mentions else SYN_DECOY_SENTENCE)}]
+    return out

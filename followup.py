@@ -1,7 +1,7 @@
 """Re-evaluation of unresolved gaps. In the demo we SIMULATE a registry update;
 live mode compares fingerprints of re-fetched records."""
 import sys, json
-import store, fixtures, requests
+import store, fixtures, requests, pubmed
 from fetch_trials import normalize_trial, API
 
 
@@ -23,7 +23,7 @@ def simulate_new_results(nct):
 
 
 def check_live_updates():
-    """For each 'watch' trial, re-fetch and requeue if the results section changed."""
+    """For each 'watch' trial, re-fetch and requeue if the results section changed or a new paper got linked."""
     changed = []
     for r in store.q("SELECT nct_id FROM queue WHERE status='watch'"):
         old = store.get_trial(r["nct_id"])
@@ -34,9 +34,14 @@ def check_live_updates():
         except requests.RequestException:
             continue
         new = normalize_trial(d, old.get("condition", ""))
-        if new["results_fingerprint"] != old.get("results_fingerprint"):
+        before = {p["pmid"] for p in store.publications_for(r["nct_id"])[1]}
+        pubmed.link_trial(new)
+        new_pubs = {p["pmid"] for p in store.publications_for(r["nct_id"])[1]} - before
+        if new["results_fingerprint"] != old.get("results_fingerprint") or new_pubs:
             store.save_trial(new, "live")
             store.set_status(r["nct_id"], "pending")
+            if new_pubs:
+                store.log_event(None, "new_publication", f"{r['nct_id']}: newly linked PMID {', '.join(sorted(new_pubs))}; queued for re-audit")
             changed.append(r["nct_id"])
     return changed
 

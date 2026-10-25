@@ -11,6 +11,7 @@ from collections import Counter
 from pathlib import Path
 
 import fixtures
+import pubmed
 from auditor import audit_trial
 from fetch_trials import normalize_trial
 from llm import AuditLLM, get_backend
@@ -69,7 +70,9 @@ def load_real(gold_path):
         for check, allowed in LABELS.items():
             if g[check] not in allowed:
                 raise ValueError(f"{ident}: invalid {check} label {g[check]}")
-        rows.append((g, normalize_trial(raw, g["condition"]), bool(raw.get("hasResults"))))
+        trial = normalize_trial(raw, g["condition"])
+        trial["pubmed_status"], trial["publications"] = pubmed.load_gold(ident)
+        rows.append((g, trial, bool(raw.get("hasResults"))))
     return rows
 
 
@@ -132,6 +135,15 @@ def markdown_report(result):
     lines += ["## Disagreements", ""]
     for miss in result["misses"]:
         lines.append(f"- {miss['nct_id']} `{miss['check']}`: reference `{miss['gold']}`, predicted `{miss['pred']}`")
+    lines += ["", "## Publication cross-check (PubMed abstracts)", "",
+              "Linked-publication sentences that appear to report a finding by sex. These are unlabeled leads "
+              "for a human reader, not scored; a lead on a `NOT_FOUND_IN_RECORD` record means the paper may "
+              "hold what the registry lacks.", ""]
+    for lead in result.get("publication_leads", []):
+        lines.append(f"- {lead['nct_id']} (registry reference `{lead['registry_reference']}`) PMID {lead['pmid']}: "
+                     f"\"{lead['sentence']}\"")
+    if not result.get("publication_leads"):
+        lines.append("- none (or no `data/real_gold/pubmed.json` snapshot; run `python pubmed.py --freeze-gold`)")
     return "\n".join(lines) + "\n"
 
 
@@ -141,8 +153,15 @@ def evaluate(rows, backend):
     misses = []
     decisions = []
     strata = Counter()
+    publication_leads = []
     for g, trial, has_results in rows:
-        verdicts = {v["chk"]: v["label"] for v in audit_trial(trial, llm)}
+        full = {v["chk"]: v for v in audit_trial(trial, llm)}
+        verdicts = {chk: v["label"] for chk, v in full.items()}
+        pub = full.get("publication_sex_analysis")
+        if pub and pub["label"] == "MENTIONED_IN_PUBLICATION":
+            publication_leads.append({"nct_id": g["nct_id"], "registry_reference": g["sex_stratified"],
+                                      "registry_prediction": verdicts["sex_stratified_results"], "pmid": pub["pmid"],
+                                      "sentence": pub["sentence"]})
         decisions.append({"nct_id": g["nct_id"], "reference": {k: g[k] for k in CHECKS},
                           "prediction": {k: verdicts[check] for k, check in CHECKS.items()},
                           "snapshot_sha256": g.get("snapshot_sha256")})
@@ -162,7 +181,7 @@ def evaluate(rows, backend):
             "reference_status": sorted({g["review_status"] for g, _, _ in rows}),
             "accuracy": {k: v["accuracy"] for k, v in metrics.items()},
             "metrics": metrics, "strata_counts": [{"condition": c, "results_status": s, "n": n} for (c, s), n in sorted(strata.items())],
-            "misses": misses}
+            "misses": misses, "publication_leads": publication_leads}
 
 
 def main():

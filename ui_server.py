@@ -4,7 +4,7 @@
 
 GET  /                 the page (ui/index.html)
 GET  /api/state        live state read from the agent's SQLite checkpoint
-GET  /api/trial?id=X   one trial's verdicts, quotes and eligibility text
+GET  /api/trial?id=X   one trial's verdicts, quotes, eligibility text, registry contacts and linked publications
 POST /api/run          {"scenario": "sabotage", "live": false, "resume": false} starts run_agent.py in the background
 POST /api/draft        {"id": 3, "status": "APPROVED" | "REJECTED"}  (approval is simulated: nothing is sent)
 POST /api/followup     simulates a trial publishing results by sex, then re-audits the queue
@@ -102,10 +102,13 @@ def trial(nct):
     if not t:
         return 404, {"error": f"No trial {nct!r}"}
     vs = store.q("SELECT chk, label, quote, method, verified, quarantined, verify_note, run_id FROM verdicts "
-                 "WHERE nct_id=? ORDER BY id DESC LIMIT 12", (nct,))
+                 "WHERE nct_id=? ORDER BY id DESC LIMIT 15", (nct,))
+    pub_status, pubs = store.publications_for(nct)
     return 200, {"nct_id": nct, "title": t.get("title"), "condition": t.get("condition"), "sex": t.get("sex"),
                  "has_results": t.get("has_results"), "eligibility_text": t.get("eligibility_text", ""),
-                 "link": drafts.link(t), "verdicts": vs}
+                 "link": drafts.link(t), "verdicts": vs, "contacts": t.get("contacts", []),
+                 "pubmed_status": pub_status, "publications": [{k: p[k] for k in ("pmid", "title", "journal", "year", "link")}
+                                                               for p in pubs]}
 
 
 def state():

@@ -4,7 +4,7 @@ NOTE: field names below follow the v2 JSON as documented. Print one raw record
 (`python fetch_trials.py --raw heart failure`) and confirm before trusting the parsers.
 """
 import re, sys, time, requests
-import store, fixtures
+import store, fixtures, contacts, pubmed
 
 API = "https://clinicaltrials.gov/api/v2/studies"
 
@@ -140,17 +140,17 @@ def normalize_trial(study, condition=""):
          "status": st.get("overallStatus", ""), "sex": el.get("sex", "UNKNOWN"),
          "eligibility_text": el.get("eligibilityCriteria", "") or "",
          "has_results": bool(study.get("hasResults", False)),
-         "baseline_measures": base, "outcome_measures": outs}
-    # Who the sponsor names for questions about posted results: the recipient of any draft request
-    poc = (res.get("moreInfoModule", {}) or {}).get("pointOfContact", {}) or {}
-    t["contact"] = {k: poc.get(k, "") for k in ("title", "organization", "email", "phone")} if poc else None
+         "baseline_measures": base, "outcome_measures": outs,
+         "contacts": contacts.extract(study),
+         "references": [{"pmid": r.get("pmid", ""), "type": r.get("type", ""), "citation": r.get("citation", "")}
+                        for r in (p.get("referencesModule", {}) or {}).get("references", []) or [] if r.get("pmid")]}
     t["female_n"], t["male_n"] = sex_counts(res.get("baselineCharacteristicsModule", {}) or {})
     t["results_fingerprint"] = fixtures.fingerprint(t)
     return t
 
 
-def ingest(condition, n, sup=None, page_size=50, log=print):
-    got, token = 0, None
+def ingest(condition, n, sup=None, page_size=50, log=print, with_pubmed=True):
+    got, token, linked = 0, None, 0
     while got < n:
         sig = f"fetch|{condition}|{token}"
         if sup:
@@ -166,19 +166,26 @@ def ingest(condition, n, sup=None, page_size=50, log=print):
                 store.save_trial(t, "live")
                 store.enqueue(t["nct_id"], condition)
                 got += 1
+                if with_pubmed:
+                    linked += pubmed.link_trial(t, sup)[1] > 0
         token = data.get("nextPageToken")
         if not token or not studies:
             break
-    log(f"  fetched {got} completed interventional trials with results for '{condition}'")
+    log(f"  fetched {got} completed interventional trials with results for '{condition}'"
+        + (f"; {linked} have linked PubMed publications" if with_pubmed else ""))
     return got
 
 
 def ingest_offline(n, seed=7, ambiguous=False, log=print):
     trials, _ = fixtures.make_synthetic(n, seed, ambiguous=ambiguous)
+    pubs = fixtures.synthetic_publications(trials, seed)
     for t in trials:
         store.save_trial(t, "synthetic")
         store.enqueue(t["nct_id"], t["condition"])
-    log(f"  loaded {len(trials)} SYNTHETIC trials (offline mode)")
+        mine = pubs.get(t["nct_id"], [])
+        store.save_publications(t["nct_id"], "OK", [{"pmid": p["pmid"], "link": "synthetic"} for p in mine], mine,
+                                source="synthetic")
+    log(f"  loaded {len(trials)} SYNTHETIC trials (offline mode); {len(pubs)} with SYNTHETIC publications")
     return len(trials)
 
 

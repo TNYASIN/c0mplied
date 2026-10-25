@@ -1,6 +1,7 @@
 """Per-trial audit. Rules first; the LLM is only used where rules cannot decide."""
 import re
 from rules import elig_candidates, strat_payload_lines
+from pubmed import find_sex_analysis
 
 NAIVE_RETRY_CAP = 100_000   # the "naive agent" retries forever; the supervisor is the safety net
 
@@ -60,6 +61,7 @@ def audit_trial(trial, llm):
                 male = next((m for m in values.get("male", []) if m.get("match_key") == female.get("match_key")), None)
                 if male:
                     proven.append((i, female, male))
+        hits, lines = strat_payload_lines(trial)
         if proven:
             i, female, male = proven[0]
             quote = (f"Outcome {i}: female={female['value']} ({female['path']}); "
@@ -67,9 +69,7 @@ def audit_trial(trial, llm):
             v = V(nct, "sex_stratified_results", "STRATIFIED_FOUND", quote, 1.0, "structured_rule")
             v["evidence_paths"] = [female["path"], male["path"]]
             out.append(v)
-            return out
-        hits, lines = strat_payload_lines(trial)
-        if not hits:
+        elif not hits:
             out.append(V(nct, "sex_stratified_results", "NOT_FOUND_IN_RECORD", "", 0.9, "rule"))
         else:
             payload = {"nct_id": nct, "lines": lines}
@@ -80,4 +80,24 @@ def audit_trial(trial, llm):
                 v["verify_note"] = "sex-specific outcome values absent; human review required"
             v["_task"], v["_payload"] = "stratified", payload
             out.append(v)
+
+    # D. linked publications (PubMed titles/abstracts, attached by the caller). Never overrides check C:
+    # the registry gap stays a registry gap; a mention is a lead that changes what the draft asks.
+    out.append(publication_check(nct, trial.get("pubmed_status"), trial.get("publications") or []))
     return out
+
+
+def publication_check(nct, status, pubs):
+    if status is None or (status == "ERROR" and not pubs):
+        return V(nct, "publication_sex_analysis", "NOT_CHECKED", "", 0.0, "rule")
+    if not pubs:
+        return V(nct, "publication_sex_analysis", "NO_LINKED_PUBLICATION", "", 1.0, "rule")
+    for p in pubs:
+        sentence = find_sex_analysis(p)
+        if sentence:
+            v = V(nct, "publication_sex_analysis", "MENTIONED_IN_PUBLICATION", f'PMID {p["pmid"]}: "{sentence}"',
+                  0.7, "rule")
+            v["pmid"], v["pub_title"], v["sentence"] = p["pmid"], p.get("title", ""), sentence
+            return v
+    return V(nct, "publication_sex_analysis", "NOT_FOUND_IN_ABSTRACTS",
+             "searched PMID " + ", ".join(p["pmid"] for p in pubs), 0.6, "rule")

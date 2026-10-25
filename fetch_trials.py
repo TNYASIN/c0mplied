@@ -150,28 +150,35 @@ def normalize_trial(study, condition=""):
 
 
 def ingest(condition, n, sup=None, page_size=50, log=print, with_pubmed=True):
-    got, token, linked = 0, None, 0
+    """Queue n trials not seen before, so each run works through new records instead of
+    re-fetching ones already audited (those stay in the checkpoint and the gap map)."""
+    got, seen, token, linked = 0, 0, None, 0
     while got < n:
         sig = f"fetch|{condition}|{token}"
         if sup:
             sup.check_budget()
             sup.note_fetch(sig)
-        data = fetch_page(condition, min(page_size, max(n - got, 1)), token)
+        data = fetch_page(condition, page_size, token)
         studies = data.get("studies", []) or []
         for s in studies:
             if got >= n:
                 break
             t = normalize_trial(s, condition)
-            if t["nct_id"]:
-                store.save_trial(t, "live")
-                store.enqueue(t["nct_id"], condition)
-                got += 1
-                if with_pubmed:
-                    linked += pubmed.link_trial(t, sup)[1] > 0
+            if not t["nct_id"]:
+                continue
+            if store.q("SELECT 1 FROM queue WHERE nct_id=?", (t["nct_id"],)):
+                seen += 1
+                continue
+            store.save_trial(t, "live")
+            store.enqueue(t["nct_id"], condition)
+            got += 1
+            if with_pubmed:
+                linked += pubmed.link_trial(t, sup)[1] > 0
         token = data.get("nextPageToken")
         if not token or not studies:
             break
-    log(f"  fetched {got} completed interventional trials with results for '{condition}'"
+    log(f"  fetched {got} new completed interventional trials with results for '{condition}'"
+        + (f" (skipped {seen} already audited)" if seen else "")
         + (f"; {linked} have linked PubMed publications" if with_pubmed else ""))
     return got
 

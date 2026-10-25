@@ -121,6 +121,7 @@ ADVICE = {
     "CALL_BUDGET": "Call budget reached. Raise the cap deliberately, then `--resume`.",
     "TIME_LIMIT": "Time limit reached. `--resume` continues from the checkpoint.",
     "EMERGENCY_CAP": "No supervisor was active; only a hard emergency cap stopped this run.",
+    "CRASH": "The agent hit an unexpected error. The unfinished batch was quarantined; see reports/ui_run.log for the traceback, fix it, then resume with `--no-ingest`.",
 }
 
 

@@ -119,6 +119,16 @@ def run(scenario="normal", conditions=None, limit=40, offline=True, supervised=T
             ids = store.quarantine(run_id, batch_idx)
             if ids:
                 store.log_event(run_id, "quarantine", f"{len(ids)} unfinished-batch trials quarantined")
+    except Exception as e:   # unattended: never die silently; halt with a handoff and a phone alert instead
+        import traceback
+        log(traceback.format_exc())
+        halt = HaltRun("CRASH", f"unexpected error: {type(e).__name__}: {str(e)[:200]}")
+        status = "HALTED_CRASH"
+        sup.halt = {"code": halt.code, "reason": halt.reason}
+        log(f"\n*** HALT [CRASH]: {halt.reason}")
+        ids = store.quarantine(run_id, batch_idx)
+        if ids:
+            store.log_event(run_id, "quarantine", f"{len(ids)} unfinished-batch trials quarantined after a crash")
     snap = sup.snapshot()
     gm = report.write_reports()
     path = report.write_handoff(run_id, status, halt, snap)

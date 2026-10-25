@@ -944,11 +944,10 @@ abbr[title] { text-decoration: underline dotted; text-underline-offset: 3px; cur
         el.innerHTML = `<summary><span class="tag ${lvl}">${txt}</span><span></span></summary><p class="msg"></p><pre class="text"></pre>`;
         el.querySelector("summary span:last-child").textContent = d.subject;
         if (d.to) {
-          el.querySelector("p.msg").textContent = "To: " + d.to.label;
-          if (d.to.status === "no_email") el.querySelector("p.msg").classList.add("gapnote");
+          el.querySelector("p.msg").textContent = d.to;
+          if (!d.to_ok) el.querySelector("p.msg").classList.add("gapnote");
         } else el.querySelector("p.msg").remove();
         el.querySelector("pre").textContent = d.body;
-        if (d.to) { const to = document.createElement("p"); to.className = "msg"; to.textContent = d.to; el.querySelector("pre").before(to); }
         if (d.status === "DRAFT") {
           const row = document.createElement("div"); row.className = "controls";
           for (const [label, status, cls] of [["Approve", "APPROVED", "primary"], ["Reject", "REJECTED", ""]]) {

@@ -112,6 +112,15 @@ def trial(nct):
                                                                for p in pubs]}
 
 
+def draft_view(d):
+    """A draft for the page: its 'To:' line, with the email shown by domain only so no address is projected."""
+    if not d["nct_id"].startswith("NCT"):
+        return {**d, "to": "To: synthetic record, no real recipient", "to_ok": True, "to_email": ""}
+    email = d.get("to_email") or ""
+    masked = {**d, "to_email": f"…@{email.rsplit('@', 1)[-1]}" if "@" in email else email}
+    return {**masked, "to": drafts.recipient_line(masked), "to_ok": bool(email)}
+
+
 def state():
     store.init()
     runs = store.q("SELECT * FROM runs ORDER BY started DESC LIMIT 1")
@@ -138,8 +147,7 @@ def state():
         "gap": [{GAP_KEYS[k]: v for k, v in r.items() if k in GAP_KEYS} for r in report.gap_map()],
         "recent": recent(rid) if rid else [],
         "scenarios": list(SCENARIOS),
-        "drafts": [{**d, "to": drafts.recipient(store.get_trial(d["nct_id"]))} for d in
-                   store.q("SELECT id, nct_id, kind, subject, body, status FROM drafts ORDER BY updated DESC, id DESC LIMIT 25")],
+        "drafts": [draft_view(d) for d in store.q("SELECT * FROM drafts ORDER BY updated DESC, id DESC LIMIT 25")],
         "events": store.q("SELECT id, ts, kind, detail FROM events ORDER BY id DESC LIMIT 12"),
         "handoff": handoff(),
         "measured": measured(),

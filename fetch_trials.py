@@ -141,6 +141,9 @@ def normalize_trial(study, condition=""):
          "eligibility_text": el.get("eligibilityCriteria", "") or "",
          "has_results": bool(study.get("hasResults", False)),
          "baseline_measures": base, "outcome_measures": outs}
+    # Who the sponsor names for questions about posted results: the recipient of any draft request
+    poc = (res.get("moreInfoModule", {}) or {}).get("pointOfContact", {}) or {}
+    t["contact"] = {k: poc.get(k, "") for k in ("title", "organization", "email", "phone")} if poc else None
     t["female_n"], t["male_n"] = sex_counts(res.get("baselineCharacteristicsModule", {}) or {})
     t["results_fingerprint"] = fixtures.fingerprint(t)
     return t

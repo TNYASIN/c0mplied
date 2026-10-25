@@ -24,6 +24,20 @@ def link(trial):
     return f"https://clinicaltrials.gov/study/{n}" if n.startswith("NCT") else f"(synthetic record {n}, no public page)"
 
 
+def recipient(trial):
+    """The record's results point of contact, with the email shown by domain only (safe to project on stage)."""
+    if not trial or not trial["nct_id"].startswith("NCT"):
+        return {"status": "synthetic", "label": "Synthetic record: no real recipient"}
+    c = trial.get("contact")
+    if c is None and "contact" not in trial:
+        return {"status": "unknown", "label": "Re-fetch this trial to look up its contact"}
+    who = ", ".join(x for x in ((c or {}).get("title"), (c or {}).get("organization")) if x)
+    email = (c or {}).get("email", "").strip()
+    if not email:
+        return {"status": "no_email", "label": f"{who or 'No contact listed'}: no email in record, contact via the sponsor"}
+    return {"status": "ok", "label": f"{who} <…@{email.rsplit('@', 1)[-1]}>" if who else f"<…@{email.rsplit('@', 1)[-1]}>"}
+
+
 def create(trial, kind):
     if store.q("SELECT 1 FROM drafts WHERE nct_id=? AND kind=? AND status IN ('DRAFT','APPROVED')", (trial["nct_id"], kind)):
         return None

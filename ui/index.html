@@ -786,8 +786,12 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
         const el = document.createElement("details");
         el.dataset.id = d.id; el.open = open.has(String(d.id));
         const [txt, lvl] = DRAFT_TAG[d.status] || [d.status.toLowerCase(), "n"];
-        el.innerHTML = `<summary><span class="tag ${lvl}">${txt}</span><span></span></summary><pre class="text"></pre>`;
+        el.innerHTML = `<summary><span class="tag ${lvl}">${txt}</span><span></span></summary><p class="msg"></p><pre class="text"></pre>`;
         el.querySelector("summary span:last-child").textContent = d.subject;
+        if (d.to) {
+          el.querySelector("p.msg").textContent = "To: " + d.to.label;
+          if (d.to.status === "no_email") el.querySelector("p.msg").classList.add("gapnote");
+        } else el.querySelector("p.msg").remove();
         el.querySelector("pre").textContent = d.body;
         if (d.status === "DRAFT") {
           const row = document.createElement("div"); row.className = "controls";

@@ -134,7 +134,8 @@ def state():
         "gap": [{GAP_KEYS[k]: v for k, v in r.items() if k in GAP_KEYS} for r in report.gap_map()],
         "recent": recent(rid) if rid else [],
         "scenarios": list(SCENARIOS),
-        "drafts": store.q("SELECT id, nct_id, kind, subject, body, status FROM drafts ORDER BY updated DESC, id DESC LIMIT 25"),
+        "drafts": [{**d, "to": drafts.recipient(store.get_trial(d["nct_id"]))} for d in
+                   store.q("SELECT id, nct_id, kind, subject, body, status FROM drafts ORDER BY updated DESC, id DESC LIMIT 25")],
         "events": store.q("SELECT id, ts, kind, detail FROM events ORDER BY id DESC LIMIT 12"),
         "handoff": handoff(),
         "measured": measured(),

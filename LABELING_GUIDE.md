@@ -1,56 +1,52 @@
-# HerEvidence 真实记录标注手册（v1，hackathon）
+HerEvidence Real-Record Labeling Manual (v1, hackathon)
+Labeling Unit and Boundaries
 
-## 标注对象和边界
+The unit is a frozen JSON version of one ClinicalTrials.gov v2 registry record, not a paper, a study protocol, or all the analyses the investigators actually performed. Each record has its NCT ID, retrieval time, last update date, and SHA-256 in data/real_gold/manifest.json. A label only describes what is visible in that JSON. The official site divides posted summary results into modules such as participant flow, baseline characteristics, outcome measures, and adverse events. This project’s “outcomes by sex” check evaluates only the outcomeMeasuresModule, and does not treat baseline counts or adverse event tables as outcome analyses.
 
-单位是一条 ClinicalTrials.gov v2 **登记记录的冻结 JSON 版本**，不是论文、研究方案或研究者实际做过的全部分析。每条记录在 `data/real_gold/manifest.json` 中有 NCT ID、抓取时间、最后更新日期和 SHA-256。标签只表示这份 JSON 可见的内容。官方将已发布的 summary results 分为 participant flow、baseline characteristics、outcome measures、adverse events 等模块；本项目的“按性别结局”仅评估 **outcomeMeasuresModule**，不把基线人数或不良事件表当作结局分析。
+Official definition references: Study Basics, Outcome Measure Data Preparation Checklist, Results Data Element Definitions. The classification thresholds below are the project’s operational definitions for research purposes, not an official ClinicalTrials.gov rating.
 
-官方定义参考：[Study Basics](https://clinicaltrials.gov/study-basics)、[Outcome Measure Data Preparation Checklist](https://cdn.clinicaltrials.gov/documents/data-prep-checklist-om-sa.pdf)、[Results Data Element Definitions](https://clinicaltrials.gov/policy/results-definitions)。以下分类阈值是**项目的研究操作定义**，不是 ClinicalTrials.gov 官方评级。
+Four Check Items
+1. sex_restriction
 
-## 四个检查项
+Read protocolSection.eligibilityModule.sex and label it with the original value: ALL, FEMALE, MALE, or UNKNOWN. It only represents the sex field registered for enrollment and does not infer fairness. The field path and value must be saved.
 
-### 1. `sex_restriction`
+2. eligibility_exclusion
 
-读 `protocolSection.eligibilityModule.sex`，照原值标 `ALL`、`FEMALE`、`MALE` 或 `UNKNOWN`。它只表示登记的招募性别字段，不推断公平性。必须保存该字段路径和值。
+Read the inclusion and exclusion criteria in protocolSection.eligibilityModule.eligibilityCriteria in full, and assign one primary label for the study as a whole:
 
-### 2. `eligibility_exclusion`
+Label	Criterion	What cannot be labeled this way
+BLANKET_EXCLUSION_CHILDBEARING	Explicitly excludes all women of childbearing potential, with no other study arm allowing them to participate; also includes an explicit restriction to enrolling only women who cannot bear children	Excluding only pregnant women; only requiring contraception; excluding in one treatment arm while another arm allows them
+PREGNANCY_LACTATION_EXCLUSION	Pregnant, breastfeeding, or pregnancy-test-positive people may not participate, even if it is written in the inclusion criteria as a “not pregnant” condition	Only requiring a pregnancy test, without stating that positive results cannot participate and with no way to infer it from context
+CONDITIONAL	People of childbearing potential may participate under conditions such as contraception or pregnancy testing, with no stronger overall exclusion	Everyone is excluded without exception
+NONE	After reading the entire field, none of the above restrictions are present	The field is missing, unreadable, or only keyword fragments were reviewed
+UNCLEAR	The field is missing, vague, or self-contradictory, or the current single-label scheme cannot express an exclusion specific to one study arm	Simply having no posted results
 
-完整阅读 `protocolSection.eligibilityModule.eligibilityCriteria` 的 inclusion 和 exclusion，按**研究整体**标一个主标签：
+If a record has both an explicit overall pregnancy/lactation exclusion and a contraception condition, the primary label is PREGNANCY_LACTATION_EXCLUSION, and the coexisting condition is noted in the remarks. An overall blanket exclusion takes precedence over other labels. For a record that restricts only one study arm while other arms still allow women of childbearing potential, label it UNCLEAR first and keep both conflicting pieces of evidence. The next version can switch to multi-label and arm-level labeling. These labels do not evaluate whether a restriction is medically reasonable.
 
-| 标签 | 判据 | 不能据此标注的情况 |
-|---|---|---|
-| `BLANKET_EXCLUSION_CHILDBEARING` | 明确排除所有有生育能力的女性，且没有另一研究臂允许她们参加；也包括仅招募无生育能力女性的明确限制 | 只排除已怀孕者；只要求避孕；只在某一治疗臂排除但另一臂允许 |
-| `PREGNANCY_LACTATION_EXCLUSION` | 已怀孕、哺乳、妊娠试验阳性者不得参加，即使写在 inclusion 中作为 “not pregnant” 条件 | 仅要求进行妊娠检测，未说明阳性者不能参加且上下文无法推断 |
-| `CONDITIONAL` | 有生育能力者可在避孕、妊娠检测等条件下参加，且没有更强的整体排除 | 所有人一律排除 |
-| `NONE` | 通读完整字段后，没有上述限制 | 字段缺失、无法读懂或只看了关键词片段 |
-| `UNCLEAR` | 字段缺失、含糊、互相矛盾，或现有单标签体系无法表达某一研究臂的专属排除 | 单纯没有结果发布 |
+A positive label must provide a short quote from the original text and its JSON path. NONE must record the full field path that was read through.
 
-若同一记录有明确的整体妊娠／哺乳排除和避孕条件，主标签取 `PREGNANCY_LACTATION_EXCLUSION`，并在备注记录共存条件。整体 blanket 排除优先于其他标签。**只限制一个研究臂**而其他臂仍允许有生育能力女性的记录先标 `UNCLEAR` 并保留两个冲突证据；下一版可改为多标签和 arm-level 标注。这里的标签不评价限制的医学合理性。
+3. enrollment_by_sex
 
-正向标签必须给出原文短引句和 JSON 路径。`NONE` 必须记录已通读的整个字段路径。
+If the top-level hasResults=false, label it NO_RESULTS_POSTED. Otherwise, review resultsSection.baselineCharacteristicsModule.measures: label it REPORTED only when you see a baseline category corresponding to sex/gender identity and at least one actual count value. If there is only a “Sex: Female, Male” title with no measurements[].value, label it NOT_REPORTED_IN_RECORD. Do not count outcome or participant flow numbers. Record the measure path, the category, and one actual value. A single-sex trial can also be REPORTED as long as the values are actually visible.
 
-### 3. `enrollment_by_sex`
+4. sex_stratified_results
 
-如果顶层 `hasResults=false`，标 `NO_RESULTS_POSTED`。否则审查 `resultsSection.baselineCharacteristicsModule.measures`：只有看到性别／性别认同对应的基线类别**以及至少一个实际人数值**时才标 `REPORTED`。只有 “Sex: Female, Male” 标题、却没有 `measurements[].value`，标 `NOT_REPORTED_IN_RECORD`。不把 outcome 或 participant flow 的人数算进来。记录 measure 路径、类别和一个实际数值。单一性别试验也可以 `REPORTED`，只要数值确实可见。
+If hasResults=false, label it NO_RESULTS_POSTED. Otherwise, review all of resultsSection.outcomeMeasuresModule.outcomeMeasures, including each outcome’s title, description, groups, classes/categories/measurements, and analyses:
 
-### 4. `sex_stratified_results`
+Label	Criterion
+STRATIFIED_FOUND	In at least one posted outcome, the result values can be clearly matched to women and to men/other explicit sex/gender subgroups. This can be sex-named outcome groups, or sex-named classes/categories with values. The outcome index, group names, and corresponding values must be saved. A statistical analysis plan or text saying “will be analyzed by sex” is not enough.
+NOT_FOUND_IN_RECORD	Results are posted, but after reviewing the outcome module one by one, no such structure was found. Mentioning male and female participants, sexual function scales, baseline counts, randomization stratified by sex, or group names without values is not enough.
+UNCLEAR	The structure is incomplete, or the relationship between text and values cannot be determined.
+NO_RESULTS_POSTED	hasResults=false.
 
-如果 `hasResults=false`，标 `NO_RESULTS_POSTED`。否则审查**所有** `resultsSection.outcomeMeasuresModule.outcomeMeasures`，包括每个 outcome 的 title、description、groups、classes/categories/measurements、analyses：
+This definition answers the key question: sex-named groups alone are not enough; there must be corresponding outcome values. STRATIFIED_FOUND does not mean there was a formal statistical test for sex interaction, nor does it mean the study proved that efficacy differs between men and women.
 
-| 标签 | 判据 |
-|---|---|
-| `STRATIFIED_FOUND` | 至少一个已发布 outcome 的结果数值能明确对应女性和男性／其他明确的 sex/gender 子群；可以是 sex-named outcome groups，也可以是 sex-named classes/categories 加数值。需保存 outcome 索引、分组名称和对应值。仅有分析计划或“将按性别分析”的文字不够。 |
-| `NOT_FOUND_IN_RECORD` | 已发布结果，但逐个审查 outcome 模块后未见上述结构。只提到男女参与者、性功能量表、基线人数、按性别随机分层或没有数值的分组名称都不够。 |
-| `UNCLEAR` | 结构残缺或文本与数值关系无法判断。 |
-| `NO_RESULTS_POSTED` | `hasResults=false`。 |
+Two-Person Labeling and Conflict Adjudication
 
-这一定义回答了关键问题：**只有男女分组名称不够，必须有对应的结局数值**。`STRATIFIED_FOUND` 不代表有正式的性别交互作用统计检验，也不意味着研究证明了男女疗效不同。
+Two labelers independently review the frozen JSON without looking at model predictions. Each fills in the four labels, evidence paths, short quotes, outcome values or “search scope,” and remarks. First compute per-item agreement rates and Cohen’s kappa. For disagreements, review the same SHA-256 version together and adjudicate according to the tables above. If they still disagree, a third person adjudicates. Before adjudication, keep both people’s original labels and reasons, and do not silently overwrite them. If the labeling scheme itself cannot express a record, keep UNCLEAR and log it as a rule-revision case.
 
-## 双人标注和冲突裁定
+The current data/gold_set.json is Codex single-reviewer initial labels and has not yet been reviewed by a second human labeler. It can be used to find code problems and demonstrate metric computation, but it cannot be described externally as “human-consensus gold” or real accuracy. Within three hours, the team’s second person can prioritize reviewing all positives, UNCLEAR cases, and records where the model disagrees with the initial labels.
 
-两名标注者独立查看冻结 JSON，不看模型预测。每人填写四个标签、证据路径、短引句、结局数值或“搜索范围”、备注。先计算逐项一致率和 Cohen's kappa；不一致时一起回看同一 SHA-256 版本并依据上表裁定。仍不一致时由第三人裁定；裁定前保留两人的原始标签与理由，不能静默覆盖。若标签体系本身表达不了记录，保留 `UNCLEAR` 并登记为规则修订案例。
+Evaluation Conventions
 
-当前 `data/gold_set.json` 是 **Codex 单评审初标，尚未经第二名人类标注者复核**。它能用于发现代码问题和演示指标计算，不能在对外展示中称为“人工共识 gold”或真实准确率。三小时内可让团队第二人优先复核所有阳性、`UNCLEAR` 和模型与初标不一致的记录。
-
-## 评估口径
-
-混淆矩阵行是真值、列是预测。每个标签的 precision = TP/(TP+FP)，recall = TP/(TP+FN)；分母为零显示 `null`，不能伪装为 0。`UNCLEAR` 是主动拒答，拒答率 = 预测 `UNCLEAR` / 该检查项全部记录数；`NO_RESULTS_POSTED` 是有效标签，不算拒答。报告全部记录准确率、非拒答准确率、覆盖率及各标签 support。挑战样本被刻意补入，本集合不能估计某类缺口在总体试验中的真实发生率。
+In the confusion matrix, rows are ground truth and columns are predictions. For each label, precision = TP/(TP+FP) and recall = TP/(TP+FN). When a denominator is zero, display null; do not disguise it as 0. UNCLEAR is an active abstention, and abstention rate = predicted UNCLEAR / all records for that check item. NO_RESULTS_POSTED is a valid label and does not count as abstention. Report overall accuracy on all records, accuracy on non-abstained records, coverage, and the support of each label. Challenge samples were deliberately added, so this set cannot be used to estimate the true prevalence of any type of gap across all trials.

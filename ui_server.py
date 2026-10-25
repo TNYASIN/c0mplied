@@ -1,19 +1,23 @@
-"""Backstage UI for judges, standard library only.
+"""Primary HerEvidence web UI, standard library only (no Streamlit needed).
 
     python ui_server.py            # then open http://localhost:8501
 
-GET  /                 the page (ui/index.html)
-GET  /api/state        live state read from the agent's SQLite checkpoint
-GET  /api/trial?id=X   one trial's verdicts, quotes and eligibility text
-POST /api/run          {"scenario": "sabotage", "live": false, "resume": false} starts run_agent.py in the background
-POST /api/draft        {"id": 3, "status": "APPROVED" | "REJECTED"}  (approval is simulated: nothing is sent)
-POST /api/followup     simulates a trial publishing results by sex, then re-audits the queue
+GET  /                  main page (ui/index.html)
+GET  /agent-demo.html    teammate's original judge/phone demo (ui/agent-demo.html)
+GET  /api/trial?id=X    trial verdicts for the original demo
+GET  /api/state           live state read from the agent's SQLite checkpoint
+GET  /api/studies         read-only summaries of stored audit records
+GET  /api/studies/<id>    one study and deterministic finding explanations
+POST /api/ask             grounded, read-only answers from stored evidence
+POST /api/run             starts run_agent.py in the background
+POST /api/draft           approves or rejects a pending follow-up draft
+POST /api/followup        simulates a synthetic record update and re-audits it
 """
-import json, os, subprocess, sys
+import json, mimetypes, os, subprocess, sys
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import parse_qs, unquote, urlsplit
 
-import config, store, report, drafts, followup, notify
+import config, drafts, evidence, followup, notify, store, report
 from config import Limits
 from supervisor import BetaTracker
 from agent import SCENARIOS
@@ -79,20 +83,22 @@ def recent(run_id, n=8):
 
 
 def handoff():
-    """Latest handoff report (written whenever a run ends or halts), as markdown text."""
-    d = config.REPORT_DIR
-    files = [os.path.join(d, f) for f in os.listdir(d) if f.startswith("handoff_")] if os.path.isdir(d) else []
+    """Return the newest handoff report written by a completed or halted run."""
+    directory = config.REPORT_DIR
+    files = [os.path.join(directory, name) for name in os.listdir(directory)
+             if name.startswith("handoff_")] if os.path.isdir(directory) else []
     if not files:
         return None
-    with open(max(files, key=os.path.getmtime)) as f:
+    with open(max(files, key=os.path.getmtime), encoding="utf-8") as f:
         return f.read()
 
 
 def measured():
+    """Load optional evaluation artifacts without making them prerequisites for the UI."""
     out = {}
     for key, path in (("compare", "data/compare.json"), ("gold", "data/gold_eval.json")):
         if os.path.exists(path):
-            with open(path) as f:
+            with open(path, encoding="utf-8") as f:
                 out[key] = json.load(f)
     return out
 
@@ -134,8 +140,16 @@ def state():
         "gap": [{GAP_KEYS[k]: v for k, v in r.items() if k in GAP_KEYS} for r in report.gap_map()],
         "recent": recent(rid) if rid else [],
         "scenarios": list(SCENARIOS),
-        "drafts": store.q("SELECT id, nct_id, kind, subject, body, status FROM drafts ORDER BY updated DESC, id DESC LIMIT 25"),
-        "events": store.q("SELECT id, ts, kind, detail FROM events ORDER BY id DESC LIMIT 12"),
+        "data_available": {
+            "real": store.q("SELECT COUNT(*) n FROM trials WHERE source!='synthetic'")[0]["n"],
+            "synthetic": store.q("SELECT COUNT(*) n FROM trials WHERE source='synthetic'")[0]["n"],
+        },
+        "drafts": store.q(
+            "SELECT d.id,d.nct_id,d.kind,d.subject,d.body,d.status,t.source "
+            "FROM drafts d LEFT JOIN trials t ON t.nct_id=d.nct_id "
+            "ORDER BY d.updated DESC,d.id DESC LIMIT 25"
+        ),
+        "events": store.q("SELECT id,ts,kind,detail FROM events ORDER BY id DESC LIMIT 12"),
         "handoff": handoff(),
         "measured": measured(),
     }
@@ -145,27 +159,38 @@ def set_draft(body):
     status = body.get("status")
     if status not in ("APPROVED", "REJECTED"):
         return 400, {"error": "status must be APPROVED or REJECTED"}
-    rows = store.q("SELECT status FROM drafts WHERE id=?", (body.get("id"),))
+    try:
+        draft_id = int(body.get("id"))
+    except (TypeError, ValueError):
+        return 400, {"error": "draft id must be an integer"}
+    rows = store.q("SELECT status FROM drafts WHERE id=?", (draft_id,))
     if not rows:
         return 404, {"error": "No such draft"}
     if rows[0]["status"] != "DRAFT":
         return 409, {"error": f"Draft is already {rows[0]['status']}"}
-    drafts.set_status(int(body["id"]), status)
-    return 200, {"ok": True}
+    drafts.set_status(draft_id, status)
+    return 200, {"ok": True, "id": draft_id, "status": status}
 
 
 def follow_up():
-    """The Streamlit dashboard's 'Simulate: new results published' + 'Resume queue', as one step."""
+    """Simulate a demo registry update and resume the saved queue.
+
+    This endpoint intentionally accepts synthetic trials only. A live NCT record must
+    never be rewritten into demo data merely to demonstrate the follow-up lifecycle.
+    """
     if running():
         return 409, {"error": "A run is already in progress. Wait for it to finish."}
-    rows = store.q("SELECT nct_id FROM drafts WHERE kind='sex_stratified_results' AND status IN ('DRAFT','APPROVED') "
-                   "ORDER BY id LIMIT 1")
+    rows = store.q(
+        "SELECT d.nct_id FROM drafts d JOIN trials t ON t.nct_id=d.nct_id "
+        "WHERE t.source='synthetic' AND d.kind='sex_stratified_results' "
+        "AND d.status IN ('DRAFT','APPROVED') ORDER BY d.id LIMIT 1"
+    )
     if not rows:
-        return 409, {"error": "No open draft request yet. Run an audit first."}
-    nct = rows[0]["nct_id"]
-    followup.simulate_new_results(nct)
+        return 409, {"error": "No open synthetic result-reporting draft is available. Run a synthetic audit first."}
+    nct_id = rows[0]["nct_id"]
+    followup.simulate_new_results(nct_id)
     code, out = start({"scenario": "normal", "resume": True})
-    return code, {**out, "nct_id": nct}
+    return code, {**out, "nct_id": nct_id}
 
 
 def start(body):
@@ -196,34 +221,93 @@ class H(BaseHTTPRequestHandler):
         self.wfile.write(data)
 
     def do_GET(self):
-        if self.path in ("/", "/index.html"):
-            # ui/index.html is a page fragment so the same file also publishes as a claude.ai artifact
-            # (where it runs a built-in simulation). Here it gets a full document and finds /api/state.
-            with open(os.path.join(HERE, "ui", "index.html"), "rb") as f:
+        parsed = urlsplit(self.path)
+        path = parsed.path
+        if path in ("/", "/index.html", "/agent-demo.html", "/ui/agent-demo.html"):
+            # Serve both UIs: redesigned homepage and teammate's original judge demo.
+            # ui/*.html files are document fragments, wrapped in a small HTML shell.
+            filename = "index.html" if path in ("/", "/index.html") else "agent-demo.html"
+            try:
+                f = open(os.path.join(HERE, "ui", filename), "rb")
+            except FileNotFoundError:
+                return self._send(404, {"error": "not found"})
+            with f:
                 page = (b'<!doctype html><html lang="en"><head><meta charset="utf-8">'
                         b'<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">'
                         b'</head><body>' + f.read() + b'</body></html>')
             return self._send(200, page, "text/html; charset=utf-8")
-        url = urlparse(self.path)
-        try:
-            if url.path == "/api/state":
+        if path in ("/ui/styles.css", "/ui/app.js"):
+            target = os.path.join(HERE, path.lstrip("/"))
+            try:
+                with open(target, "rb") as f:
+                    return self._send(200, f.read(), mimetypes.guess_type(target)[0] or "application/octet-stream")
+            except FileNotFoundError:
+                return self._send(404, {"error": "not found"})
+        if path == "/api/state":
+            try:
                 return self._send(200, state())
-            if url.path == "/api/trial":
-                return self._send(*trial(parse_qs(url.query).get("id", [""])[0]))
-        except Exception as e:   # e.g. DB busy mid-write: the page just polls again
-            return self._send(503, {"error": str(e)})
+            except Exception as e:   # e.g. DB busy mid-write: the page just polls again
+                return self._send(503, {"error": str(e)})
+        if path == "/api/trial":
+            # Compatibility endpoint for the team's judge/phone demo.
+            nct_id = parse_qs(parsed.query).get("id", [""])[0]
+            if not nct_id or len(nct_id) > 40:
+                return self._send(400, {"error": "invalid study identifier"})
+            try:
+                return self._send(*trial(nct_id))
+            except Exception as e:
+                return self._send(503, {"error": str(e)})
+        if path == "/api/studies":
+            scope = parse_qs(parsed.query).get("scope", ["real"])[0]
+            if scope not in ("real", "synthetic"):
+                return self._send(400, {"error": "scope must be real or synthetic"})
+            try:
+                return self._send(200, {"studies": evidence.studies(scope), "overview": evidence.overview(scope)})
+            except Exception as e:
+                return self._send(503, {"error": str(e)})
+        if path.startswith("/api/studies/"):
+            nct_id = unquote(path[len("/api/studies/"):]).strip()
+            if not nct_id or "/" in nct_id or len(nct_id) > 40:
+                return self._send(400, {"error": "invalid study identifier"})
+            try:
+                detail = evidence.study_detail(nct_id)
+                return self._send(200, detail) if detail else self._send(404, {"error": "study not found"})
+            except Exception as e:
+                return self._send(503, {"error": str(e)})
         self._send(404, {"error": "not found"})
 
     def do_POST(self):
-        routes = {"/api/run": start, "/api/draft": set_draft, "/api/followup": lambda body: follow_up()}
-        if self.path not in routes:
+        path = urlsplit(self.path).path
+        if path not in ("/api/run", "/api/ask", "/api/draft", "/api/followup"):
             return self._send(404, {"error": "not found"})
         n = int(self.headers.get("Content-Length") or 0)
+        if n > 64_000:
+            return self._send(413, {"error": "request too large"})
         try:
             body = json.loads(self.rfile.read(n) or b"{}")
         except json.JSONDecodeError:
             return self._send(400, {"error": "Body must be JSON"})
-        self._send(*routes[self.path](body))
+        if not isinstance(body, dict):
+            return self._send(400, {"error": "Body must be a JSON object"})
+        if path == "/api/ask":
+            question = str(body.get("question") or "").strip()
+            scope = body.get("scope", "real")
+            nct_id = body.get("nct_id")
+            if not question:
+                return self._send(400, {"error": "Ask a question first"})
+            if len(question) > 2_000:
+                return self._send(400, {"error": "Question is too long"})
+            if scope not in ("real", "synthetic"):
+                return self._send(400, {"error": "scope must be real or synthetic"})
+            try:
+                return self._send(200, evidence.answer(question, nct_id=nct_id, scope=scope))
+            except Exception as e:
+                return self._send(503, {"error": str(e)})
+        if path == "/api/draft":
+            return self._send(*set_draft(body))
+        if path == "/api/followup":
+            return self._send(*follow_up())
+        self._send(*start(body))
 
     def log_message(self, *a):
         pass
@@ -232,5 +316,6 @@ class H(BaseHTTPRequestHandler):
 if __name__ == "__main__":
     os.chdir(HERE)
     print(f"HerEvidence UI on http://localhost:{PORT}  (Ctrl+C to stop)")
+    print(f"Team agent demo: http://localhost:{PORT}/agent-demo.html")
     print("Phone notifications:", ", ".join(notify.channels()) or "OFF (set NTFY_TOPIC to turn on)")
     ThreadingHTTPServer(("127.0.0.1", PORT), H).serve_forever()

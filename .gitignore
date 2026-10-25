@@ -1,9 +1,15 @@
-# Generated on every run; committing these causes pull conflicts
+# Python-generated files
 __pycache__/
-*.pyc
+*.py[cod]
 .pytest_cache/
+
+# Generated databases
+data/*.db
+data/*.db-*
 data/herevidence.db*
+
+# Generated reports
 reports/
 
-# Secrets (API keys, notification topic)
+# Secrets
 .env

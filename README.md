@@ -2,7 +2,7 @@
 
 **Track: Unsupervised.** An agent audits ClinicalTrials.gov records for gaps in sex-specific reporting,
 runs unattended, and *knows when it is stuck, looping, overspending, or unreliable, and stops itself.*
-Only reaches a human when it needs approval or has halted. The demo page (`ui_server.py`) is backstage for judges.
+Only reaches a human when it needs approval or has halted. The public-facing web UI explains trusted findings, while the Agent Monitor provides a backstage view of the autonomous run and supervisor for judges and operators. The interface is served by `ui_server.py`.
 
 ## Problem / solution
 **Problem:** Women have been under-represented in clinical research, and registry records often do not show whether
@@ -60,12 +60,32 @@ python -m pytest tests                     # existing and phase-1 tests
 
 `data/gold_eval.json` and `data/gold_eval.md` contain per-label precision, recall, F1, support, confusion matrices, coverage, abstention rate, and disagreements. The sample includes targeted challenge records, so it does not estimate population prevalence. `--template 30` remains available for exporting additional cached live records, but its candidate lines are not sufficient for labeling; read the complete source. `ARCHITECTURE_REVIEW.md` gives the remaining three-hour schedule.
 
-## Demo UI (`python ui_server.py`)
-One page, standard library only. Left: the phone of the person running the audit; it stays silent until the agent halts
-or finishes, then shows the same message `notify.py` texts. Right: backstage for judges. **Run audit** and the
-**Break it** buttons start real `run_agent.py` runs in the background (paced at 0.3 s/trial so they can be watched;
-`HEREVIDENCE_UI_PACE` changes it). The supervisor chart is P(error rate > 10%) per batch, the same numbers the halt rule
-uses. **Send morning brief** summarizes the gap map. Pick **Real (ClinicalTrials.gov)** in the Data menu for live runs.
+## Web UI (`python ui_server.py`)
+The standard-library server and `ui/` frontend are the primary interface. It has five connected areas: **Home**,
+**Explore Research**, **Study Findings**, **Ask HerEvidence**, and **Agent Monitor**. The monitor still starts the real
+`run_agent.py` process, resumes its SQLite queue, and exposes every failure scenario. `HEREVIDENCE_UI_PACE` controls
+how quickly a run advances when it is watched in the UI.
+
+**Explain This Finding** builds beginner and researcher views from the same stored verdict. Researcher mode exposes the
+classification label, normalized source field path, original excerpt, run/batch metadata, and verification outcome.
+**Ask HerEvidence** is read-only and works without an API key: supported questions are answered deterministically from
+verified, non-quarantined SQLite records. Real and synthetic records are separate data views; demo answers are always
+labelled synthetic. Real NCT references link to the original ClinicalTrials.gov study page.
+
+The Agent Monitor also keeps the original human-in-the-loop workflow available: operators can approve or reject
+follow-up drafts, inspect lifecycle events and the latest supervisor handoff, and review measured supervisor/gold
+evaluation results. Gap-closure simulation is deliberately limited to synthetic demo records, so it cannot rewrite a
+real NCT record.
+
+Read-only API routes used by the frontend:
+
+- `GET /api/studies?scope=real|synthetic` — reporting overview and study cards
+- `GET /api/studies/<id>` — stored study metadata and deterministic finding explanations
+- `POST /api/ask` — grounded answers with the exact records checked and source references
+- `POST /api/draft` — approve or reject a pending follow-up draft
+- `POST /api/followup` — simulate gap closure for an approved synthetic demo record
+
+The existing `GET /api/state` and `POST /api/run` routes continue to power the autonomous Agent Monitor.
 
 ## Phone notifications
 The agent pushes to a real phone when a run finishes or the supervisor halts it (halts arrive as high priority).
@@ -105,4 +125,9 @@ verified numbers; some countries require sender registration first, so test earl
 ## Files
 `agent.py` loop | `supervisor.py` guards + Beta-Binomial | `verifier.py` quote grounding + sampled recheck | `auditor.py` rules-first, LLM-second |
 `fetch_trials.py` API + cache + enrollment counts by sex | `prevalence.csv` women's share of patients (sourced) | `store.py` checkpoint DB | `report.py` gap map + handoff | `drafts.py`/`notify.py`/`followup.py` actions |
+<<<<<<< HEAD
 `mock_llm.py` offline model w/ sabotage modes | `eval_gold.py` | `compare.py` | `ui_server.py` + `ui/index.html` demo page | `tests/`
+=======
+`mock_llm.py` offline model w/ sabotage modes | `evidence.py` read-only explanations + Q&A | `ui_server.py` + `ui/` primary web UI |
+`eval_gold.py` | `compare.py` | `app.py` legacy dashboard | `tests/`
+>>>>>>> 8c0c28b (Add HerEvidence frontend assets, evidence handling, and tests)

@@ -1,75 +1,109 @@
-# HerEvidence: an autonomous auditor that audits itself
+# HerEvidence
 
-**Track: Unsupervised.** An agent audits ClinicalTrials.gov records for gaps in sex-specific reporting,
-runs unattended, and *knows when it is stuck, looping, overspending, or unreliable, and stops itself.*
-Only reaches a human when it needs approval or has halted. The demo page (`ui_server.py`) is backstage for judges.
+**An autonomous AI research auditor that finds missing sex-specific evidence in clinical trials, checks its own work, and stops itself when it can no longer be trusted.**
 
-## Problem / solution
-**Problem:** Women have been under-represented in clinical research, and registry records often do not show whether
-results were analyzed by sex. Checking thousands of records by hand is too tedious for anyone to do routinely.
-**Solution:** an agent that audits records in the background, backs every finding with a verbatim quote, verifies its own
-work, and halts with a handoff report when it can no longer be trusted. Gaps become *approval-gated* draft requests.
-**Wording rule:** "not found in the registry record", never "failed to analyze by sex". Pregnancy exclusions are flagged for
-review, not labeled discriminatory.
+*Invisible Interfaces hackathon · Track: Unsupervised*
 
-## Criteria -> where it lives
-| Track criterion | Implementation | Demo scenario |
+---
+
+## Why this exists
+
+For decades, medical research has often treated the male body as the default, even though women and men can respond differently to medications.
+
+Historically, women were excluded from many early-stage drug trials, partly because of concerns about pregnancy and hormonal changes. This contributed to gaps in our understanding of how certain medications affect women.
+
+Those differences can have serious consequences. For example, research has found that women experience a higher incidence of accidental awareness during general anesthesia, meaning some patients may become conscious and later remember parts of a surgical procedure (the UK's 5th National Audit Project on accidental awareness, NAP5, listed female sex among the factors associated with higher risk; Pandit et al., *Anaesthesia*, October 2014). That is an observational audit, and it shows why understanding sex-related differences in drug response matters. It does not establish that exclusion from clinical trials caused any individual patient's experience.
+
+**The problem isn't simply whether women are included in clinical trials. It's whether researchers actually study and report how treatments affect women differently.**
+
+Checking that by hand means reading thousands of registry records, so almost nobody does it routinely. That is the job we gave to an agent.
+
+## What HerEvidence does
+
+HerEvidence audits completed trials on ClinicalTrials.gov, runs without anyone watching, and for each trial answers three questions:
+
+1. **Who was allowed in?** Does the eligibility text exclude pregnant or breastfeeding women, or women of childbearing potential? These are flagged for review, never labeled discriminatory, because some have legitimate safety reasons.
+2. **Was enrollment reported by sex?** Read from the record's structured baseline table.
+3. **Were results reported by sex?** Is there any outcome result broken out for women and men?
+
+It also reports the share of women enrolled against the share of women among patients with the condition (participation-to-prevalence ratio, below 0.8 is usually read as under-representation). Patient shares and their sources are in `prevalence.csv`.
+
+Every AI finding comes with a **verbatim quote from the source record**. When results are posted but nothing is reported by sex, the agent drafts a polite clarification request addressed to the trial's results point of contact from the registry record. **Nothing is ever sent without a human approving it** (in the demo, approval is simulated and nothing is sent). When a trial's results change, the agent can re-check it and close the gap (`followup.py`; simulated in the demo).
+
+**Wording rule:** a finding means *"not found in the registry record,"* never *"the researchers failed to analyze by sex."* Papers may contain analyses the registry lacks.
+
+## Why it fits the Unsupervised track
+
+The agent is the vehicle. The supervisor is the point: **does the agent know when to stop?**
+
+| Track criterion | How HerEvidence handles it | Demo scenario |
 |---|---|---|
-| Resumable batches | SQLite queue = checkpoint; `--no-ingest` requeues unresolved trials on the next run | `normal` |
-| Knows when it's **stuck** | `STUCK`: N batches resolving zero trials | `stuck` |
-| Knows when it's **looping** | identical-call fingerprints (per-task skip, then run halt); repeated fetch pages | `loop` |
-| Knows when it's **overspending** | token / call / cost / time caps checked before every call | `budget` |
-| Knows when to **stop** | Beta-Binomial posterior on measured error rates; halt if P(rate>10%) >= 0.8; quarantine since last clean batch | `sabotage` |
-| Hands off cleanly | `reports/handoff_<run>.md` with why, spend, what's quarantined, what to do | all |
-| Human-in-the-loop | drafts need approval; nothing is sent automatically | demo page |
+| Runs without constant supervision | Work lives in a SQLite queue, so a halted run resumes from its checkpoint (`--no-ingest`) | `normal` |
+| Knows when it is **unreliable** | Beta-Binomial posterior on its own measured error rate; halts when P(error rate > 10%) reaches 0.8, then quarantines every batch since the last clean one | `sabotage` |
+| Knows when it is **looping** | Fingerprints identical calls and repeated fetch pages; skips the looping task, halts the run if it keeps happening | `loop` |
+| Knows when it is **overspending** | Token, call, cost and time caps checked before every call | `budget` |
+| Knows when it is **stuck** | Halts after N batches that resolve zero trials | `stuck` |
+| Hands off cleanly | `reports/handoff_<run>.md`: why it stopped, spend, what is quarantined, what a human should do next | all |
+| Human stays in control | Draft requests need approval; the phone is buzzed only on a halt, a finish, or a draft approval | demo page |
 
-**Representation (who is enrolled):** the gap map also reports the share of women among participants, read from each
-record's structured baseline table (no LLM), against the share of women among patients from `prevalence.csv`. The ratio
-is the participation-to-prevalence ratio (PPR); below 0.8 is usually read as under-representation. Offline runs use
-SYNTHETIC patient shares, labeled as such in the report; never quote those numbers.
+## How it works
 
-## Run it (no API key, no internet needed)
+```
+ClinicalTrials.gov -> queue (SQLite checkpoint)
+        |
+        v   5 trials per batch; supervisor checks budget before every call
+  rules first (free)  ->  LLM only for ambiguous text, must quote the source
+        |
+        v
+  verifier:  A) is the quote really in the record?  (every AI answer that cites evidence)
+             B) does an independent second pass agree?  (sampled)
+        |
+        v
+  supervisor: updates error-rate posterior, loop / budget / stuck detectors
+        |            \
+        v             v  halt -> quarantine -> handoff report -> phone alert
+  gap map + approval-gated draft requests + follow-up re-checks
+```
+
+Rule-based answers (such as enrollment counts by sex) are read directly from structured fields, so they need no quote check. Rejected or quarantined answers never reach the gap map.
+
+## Run it (no internet needed)
+
 ```bash
 pip install -r requirements.txt
-python run_agent.py --scenario normal            # synthetic trials, mock LLM
-python run_agent.py --scenario sabotage          # model degrades mid-run -> supervisor halts + quarantines
-python run_agent.py --scenario loop              # unparseable replies -> loop detector
-python run_agent.py --scenario stuck             # ambiguous trials -> stuck detector
-python run_agent.py --scenario budget            # tiny token cap
-python compare.py                                # same sabotage, supervisor OFF vs ON (headline numbers)
+python run_agent.py --scenario normal      # synthetic trials, mock LLM
+python run_agent.py --scenario sabotage    # model degrades mid-run -> halt + quarantine
+python run_agent.py --scenario loop
+python run_agent.py --scenario budget
+python run_agent.py --scenario stuck
+python compare.py                          # same sabotage, supervisor OFF vs ON
 python followup.py --simulate && python run_agent.py --no-ingest   # gap closes -> draft marked RESOLVED
-python ui_server.py                              # the demo page: http://localhost:8501
+python ui_server.py                        # demo page at http://localhost:8501
 python -m pytest tests
 ```
-**Real data + real LLM:** `export ANTHROPIC_API_KEY=...` then `python run_agent.py --live --limit 60 --llm anthropic`.
-Set `HEREVIDENCE_MODEL` if you want a different model. **Before trusting live mode:** run
-`python fetch_trials.py --raw heart failure` and confirm the v2 field names and the `aggFilters` string; this was written
-against the live API. The phase-1 frozen JSON records enable parser checks, but the whole live pipeline still needs end-to-end validation.
 
-## Real-record evaluation: phase 1
+**If `ANTHROPIC_API_KEY` is set, these use the real model and spend credits.** Add `--llm mock` to force the offline model.
 
-See [`AGENT_RESEARCH_REVIEW.md`](AGENT_RESEARCH_REVIEW.md) for the DataMaster/AIBuildAI comparison, numeric evidence gate, staged draft behavior, and candidate branch stop rules. `experiment_gate.py` uses version-matched evaluation reports to stop regressions and holds promotion until an independent adjudicated holdout passes. It does not merge or deploy code.
-
-Read `LABELING_GUIDE.md` and `ARCHITECTURE_REVIEW.md`. `data/real_gold/` contains 25 frozen ClinicalTrials.gov v2 JSON records, with SHA-256 and record dates. `data/gold_set.json` contains **single-reviewer provisional labels**, not a two-person adjudicated gold set. The blind review sheets cover 7 model disagreements (`data/reviewer2_disagreements.csv`), 18 priority records (`data/reviewer2_priority.csv`), and all 25 records (`data/reviewer2_full.csv`). A second person should label from the full source records without seeing the first labels. Then run `python compare_reviewers.py data/reviewer2_full.csv`, adjudicate disagreements, and update the gold file and review status.
+**Real data and a real model:**
 
 ```bash
-python eval_gold.py --llm mock             # pipeline check, not real-LLM accuracy
-python eval_gold.py --llm anthropic        # requires the package and ANTHROPIC_API_KEY
-python -m pytest tests                     # existing and phase-1 tests
+export ANTHROPIC_API_KEY=...
+python run_agent.py --live --limit 60 --llm anthropic
 ```
 
-`data/gold_eval.json` and `data/gold_eval.md` contain per-label precision, recall, F1, support, confusion matrices, coverage, abstention rate, and disagreements. The sample includes targeted challenge records, so it does not estimate population prevalence. `--template 30` remains available for exporting additional cached live records, but its candidate lines are not sufficient for labeling; read the complete source. `ARCHITECTURE_REVIEW.md` gives the remaining three-hour schedule.
+Set `HEREVIDENCE_MODEL` to use a different model.
 
-## Demo UI (`python ui_server.py`)
-One page, standard library only. Left: the phone of the person running the audit; it stays silent until the agent halts
-or finishes, then shows the same message `notify.py` texts. Right: backstage for judges. **Run audit** and the
-**Break it** buttons start real `run_agent.py` runs in the background (paced at 0.3 s/trial so they can be watched;
-`HEREVIDENCE_UI_PACE` changes it). The supervisor chart is P(error rate > 10%) per batch, the same numbers the halt rule
-uses. **Send morning brief** summarizes the gap map. Pick **Real (ClinicalTrials.gov)** in the Data menu for live runs.
+## Demo page (`python ui_server.py`)
+
+One page, standard library only. Left: the phone of the person running the audit; it stays silent until the agent halts or finishes. Right: backstage for judges. **Run audit** and the **Break it** buttons start real `run_agent.py` runs in the background (paced at 0.3 s/trial so they can be watched; `HEREVIDENCE_UI_PACE` changes it). Pick **Real (ClinicalTrials.gov)** in the Data menu for live records.
+
+**How Break it works with the real model:** asking Claude to misbehave in the prompt is unreliable (it keeps quoting verbatim), so the scenarios use fault injection: the real model answers normally, then `llm.inject_fault` corrupts the answer the way a failing model would (a quote not in the record, unusable prose, or UNCLEAR) before the agent sees it. The supervisor has to catch the failure from the output alone. Any unexpected error halts the run as `CRASH` with a handoff report instead of dying silently.
+
+Below: the supervisor chart (P(error rate > 10%) per batch, the same numbers the halt rule uses), the gap map, the latest trials (click an ID for its evidence and quotes), draft requests with Approve / Reject and the follow-up button, the latest handoff report, and measured results.
 
 ## Phone notifications
-The agent pushes to a real phone when a run finishes or the supervisor halts it (halts arrive as high priority).
-It uses [ntfy](https://ntfy.sh): free, no account, works on iPhone and Android. Without setup it just prints `[notify:stub]`.
+
+The agent pushes to a real phone when a run finishes or the supervisor halts it (halts arrive as high priority). It uses [ntfy](https://ntfy.sh): free, no account, works on iPhone and Android. Without setup it just prints `[notify:stub]`.
 
 1. Install the **ntfy** app (App Store / Google Play). On iPhone, tap **Allow** when it asks to send notifications.
 2. In the app, tap **+** and subscribe to the team topic (ask Tanya for the name; anyone who knows it can read it, so don't post it publicly). Leave the server as ntfy.sh.
@@ -79,30 +113,56 @@ It uses [ntfy](https://ntfy.sh): free, no account, works on iPhone and Android. 
    ```
 4. Test: lock the phone, then run `NTFY_TOPIC=<team-topic> python notify.py`. The phone should buzz.
 
-**Troubleshooting (iPhone):** if messages show inside the app but never on the lock screen, notifications weren't registered.
-Delete the app, reinstall, tap **Allow**, re-add the topic. Also check Settings → Notifications → ntfy and turn off Focus.
-A failed send prints `[notify:ntfy] FAILED ...` in the terminal.
+**Troubleshooting (iPhone):** if messages show inside the app but never on the lock screen, notifications weren't registered. Delete the app, reinstall, tap **Allow**, re-add the topic. Also check Settings → Notifications → ntfy and turn off Focus. A failed send prints `[notify:ntfy] FAILED ...` in the terminal.
 
-SMS via Twilio also works: set `TWILIO_SID`, `TWILIO_TOKEN`, `TWILIO_FROM`, `NOTIFY_TO` (trial accounts can only text
-verified numbers; some countries require sender registration first, so test early).
+SMS via Twilio also works: set `TWILIO_SID`, `TWILIO_TOKEN`, `TWILIO_FROM`, `NOTIFY_TO` (trial accounts can only text verified numbers; some countries require sender registration first, so test early).
+
+## Results
+
+Every number HerEvidence reports is generated by the code and written to a file, so nothing in this README can drift out of date.
+
+| What it shows | How to produce it | Output | Data |
+|---|---|---|---|
+| Supervisor ON vs OFF under the same model sabotage: wrong verdicts that reach the gap map, calls and tokens spent, verdicts withheld | `python compare.py` | `data/compare.json` | Synthetic trials with known ground truth |
+| Halts: why the run stopped, spend, what was quarantined, what a human should do next | any `run_agent.py` run | `reports/handoff_<run>.md` | Whatever the run used |
+| Classification agreement per label: precision, recall, F1, support, confusion matrices, abstention rate, disagreements | `python eval_gold.py --llm anthropic` | `data/gold_eval.json`, `data/gold_eval.md` | 25 frozen real ClinicalTrials.gov records, provisional labels from one AI reviewer, not yet human-checked |
+| Gap map by condition, including participation-to-prevalence ratio | any run with `--live` | `reports/gap_map.csv`, `reports/gap_report.md` | Live ClinicalTrials.gov records |
+
+Read the data column before quoting a number. Synthetic runs show that the supervisor works. They say nothing about clinical accuracy, and offline prevalence shares are synthetic and labeled as such in the report.
+
+## Real-record evaluation
+
+`data/real_gold/` holds 25 frozen ClinicalTrials.gov v2 records with SHA-256 fingerprints and record dates (`.gitattributes` keeps git from changing their line endings, which would break the fingerprints). `data/gold_set.json` holds **provisional labels from one AI reviewer** (Codex), not a human or two-person adjudicated gold set. Label definitions are in `LABELING_GUIDE.md`; see also `ARCHITECTURE_REVIEW.md` and `AGENT_RESEARCH_REVIEW.md`.
+
+To make it human-checked: a person labels `data/reviewer2_disagreements.csv` (7 records), `data/reviewer2_priority.csv` (18) or `data/reviewer2_full.csv` (25) from the full source records, without looking at `gold_set.json`. Then run `python compare_reviewers.py <sheet>`, adjudicate the disagreements in `data/adjudication_queue.csv`, and update the gold file and its review status.
+
+```bash
+python eval_gold.py --llm mock             # pipeline check, not real-LLM accuracy
+python eval_gold.py --llm anthropic        # requires the package and ANTHROPIC_API_KEY
+```
+
+The sample includes targeted challenge records, so it does not estimate population prevalence. `experiment_gate.py` holds promotion until an independent adjudicated holdout passes; it currently says HOLD.
 
 ## 3-minute demo
-1. **Real gap:** live run, open a flagged trial, show the verbatim quote against source text.
-2. **Sabotage:** `sabotage` scenario. Posterior climbs, supervisor halts, quarantines, prints the handoff.
-3. **Loop + budget:** `loop` (burns 15 calls, not 150) and `budget` (stops mid-run, resumable).
-4. **Numbers:** `compare.py` compares wrong verdicts eligible for the gap map in a synthetic sabotage run; its `published` column is a database count, not external publication.
-5. **Follow-up:** approve a draft (simulated), simulate new results, watch the gap close and the draft resolve.
-6. **Limits slide:** below.
 
-## Honest limits (say them before the judges do)
-- Offline numbers come from **synthetic** trials with known ground truth; they test the plumbing and supervisor, not clinical accuracy. The checked-in real-record labels are provisional and the checked-in evaluation uses mock, so neither is a validated real-LLM clinical accuracy result.
-- Verification measures *source-grounding and agreement*. An error both passes share is invisible; the sampled recheck can miss errors in
-  unsampled verdicts (the supervised run shows 0 wrong published in the demo, but this is not a guarantee).
-- Loop detection uses exact call fingerprints; swap in embedding similarity if you have time.
+1. **Real gap:** live run, show the gap map (heart failure PPR), open a flagged trial, show the verbatim quote against the source text.
+2. **Sabotage:** **Model degrades**. The posterior climbs, the supervisor halts and quarantines, the phone buzzes, the handoff report appears.
+3. **Loop and budget:** **Model loops** (burns 15 calls, not 150) and **Tiny budget** (stops mid-run, resumable).
+4. **Numbers:** measured results compare wrong verdicts reaching the gap map in a synthetic sabotage run, supervisor off vs on. Its `published` column is a database count, not external publication.
+5. **Follow-up:** show a draft's recipient, approve it (simulated), click **A trial publishes results by sex**, watch the draft close.
+6. **Limits:** below.
+
+## Honest limits
+
+- Offline numbers come from synthetic trials with known ground truth. The real-record labels are provisional and come from one AI reviewer (not human-checked or adjudicated), and the checked-in evaluation uses the mock model, so none of this is validated real-LLM clinical accuracy yet.
+- Verification measures source-grounding and agreement. An error both passes share is invisible, and the sampled recheck can miss errors in unsampled verdicts.
+- Loop detection matches exact repeated calls, not similar ones.
 - The registry is not the literature: absent from the record does not mean absent from a paper.
-- Check C ("sex-stratified results") definitions with a domain-aware teammate before presenting percentages.
+- Pregnancy exclusions are flagged for human review, not judged.
+- Patient shares in `prevalence.csv` are worldwide estimates, while many audited trials are US-based. Rheumatoid arthritis is approximated from a female-to-male prevalence ratio, and lung cancer uses new cases (incidence), not prevalence.
+- Live runs sample about 10 trials per condition, so the gap map is a small sample, not a field-wide estimate.
+- Draft requests are addressed to each trial's registry contact but never sent.
 
-## Files
-`agent.py` loop | `supervisor.py` guards + Beta-Binomial | `verifier.py` quote grounding + sampled recheck | `auditor.py` rules-first, LLM-second |
-`fetch_trials.py` API + cache + enrollment counts by sex | `prevalence.csv` women's share of patients (sourced) | `store.py` checkpoint DB | `report.py` gap map + handoff | `drafts.py`/`notify.py`/`followup.py` actions |
-`mock_llm.py` offline model w/ sabotage modes | `eval_gold.py` | `compare.py` | `ui_server.py` + `ui/index.html` demo page | `tests/`
+## Repository map
+
+`agent.py` main loop · `supervisor.py` guards and Beta-Binomial · `verifier.py` quote grounding and recheck · `auditor.py` rules first, LLM second · `fetch_trials.py` API, caching and results contact · `prevalence.csv` sourced patient shares · `store.py` checkpoint DB · `report.py` gap map and handoff · `drafts.py`, `notify.py`, `followup.py` actions · `mock_llm.py` offline model with sabotage modes · `eval_gold.py` · `compare.py` · `ui_server.py` + `ui/index.html` demo page · `tests/`

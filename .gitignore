@@ -1,0 +1,9 @@
+# Generated on every run; committing these causes pull conflicts
+__pycache__/
+*.pyc
+.pytest_cache/
+data/herevidence.db*
+reports/
+
+# Secrets (API keys, notification topic)
+.env

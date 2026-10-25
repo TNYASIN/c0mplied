@@ -644,6 +644,8 @@ pre.text { white-space: pre-wrap; overflow-wrap: anywhere; font: .78rem/1.5 var(
     }
     if (code === "LOOP") return ["alert", "Stopped itself: stuck in a loop",
       `The model kept giving the same unusable answer. Stopped after ${sn.calls} calls instead of burning the budget.`];
+    if (code === "CRASH") return ["alert", "Stopped itself: unexpected error",
+      `${r.halt_reason || "Something failed"}. The unfinished batch was set aside and a handoff report written.`];
     if (code === "STUCK") return ["alert", "Stopped itself: no progress",
       `${sn.no_progress} batches in a row resolved nothing. The remaining trials need a person to look.`];
     return ["alert", "Stopped at its budget",

@@ -1,6 +1,6 @@
 """The autonomous audit loop, wrapped end-to-end by the supervisor."""
 import json, random, time
-import config, store, drafts, report, notify, fetch_trials
+import config, store, drafts, report, notify, fetch_trials, pubmed
 from config import Limits
 from supervisor import Supervisor, HaltRun, TaskLoop
 from llm import AuditLLM, get_backend
@@ -25,8 +25,9 @@ def decide(verdicts, attempts_so_far, max_attempts):
 
 
 def run(scenario="normal", conditions=None, limit=40, offline=True, supervised=True, ingest_data=True,
-        seed=7, llm_mode="auto", overrides=None, verbose=True, pace=0.0):
-    """pace: seconds to wait after each trial, so the mock run is slow enough to watch on stage (UI uses it)."""
+        seed=7, llm_mode="auto", overrides=None, verbose=True, pace=0.0, with_pubmed=True):
+    """pace: seconds to wait after each trial, so the mock run is slow enough to watch on stage (UI uses it).
+    with_pubmed: look up linked publications for real (NCT) trials; synthetic trials bring their own."""
     cfg = SCENARIOS[scenario]
     limits = Limits(**{**cfg.get("limits", {}), **(overrides or {})})
     store.init()
@@ -47,7 +48,7 @@ def run(scenario="normal", conditions=None, limit=40, offline=True, supervised=T
             else:
                 conds = conditions or ["heart failure", "major depressive disorder", "rheumatoid arthritis", "lung cancer"]
                 for c in conds:
-                    fetch_trials.ingest(c, max(1, limit // len(conds)), sup, log=log)
+                    fetch_trials.ingest(c, max(1, limit // len(conds)), sup, log=log, with_pubmed=with_pubmed)
         store.requeue(limits.max_attempts_per_trial)
         while True:
             sup.check_budget()
@@ -61,6 +62,10 @@ def run(scenario="normal", conditions=None, limit=40, offline=True, supervised=T
             pending = []
             for nct in ids:
                 trial = store.get_trial(nct)
+                trial["pubmed_status"], trial["publications"] = store.publications_for(nct)
+                if with_pubmed and nct.startswith("NCT") and trial["pubmed_status"] is None:
+                    pubmed.link_trial(trial, sup)   # queued before PubMed lookups existed
+                    trial["pubmed_status"], trial["publications"] = store.publications_for(nct)
                 try:
                     verdicts = audit_trial(trial, llm)
                     for v in verdicts:
@@ -88,7 +93,9 @@ def run(scenario="normal", conditions=None, limit=40, offline=True, supervised=T
             for nct, trial, verdicts, outcome in pending:
                 store.set_status(nct, outcome, run_id, inc=outcome in ("retry", "review"))
                 if outcome == "watch":
-                    drafts.create(trial, "sex_stratified_results")
+                    pub = next((v for v in verdicts if v["chk"] == "publication_sex_analysis"
+                                and v["label"] == "MENTIONED_IN_PUBLICATION"), None)
+                    drafts.create(trial, "sex_stratified_results", publication=pub)
                 if outcome in ("done", "watch") and any(
                         v["chk"] == "enrollment_by_sex" and v["label"] == "NOT_REPORTED_IN_RECORD" and v["verified"]
                         for v in verdicts):

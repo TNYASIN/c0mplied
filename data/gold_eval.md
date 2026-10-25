@@ -88,3 +88,10 @@ Confusion matrix:
 
 ## Disagreements
 
+
+## Publication cross-check (PubMed abstracts)
+
+Linked-publication sentences that appear to report a finding by sex. These are unlabeled leads for a human reader, not scored; a lead on a `NOT_FOUND_IN_RECORD` record means the paper may hold what the registry lacks.
+
+- NCT00043550 (registry reference `NOT_FOUND_IN_RECORD`) PMID 22152401: "Gender and minority status moderated outcome (P = .014), with psychotherapy more efficacious for minority men than MED (P = .027, Cohen d = 1.02) and PBO (P = .019, d = 1.09)."
+- NCT00381303 (registry reference `STRATIFIED_FOUND`) PMID 23092052: "Darunavir/ritonavir treatment is safe and effective in treatment-experienced patients, irrespective of sex or race."

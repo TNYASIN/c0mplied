@@ -66,6 +66,8 @@ def gap_map():
         n = len(ts)
         res = [t for t in ts if t.get("sex_stratified_results") not in (None, "NO_RESULTS_POSTED")]
         el = [t for t in ts if "eligibility_exclusion" in t]
+        gaps = [t for t in res if t.get("sex_stratified_results") == "NOT_FOUND_IN_RECORD"]
+        checked = [t for t in gaps if t.get("publication_sex_analysis") not in (None, "NOT_CHECKED")]
         out.append({
             "condition": cond, "trials_audited": n, "with_results_posted": len(res),
             **representation(cond, [nct for nct, _ in pairs], prevalence),
@@ -74,7 +76,9 @@ def gap_map():
             "% pregnancy/lactation exclusion": pct(sum(t.get("eligibility_exclusion") == "PREGNANCY_LACTATION_EXCLUSION" for t in el), len(el)),
             "% enrollment-by-sex reported (of results-posted)": pct(sum(t.get("enrollment_by_sex") == "REPORTED" for t in res), len(res)),
             "% sex-stratified results found (of results-posted)": pct(sum(t.get("sex_stratified_results") == "STRATIFIED_FOUND" for t in res), len(res)),
-            "% results-posted with NO sex-stratified result in record": pct(sum(t.get("sex_stratified_results") == "NOT_FOUND_IN_RECORD" for t in res), len(res)),
+            "% results-posted with NO sex-stratified result in record": pct(len(gaps), len(res)),
+            "% of those gaps with a linked publication (PubMed-checked)": pct(sum(t.get("publication_sex_analysis") != "NO_LINKED_PUBLICATION" for t in checked), len(checked)),
+            "% of those gaps where a linked abstract mentions a sex analysis (lead, unverified)": pct(sum(t.get("publication_sex_analysis") == "MENTIONED_IN_PUBLICATION" for t in checked), len(checked)),
         })
     return out
 

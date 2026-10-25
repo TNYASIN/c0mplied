@@ -1,0 +1,2 @@
+# Frozen registry snapshots are fingerprinted byte-for-byte: never convert line endings
+data/real_gold/*.json -text

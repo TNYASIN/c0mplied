@@ -1,0 +1,37 @@
+
+=== run-1792885186033-sabotage | supervisor=ON | llm=mock | scenario=sabotage
+  loaded 40 SYNTHETIC trials (offline mode)
+  SYN0700000: watch  
+  SYN0700001: watch  
+  SYN0700002: watch  
+  SYN0700003: watch  
+  SYN0700004: done   
+ batch 0: resolved 5/5 | grounding 0/5 P>10%=0.23 | recheck 0/3 P>10%=0.28 | tokens 4,552 | $0.019
+  SYN0700005: done   
+  SYN0700006: done   
+  SYN0700007: done   
+  SYN0700008: watch  
+  SYN0700009: watch  
+ batch 1: resolved 5/5 | grounding 0/10 P>10%=0.14 | recheck 0/6 P>10%=0.21 | tokens 8,841 | $0.036
+  SYN0700010: watch  
+  SYN0700011: retry  
+  SYN0700012: retry  REJECTED 1 verdict(s): QUOTE NOT IN SOURCE (fabricated or paraphrased)
+  SYN0700013: watch  
+  SYN0700014: watch  
+ batch 2: resolved 3/5 | grounding 1/12 P>10%=0.36 | recheck 0/7 P>10%=0.18 | tokens 10,790 | $0.044
+  SYN0700015: retry  REJECTED 2 verdict(s): QUOTE NOT IN SOURCE (fabricated or paraphrased)
+  SYN0700016: watch  
+  SYN0700017: watch  
+  SYN0700018: watch  
+  SYN0700019: retry  
+ batch 3: resolved 3/5 | grounding 2/16 P>10%=0.54 | recheck 1/9 P>10%=0.45 | tokens 14,942 | $0.061
+  SYN0700020: retry  REJECTED 2 verdict(s): quote found in source; RECHECK DISAGREES (primary=CONDITIONAL, recheck=PREGNANCY_LACTATION_EXCLUSION)
+  SYN0700021: watch  
+  SYN0700022: done   
+  SYN0700023: watch  
+  SYN0700024: retry  REJECTED 1 verdict(s): QUOTE NOT IN SOURCE (fabricated or paraphrased)
+
+*** SUPERVISOR HALT [ERROR_RATE]: grounding check: 4/22 failures; P(error rate > 10%) = 0.81 >= 0.80
+*** QUARANTINED 15 trials from batches after the last clean batch (1); excluded from the gap map
+
+HALTED_ERROR_RATE | tokens 19,352 | calls 40 | ~$0.079 | handoff: reports/handoff_run-1792885186033-sabotage.md

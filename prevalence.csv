@@ -1,7 +1,7 @@
 condition,female_share_of_patients,source
 chronic kidney disease,0.55,"Pinho-Gomes et al. 2023, Clinical Kidney Journal: women are 55% of the global CKD population"
 dementia,0.64,"Imperial College / UCL review of dementia trials 2010-2021: women are 64% of the global dementia population"
-heart failure,,FILL IN with a cited figure (e.g. a GBD or registry estimate)
-major depressive disorder,,FILL IN with a cited figure
-rheumatoid arthritis,,FILL IN with a cited figure
-lung cancer,,FILL IN with a cited figure
+heart failure,0.503,"Wei et al. 2023, Eur Heart J Qual Care Clin Outcomes 9(7):662-672, doi:10.1093/ehjqcco/qcac088 (GBD 2019): 50.3% of 56.2M people with heart failure were female"
+major depressive disorder,0.605,"Chen et al. 2025, Depression and Anxiety, doi:10.1155/da/5553491 (GBD 2021): 201.27M female vs 131.14M male prevalent cases of depressive disorders (MDD + dysthymia combined)"
+rheumatoid arthritis,0.71,"APPROXIMATE: GBD 2021 RA Collaborators (Black et al.) 2023, Lancet Rheumatol 5(10):e594-610, doi:10.1016/S2665-9913(23)00211-4: age-standardised female:male prevalence ratio 2.45; share derived as 2.45/3.45, not from case counts"
+lung cancer,0.367,"GLOBOCAN 2022 (Filho et al., Int J Cancer, doi:10.1002/ijc.35278): 0.91M of 2.48M new lung cancer cases were in women (incidence, not prevalence)"

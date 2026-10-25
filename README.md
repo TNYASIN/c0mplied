@@ -4,6 +4,10 @@
 
 *Invisible Interfaces hackathon · Track: Unsupervised*
 
+### [▶ Try the live demo](https://tnyasin.github.io/c0mplied/ui/)
+
+Runs in your browser, no install: press **Run audit**, then a red **Break it** button to watch the supervisor stop the agent. The online demo simulates the agent with the same rules on synthetic trials; real ClinicalTrials.gov data, the real model, drafts and phone alerts need `python ui_server.py` on a laptop (below).
+
 ---
 
 ## Why this exists

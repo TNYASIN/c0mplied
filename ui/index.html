@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>HerEvidence</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -236,6 +241,8 @@ abbr[title] { text-decoration: underline dotted; text-underline-offset: 3px; cur
 @media (max-width: 860px) { .steps3 { grid-template-columns: 1fr; } .demos li { grid-template-columns: 1fr; } .ex > div { padding-left: 12px; } .tour { bottom: 12px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
+</head>
+<body>
 
 <a class="skip" href="#sec-run">Skip to the controls</a>
 <div class="wrap" role="main" id="top">
@@ -257,7 +264,7 @@ abbr[title] { text-decoration: underline dotted; text-underline-offset: 3px; cur
 
   <section id="sec-start" class="panel start" aria-labelledby="start-h">
     <h2 id="start-h">New here? Start with this</h2>
-    <p style="margin:0">HerEvidence is an AI helper that reads public clinical-trial records and looks for <strong>gaps that affect women</strong>: are women included, were results reported separately for women and men, and do the rules keep women out? It <strong>double-checks its own work and stops itself</strong> if it stops being reliable. With <strong>Synthetic</strong> data everything is made up for practice; choose <strong>Real</strong> to audit live ClinicalTrials.gov records.</p>
+    <p style="margin:0">HerEvidence is an AI helper that reads public clinical-trial records and looks for <strong>gaps that affect women</strong>: are women included, were results reported separately for women and men, and do the rules keep women out? It <strong>double-checks its own work and stops itself</strong> if it stops being reliable. With <strong>Synthetic</strong> data everything is made up for practice; when the app runs on the laptop, choose <strong>Real</strong> to audit live ClinicalTrials.gov records.</p>
     <ol class="steps3">
       <li><b>1</b><div><strong>Press “Run audit”</strong><p>The agent starts checking trials by itself. Nothing for you to do while it works.</p></div></li>
       <li><b>2</b><div><strong>Watch the safety checks</strong><p>The counters and the chart show it checking its own mistakes as it goes.</p></div></li>
@@ -1221,3 +1228,5 @@ abbr[title] { text-decoration: underline dotted; text-underline-offset: 3px; cur
   });
 })();
 </script>
+</body>
+</html>

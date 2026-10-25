@@ -220,13 +220,10 @@ class H(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if self.path in ("/", "/index.html"):
-            # ui/index.html is a page fragment so the same file also publishes as a claude.ai artifact
-            # (where it runs a built-in simulation). Here it gets a full document and finds /api/state.
+            # ui/index.html is a complete page, so the same file is also the public demo on GitHub Pages
+            # (where /api/state doesn't exist and it runs its built-in simulation). Here it finds /api/state.
             with open(os.path.join(HERE, "ui", "index.html"), "rb") as f:
-                page = (b'<!doctype html><html lang="en"><head><meta charset="utf-8">'
-                        b'<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">'
-                        b'</head><body>' + f.read() + b'</body></html>')
-            return self._send(200, page, "text/html; charset=utf-8")
+                return self._send(200, f.read(), "text/html; charset=utf-8")
         url = urlparse(self.path)
         try:
             if url.path == "/api/state":
